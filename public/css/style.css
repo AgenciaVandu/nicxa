@@ -1,0 +1,498 @@
+html {
+    scroll-behavior: smooth;
+}
+.bg-nicxa {
+    background-color: #EB0028;
+}
+.nav-link {
+    color: #fff !important;
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+.navbar-toggler {
+    border: none;
+}
+.menu {
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+}@media (max-width:1100px) {
+    .negocios-portada {
+        margin-top: 3.7em;
+    }
+}
+@media (max-width:400px) {
+    .negocios-portada {
+        margin-top: 3.4em;
+    }
+    
+}
+.header {
+    padding-top: 1.5em;
+}
+@media (max-width:600px) {
+    .header {
+        padding-top: 3.3em;
+    }
+}
+
+
+.vacantes {
+    background-color: #EB0028;
+    color: #fff;
+    font-family: 'Raleway';
+    font-weight: 600;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+    font-size: .8em;
+}
+.quienes-somos {
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+.timeline {
+    background-image: url(/img/gn-logo.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.timeline__espacio {
+    padding: 0em 5em 2em 5em;
+} @media (max-width:1190px) {
+    .timeline__espacio {
+        padding: 0;
+    }
+}
+.highlights {
+    background-color: #333A41;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    color: #fff;
+}
+.negocios {
+    padding-top: 2em;
+}
+.bg-negocios {
+   /*  background-image: url(/img/fondo-1.png); */
+    background-image: url(/img/fondo-1.png);
+    background-position: center 28em;
+    background-repeat: no-repeat;
+}
+.bg-negocios-1 {
+    background-color: #EB0006;
+     /* background-image: url(/img/fondo-1.png); */
+     background-position: center ;
+     background-repeat: no-repeat;
+ }
+
+/* Franquicia */
+.franquicia {
+    padding-top: 2em;
+    text-align: center;
+}
+.franquicia__nicxa {
+    color: #EB0028;
+} 
+.franquicia__nicxa_1 {
+    color: #EB0006;
+}@media (max-width:992px) {
+    .franquicia__nicxa_1 {
+        color: #fff;
+    }
+}
+@media (max-width:500px) {
+    .portada-fundacion {
+        margin-top: 3.7em;
+    }
+}
+.franquicia__logos {
+    padding: 2em 12em 0em 12em;
+} @media (max-width:500px) {
+    .portada-franquicia {
+        margin-top: 3.77em;
+    }
+    .franquicia__logos {
+        padding: 0;
+    }
+}
+.bg-cupon-1 {
+    padding-bottom: 2em;
+}
+.ordena-ahora {
+    background-color: #333A41;
+}
+.ordena-ahora li {
+    list-style: none;
+}
+.ordena-ahora__espacio {
+    padding: 1em 5em 1em 5em;
+}  .ordena-ahora__cupon {
+    padding-top: 1em;
+}@media (max-width:1100px) {
+    .ordena-ahora__espacio {
+        padding:1em 5em 1em 5em;
+    }
+} @media (max-width:575px) {
+    .ordena-ahora__espacio {
+        padding:1em 8.5em 1em 8.5em;
+    }
+}@media (max-width:457px) {
+    .ordena-ahora__espacio {
+        padding:1em 6em 1em 6em;
+    } 
+    .ordena-ahora__cupon {
+        padding-top: 1em;
+    }
+}@media (max-width:383px) {
+    .ordena-ahora__espacio {
+        padding:1em 3em 1em 3em;
+    } 
+    .ordena-ahora__cupon {
+        padding-top: 1em;
+    }
+}
+.ordena-ahora__cupon:hover {
+    -webkit-transform:scale(.95);
+    -moz-transform:scale(.95);
+    -ms-transform:scale(.95);
+    -o-transform:scale(.95);
+    transform:scale(.95);
+}
+.ordena-ahora {
+    color: #fff;
+}
+.btn-dark {
+    /* font-size: .68em;
+    border-radius: .5em; */
+    background-color: #000;
+    border: none;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+}
+.btn-primary {
+    background-color: #000;
+    border-radius: .4em;
+    border: none;
+    font-weight: 700;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+}
+.btn-primary:hover {
+    background-color: rgb(37, 37, 37);
+}
+.btn-danger {
+    background-color: #EB0006;
+    font-family: 'Raleway';
+    font-weight: 800;
+    padding: .6em 1em .6em 1em;
+    border-radius: .8em;
+}
+
+.ordena-ahora__opciones a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.ordena-ahora__opciones a:hover {
+    color: #EB0006;
+}
+.pizza-hut {
+    font-size: .94em;
+}
+.acciones__texto {
+    font-weight: 400;
+    padding-bottom: 1.5em;
+}
+.acciones__logos {
+    padding: 1em 0em 0em 0em;
+} @media (max-width:1105px) {
+    .acciones__logos {
+        padding: 1em 4em 0em 4em;
+    }
+} @media (max-width:700px) {
+    .acciones__logos {
+        padding: 1em 4em 0em 4em;
+    }
+} @media (max-width:500px) {
+    .acciones__logos {
+        padding: 1em 3.7em 0em 3.7em;
+    }
+}
+.inmobiliaria {
+    background-image: url(/img/gn-logo-bco-1.png);
+    background-color: #333A41;
+    background-repeat: no-repeat;
+    background-position: center right;
+    margin-top: 2em;
+    padding-bottom: 2em;
+} @media (max-width:900px) {
+    .inmobiliaria {
+        background-position: top right;
+    }
+}
+.inmobiliaria__texto {
+    padding: 0 5em 0 5em;
+    font-weight: 400;
+    color: #fff;
+} @media (max-width:900px) {
+    .inmobiliaria__texto {
+        padding: 0 1em 0 1em;
+    } 
+}
+.bolsa-de-trabajo {
+    background-image: url(/img/bolsa-de-trabajo.jpg);
+    height: 487px;
+    background-size: cover;
+    background-position: center;
+    display: flex;     
+    align-items: center;
+    justify-content: center;
+}
+
+.cta {
+    background-color: #EB0028;
+}
+.form-control-file {
+    color: #FFF;
+    font-family: 'Raleway';
+}
+.custom-file-upload {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: .3em;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.glider-prev, .glider-next {
+    font-size: 1em;
+} 
+.negocios__card {
+    padding: 0 4em 0 4em;
+} @media (max-width:1190px) {
+    .negocios__card {
+        padding: 0 0 0 0;
+    }
+}
+.negocios__franquicia {
+    background-image: url(/img/ALIMENTOS-1.png);
+    min-height: 534px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.negocios__franquicia:hover {
+    background-image: url(/img/alimentos.png);
+    transition: all 500ms ease-out;
+    background-position: center;
+    
+}
+.negocios__fundacion {
+    background-image: url(/img/FUNDACIÓN-1.png);
+    min-height: 534px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.negocios__fundacion:hover {
+    background-image: url(/img/fundacion.png);
+    transition: .5s ease-in-out;
+    background-position: center;
+    
+}
+.negocios__inmobiliaria {
+    background-image: url(/img/INMOBILIARIA-1.png);
+    min-height: 534px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.negocios__inmobiliaria:hover {
+    background-image: url(/img/inmobiliaria.png);
+    transition: .5s ease-in-out;
+    background-position: center;
+    
+}
+.negocios__unidad {
+    background-image: url(/img/unidad-1.png);
+    min-height: 534px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.negocios__unidad:hover {
+    background-image: url(/img/unidad.png);
+    transition: all 500ms ease-out;
+    background-position: center;
+    
+}
+
+.bg-cupon {
+    background-color: #EB0006;
+    padding-bottom: 2em;
+}
+/*Carousel*/
+
+.carousel__contenedor {
+    position: relative;
+}
+
+.carousel__anterior, .carousel__anterior-colab,
+.carousel__siguiente, .carousel__siguiente-colab {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    opacity: 100%;
+} @media (max-width: 700px) {
+    .carousel__anterior,
+    .carousel__siguiente {
+        display: none;
+    }
+}
+
+.carousel__anterior:hover, .carousel__anterior-colab:hover,
+.carousel__siguiente:hover, .carousel__siguiente-colab:hover {
+    opacity: 100%;
+}
+
+.carousel__anterior, .carousel__anterior-colab {
+    left: -20px;
+}
+
+.carousel__siguiente,.carousel__siguiente-colab {
+    right: -20px;
+}
+
+.carousel__indicadores .glider-dot, .carousel__indicadores-colab .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #000;
+    opacity: .2;
+    border-radius: none;
+}
+
+.carousel__indicadores .glider-dot:hover, .carousel__indicadores-colab .glider-dot:hover {
+    opacity: 1;
+}
+
+.carousel__indicadores .glider-dot.active, .carousel__indicadores-colab .glider-dot.active {
+    opacity: 1;
+}
+.cta__contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.cta__contenedor figure {
+    position: relative;
+    height: 260px;
+    width: 270px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.cta__contenedor figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.cta__contenedor--capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    text-align: center;
+    padding: 1em;
+}
+.cta__contenedor--capa:hover {
+    opacity: 1;
+}
+.cta__contenedor--capa h5{
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.cta__contenedor--capa p{
+    color: #fff;
+    font-size: .6em;
+    
+}
+.cta__contenedor--capa:hover h5{
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #EB0028 ;
+    min-height: 200px;
+    background-position: center;
+    background-size: cover;
+    color: #FFF;
+}
+.footer__espacio {
+    padding: 2em 2em 2em 2em;
+} @media (max-width:1100px) {
+    .footer__espacio {
+        padding: 2em 2.2em 2em 2.2em;
+    } 
+} @media (max-width:991px) {
+    .footer__espacio {
+        padding: 2em 8em 2em 8em;
+    }
+    .orden {
+        order: 1;
+    } .orden-4 {
+        order: 0;
+    }
+} @media (max-width:780px) {
+    .footer__espacio {
+        padding: 2em 6em 2em 6em;
+    }
+    .orden {
+        order: 1;
+    } .orden-4 {
+        order: 0;
+    }
+} @media (max-width:620px) {
+    .footer__espacio {
+        padding: 2em 3em 2em 3em;
+    }
+    .orden {
+        order: 1;
+    } .orden-4 {
+        order: 0;
+    }
+}@media (max-width:550px) {
+    .footer__espacio {
+        padding: 1em;
+    } 
+} @media (max-width:320px) {
+    .footer__espacio {
+        padding: 0em;
+    } 
+}
+footer li {
+    list-style: none;
+    padding-bottom: .7em;
+}@media(max-width:1220px) {
+    footer li {
+        font-size: .9em;
+    }
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}

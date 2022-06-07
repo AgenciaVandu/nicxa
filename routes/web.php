@@ -14,7 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+Route::get('/negocios', function () {
+    return view('negocios');
+});
+Route::get('/franquicia', function () {
+    return view('franquicia');
+});
+Route::get('/responsabilidad-social', function () {
+    return view('responsabilidad-social');
+});
+Route::get('/unete-a-la-famila-nicxa', function () {
+    return view('bolsa-de-trabajo');
 });
 
 Route::middleware([
