@@ -1,0 +1,260 @@
+
+/* Formulario */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    
+}
+.logo_page{
+    width: 35%;
+    padding: 2rem 1.5rem;
+}
+.text-p{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800 !important;
+    font-size: 2.5em;
+    color: #fff;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700 !important;
+    color: #fff;
+    font-size: 2rem !important;
+    text-align: center;
+}
+
+
+/*Sections one*/
+.section_one{
+    background: url('img/section_one.png') no-repeat center;
+    background-size: cover;
+    padding: 6rem 2rem;
+}
+.btn-black{
+    padding: .5rem 1rem;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background: #000;
+    border-radius: 50px;
+    width: 250px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.btn-black:hover{
+    text-decoration: none;
+    background: #171717;
+    color: #fff;
+    transition: .3s;
+    transform: scale(1.05);
+}
+
+
+/*Sections two*/
+.image_section_two{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-top: 2rem;
+    border-radius: 200px;   
+}
+.text-section_two{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    background: #000;
+    padding: 3rem;
+    display: block;
+    margin: 5rem 16rem 2rem 2rem;
+    border-radius: 5px;
+    text-align: justify;
+}
+.marcas{
+    display: block;
+    margin: auto;
+    width: 35%;
+    padding: 1rem 2rem;
+}
+
+
+/*Sections three*/
+.title_three{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.banner{
+    background: red;
+    padding: 1rem;
+}
+.super_empresa{
+    width: 60%;
+    display: block;
+    margin-top: 2rem;
+    margin-left: auto;
+}
+
+
+/* Section Four */
+.text-beneficios{
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: justify;
+}
+.list-beneficios{
+    padding: 1rem 2rem !important;
+    display: block;
+    margin-top: 10% ;
+}
+.btn-red{
+    padding: .5rem 1rem;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background: red;
+    border-radius: 50px;
+    width: 250px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.btn-red:hover{
+    text-decoration: none;
+    background: #171717;
+    color: #fff;
+    transition: .3s;
+    transform: scale(1.05);
+}
+.beneficios-foto{
+    width: 80%;
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-bottom: 5%;
+    border-radius: 50px;   
+}
+
+/* SLIDER */
+.container-slider{
+    padding: 2rem 8rem 4rem 0;
+    background: #000;
+}
+.head-title{
+    text-align: center !important; 
+}
+.head-text{
+    text-align: center !important; 
+}
+.container-slider>div>h1{
+    display: block;
+    margin: auto;
+    text-align: left; 
+}
+.container-slider>div>p{
+    text-align: justify;
+}
+.list-slider{
+    padding: 2rem !important;
+}
+.image-slider{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+}
+
+
+
+/* Formulario */
+.form-container{
+    width: 100%;
+    height: auto;
+    padding: 2rem 5rem;
+    background-color: #000;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"]{
+    width: 100%;
+    border: 3px solid #171717;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #000;
+    font-size: 18px;
+    font-weight: 600 !important;
+    margin: .5rem 0;
+}
+input[type="submit"]{
+    width: 100%;
+    border: 3px solid #171717;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    color: #171717;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 600 !important;
+    margin: .5rem 0;
+}
+input[type="submit"]:hover{
+    background: #171717;
+    color: #fff;
+    text-decoration: none;
+    transition: .4s;
+}
+label{
+    margin-left: 2rem;
+    text-align: center !important;
+    font-size: 18px;
+    font-weight: 600 !important;
+    color: #fff;
+}
+select{
+    margin-top: .5rem 0 !important;
+    width: 100%;
+    border: 3px solid #171717;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    color: #414141;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    font-family: 'Raleway', sans-serif;
+    background: #000;
+    font-size: 18px;
+}
+option{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700 !important;
+    color: #fff !important;
+    border: none;
+}
+
+
+
+
+
+/* Functions */
+#exito{
+    display: none;
+}
+#registro{
+    display: none;
+}
+
+.activo{
+    display: block !important;
+}

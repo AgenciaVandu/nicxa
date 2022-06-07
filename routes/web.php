@@ -39,6 +39,9 @@ Route::post('/enviar', [SistemaController::class,'store'])->name('enviar');
 Route::get('/tankcupon', function () {
     return view('pdf');
 });
+Route::get('/bolsa-de-trabajo', function () {
+    return view('cultura-nicxa');
+});
 
 Route::get('/descargar/{nombre}/{cupon}', function ($nombre,$cupon) {
     $datos = ['nombre' => $nombre, 'cupon' => $cupon];

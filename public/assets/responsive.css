@@ -1,0 +1,68 @@
+/* Responsive Desing */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem !important;
+  }
+  h2 {
+    font-size: 1rem !important;
+  }
+  .form-container {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+    background-color: #000;
+  }
+  input,
+  select {
+    font-size: 14px !important;
+    font-weight: 600;
+  }
+  .logo_page {
+    width: 70%;
+    padding: 2rem 1.5rem;
+  }
+
+  .beneficios-foto {
+    width: 90%;
+  }
+  .text-section_two {
+    padding: 2rem 1rem;
+    margin: 1rem 2rem;
+  }
+  .image_section_two{
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 200px;   
+}
+.super_empresa{
+    width: 85%;
+    display: block;
+    margin: auto !important;
+}
+.marcas{
+    display: block;
+    margin: auto;
+    width: 80%;
+    padding: 1rem 2rem;
+}
+.section_one{
+    background: url('img/section_one.png') no-repeat center;
+    background-size: cover;
+    padding: 1rem;
+}
+.container-slider{
+  padding: 2rem 0;
+  background: #000;
+}
+.image-slider{
+  width: 100%;
+  padding: 0 3rem;
+}
+.container-slider>div>h1{
+  display: block;
+  margin: auto;
+  text-align: center; 
+}
+
+}

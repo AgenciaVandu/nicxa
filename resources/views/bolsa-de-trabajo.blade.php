@@ -25,7 +25,7 @@
 <section class="cta" id="cta">
     <div class="container">
         <div class="row pt-5 pb-5">
-            <div class="col-lg-7 col-md-6 col-sm-12">
+            <div class="col-lg-7 col-md-6 col-sm-12 m-auto">
                     <h6 class="text-center cta__titulo">Conoce la trayectoria y crecimiento de algunos de nuestros colaboradores</h6><!-- Carrusel -->
                       <div class="carousel">
                         <div class="carousel__contenedor mb-2">
@@ -216,7 +216,7 @@
                     </div> 
                 </div>
             <div class="col-lg-5 col-md-6 col-sm-12 m-auto">
-                <form action="">
+                <form id="formulario">
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
                         <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
@@ -231,17 +231,34 @@
                           <input type="tel" id="phone" class="form-control">
                         </div>
                     </div>
+                    <input type="hidden" value="Landing Page" name="canal" />
                     <div class="row mt-4">
-                        <div class="col d-flex">
-                          <label for="marca" class="m-auto pr-3">Marca</label>
-                          <select class="form-control" id="marca">
-                            <option>Burger King</option>
-                            <option>KFC</option>
-                            <option>Pizza Hut</option>
-                            <option>Los Bisquets Obregón</option>
+                        <div class="col">
+                          <label for="estado">Estado</label>
+                          <select class="form-control" name="estado" id="estado">
+                            <option value="Yucatán">Yucatán</option>
+                            <option value="Quintana Roo">Quintana Roo</option>
+                            <option value="Campeche">Campeche</option>
+                            <option value="Chiapas">Chiapas</option>
+                            <option value="Tabasco">Tabasco</option>
                           </select>
                         </div>
-                        <div class="col d-flex">
+                    </div>
+                    <div class="form-group mt-4" id="ciudad">
+                        <input type="hidden" value="indefinido" name="ciudad" />                 
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col">
+                          <label for="marca" class="m-auto pr-3">Marca</label>
+                          <select class="form-control" name="franquicia" id="franquicia">
+                            <option value="Pizza Hut">Pizza Hut</option>
+                            <option value="KFC">KFC</option>
+                            <option value="LBB Obregon">LBB Obregon</option>
+                            <option value="Burgerking">Burgerking</option>
+                          </select>
+                        </div>
+                        <div class="col-12 mt-4">
                             <label for="puesto" class="m-auto pr-3">Puesto</label>
                             <select class="form-control" id="puesto">
                                 <option>Empleado General (Asociado)</option>
@@ -256,24 +273,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="form-group mt-4">
-                        <label for="ciudad">Ciudad de interés</label>
-                        <select class="form-control" id="ciudad">
-                            <option>Playa del carmen</option>
-                            <option>Tapachula</option>
-                            <option>Mérida</option>
-                            <option>Villahermosa</option>
-                            <option>Tuxtla</option>
-                            <option>Cancun</option>
-                            <option>Ciudad del Carmen</option>
-                            <option>San cristobal</option>
-                            <option>Tonalá</option>
-                            <option>Comitan</option>
-                            <option>Tulum</option>
-                            <option>Chetumal</option>
-                            <option>Cozumel</option>
-                        </select>
-                    </div>
+                    
                     <div class="form-group mt-4">
                         <div class="row">
                             <div class="col-3 m-auto">
@@ -283,7 +283,7 @@
                             </div>
                         </div>                               
                     </div>
-                    <button class="btn btn-primary btn-block">Postularme</button>
+                    <input type="submit" value="Postularme" class="btn btn-primary btn-block"></input>
                 </form>
             </div>
         </div>
