@@ -1,0 +1,345 @@
+:root {
+    --primary-font: 'Raleway', sans-serif;
+}
+.slider{
+    border-top: 1px solid #c00423;
+    margin-top: -2px;
+}
+.img-slider{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+body{
+    background: #fff;
+}
+nav{
+    background: #eb0028;
+}
+.navigation_logo{
+    width: 60px;
+    height: auto;
+    display: block;
+    margin: left;
+}
+.cupones{
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+.button-descargar{
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 3px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    background: #eb0028;
+    border: none;
+    padding: .5rem 1rem;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.button-descargar-b{
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 3px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    background: #171717;
+    border: none;
+    padding: .5rem 1rem;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.button-descargar-d{
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 3px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    background: #00703c;
+    border: none;
+    padding: .5rem 1rem;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/*Formulario*/
+.marcas{
+    display: block;
+    margin: auto;
+}
+.modal-header{
+    border: none;
+}
+.modal-content{
+    padding: 0;
+    background: #fff;
+    border-radius: 3px;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    color: #171717;
+    font-weight: 600;
+}
+.btn-submit{
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 3px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: #fff;
+    background: #eb0028;
+    padding: .5rem 1rem;
+    border: none;
+}
+.input_bg{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    color: #e1e1e1;
+    border-radius: 10px;
+}
+.terminos{
+    color: #eb0028;
+}
+.terminos:hover{
+    text-decoration: none;
+    color: #e1e1e1;
+}
+
+/* Titulos */
+h1{
+    font-family: var(--primary-font);
+    font-weight: 800;
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.subtitle{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #171717;
+    text-transform: uppercase;
+}
+.variant-title{
+    font-family: var(--primary-font);
+    color: #eb0028 !important;
+}
+.variant-title-b{
+    font-family: var(--primary-font);
+    color: #fff;
+/*
+    color: #00703c;    
+*/
+}
+.variant-title-c{
+    font-family: var(--primary-font);
+    color: #00703c;
+}
+.kfc-title{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.ph-title{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* Secciones */
+.seccion-content{
+    background: #fff;
+    padding: 4rem 0;
+}
+.seccion-content-b{
+    background: #eb0028;
+    padding: 4rem 0;
+}
+.lbbo-content{
+    background: url('banner_lbbo.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+/* Footer */
+.marcas-footer{
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+footer{
+    background: #eb0028;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+}
+.footer-text{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    text-align: center;
+}
+.footer-a{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    color: #e1e1e1;
+    text-align: center;
+}
+.footer-a:hover{
+    
+    text-decoration: none;
+    color: #fff;
+}
+.footer-a-b{
+    font-family: var(--primary-font);
+    font-size: 14px;
+    color: #c00423;
+    text-align: center;
+}
+.footer-a-b:hover{
+    font-family: var(--primary-font);
+    color: #332e1f;
+}
+
+.logo{
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+
+/* PDF*/
+.content-cupon-descargar{
+    margin-top: 13rem;
+}
+h3{
+    font-family: var(--primary-font);
+    font-size: 25px;
+    font-weight: 700;
+    color: #332e1f;
+    text-align: center;
+}
+.subtext{
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 600;
+    color: #332e1f;
+    text-align: center;
+}
+.button-descargar-c {
+    width: 70%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    background: #eb0028;
+    border: none;
+    padding: .5rem 1rem;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.button-descargar-c:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+    .img-slider{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    footer{
+        padding: 2rem;
+    }
+    .marcas-footer{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .footer-text{
+        text-align: center;
+        font-size: 14px;
+    }
+    .logo{
+        width: 250px;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .logo_pdf{
+        display: none;
+    }
+    h1{
+        font-family: var(--primary-font);
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 1.8rem;
+    }
+    h3{
+        font-family: var(--primary-font);
+        font-size: 20px;
+        font-weight: 700;
+        color: #332e1f;
+        text-align: center;
+    }
+    .subtext{
+        font-family: var(--primary-font);
+        font-size: 16px;
+        font-weight: 600;
+        color: #332e1f;
+        text-align: center;
+    }
+    .subtitle{
+        font-family: var(--primary-font);
+        font-weight: 700;
+        font-size: 12px;
+    }
+    .button-descargar{
+        font-family: var(--primary-font);
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .marcas{
+        width: 65%;
+        display: block;
+        margin: auto;
+    }
+    .content-cupon-descargar{
+        margin: 2rem 0;
+    }
+}
+@media (max-width: 375px){
+    .img-slider{
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+}

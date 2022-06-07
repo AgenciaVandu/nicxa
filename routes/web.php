@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SistemaController;
+use  Illuminate\Http\Request;
+use Barryvdh\DomPDF\Facade as PDF;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +31,23 @@ Route::get('/responsabilidad-social', function () {
 Route::get('/unete-a-la-famila-nicxa', function () {
     return view('bolsa-de-trabajo');
 });
+Route::get('/promociones-nicxa', function () {
+    return view('promociones');
+});
+Route::post('/enviar', [SistemaController::class,'store'])->name('enviar');
+
+Route::get('/tankcupon', function () {
+    return view('pdf');
+});
+
+Route::get('/descargar/{nombre}/{cupon}', function ($nombre,$cupon) {
+    $datos = ['nombre' => $nombre, 'cupon' => $cupon];
+    view()->share('datos', $datos);
+    $pdf = PDF::loadView('cuponpdf', ['datos'=> $datos]);
+    return $pdf->download('bgcupon.pdf');
+})->name('descargar');
+
+Route::get('/test_cupones', [SistemaController::class,'factory_test']);
 
 Route::middleware([
     'auth:sanctum',
