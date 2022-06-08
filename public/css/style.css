@@ -309,19 +309,19 @@ html {
     
 }
 .negocios__unidad {
-    background-image: url(/img/unidad-1.png);
+    background-image: url(/img/bolita.png);
     min-height: 534px;
     background-repeat: no-repeat;
     background-position: center;
 }
 .negocios__unidad:hover {
-    background-image: url(/img/unidad.png);
+    background-image: url(/img/bolita-1.png);
     transition: all 500ms ease-out;
     background-position: center;
     
 }
 
-.bg-cupon {
+.bg-cupon-2 {
     background-color: #EB0006;
     padding-bottom: 2em;
 }

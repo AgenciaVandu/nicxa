@@ -10,7 +10,7 @@
     @stack('css')
     <link rel="stylesheet" href="/css/font.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/main.css">
+    {{-- <link rel="stylesheet" href="/main.css"> --}}
     <script src="/js/scrollreveal.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9111dc1fca.js" crossorigin="anonymous"></script>
@@ -179,7 +179,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     @stack('scripts')
     <script src="{{url('app.js')}}"></script>
-    <script src="assets/app.js"></script>
+    
     
 </body>
 </html>
