@@ -372,7 +372,7 @@
                         <li class="ordena-ahora__opciones">
                             <div class="row">
                                 <div class="col">
-                                    <a href="https://kfc.com.mx/" class="pizza-hut pr-3">
+                                    <a href="https://kfc.com.mx/" target="_blank" class="pizza-hut pr-3">
                                         <i class="fa-solid fa-globe"></i>
                                         kfc.com.mx
                                     </a>
@@ -395,7 +395,7 @@
                         <li class="ordena-ahora__opciones">
                             <div class="row">
                                 <div class="col">
-                                    <a href="https://www.pizzahut.com.mx/home" class="pizza-hut pr-3">
+                                    <a href="https://www.pizzahut.com.mx/home" target="_blank" class="pizza-hut pr-3">
                                         <i class="fa-solid fa-globe"></i>
                                         pizzahut.com.mx
                                     </a>
