@@ -403,5 +403,5 @@
 @push('scripts')
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="/js/partners.js"></script>
-    <script src="{{asset('app.js')}}"></script>
+    <script src="{{asset('assets/app.js')}}"></script>
 @endpush
