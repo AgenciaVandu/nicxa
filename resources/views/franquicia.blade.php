@@ -335,10 +335,12 @@
                                         <i class="fa-solid fa-motorcycle"></i>
                                         Delivery
                                     </a>
-                                    <a href="#" class="pizza-hutp pr-3">
+                                    <span class="pizza-hutp pr-2">
                                         <i class="fa-solid fa-rocket"></i>
-                                        Pide por la app
-                                    </a> <br class="d-block d-sm-block-d-md-none d-lg-none">
+                                        Pide por la app 
+                                        <a href="https://apps.apple.com/mx/app/burger-king-mexico/id1457228152" class="pl-2 pr-2" target="_blank"><i class="fa-brands fa-apple"></i></a> 
+                                        <a href="https://play.google.com/store/apps/details?id=com.nosmk.burgerking&hl=es_MX&gl=US" class="pr-2" target="_blank"><i class="fa-brands fa-android"></i></a>
+                                    </span> <br class="d-block d-sm-block-d-md-none d-lg-none">
                                     <a href="tel:9999263000" class="pizza-hut">
                                         <i class="fa-solid fa-headset"></i>
                                         999 926 3000
@@ -356,10 +358,12 @@
                                         <i class="fa-solid fa-globe"></i>
                                         kfc.com.mx
                                     </a>
-                                    <a href="#" class="pizza-hut pr-3">
+                                    <span class="pizza-hutp pr-2">
                                         <i class="fa-solid fa-rocket"></i>
-                                        Pide por la app
-                                    </a> <br class="d-block d-sm-block-d-md-none d-lg-none">
+                                        Pide por la app 
+                                        <a href="https://apps.apple.com/mx/app/kfc-méxico/id1539188123" class="pl-2 pr-2" target="_blank"><i class="fa-brands fa-apple"></i></a> 
+                                        <a href="https://play.google.com/store/apps/details?id=com.kfc.mexico&hl=es_MX&gl=US" class="pr-2" target="_blank"><i class="fa-brands fa-android"></i></a>
+                                    </span> <br class="d-block d-sm-block-d-md-none d-lg-none">
                                     <a href="tel:9995154747" class="pizza-hut">
                                         <i class="fa-solid fa-headset"></i>
                                         9995 15 4747
@@ -377,11 +381,13 @@
                                         <i class="fa-solid fa-globe"></i>
                                         pizzahut.com.mx
                                     </a>
-                                    <a href="#" class="pizza-hut pr-3">
+                                    <span class="pizza-hutp pr-2">
                                         <i class="fa-solid fa-rocket"></i>
-                                        Pide por la app
-                                    </a> <br class="d-block d-sm-block-d-md-none d-lg-none">
-                                    <a href="tel:999 153737" class="pizza-hut">
+                                        Pide por la app 
+                                        <a href="https://apps.apple.com/es/app/pizza-hut-delivery/id1469870172?platform=iphone" class="pl-2 pr-2" target="_blank"><i class="fa-brands fa-apple"></i></a> 
+                                        <a href="https://play.google.com/store/apps/details?id=com.kfc.mexico&hl=es_MX&gl=US" class="pr-2" target="_blank"><i class="fa-brands fa-android"></i></a>
+                                    </span> <br class="d-block d-sm-block-d-md-none d-lg-none">
+                                    <a href="tel:999153737" class="pizza-hut">
                                         <i class="fa-solid fa-headset"></i>
                                         9995 15 3737
                                     </a>
@@ -394,7 +400,7 @@
                         <li class="ordena-ahora__opciones">
                             <div class="row">
                                 <div class="col-12">
-                                    <a href="9999480578" class="pizza-hut">
+                                    <a href="tel:9999480578" class="pizza-hut">
                                         <i class="fa-solid fa-headset"></i>
                                         9999 48 0578
                                     </a>

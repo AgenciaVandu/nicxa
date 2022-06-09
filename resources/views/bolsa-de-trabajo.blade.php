@@ -2,6 +2,19 @@
 @section('content')
     @push('css')
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+        <style>
+            #exito{
+            display: none;
+            }
+            #registro{
+                display: none;
+            }
+
+            .activo{
+                display: block !important;
+            }
+
+        </style>
     @endpush
     <header class="bolsa-de-trabajo">
         <div class="container">
@@ -281,76 +294,87 @@
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6 col-sm-12 m-auto">
-                    <form id="formulario">
-                        <div class="form-group">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <label for="email">Correo</label>
-                                <input type="email" id="email" class="form-control" placeholder="hola@correo.com">
+                    <div id="registro" class="activo">
+                        <form id="formulario">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
                             </div>
-                            <div class="col">
-                                <label for="phone">Teléfono</label>
-                                <input type="tel" id="phone" class="form-control">
-                            </div>
-                        </div>
-                        <input type="hidden" value="Landing Page" name="canal" />
-                        <div class="row mt-4">
-                            <div class="col">
-                                <label for="estado">Estado</label>
-                                <select class="form-control" name="estado" id="estado">
-                                    <option value="Yucatán">Yucatán</option>
-                                    <option value="Quintana Roo">Quintana Roo</option>
-                                    <option value="Campeche">Campeche</option>
-                                    <option value="Chiapas">Chiapas</option>
-                                    <option value="Tabasco">Tabasco</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group mt-4" id="ciudad">
-                            <input type="hidden" value="indefinido" name="ciudad" />
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col">
-                                <label for="marca" class="m-auto pr-3">Marca</label>
-                                <select class="form-control" name="franquicia" id="franquicia">
-                                    <option value="Pizza Hut">Pizza Hut</option>
-                                    <option value="KFC">KFC</option>
-                                    <option value="LBB Obregon">LBB Obregon</option>
-                                    <option value="Burgerking">Burgerking</option>
-                                </select>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <label for="puesto" class="m-auto pr-3">Puesto</label>
-                                <select class="form-control" id="puesto">
-                                    <option>Empleado General (Asociado)</option>
-                                    <option>Repartidor</option>
-                                    <option>Cocinero</option>
-                                    <option>Restaurantes - Piso (servicio)</option>
-                                    <option>Restaurantes - Cocina</option>
-                                    <option>Restaurantes - Gerente</option>
-                                    <option>Corporativo - Adaministración</option>
-                                    <option>Corporativo - Ejecutivo / Gerencial</option>
-                                    <option>Prácticas Profesionales</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group mt-4">
                             <div class="row">
-                                <div class="col-3 m-auto">
-                                    <label for="curriculum">Cargar CV</label>
+                                <div class="col">
+                                    <label for="email">Correo</label>
+                                    <input type="email" id="email" class="form-control" placeholder="hola@correo.com">
                                 </div>
-                                <div class="col-9 m-auto">
-                                    <input type="file" class="custom-file-upload btn-block" id="curriculum">
+                                <div class="col">
+                                    <label for="phone">Teléfono</label>
+                                    <input type="tel" id="phone" class="form-control">
                                 </div>
                             </div>
-                        </div>
-                        <input type="submit" value="Postularme" class="btn btn-primary btn-block"></input>
-                    </form>
+                            <input type="hidden" value="Landing Page" name="canal" />
+                            <div class="row mt-4">
+                                <div class="col">
+                                    <label for="estado">Estado</label>
+                                    <select class="form-control" name="estado" id="estado">
+                                        <option value="Yucatán">Yucatán</option>
+                                        <option value="Quintana Roo">Quintana Roo</option>
+                                        <option value="Campeche">Campeche</option>
+                                        <option value="Chiapas">Chiapas</option>
+                                        <option value="Tabasco">Tabasco</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group mt-4" id="ciudad">
+                                <input type="hidden" value="indefinido" name="ciudad" />
+                            </div>
+    
+                            <div class="row mt-4">
+                                <div class="col">
+                                    <label for="marca" class="m-auto pr-3">Marca</label>
+                                    <select class="form-control" name="franquicia" id="franquicia">
+                                        <option value="Pizza Hut">Pizza Hut</option>
+                                        <option value="KFC">KFC</option>
+                                        <option value="LBB Obregon">LBB Obregon</option>
+                                        <option value="Burgerking">Burgerking</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <label for="puesto" class="m-auto pr-3">Puesto</label>
+                                    <select class="form-control" id="puesto">
+                                        <option>Empleado General (Asociado)</option>
+                                        <option>Repartidor</option>
+                                        <option>Cocinero</option>
+                                        <option>Restaurantes - Piso (servicio)</option>
+                                        <option>Restaurantes - Cocina</option>
+                                        <option>Restaurantes - Gerente</option>
+                                        <option>Corporativo - Adaministración</option>
+                                        <option>Corporativo - Ejecutivo / Gerencial</option>
+                                        <option>Prácticas Profesionales</option>
+                                    </select>
+                                </div>
+                            </div>
+    
+                            {{-- <div class="form-group mt-4">
+                                <div class="row">
+                                    <div class="col-3 m-auto">
+                                        <label for="curriculum">Cargar CV</label>
+                                    </div>
+                                    <div class="col-9 m-auto">
+                                        <input type="file" class="custom-file-upload btn-block" id="curriculum">
+                                    </div>
+                                </div>
+                            </div> --}}
+                            <input type="submit" value="Postularme" class="btn btn-primary btn-block mt-4"></input>
+                        </form>
+                    </div>
+                    <div id="exito" class="" style="padding: 5rem 1rem">
+                        <h1 class="py-3 text-center" style="color: #fff">
+                            ¡Tus datos se han enviado de manera exitosa!
+                        </h1>
+                        <p class="text-center" style="color: #fff">
+                            Gracias por unirte a Grupo Nicxa, en breve nos pondremos en
+                            contacto con usted.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
