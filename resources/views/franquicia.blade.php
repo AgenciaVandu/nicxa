@@ -200,7 +200,7 @@
     </div>
     <div class="bg-cupon-2">
         <div class="container">
-            <div class="row text-center">
+            <div class="text-center">
                 <div class="col-12 text-center pt-5 ">
                     <h3 style="color: #fff;">¿VISITA SORPRESA?</h3>
                 </div>
