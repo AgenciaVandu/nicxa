@@ -281,7 +281,25 @@
                 <div class="col-12 text-center pt-5">
                     <h3 style="color: #2f3235;">¿CONVIVENCIA FAMILIAR?</h3>
                 </div>
-                <div class="row ordena-ahora__espacio">
+                <div class="row ordena-ahora__espacio-center">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <figure class="ordena-ahora__cupon">
+                            <img src="{{asset('/img/cupones-1/tres/1.png')}}" class="img-fluid" alt="Cuponera Nicxa">
+                        </figure>
+                        <div class="text-center">
+                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Family King $215', '{{url('/img/cupones-1/tres/1.png')}}', 'Burger King' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}')">Descargar cupón</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <figure class="ordena-ahora__cupon">
+                            <img src="{{asset('/img/cupones-1/tres/2.png')}}" class="img-fluid" alt="cuponera Nicxa">
+                        </figure>
+                        <div class="text-center">
+                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Elige y Arma tus 2 combos con king de pollo y/o Whopper sin queso', '{{url('/img/cupones-1/tres/2.png')}}', 'Burger King' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}')">Descargar cupón</button>
+                        </div>
+                    </div>
+                </div>
+                {{-- <div class="row ordena-ahora__espacio">
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <figure class="ordena-ahora__cupon">
                             <img src="{{asset('/img/cupones-1/tres/1.png')}}" class="img-fluid" alt="Cuponera Nicxa">
@@ -314,7 +332,7 @@
                             <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('10 Piezas de pollo', '{{url('/img/cupones-1/tres/4.png')}}', 'KFC' ,'{{url('terminos/ph/10 pzas mayo LEGALES.jpg')}}')">Descargar cupón</button>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>

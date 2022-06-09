@@ -3,7 +3,7 @@ let cont1=document.getElementById('cont1'),
       cont3=document.getElementById('cont3'),
       cont4=document.getElementById('cont4'),
       cont5=document.getElementById('cont5')
-  let cant1=0,cant2=0,cant3=0,cant4=0,tiem=25,tiem2=1
+  let cant1=0,cant2=0,cant3=0,cant4=0
 
   let tiempo1= setInterval(() => {
         cont1.textContent=cant1+=1
@@ -12,7 +12,7 @@ let cont1=document.getElementById('cont1'),
           clearInterval(tiempo1)
         }
 
-      }, 100 );
+      }, 200 );
 
   let tiempo2= setInterval(() => {
     cont2.textContent= new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(cant2+=4)
@@ -21,7 +21,7 @@ let cont1=document.getElementById('cont1'),
           clearInterval(tiempo2)
         }
 
-      }, '${tiem}' );
+      }, 200 );
 
   let tiempo3= setInterval(() => {
     cont3.textContent=cant3+=1
@@ -30,7 +30,7 @@ let cont1=document.getElementById('cont1'),
           clearInterval(tiempo3)
         }
 
-      }, 200 );
+      }, 30 );
 
       
   let tiempo4= setInterval(() => {
@@ -40,7 +40,7 @@ let cont1=document.getElementById('cont1'),
         if (cant4===1000000) {
           clearInterval(tiempo4)
         }
-}, '${tiem2}' );
+}, 30 );
 
 
 
