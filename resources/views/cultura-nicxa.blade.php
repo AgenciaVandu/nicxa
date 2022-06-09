@@ -272,7 +272,7 @@
 
                     <div id="exito" class="" style="padding: 5rem 1rem">
                         <h1 class="py-3 text-center">
-                            ¡Tus datos se enviado de manera exitosa!
+                            ¡Tus datos se han enviado de manera exitosa!
                         </h1>
                         <p class="text-p">
                             Gracias por unirte a Grupo Nicxa, en breve nos pondremos en
