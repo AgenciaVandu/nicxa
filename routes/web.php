@@ -61,3 +61,8 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+
+Route::get('/facebook', function () {
+    redirect('https://www.facebook.com/GrupoNicxa');
+});
