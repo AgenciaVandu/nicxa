@@ -303,11 +303,11 @@
                             <div class="row">
                                 <div class="col">
                                     <label for="email">Correo</label>
-                                    <input type="email" id="email" class="form-control" placeholder="hola@correo.com">
+                                    <input type="email" id="correo" class="form-control" placeholder="hola@correo.com">
                                 </div>
                                 <div class="col">
                                     <label for="phone">Teléfono</label>
-                                    <input type="tel" id="phone" class="form-control">
+                                    <input type="tel" id="telefono" class="form-control">
                                 </div>
                             </div>
                             <input type="hidden" value="Landing Page" name="canal" />
@@ -326,7 +326,7 @@
                             <div class="form-group mt-4" id="ciudad">
                                 <input type="hidden" value="indefinido" name="ciudad" />
                             </div>
-    
+
                             <div class="row mt-4">
                                 <div class="col">
                                     <label for="marca" class="m-auto pr-3">Marca</label>
@@ -339,7 +339,7 @@
                                 </div>
                                 <div class="col-12 mt-4">
                                     <label for="puesto" class="m-auto pr-3">Puesto</label>
-                                    <select class="form-control" id="puesto">
+                                    <select class="form-control" id="vacantes">
                                         <option>Empleado General (Asociado)</option>
                                         <option>Repartidor</option>
                                         <option>Cocinero</option>
@@ -352,7 +352,7 @@
                                     </select>
                                 </div>
                             </div>
-    
+
                             {{-- <div class="form-group mt-4">
                                 <div class="row">
                                     <div class="col-3 m-auto">
