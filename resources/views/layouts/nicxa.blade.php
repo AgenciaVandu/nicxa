@@ -83,34 +83,34 @@
                           <div class="row">
                               <div class="col-4">
                                   <li>
-                                      <a href="/index.html">
+                                      <a href="/">
                                           Home
                                       </a>
                                   </li>
                                   <li>
-                                      <a href="/negocios.html">
+                                      <a href="/negocios">
                                           Negocios
                                       </a>
                                   </li>
                                   <li>
-                                      <a href="/franquicia.html">
+                                      <a href="/franquicia">
                                           Franquicia
                                       </a>
                                   </li>
                                   <li>
-                                      <a href="/responsabilidad-social.html">
+                                      <a href="/responsabilidad-social">
                                           Responsabildad social
                                       </a>
                                   </li>
                               </div>
                               <div class="col-8">
                                   <li>
-                                      <a href="/responsabilidad-social.html#inmobiliaria">
+                                      <a href="/responsabilidad-social#inmobiliaria">
                                           Inmobiliaria
                                       </a>
                                   </li>
                                   <li>
-                                      <a href="/bolsa-de-trabajo.html">Únete a la familia Nicxa</a>
+                                      <a href="/unete-a-la-famila-nicxa">Únete a la familia Nicxa</a>
                                   </li>
                                   <li>
                                       <a href="http://facturacion.gruponicxa.com.mx:6868/" target="_blank">

@@ -32,21 +32,21 @@
                     <h2 class="pl-2">NEGOCIOS</h2>
                     <div class="row">
                         <div class="col-lg-3 col-md-4 col-sm-12">
-                            <a href="/franquicia.html">
+                            <a href="/franquicia">
                                 <div class="negocios__franquicia text-center">
                                     <!-- <img src="/img/ALIMENTOS-1.png" class="img-fluid" alt=""> -->
                                 </div>
                             </a>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-12">
-                            <a href="/responsabilidad-social.html">
+                            <a href="/responsabilidad-social">
                                 <div class="negocios__fundacion text-center">
                                     <!-- <img src="/img/FUNDACIÓN-1.png" class="img-fluid" alt=""> -->
                                 </div>
                                </a>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-12">
-                            <a href="responsabilidad-social.html#inmobiliaria">
+                            <a href="responsabilidad-social#inmobiliaria">
                                 <div class="negocios__inmobiliaria text-center">
                                     <!-- <img src="/img/INMOBILIARIA-1.png" class="img-fluid" alt=""> -->
                                 </div>
