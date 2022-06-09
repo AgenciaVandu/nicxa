@@ -63,6 +63,6 @@ Route::middleware([
 });
 
 Route::get('/facebook', function () {
-    redirect('https://www.facebook.com/GrupoNicxa');
+    return redirect('https://www.facebook.com/GrupoNicxa');
 });
 
