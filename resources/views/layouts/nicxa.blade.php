@@ -14,14 +14,14 @@
     <script src="/js/scrollreveal.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9111dc1fca.js" crossorigin="anonymous"></script>
-    
+
 </head>
 <body>
     <div class="fixed-top">
         <nav class="navbar navbar-dark bg-nicxa">
          <div class="container">
             <a class="navbar-brand" href="/">
-            <img src="{{asset('/img/logo-nicxa.svg')}}" width="155" alt="">    
+            <img src="{{asset('/img/logo-nicxa.svg')}}" width="155" alt="">
             </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="menu col-12 text-right m-auto" style="font-family: Raleway; font-weight:600; color:#fff; font-size:.7em;">
@@ -137,13 +137,13 @@
                                   <li>Teléfono:</li>
                                   <li>email:</li>
                                   <li>Oficinas:</li>
-                                  
+
                               </div>
                               <div class="col-9">
                                   <li>(999) 930 1830</li>
                                   <li>comunicxa@gruponicxa.com.mx </li>
-                                  <li>Calle 59 Dpto. A x 32 y 32 
-                                      A No. 253 Col. San Ramón Norte 
+                                  <li>Calle 59 Dpto. A x 32 y 32
+                                      A No. 253 Col. San Ramón Norte
                                       CP. 97117</li>
                                   <li>
                                       <span class="pr-2">
@@ -178,8 +178,5 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     @stack('scripts')
-    <script src="{{asset('app.js')}}"></script>
-    
-    
 </body>
 </html>
