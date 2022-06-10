@@ -157,8 +157,8 @@
                     <figure class="ordena-ahora__cupon">
                         <img src="{{asset('/img/cupones-1/uno/4.png')}}" class="img-fluid" alt="cuponera Nicxa">
                     </figure>
-                    <div class="text-center">
-                        <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('10 Nuggets + papas grandes', '{{url('/img/cupones-1/uno/4.png')}}', 'Burger King' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}')">Descargar cupón</button>
+                    <div class="text-center">{{-- modificar --}}
+                        <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('10 Nuggerts + papas grandes', '{{url('/img/cupones-1/uno/4.png')}}', 'Burger King' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}')">Descargar cupón</button>
                     </div>
                 </div>
             </div>
