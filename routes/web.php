@@ -65,4 +65,55 @@ Route::middleware([
 Route::get('/facebook', function () {
     return redirect('https://www.facebook.com/GrupoNicxa');
 });
+// Rutas LBO
+Route::get('/lbo-centro', function () {
+    return view('sucursales.lbo-centro');
+});
+Route::get('/lbo-clinica', function () {
+    return view('sucursales.lbo-clinica');
+});
+Route::get('/lbo-norte', function () {
+    return view('sucursales.lbo-norte');
+});
 
+// Rutas BBK
+Route::get('/bbk-santa-elena', function () {
+    return view('sucursales.bbk-santa-elena');
+});
+Route::get('/bbk-diana-cazadora', function () {
+    return view('sucursales.bbk-diana-cazadora');
+});
+Route::get('/bbk-sendero-vhsa', function () {
+    return view('sucursales.bbk-sendero-vhsa');
+});
+Route::get('/bbk-tuxtla', function () {
+    return view('sucursales.bbk-tuxtla');
+});
+Route::get('/bbk-malecon-americas', function () {
+    return view('sucursales.bbk-malecon-americas');
+});
+Route::get('/bbk-tizimin', function () {
+    return view('sucursales.bbk-tizimin');
+});
+
+// Rutas KFC
+Route::get('/kfc-oriente', function () {
+    return view('sucursales.kfc-oriente');
+});
+Route::get('/kfc-chetum', function () {
+    return view('sucursales.kfc-chetum');
+});
+Route::get('/kfc-labna', function () {
+    return view('sucursales.kfc-labna');
+});
+Route::get('/kfc-gp-cun', function () {
+    return view('sucursales.kfc-gp-cun');
+});
+Route::get('/kfc-malecon', function () {
+    return view('sucursales.kfc-malecon');
+});
+
+//Rutas PH
+Route::get('/ph-oriente', function () {
+    return view('sucursales.ph-oriente');
+});
