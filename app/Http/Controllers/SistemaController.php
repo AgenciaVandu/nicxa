@@ -152,9 +152,4 @@ class SistemaController extends Controller
         return view('pdf')->with(['datos' => $datos_vista]);
     }
 
-    public  function factory_test()
-    {
-        Cupones::factory(4)->create();
-        dd('Factory test Cupones');
-    }
 }

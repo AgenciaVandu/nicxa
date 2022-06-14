@@ -1,7 +1,7 @@
 @include('app.header')
 
 <body>
-    
+
     @include('app.nav')
 
     <!-- SLIDER -->
@@ -26,16 +26,22 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-4" id="pop_corn_mediano">
-                    <img class="cupones" src="{{url('assets/kfc_cupones/kfc_pop_corn.jpg')}}" width="300px" height="auto" alt="" srcset="">
-                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Pop Corn Medianos','{{url('assets/kfc_cupones/kfc_pop_corn.jpg')}}', 'KFC','{{url('terminos/kfc/Popcorn LEGALES.jpg')}}')" class="button-descargar">Descargar cupón</button>
+                <div class=" col-md-3" id="my_box">
+                    <img class="cupones" src="{{url('assets/ph_cupones_new/pz_my_box.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('My Box', '{{url('assets/ph_cupones_new/pz_my_box.jpg')}}', 'Pizza Hut' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}' )" class="button-descargar">Descargar cupón</button>
                 </div>
-                <div class="col-md-4" id="my_box">
-                    <img class="cupones" src="{{url('assets/ph_cupones/pz_my_box.jpg')}}" width="300px" height="auto" alt="" srcset="">
-                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('My Box', '{{url('assets/ph_cupones/pz_my_box.jpg')}}', 'Pizza Hut' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}' )" class="button-descargar">Descargar cupón</button>
+                <div class=" col-md-3" id="2_papas_medianas">
+                    <img class="cupones" src="{{url('assets/bk_cupones_new/2_papas_medianas.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('2 Papas medianas','{{url('assets/bk_cupones_new/2_papas_medianas.jpg')}}', 'Burgerking','{{url('terminos/bk_legales/2_papas_medianas.jpg')}}')" class="button-descargar">Descargar cupón</button>
                 </div>
-                <div class="col-md-2"></div>
+                <div class=" col-md-3" id="combo_whopper">
+                    <img class="cupones" src="{{url('assets/bk_cupones_new/combo_whopper.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Combo Whopper', '{{url('assets/bk_cupones_new/combo_whopper.jpg')}}', 'Burgerking' ,'{{url('terminos/bk_legales/combo_whopper.jpg')}}' )" class="button-descargar">Descargar cupón</button>
+                </div>
+                <div class=" col-md-3" id="diez_nuggets">
+                    <img class="cupones" src="{{url('assets/bk_cupones_new/10_nuggets.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('10 Nuggets + Papas grandes', '{{url('assets/bk_cupones_new/10_nuggets.jpg')}}', 'Burgerking' ,'{{url('legales/10 nuggets.jpg')}}' )" class="button-descargar">Descargar cupón</button>
+                </div>
             </div>
         </div>
     </div>
@@ -53,40 +59,52 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3" id="big_crunch">
-                    <img class="cupones" src="{{url('assets/kfc_cupones/kfc_2_big_crunch.jpg')}}" width="300px" height="auto" alt="" srcset="">
-                    <button class="button-descargar-b" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('2 Big Crunch','{{url('assets/kfc_cupones/kfc_2_big_crunch.jpg')}}', 'KFC','{{url('terminos/kfc/2 big crunch LEGALES.jpg')}}')">Descargar Cupón</button>
-                </div>
-                <div class="col-md-3" id="2_pz_pollo">
-                    <img class="cupones" src="{{url('assets/kfc_cupones/kfc_2_piezas.jpg')}}" width="300px" height="auto" alt="" srcset="">
-                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('2 Piezas de pollo','{{url('assets/kfc_cupones/kfc_2_piezas.jpg')}}', 'KFC','{{url('terminos/kfc/2 pzas LEGALES.jpg')}}')" class="button-descargar-b">Descargar Cupón</button>
-                </div>
-                <div class="col-md-3" id="2_refrescos_medianos">
-                    <img class="cupones" src="{{url('assets/kfc_cupones/kfc_2_refrescos.jpg')}}" width="300px" height="auto" alt="" srcset="">
-                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('2 Refrescos Medianos','{{url('assets/kfc_cupones/kfc_2_refrescos.jpg')}}', 'KFC','{{url('terminos/kfc/2 refrescos LEGALES.jpg')}}')" class="button-descargar-b">Descargar cupón</button>
-                </div>
-                <div class="col-md-3" id="6_pz_pollo">
-                    <img class="cupones" src="{{url('assets/kfc_cupones/kfc_6_piezas.jpg')}}" width="300px" height="auto" alt="" srcset="">
-                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('6 Piezas de pollo','{{url('assets/kfc_cupones/kfc_6_piezas.jpg')}}', 'KFC','{{url('terminos/kfc/6 pzas LEGALES.jpg')}}')" class="button-descargar-b">Descargar Cupón</button>
+                <div class="col-md-4" id="2_hamburguesas">
+                    <img class="cupones" src="{{url('assets/bk_cupones_new/2_hamburgesas.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('2 hamburguesas', '{{url('assets/bk_cupones_new/2_hamburgesas.jpg')}}', 'Burgerking' ,'{{url('terminos/bk_legales/2_hamburguesas.jpg')}}' )" class="button-descargar-b">Descargar cupón</button>
                 </div>
 
+
+                <div class="col-md-4" id="3_ketiras">
+                    <img class="cupones" src="{{url('assets/kfc_cupones_new/3_ketiras.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button class="button-descargar-b" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('3 Ketiras','{{url('assets/kfc_cupones_new/3_ketiras.jpg')}}', 'KFC','{{url('terminos/kfc_legales/ketiras.jpg')}}')">Descargar Cupón</button>
+                </div>
+
+                <div class="col-md-4" id="2_pz_pollo">
+                    <img class="cupones" src="{{url('assets/kfc_cupones_new/2_piezas.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('2 Piezas de pollo','{{url('assets/kfc_cupones_new/2_piezas.jpg')}}', 'KFC','{{url('terminos/kfc_legales/2_piezas.jpg')}}')" class="button-descargar-b">Descargar Cupón</button>
+                </div>
             </div>
             <div class="row">
-                <div class="col-md-3" id="arma_tu_paquete">
-                    <img class="cupones" src="{{url('assets/ph_cupones/pz_arma_tu_paquete.jpg')}}" width="300px" height="auto" alt="" srcset="">
-                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Arma tu paquete', '{{url('assets/ph_cupones/pz_arma_tu_paquete.jpg')}}', 'Pizza Hut' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}')" class="button-descargar-b">Descargar cupón</button>
+                <div class="col-md-4" id="2_refrescos_medianos">
+                    <img class="cupones" src="{{url('assets/kfc_cupones_new/2_refrescos.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('2 Refrescos Medianos','{{url('assets/kfc_cupones_new/2_refrescos.jpg')}}', 'KFC','{{url('terminos/kfc_legales/2_refrescos.jpg')}}')" class="button-descargar-b">Descargar cupón</button>
                 </div>
-                <div class="col-md-3" id="jueves_hut">
-                    <img class="cupones" src="{{url('assets/ph_cupones/pz_Jueves_hut.jpg')}}" width="300px" height="auto" alt="" srcset="">
-                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Jueves Hut', '{{url('assets/ph_cupones/pz_Jueves_hut.jpg')}}', 'Pizza Hut' ,'{{url('terminos/ph/LEGALES CUPONES PH_30 por ciento.jpg')}}')" class="button-descargar-b">Descargar cupón</button>
+
+
+                <div class="col-md-4" id="6_pz_pollo">
+                    <img class="cupones" src="{{url('assets/kfc_cupones_new/6_piezas.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('6 Piezas de pollo','{{url('assets/kfc_cupones_new/6_piezas.jpg')}}', 'KFC','{{url('terminos/kfc_legales/6_piezas.jpg')}}')" class="button-descargar-b">Descargar Cupón</button>
                 </div>
-                <div class="col-md-3" id="martes hut">
-                    <img class="cupones" src="{{url('assets/ph_cupones/pz_martes_hut.jpg')}}" width="300px" height="auto" alt="" srcset="">
-                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Martes Hut', '{{url('assets/ph_cupones/pz_martes_hut.jpg')}}', 'Pizza Hut','{{url('terminos/ph/LEGALES CUPONES PH_20 por ciento.jpg')}}' )" class="button-descargar-b">Descargar cupón</button>
+
+
+                <div class="col-md-4" id="kruncher">
+                    <img class="cupones" src="{{url('assets/kfc_cupones_new/kruncher.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Kruncher', '{{url('assets/kfc_cupones_new/kruncher.jpg')}}', 'KFC','{{url('terminos/kfc_legales/kruncher.jpg')}}' )" class="button-descargar-b">Descargar cupón</button>
                 </div>
-                <div class="col-md-3" id="paquete_mediano">
-                    <img class="cupones" src="{{url('assets/ph_cupones/pz_paquete_mediano.jpg')}}" width="300px" height="auto" alt="" srcset="" />
-                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Paquete Mediano', '{{url('assets/ph_cupones/pz_paquete_mediano.jpg')}}', 'Pizza Hut' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}')" class="button-descargar-b">Descargar cupón</button>
+            </div>
+            <div class="row">
+                <div class="col-md-4" id="arma_tu_paquete">
+                    <img class="cupones" src="{{url('assets/ph_cupones_new/pz_arma_tu_paquete.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Arma tu paquete', '{{url('assets/ph_cupones_new/pz_arma_tu_paquete.jpg')}}', 'Pizza Hut' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}')" class="button-descargar-b">Descargar cupón</button>
+                </div>
+                <div class="col-md-4" id="hut_cheese">
+                    <img class="cupones" src="{{url('assets/ph_cupones_new/hut_cheese.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Hut Cheese', '{{url('assets/ph_cupones_new/hut_cheese.jpg')}}', 'Pizza Hut' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}')" class="button-descargar-b">Descargar cupón</button>
+                </div>
+                <div class="col-md-4" id="paquete_mediano">
+                    <img class="cupones" src="{{url('assets/ph_cupones_new/pz_paquete_mediano.jpg')}}" width="300px" height="auto" alt="" srcset="" />
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Paquete Mediano', '{{url('assets/ph_cupones_new/pz_paquete_mediano.jpg')}}', 'Pizza Hut' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}')" class="button-descargar-b">Descargar cupón</button>
                 </div>
             </div>
         </div>
@@ -105,17 +123,35 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4" id="8_pz_pollo">
-                    <img class="cupones" src="{{url('assets/kfc_cupones/kfc_8_piezas.jpg')}}" width="300px" height="auto" alt="" srcset="">
-                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('8 Piezas de pollo','{{url('assets/kfc_cupones/kfc_8_piezas.jpg')}}', 'KFC','{{url('terminos/kfc/8 pzas LEGALES.jpg')}}')" class="button-descargar">Descargar cupón</button>
+                <div class="col-md-3" id="elige_arma">
+                    <img class="cupones" src="{{url('assets/bk_cupones_new/elije_arma.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Elige y Arma', '{{url('assets/bk_cupones_new/elije_arma.jpg')}}', 'Burgerking' ,'{{url('terminos/bk_legales/elige.jpg')}}' )" class="button-descargar">Descargar cupón</button>
                 </div>
-                <div class="col-md-4" id="10_pz_pollo">
-                    <img class="cupones" src="{{url('assets/kfc_cupones/kfc_10_piezas.jpg')}}" width="300px" height="auto" alt="" srcset="">
-                    <button class="button-descargar" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('10 Piezas','{{url('assets/kfc_cupones/kfc_10_piezas.jpg')}}', 'KFC','{{url('terminos/kfc/10 pzas LEGALES.jpg')}}')">Descargar Cupón</button>
+                <div class="col-md-3" id="family_king">
+                    <img class="cupones" src="{{url('assets/bk_cupones_new/family_king.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Family King', '{{url('assets/bk_cupones_new/family_king.jpg')}}', 'Burgerking' ,'{{url('terminos/bk_legales/family_king.jpg')}}' )" class="button-descargar">Descargar cupón</button>
                 </div>
-                <div class="col-md-4" id="gran_hut_mix">
-                    <img class="cupones" src="{{url('assets/ph_cupones/pz_gran_hut_mix.jpg')}}" width="300px" height="auto" alt="" srcset="">
-                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Gran Hut Mix', '{{url('assets/ph_cupones/pz_gran_hut_mix.jpg')}}', 'Pizza Hut' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}')" class="button-descargar">Descargar cupón</button>
+                <div class="col-md-3" id="8_pz_pollo">
+                    <img class="cupones" src="{{url('assets/kfc_cupones_new/8_piezas.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('8 Piezas de pollo','{{url('assets/kfc_cupones_new/8_piezas.jpg')}}', 'KFC','{{url('terminos/kfc_legales/8_piezas.jpg')}}')" class="button-descargar">Descargar cupón</button>
+                </div>
+                <div class="col-md-3" id="10_pz_pollo">
+                    <img class="cupones" src="{{url('assets/kfc_cupones_new/10_piezas.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button class="button-descargar" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('10 Piezas','{{url('assets/kfc_cupones_new/10_piezas.jpg')}}', 'KFC','{{url('terminos/kfc_legales/10_piezas.jpg')}}')">Descargar Cupón</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="cupones" src="{{url('assets/ph_cupones_new/mejores_sabores.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Los mejores sabores', '{{url('assets/ph_cupones_new/mejores_sabores.jpg')}}', 'Pizza Hut' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}' )" class="button-descargar">Descargar cupón</button>
+                </div>
+                <div class="col-md-4">
+                    <img class="cupones" src="{{url('assets/ph_cupones_new/30_descuento.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('30% de descuento', '{{url('assets/ph_cupones_new/30_descuento.jpg')}}', 'Pizza Hut' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}' )" class="button-descargar">Descargar cupón</button>
+                </div>
+                <div class="col-md-4" id="combinacion_perfecta">
+                    <img class="cupones" src="{{url('assets/ph_cupones_new/combinacion_perfecta.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Gran Hut Mix', '{{url('assets/ph_cupones_new/combinacion_perfecta.jpg')}}', 'Pizza Hut' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}')" class="button-descargar">Descargar cupón</button>
                 </div>
             </div>
         </div>
@@ -133,21 +169,24 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2"></div>
+                <div class="col-md-4" id="2 Conos X $14">
+                    <img class="cupones" src="{{url('assets/bk_cupones_new/2_conos.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('2 Conos X $14', '{{url('assets/bk_cupones_new/2_conos.jpg')}}', 'Burgerking' ,'{{url('terminos/bk_legales/2_conos.jpg')}}' )" class="button-descargar-b">Descargar cupón</button>
+                </div>
                 <div class="col-md-4" id="4_bisquets">
-                    <img class="cupones" src="{{url('assets/kfc_cupones/kfc_4_bisquets.jpg')}}" width="300px" height="auto" alt="" srcset="">
-                    <button class="button-descargar-b" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('4 Bisquets','{{url('assets/kfc_cupones/kfc_4_bisquets.jpg')}}', 'KFC','{{url('terminos/kfc/4 bisquetes LEGALES.jpg')}}')">Descargar Cupón</button>
+                    <img class="cupones" src="{{url('assets/kfc_cupones_new/4_bisquets.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button class="button-descargar-b" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('4 Bisquets','{{url('assets/kfc_cupones_new/4_bisquets.jpg')}}', 'KFC','{{url('terminos/kfc_legales/4_bisquets.jpg')}}')">Descargar Cupón</button>
                 </div>
                 <div class="col-md-4" id="bastones_de_cajeta">
-                    <img class="cupones" src="{{url('assets/ph_cupones/pz_bastones_cajeta.jpg')}}" width="300px" height="auto" alt="" srcset="">
-                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Bastones de Cajeta', '{{url('assets/ph_cupones/pz_bastones_cajeta.jpg')}}', 'Pizza Hut' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}')" class="button-descargar-b">Descargar cupón</button>
+                    <img class="cupones" src="{{url('assets/ph_cupones_new/pz_bastones_cajeta.jpg')}}" width="300px" height="auto" alt="" srcset="">
+                    <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Bastones de Cajeta', '{{url('assets/ph_cupones_new/pz_bastones_cajeta.jpg')}}', 'Pizza Hut' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}')" class="button-descargar-b">Descargar cupón</button>
                 </div>
-                <div class="col-md-2"></div>
+                
             </div>
         </div>
     </div>
 
-    <!-- CUPONES SECCION CINCO -->
+    <!-- CUPONES SECCION CINCO 
     <div class="seccion-content">
         <div class="container">
             <div class="row">
@@ -169,6 +208,7 @@
             </div>
         </div>
     </div>
+    -->
 
 
 
@@ -194,7 +234,6 @@
                 <div class="modal-body">
                     <form action="{{route('enviar')}}" method="post" id="formulario">
                         @csrf
-                        @method('POST')
                         <div class="form-content">
                             <div id="alerta" class="" role="alert">
 
@@ -220,7 +259,7 @@
                                     $utm_source = 'Facebook';
                                 } elseif ($utm_source == 'google') {
                                     $utm_source = 'Google';
-                                }elseif ($utm_source == 'sms') {
+                                } elseif ($utm_source == 'sms') {
                                     $utm_source = 'SMS';
                                 }
                                 echo ('
@@ -242,7 +281,7 @@
                                     Haz click <a id="terminos" class="terminos" href="#" target="_blank">aquí</a> para verlos.
                                     <br>
                                     <a class="footer-a-b" href="{{url('Aviso de Privacidad.pdf')}}">Politicas de privacidad</a>
-        
+
                                 </p>
                                 <img class="marcas" src="{{url('marcas.png')}}" alt="" srcset="">
                             </span>
