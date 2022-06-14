@@ -82,6 +82,19 @@ class SistemaController extends Controller
                     'field[%FUENTE%,0]' => $request->utm_souce,
                     'tags' => $request->cupon . ',' . 'Cupones Impresos' . ',' . $request->marca,
                 );
+            } elseif ($request->marca == 'Burger King') {
+                $post_active = array(
+                    'first_name' => $request->nombre,
+                    'last_name' => '',
+                    'email' => $request->correo,
+                    'phone' => '+52 ' . $request->telefono,
+                    'field[%CAMPAA%,0]' => 'Cupones Impresos',
+                    'field[%CUPN_LBBO%]' => $request->cupon,
+                    'field[%MARCA%,0]' => $request->marca,
+                    'field[%CANAL%,0]' => 'Landing page',
+                    'field[%FUENTE%,0]' => $request->utm_souce,
+                    'tags' => $request->cupon . ',' . 'Cupones Impresos' . ',' . $request->marca,
+                );
             }
 
             // This section takes the input fields and converts them to the proper format
