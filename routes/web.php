@@ -31,9 +31,13 @@ Route::get('/responsabilidad-social', function () {
 Route::get('/unete-a-la-famila-nicxa', function () {
     return view('bolsa-de-trabajo');
 });
+
+
+
 Route::get('/promociones-nicxa', function () {
     return view('promociones');
 });
+
 Route::post('/enviar', [SistemaController::class,'store'])->name('enviar');
 
 Route::get('/tankcupon', function () {
@@ -43,6 +47,9 @@ Route::get('/bolsa-de-trabajo', function () {
     return view('cultura-nicxa');
 });
 
+
+
+/*
 Route::get('/descargar/{nombre}/{cupon}', function ($nombre,$cupon) {
     $datos = ['nombre' => $nombre, 'cupon' => $cupon];
     view()->share('datos', $datos);
@@ -51,6 +58,9 @@ Route::get('/descargar/{nombre}/{cupon}', function ($nombre,$cupon) {
 })->name('descargar');
 
 Route::get('/test_cupones', [SistemaController::class,'factory_test']);
+*/
+
+
 
 Route::middleware([
     'auth:sanctum',
