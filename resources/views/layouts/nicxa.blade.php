@@ -139,7 +139,7 @@
                                       <a href="/unete-a-la-famila-nicxa">Únete a la familia Nicxa</a>
                                   </li>
                                   <li>
-                                      <a href="http://facturacion.gruponicxa.com.mx:6868/" target="_blank">
+                                      <a href="http://facturacion.gruponicxa.com.mx:8081/facturacioncliente/" target="_blank">
                                           Facturación
                                       </a>
                                   </li>
