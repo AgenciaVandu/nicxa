@@ -82,7 +82,7 @@
                         <a class="nav-link" href="/unete-a-la-famila-nicxa">Únete a la familia Nicxa <br class="d-block d-sm-block-d-md-none d-lg-none"> <span class="vacantes">¡Vacantes disponibles!</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://facturacion.gruponicxa.com.mx:6868/" target="_blank">Facturación</a>
+                        <a class="nav-link" href="http://facturacion.gruponicxa.com.mx:8081/facturacioncliente/" target="_blank">Facturación</a>
                     </li>
                   </ul>
               </div>
