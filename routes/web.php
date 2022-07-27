@@ -16,7 +16,7 @@ use Barryvdh\DomPDF\Facade as PDF;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function (Request $request) {
     return view('index');
 });
 Route::get('/negocios', function () {
