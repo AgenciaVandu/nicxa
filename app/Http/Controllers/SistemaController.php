@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Client;
 use App\Models\Cupones;
 use App\Models\Usuarios;
 use Illuminate\Http\Request;
@@ -11,13 +12,37 @@ class SistemaController extends Controller
 
     public function store(Request $request)
     {
+        /* return $request->all(); */
         $request->validate([
             'nombre' => 'required|min:3',
             'telefono' => 'required|min:6',
             'correo' => 'required|email',
             'utm_souce' => 'required|min:3'
         ]);
-        if ($request->cupon == 'none') {
+        $client = Client::where('email', $request->correo)->first();
+        if($client){
+            $coupon = $client->coupons()->create([
+                'coupon' => $request->cupon,
+                'franchise' => $request->marca,
+            ]);
+        }else{
+            $client = Client::create([
+                'name' => $request->nombre,
+                'phone' => '+52'.$request->telefono,
+                'email' => $request->correo,
+                'source' => $request->utm_souce,
+                'ip_address' => $request->ip()
+            ]);
+            $coupon = $client->coupons()->create([
+                'coupon' => $request->cupon,
+                'franchise' => $request->marca,
+            ]);
+        }
+
+        $datos_vista = ['nombre' => $request->nombre, 'cupon' => $request->cupon, 'url' => $request->url_cupon];
+        return view('pdf')->with(['datos' => $datos_vista]);
+
+        /*  if ($request->cupon == 'none') {
             return redirect()->back()->with('error', 'Nos has seleccionado un cupón, por favor selecciona uno.');
         } else {
             $registro = new Usuarios();
@@ -29,12 +54,12 @@ class SistemaController extends Controller
             $registro->cupon = $request->cupon;
             $registro->campaña = 'Cupones Impresos';
             $registro->save();
-
+ */
 
             /* CONEXION CRM */
             /* CONEXION API REST PARA ENVIAR DATOS AL CRM (CONTACFT_SYNC). */
 
-            $url = 'https://gruponicxa.api-us1.com';
+          /*   $url = 'https://gruponicxa.api-us1.com';
 
             $params = array(
 
@@ -82,32 +107,32 @@ class SistemaController extends Controller
                     'field[%FUENTE%,0]' => $request->utm_souce,
                     'tags' => $request->cupon . ',' . 'Cupones Impresos' . ',' . $request->marca,
                 );
-            }
+            } */
 
             // This section takes the input fields and converts them to the proper format
-            $query = "";
+           /*  $query = "";
             foreach ($params as $key => $value) $query .= urlencode($key) . '=' . urlencode($value) . '&';
-            $query = rtrim($query, '& ');
+            $query = rtrim($query, '& '); */
 
             // This section takes the input data and converts it to the proper format
-            $data = "";
+           /*  $data = "";
             foreach ($post_active as $key => $value) $data .= urlencode($key) . '=' . urlencode($value) . '&';
-            $data = rtrim($data, '& ');
+            $data = rtrim($data, '& '); */
 
             // clean up the url
-            $url = rtrim($url, '/ ');
+           /*  $url = rtrim($url, '/ '); */
 
             // This sample code uses the CURL library for php to establish a connection,
             // submit your request, and show (print out) the response.
-            if (!function_exists('curl_init')) die('CURL not supported. (introduced in PHP 4.0.2)');
+           /*  if (!function_exists('curl_init')) die('CURL not supported. (introduced in PHP 4.0.2)'); */
 
             // If JSON is used, check if json_decode is present (PHP 5.2.0+)
-            if ($params['api_output'] == 'json' && !function_exists('json_decode')) {
+            /* if ($params['api_output'] == 'json' && !function_exists('json_decode')) {
                 die('JSON not supported. (introduced in PHP 5.2.0)');
             }
-
+ */
             // define a final API request - GET
-            $api = $url . '/admin/api.php?' . $query;
+           /*  $api = $url . '/admin/api.php?' . $query;
 
             $request_ac = curl_init($api); // initiate curl object
             curl_setopt($request_ac, CURLOPT_HEADER, 0); // set to 0 to eliminate header info from response
@@ -116,32 +141,30 @@ class SistemaController extends Controller
             //curl_setopt($request, CURLOPT_SSL_VERIFYPEER, FALSE); // uncomment if you get no gateway response and are using HTTPS
             curl_setopt($request_ac, CURLOPT_FOLLOWLOCATION, true);
 
-            $response = (string)curl_exec($request_ac); // execute curl post and store results in $response
+            $response = (string)curl_exec($request_ac);  */// execute curl post and store results in $response
 
             // additional options may be required depending upon your server configuration
             // you can find documentation on curl options at http://www.php.net/curl_setopt
-            curl_close($request_ac); // close curl object
-            
-            if (!$response) {
+           /*  curl_close($request_ac);  */// close curl object
+
+           /*  if (!$response) {
                 die('Nothing was returned. Do you have a connection to Email Marketing server?');
-            }
+            } */
 
             // This line takes the response and breaks it into an array using:
             // JSON decoder
             //$result = json_decode($response);
             // unserializer
-            $result = unserialize($response);
+           /*  $result = unserialize($response); */
 
             /* CONEXION CRM */
             /* CONEXION API REST PARA ENVIAR DATOS AL CRM (CONTACFT_SYNC). */
-        }
-        $datos_vista = ['nombre' => $request->nombre, 'cupon' => $request->cupon, 'url' => $request->url_cupon];
-        return view('pdf')->with(['datos' => $datos_vista]);
+        //}
     }
 
-    public  function factory_test()
+/*     public  function factory_test()
     {
         Cupones::factory(4)->create();
         dd('Factory test Cupones');
-    }
+    } */
 }
