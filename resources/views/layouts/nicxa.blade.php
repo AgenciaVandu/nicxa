@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTHZP14R8R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZTHZP14R8R');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=»theme-color» content=»#EB0028»>
-    <title>Grupo Nicxa</title>
+    <title>Grupo Nicxa - Nuestra meta eres tú</title>
+    <meta name="facebook-domain-verification" content="qhqtbupunltndj8a4lurqu5e5ocshg" />
+    <meta name="google-site-verification" content="q61Lt_yavm_0AcKrsM5i_85AaX7U7w9-hACnBVtjVH8" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     @stack('css')
-    <link rel="stylesheet" href="/css/font.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{{asset('/css/font.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/style.css')}}">
     {{-- <link rel="stylesheet" href="/main.css"> --}}
     <script src="/js/scrollreveal.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9111dc1fca.js" crossorigin="anonymous"></script>
-    
+    <!-- Meta Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '313957290799065');
+            fbq('track', 'PageView');
+            </script>
+            <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=313957290799065&ev=PageView&noscript=1"
+        /></noscript>
+        <!-- End Meta Pixel Code -->
 </head>
 <body>
     <div class="fixed-top">
         <nav class="navbar navbar-dark bg-nicxa">
          <div class="container">
             <a class="navbar-brand" href="/">
-            <img src="{{asset('/img/logo-nicxa.svg')}}" width="155" alt="">    
+            <img src="{{asset('/img/logo-nicxa.svg')}}" width="155" alt="">
             </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="menu col-12 text-right m-auto" style="font-family: Raleway; font-weight:600; color:#fff; font-size:.7em;">
@@ -56,7 +83,7 @@
                         <a class="nav-link" href="/unete-a-la-famila-nicxa">Únete a la familia Nicxa <br class="d-block d-sm-block-d-md-none d-lg-none"> <span class="vacantes">¡Vacantes disponibles!</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://facturacion.gruponicxa.com.mx:6868/" target="_blank">Facturación</a>
+                        <a class="nav-link" href="http://facturacion.gruponicxa.com.mx:8081/facturacioncliente/" target="_blank">Facturación</a>
                     </li>
                   </ul>
               </div>
@@ -83,37 +110,37 @@
                           <div class="row">
                               <div class="col-4">
                                   <li>
-                                      <a href="/index.html">
+                                      <a href="/">
                                           Home
                                       </a>
                                   </li>
                                   <li>
-                                      <a href="/negocios.html">
+                                      <a href="/negocios">
                                           Negocios
                                       </a>
                                   </li>
                                   <li>
-                                      <a href="/franquicia.html">
+                                      <a href="/franquicia">
                                           Franquicia
                                       </a>
                                   </li>
                                   <li>
-                                      <a href="/responsabilidad-social.html">
+                                      <a href="/responsabilidad-social">
                                           Responsabildad social
                                       </a>
                                   </li>
                               </div>
                               <div class="col-8">
                                   <li>
-                                      <a href="/responsabilidad-social.html#inmobiliaria">
+                                      <a href="/responsabilidad-social#inmobiliaria">
                                           Inmobiliaria
                                       </a>
                                   </li>
                                   <li>
-                                      <a href="/bolsa-de-trabajo.html">Únete a la familia Nicxa</a>
+                                      <a href="/unete-a-la-famila-nicxa">Únete a la familia Nicxa</a>
                                   </li>
                                   <li>
-                                      <a href="http://facturacion.gruponicxa.com.mx:6868/" target="_blank">
+                                      <a href="http://facturacion.gruponicxa.com.mx:8081/facturacioncliente/" target="_blank">
                                           Facturación
                                       </a>
                                   </li>
@@ -137,13 +164,13 @@
                                   <li>Teléfono:</li>
                                   <li>email:</li>
                                   <li>Oficinas:</li>
-                                  
+
                               </div>
                               <div class="col-9">
                                   <li>(999) 930 1830</li>
                                   <li>comunicxa@gruponicxa.com.mx </li>
-                                  <li>Calle 59 Dpto. A x 32 y 32 
-                                      A No. 253 Col. San Ramón Norte 
+                                  <li>Calle 59 Dpto. A x 32 y 32
+                                      A No. 253 Col. San Ramón Norte
                                       CP. 97117</li>
                                   <li>
                                       <span class="pr-2">
@@ -178,8 +205,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     @stack('scripts')
-    <script src="{{url('app.js')}}"></script>
-    
-    
+    <script src="{{asset('app.js')}}"></script>
 </body>
 </html>

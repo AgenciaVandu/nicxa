@@ -56,9 +56,11 @@
             </div>
         </div>
         <div class="d-block d-sm-block d-md-block d-lg-none">
+           <div class="reveal">
             <figure>
                 <img src="/img/timeline-m.svg" class="img-fluid" alt="linea del tiempo Grupo Nicxa">
             </figure>
+           </div>
         </div>
     </div>
 </section>
