@@ -60,18 +60,6 @@ Route::get('/descargar/{nombre}/{cupon}', function ($nombre,$cupon) {
 Route::get('/test_cupones', [SistemaController::class,'factory_test']);
 */
 
-
-
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
-
 Route::get('/facebook', function () {
     return redirect('https://www.facebook.com/GrupoNicxa');
 });

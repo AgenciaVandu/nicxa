@@ -18,9 +18,6 @@ class CreateClientsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
-            $table->string('source')->default('landing');
-            $table->string('campaign')->default('Cupones Impresos');
-            $table->string('chanel')->default('web');
             $table->string('ip_address');
 
             $table->timestamps();

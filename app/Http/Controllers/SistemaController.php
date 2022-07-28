@@ -19,20 +19,21 @@ class SistemaController extends Controller
         ]);
         $client = Client::where('email', $request->correo)->first();
         if($client){
-            $coupon = $client->coupons()->create([
+            $client->coupons()->create([
                 'coupon' => $request->cupon,
                 'franchise' => $request->marca,
+                'source' => $request->utm_souce,
             ]);
         }else{
             $client = Client::create([
                 'name' => $request->nombre,
                 'phone' => '+52'.$request->telefono,
                 'email' => $request->correo,
-                'source' => $request->utm_souce,
                 'ip_address' => $request->ip()
             ]);
-            $coupon = $client->coupons()->create([
+            $client->coupons()->create([
                 'coupon' => $request->cupon,
+                'source' => $request->utm_souce,
                 'franchise' => $request->marca,
             ]);
         }
