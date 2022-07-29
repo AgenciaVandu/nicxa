@@ -18,6 +18,8 @@ Route::get('/', function(MonthlyUsersChart $chart,MonthlyUsersChart2 $chart2) {
 Route::get('reports/filters/{value}',[ReportController::class,'filters'])->name('reports.filters');
 Route::post('reports/filters/{value}/search',[ReportController::class,'search'])->name('reports.search');
 
+Route::get('export/{value}/{start_date}/{end_date}/{franchise}',[ReportController::class,'exportCoupon'])->name('export.coupons');
+
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'),'verified'])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');

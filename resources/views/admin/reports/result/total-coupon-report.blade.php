@@ -38,6 +38,11 @@
                     </table>
                 </div>
                 {{-- Fin de la tabla --}}
+                <div class="flex justify-end">
+                    <a href="{{ route('export.coupons',[$value,$start_date,$end_date,$franchise]) }}" class="text-sm text-gray-500 hover:text-gray-700">
+                        {{ __('Exportar excel') }}
+                    </a>
+                </div>
             </div>
         </div>
     </div>

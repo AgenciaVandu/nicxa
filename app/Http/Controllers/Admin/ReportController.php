@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Exports\TotalCouponExport;
 use App\Http\Controllers\Controller;
 use App\Models\Coupon;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 
 class ReportController extends Controller
 {
@@ -31,44 +33,57 @@ class ReportController extends Controller
                     case 'all':
                         //consultar entre las dos fechas
                         $coupons = Coupon::whereBetween('created_at', [$request->start_date, $request->end_date])->get();
-                        /* $coupons = Coupon::where('created_at', '>=', $request->start_date)->where('created_at', '<=', $request->end_date)->get(); */
-                        return view('admin.reports.result.total-coupon-report', compact('coupons'));
+                        $start_date = $request->start_date;
+                        $end_date = $request->end_date;
+                        $franchise = $request->franchise;
+                        return view('admin.reports.result.total-coupon-report', compact('coupons', 'start_date', 'end_date', 'franchise', 'value'));
                         break;
                     case 'KFC':
                         //consultar entre las dos fechas
                         $coupons = Coupon::whereBetween('created_at', [$request->start_date, $request->end_date])->where('franchise', 'KFC')->get();
-                        /* $coupons = Coupon::where('created_at', '>=', $request->start_date)->where('created_at', '<=', $request->end_date)->where('franchise', 'KFC')->get(); */
-                        return view('admin.reports.result.total-coupon-report', compact('coupons'));
+                        $start_date = $request->start_date;
+                        $end_date = $request->end_date;
+                        $franchise = $request->franchise;
+                        return view('admin.reports.result.total-coupon-report', compact('coupons', 'start_date', 'end_date', 'franchise', 'value'));
                         break;
                     case 'LBB Obregon':
                         //consultar entre las dos fechas
                         $coupons = Coupon::whereBetween('created_at', [$request->start_date, $request->end_date])->where('franchise', 'LBB Obregon')->get();
-                        /* $coupons = Coupon::where('created_at', '>=', $request->start_date)->where('created_at', '<=', $request->end_date)->where('franchise', 'McDonalds')->get(); */
-                        return view('admin.reports.result.total-coupon-report', compact('coupons'));
+                        $start_date = $request->start_date;
+                        $start_date = $request->start_date;
+                        $end_date = $request->end_date;
+                        $franchise = $request->franchise;
+                        return view('admin.reports.result.total-coupon-report', compact('coupons', 'start_date', 'end_date', 'franchise', 'value'));
                         break;
                     case 'Pizza Hut':
                         //consultar entre las dos fechas
                         $coupons = Coupon::whereBetween('created_at', [$request->start_date, $request->end_date])->where('franchise', 'Pizza Hut')->get();
-                        /* $coupons = Coupon::where('created_at', '>=', $request->start_date)->where('created_at', '<=', $request->end_date)->where('franchise', 'Pizza Hut')->get(); */
-                        return view('admin.reports.result.total-coupon-report', compact('coupons'));
+                                                $end_date = $request->end_date;
+                        return view('admin.reports.result.total-coupon-report', compact('coupons','start_date', 'end_date', 'franchise', 'value'));
                         break;
                     case 'Burger King':
                         //consultar entre las dos fechas
                         $coupons = Coupon::whereBetween('created_at', [$request->start_date, $request->end_date])->where('franchise', 'Burger King')->get();
-                        /* $coupons = Coupon::where('created_at', '>=', $request->start_date)->where('created_at', '<=', $request->end_date)->where('franchise', 'Burger King')->get(); */
-                        return view('admin.reports.result.total-coupon-report', compact('coupons'));
+                                                $franchise = $request->franchise;
+                        return view('admin.reports.result.total-coupon-report', compact('coupons','start_date', 'end_date', 'franchise', 'value'));
                         break;
-
                     default:
                         # code...
                         break;
                 }
-                return view('admin.reports.result.total-coupon-result');
+                break;
+                case 'value':
+                    
                 break;
 
             default:
                 # code...
                 break;
         }
+    }
+
+    public function exportCoupon($value, $start_date, $end_date, $franchise){
+        $coupons = Coupon::whereBetween('created_at', [$start_date, $end_date])->get();
+        return Excel::download(new TotalCouponExport($coupons), 'total-coupon-report.xlsx');
     }
 }
