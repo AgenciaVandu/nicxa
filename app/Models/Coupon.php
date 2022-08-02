@@ -11,10 +11,10 @@ class Coupon extends Model
 
     protected $guarded = ['id'];
 
-    //Relacion uno a muchos inversa con la tabla clients
-    public function client()
+    //Relacion muchos a muchos con la tabla client
+    public function clients()
     {
-        return $this->belongsTo(Client::class);
+        return $this->belongsToMany(Client::class);
     }
 
 }

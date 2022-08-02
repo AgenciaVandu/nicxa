@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="flex justify-end p-6">
-                    <a href="{{ route('export.coupons',[$value,$start_date,$end_date,$franchise]) }}" class="text-sm text-gray-500 hover:text-gray-700">
+                    <a href="{{ route('export.coupons',[$value,$start_date,$end_date,$client_id]) }}" class="text-sm text-gray-500 hover:text-gray-700">
                         {{ __('Exportar excel') }}
                     </a>
                 </div>
@@ -22,7 +22,9 @@
                                 <th class="text-center p-2">Fecha</th>
                                 <th class="text-center p-2">Franquicia</th>
                                 <th class="text-center p-2">Canal</th>
-                                <th class="text-center p-2">Cupon</th>
+                                <th class="text-center p-2">Cupon descargado</th>
+                                <th class="text-center p-2">Email</th>
+                                <th class="text-center p-2">Phone</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-100">
@@ -33,6 +35,8 @@
                                     <td class="text-center">{{ $coupon->franchise }}</td>
                                     <td class="text-center">{{ $coupon->source }}</td>
                                     <td class="text-center">{{ $coupon->coupon }}</td>
+                                    <td class="text-center">{{ $coupon->client->email }}</td>
+                                    <td class="text-center">{{ $coupon->client->phone }}</td>
                                 </tr>
                             @endforeach
                         </tbody>

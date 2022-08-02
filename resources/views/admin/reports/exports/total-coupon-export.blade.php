@@ -2,10 +2,10 @@
     <thead>
         <tr>
             <th>#</th>
-            <th>Fecha</th>
-            <th>Franquicia</th>
-            <th>Canal</th>
-            <th>Cupones descargados</th>
+            <th>Create at</th>
+            <th>Franchise</th>
+            <th>Chanel</th>
+            <th>Coupon</th>
             <th>Email</th>
             <th>Phone</th>
         </tr>

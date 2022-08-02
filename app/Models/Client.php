@@ -10,9 +10,9 @@ class Client extends Model
     use HasFactory;
     protected $guarded = ['id'];
 
-    //Relacion uno a muchos con la tabla coupons
+    //Relacion muchos a muchos con coupon
     public function coupons()
     {
-        return $this->hasMany(Coupon::class);
+        return $this->belongsToMany(Coupon::class);
     }
 }
