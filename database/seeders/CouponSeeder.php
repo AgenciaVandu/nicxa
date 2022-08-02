@@ -22,6 +22,11 @@ class CouponSeeder extends Seeder
             'email' => 'dev@agenciavandu.com',
             'password' => bcrypt('marencos6359:D'),
         ]);
+        User::create([
+            'name' => 'Alvar Buenfil Vadillo',
+            'email' => 'ab@agenciavandu.com',
+            'password' => bcrypt('password'),
+        ]);
         $coupons = Coupon::factory(60)->create();
 
         foreach ($coupons as $coupon) {
