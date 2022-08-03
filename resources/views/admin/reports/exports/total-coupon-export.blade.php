@@ -6,8 +6,6 @@
             <th>Franchise</th>
             <th>Chanel</th>
             <th>Coupon</th>
-            <th>Email</th>
-            <th>Phone</th>
         </tr>
     </thead>
     <tbody>
@@ -18,8 +16,6 @@
                 <td>{{ $coupon->franchise }}</td>
                 <td>{{ $coupon->source }}</td>
                 <td>{{ $coupon->coupon }}</td>
-                <td>{{ $coupon->client->email }}</td>
-                <td>{{ $coupon->client->phone }}</td>
             </tr>
         @endforeach
     </tbody>

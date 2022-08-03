@@ -16,5 +16,6 @@ class Coupon extends Model
     {
         return $this->belongsToMany(Client::class);
     }
+    
 
 }
