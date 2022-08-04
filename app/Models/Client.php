@@ -13,6 +13,6 @@ class Client extends Model
     //Relacion muchos a muchos con coupon
     public function coupons()
     {
-        return $this->belongsToMany(Coupon::class);
+        return $this->belongsToMany(Coupon::class)->withPivot('franchise', 'source', 'campaign', 'chanel')->withTimestamps();
     }
 }

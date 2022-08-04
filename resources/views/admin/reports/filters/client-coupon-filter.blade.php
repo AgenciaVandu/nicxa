@@ -32,8 +32,9 @@
                     <div class="mb-4">
                         <x-jet-label value="Cliente" />
                         <select name="client_id" class="rounded-md border-gray-300">
+                            <option value="all" selected>Todos</option>
                             @foreach ($clients as $client)
-                            <option value="{{ $client->id }}" selected>{{ $client->email }}</option>
+                            <option value="{{ $client->id }}">{{ $client->email }}</option>
                             @endforeach
                         </select>
                     </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
+use App\Models\Coupon;
 use Illuminate\Http\Request;
 
 class SistemaController extends Controller
@@ -10,34 +11,56 @@ class SistemaController extends Controller
 
     public function store(Request $request)
     {
-        /* return $request->all(); */
+        //Realizamos la validación de los datos del formulario
         $request->validate([
             'nombre' => 'required|min:3',
             'telefono' => 'required|min:6',
             'correo' => 'required|email',
+            'estado' => 'required',
             'utm_souce' => 'required|min:3'
         ]);
+
+        //Validamos que el correo no exista en la base de datos
         $client = Client::where('email', $request->correo)->first();
+        //Si el cliente existe almacenamos el coupon nuevo que esta descargando a la tabla client_coupon
         if($client){
-            $client->coupons()->create([
-                'coupon' => $request->cupon,
-                'franchise' => $request->marca,
-                'source' => $request->utm_souce,
-            ]);
+            //Validamos si el cupon ya existe en la tabla coupon
+            $coupon = Coupon::where('coupon', $request->cupon)->first();
+            if ($coupon) {
+                //Si existe el cupon en la base de datos solo asignamos el cupon al cliente en la tabla client_coupon
+                $client->coupons()->attach([
+                    'coupon_id' => $coupon->id,
+                ]);
+            } else {
+                //Si no existe el cupon en la base de datos lo creamos y lo asignamos al cliente en la tabla client_coupon
+                $coupon = Coupon::create([
+                    'coupon' => $request->cupon,
+                    'franchise' => $request->marca,
+                    'source' => $request->utm_souce,
+                ]);
+                $client->coupons()->attach([
+                    'coupon_id' => $coupon->id,
+                ]);
+            }
+
+        //Si no
         }else{
+            //Si el cliente no existe almacenamos el cliente nuevo en la tabla client
             $client = Client::create([
                 'name' => $request->nombre,
-                'phone' => '+52'.$request->telefono,
+                'phone' => $request->telefono,
                 'email' => $request->correo,
+                'state' => $request->estado,
                 'ip_address' => $request->ip()
             ]);
+            //Almacenamos el coupon nuevo en la tabla client_coupon relacionado al cliente que acaba de registrarse
             $client->coupons()->create([
                 'coupon' => $request->cupon,
                 'source' => $request->utm_souce,
                 'franchise' => $request->marca,
             ]);
         }
-
+        //Retornamos un mensaje de exito con parametros necesarios para mostrar la vista pdf
         $datos_vista = ['nombre' => $request->nombre, 'cupon' => $request->cupon, 'url' => $request->url_cupon];
         return view('pdf')->with(['datos' => $datos_vista]);
 
@@ -58,7 +81,7 @@ class SistemaController extends Controller
             /* CONEXION CRM */
             /* CONEXION API REST PARA ENVIAR DATOS AL CRM (CONTACFT_SYNC). */
 
-          /*   $url = 'https://gruponicxa.api-us1.com';
+            /*   $url = 'https://gruponicxa.api-us1.com';
 
             $params = array(
 

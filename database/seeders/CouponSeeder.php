@@ -27,10 +27,10 @@ class CouponSeeder extends Seeder
             'email' => 'ab@agenciavandu.com',
             'password' => bcrypt('password'),
         ]);
-        $coupons = Coupon::factory(60)->create();
+        /* $coupons = Coupon::factory(60)->create();
 
         foreach ($coupons as $coupon) {
             $coupon->clients()->attach(Client::all()->random()->id);
-        }
+        } */
     }
 }

@@ -66,17 +66,53 @@
 
                         </div>
                         <label for="nombre" style="color: #000">Nombre</label>
-                        <input type="text" class="mb-3 input_bg form-control" name="nombre" placeholder="Ingresa tu nombre" />
+                        <input type="text" class="mb-3 input_bg form-control" name="nombre" placeholder="Ingresa tu nombre" required />
 
                         <!--
                             <label for="apellido">Apellido</label>
                             <input type="text" class="mb-3 input_bg form-control" name="apellido" placeholder="Ingresa tu apellido" />
                         -->
                         <label for="telefono" style="color: #000">Teléfono</label>
-                        <input type="tel" class="mb-3 input_bg form-control" name="telefono" placeholder="Ingresa tu numero de teléfono" />
-
+                        <input type="tel" class="mb-3 input_bg form-control" name="telefono" placeholder="Ingresa tu numero de teléfono" required />
+                        <label for="estado" style="color:#000">Estado</label>
+                        {{-- Select con todos los estados de México --}}
+                        <select class="mb-3 input_bg form-control" name="estado" id="estado" required>
+                            {{-- options todos los estados de mexico --}}
+                            <option value="" disabled selected>Selecciona un estado</option>
+                            <option value="aguas calientes">Aguas Calientes</option>
+                            <option value="baja california">Baja California</option>
+                            <option value="baja california sur">Baja California Sur</option>
+                            <option value="campeche">Campeche</option>
+                            <option value="coahuila de Zaragoza">Coahuila de Zaragoza</option>
+                            <option value="colima">Colima</option>
+                            <option value="chiapas">Chiapas</option>
+                            <option value="chihuahua">Chihuahua</option>
+                            <option value="cdmx">Ciudad de México</option>
+                            <option value="durango">Durango</option>
+                            <option value="guanajuato">Guanajuato</option>
+                            <option value="guerrero">Guerrero</option>
+                            <option value="hidalgo">Hidalgo</option>
+                            <option value="jalisco">Jalisco</option>
+                            <option value="michoacan">Michoacán</option>
+                            <option value="morelos">Morelos</option>
+                            <option value="nayarit">Nayarit</option>
+                            <option value="nuevo leon">Nuevo León</option>
+                            <option value="oaxaca">Oaxaca</option>
+                            <option value="puebla">Puebla</option>
+                            <option value="queretaro">Querétaro</option>
+                            <option value="quintana roo">Quintana Roo</option>
+                            <option value="san luis potosi">San Luis Potosí</option>
+                            <option value="sinaloa">Sinaloa</option>
+                            <option value="sonora">Sonora</option>
+                            <option value="tabasco">Tabasco</option>
+                            <option value="tamaulipas">Tamaulipas</option>
+                            <option value="tlaxcala">Tlaxcala</option>
+                            <option value="veracruz">Veracruz</option>
+                            <option value="yucatan">Yucatán</option>
+                            <option value="zacatecas">Zacatecas</option>
+                        </select>
                         <label for="email" style="color: #000">Correo</label>
-                        <input type="email" class="mb-3 input_bg form-control" name="correo" placeholder="Ingresa tu correo" />
+                        <input type="email" class="mb-3 input_bg form-control" name="correo" placeholder="Ingresa tu correo" required />
 
                         <?php
                         if (isset($_GET['utm_source'])) {
@@ -108,7 +144,7 @@
                                 Haz click <a id="terminos" class="terminos" href="#" target="_blank">aquí</a> para verlos.
                                 <br>
                                 <a class="footer-a-b" href="{{url('Aviso de Privacidad.pdf')}}">Politicas de privacidad</a>
-    
+
                             </p>
                             <img class="marcas" src="{{url('/img/marcas.svg')}}" width="300" alt="" srcset="">
                         </span>
@@ -150,7 +186,7 @@
                     {{-- <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Bastones de Cajeta', '{{url('/img/cupones-1/uno/18-julio/lbo-9.png')}}', 'Pizza Hut' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}')" class="button-descargar-b">Descargar cupón</button> --}}
                     </figure>
                     <div class="text-center">
-                        <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('2 Bisquets gratis en tu primera compra*', '{{url('/img/cupones-1/uno/18-julio/lbo-9.png')}}', 'KFC' ,'{{url('/img/cupones-1/uno/18-julio/lbo-9.png')}}')" >Descargar cupón</button>
+                        <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('2 Bisquets gratis en tu primera compra*', '{{url('/img/cupones-1/uno/18-julio/lbo-9.png')}}', 'LBB Obregon' ,'{{url('/img/cupones-1/uno/18-julio/lbo-9.png')}}')" >Descargar cupón</button>
                     </div>
                 </div>
                 <div class="col-lg col-md-6 col-sm-6">
@@ -247,7 +283,7 @@
                         <div class="text-center">
                             <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('2 Big Krunch', '{{url('/img/cupones-1/uno/18-julio/kfc-5.png')}}', 'KFC' ,'{{url('/img/cupones-1/terminos-franquicia/18-julio/legales-4.jpg')}}')">Descargar cupón</button>
                         </div>
-                    </div> 
+                    </div>
                     <div class="col-lg col-md-6 col-sm-6">
                         <figure class="ordena-ahora__cupon">
                             <img src="{{asset('/img/cupones-1/uno/18-julio/kfc-6.png')}}" class="img-fluid" alt="cuponera Nicxa">
@@ -256,7 +292,7 @@
                             <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('8 Piezas de Pollo', '{{url('/img/cupones-1/uno/18-julio/kfc-6.png')}}', 'KFC' ,'{{url('/img/cupones-1/terminos-franquicia/18-julio/legales-9.jpg')}}')">Descargar cupón</button>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg col-md-6 col-sm-6">
                         <figure class="ordena-ahora__cupon">
                             <img src="{{asset('/img/cupones-1/uno/12-julio/5.png')}}" class="img-fluid" alt="cuponera Nicxa">
@@ -290,7 +326,7 @@
                         <div class="text-center">
                             <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Pizza Grande Tradicional Lovers', '{{url('/img/cupones-1/uno/12-julio/7.png')}}', 'Pizza Hut' ,'{{url('/img/cupones-1/terminos-franquicia/12-julio/pizza-lovers.png')}}')">Descargar cupón</button>
                         </div>
-                    </div> 
+                    </div>
                    <!--  <div class="col-lg col-md-6 col-sm-6">
                         <figure class="ordena-ahora__cupon">
                             <img src="{{asset('/img/cupones-1/uno/12-julio/8.png')}}" class="img-fluid" alt="cuponera Nicxa">
@@ -332,7 +368,7 @@
                         <div class="text-center">
                             <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Pizza de sartén mediana', '{{url('/img/cupones-1/uno/18-julio/ph-sarten.png')}}', 'Pizza Hut' ,'{{url('/img/cupones-1/terminos-franquicia/18-julio/legales-10.jpg')}}')">Descargar cupón</button>
                         </div>
-                    </div> 
+                    </div>
                     <div class="col-lg col-md-6 col-sm-6">
                         <figure class="ordena-ahora__cupon">
                             <img src="{{asset('/img/cupones-1/uno/18-julio/just4-2.png')}}" class="img-fluid" alt="cuponera Nicxa">
@@ -449,8 +485,8 @@
                                     </a>
                                     <span class="pizza-hutp pr-2">
                                         <i class="fa-solid fa-rocket"></i>
-                                        Pide por la app 
-                                        <a href="https://apps.apple.com/mx/app/burger-king-mexico/id1457228152" class="pl-2 pr-2" target="_blank"><i class="fa-brands fa-apple"></i></a> 
+                                        Pide por la app
+                                        <a href="https://apps.apple.com/mx/app/burger-king-mexico/id1457228152" class="pl-2 pr-2" target="_blank"><i class="fa-brands fa-apple"></i></a>
                                         <a href="https://play.google.com/store/apps/details?id=com.nosmk.burgerking&hl=es_MX&gl=US" class="pr-2" target="_blank"><i class="fa-brands fa-android"></i></a>
                                     </span> <br class="d-block d-sm-block-d-md-none d-lg-none">
                                     <a href="tel:9999263000" class="pizza-hut">
@@ -472,8 +508,8 @@
                                     </a>
                                     <span class="pizza-hutp pr-2">
                                         <i class="fa-solid fa-rocket"></i>
-                                        Pide por la app 
-                                        <a href="https://apps.apple.com/mx/app/kfc-méxico/id1539188123" class="pl-2 pr-2" target="_blank"><i class="fa-brands fa-apple"></i></a> 
+                                        Pide por la app
+                                        <a href="https://apps.apple.com/mx/app/kfc-méxico/id1539188123" class="pl-2 pr-2" target="_blank"><i class="fa-brands fa-apple"></i></a>
                                         <a href="https://play.google.com/store/apps/details?id=com.kfc.mexico&hl=es_MX&gl=US" class="pr-2" target="_blank"><i class="fa-brands fa-android"></i></a>
                                     </span> <br class="d-block d-sm-block-d-md-none d-lg-none">
                                     <a href="tel:9995154747" class="pizza-hut">
@@ -495,8 +531,8 @@
                                     </a>
                                     <span class="pizza-hutp pr-2">
                                         <i class="fa-solid fa-rocket"></i>
-                                        Pide por la app 
-                                        <a href="https://apps.apple.com/es/app/pizza-hut-delivery/id1469870172?platform=iphone" class="pl-2 pr-2" target="_blank"><i class="fa-brands fa-apple"></i></a> 
+                                        Pide por la app
+                                        <a href="https://apps.apple.com/es/app/pizza-hut-delivery/id1469870172?platform=iphone" class="pl-2 pr-2" target="_blank"><i class="fa-brands fa-apple"></i></a>
                                         <a href="https://play.google.com/store/apps/details?id=com.kfc.mexico&hl=es_MX&gl=US" class="pr-2" target="_blank"><i class="fa-brands fa-android"></i></a>
                                     </span> <br class="d-block d-sm-block-d-md-none d-lg-none">
                                     <a href="tel:999153737" class="pizza-hut">
