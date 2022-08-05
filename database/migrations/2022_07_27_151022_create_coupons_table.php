@@ -17,7 +17,6 @@ class CreateCouponsTable extends Migration
             $table->id();
             $table->string('coupon');
             $table->string('franchise');
-            $table->string('source')->default('landing');
             $table->string('campaign')->default('Cupones Impresos');
             $table->string('chanel')->default('web');
             $table->timestamps();

@@ -18,6 +18,7 @@ class CreateClientCouponTable extends Migration
             $table->foreignId('client_id')->constrained();
             $table->foreignId('coupon_id')->constrained();
             $table->string('state');
+            $table->string('source')->default('landing');;
             $table->timestamps();
         });
     }

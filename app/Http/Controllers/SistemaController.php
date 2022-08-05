@@ -30,21 +30,22 @@ class SistemaController extends Controller
             if ($coupon) {
                 //Si existe el cupon en la base de datos solo asignamos el cupon al cliente en la tabla client_coupon
                 ClientCoupon::create([
-                'coupon_id' => $coupon->id,
-                'client_id' => $client->id,
-                'state' => $request->estado,
+                    'coupon_id' => $coupon->id,
+                    'client_id' => $client->id,
+                    'state' => $request->estado,
+                    'source' => $request->utm_souce
             ]);
             } else {
                 //Si no existe el cupon en la base de datos lo creamos y lo asignamos al cliente en la tabla client_coupon
                 $coupon = Coupon::create([
                     'coupon' => $request->cupon,
                     'franchise' => $request->marca,
-                    'source' => $request->utm_souce,
                 ]);
                 ClientCoupon::create([
-                'coupon_id' => $coupon->id,
-                'client_id' => $client->id,
-                'state' => $request->estado,
+                    'coupon_id' => $coupon->id,
+                    'client_id' => $client->id,
+                    'state' => $request->estado,
+                    'source' => $request->utm_souce
             ]);
             }
 
@@ -62,21 +63,22 @@ class SistemaController extends Controller
             if ($coupon) {
                 //Si existe el cupon en la base de datos solo asignamos el cupon al cliente en la tabla client_coupon
                 ClientCoupon::create([
-                'coupon_id' => $coupon->id,
-                'client_id' => $client->id,
-                'state' => $request->estado,
+                    'coupon_id' => $coupon->id,
+                    'client_id' => $client->id,
+                    'state' => $request->estado,
+                    'source' => $request->utm_souce
             ]);
             } else {
                 //Si no existe el cupon en la base de datos lo creamos y lo asignamos al cliente en la tabla client_coupon
                 $coupon = Coupon::create([
                     'coupon' => $request->cupon,
                     'franchise' => $request->marca,
-                    'source' => $request->utm_souce,
                 ]);
                 ClientCoupon::create([
-                'coupon_id' => $coupon->id,
-                'client_id' => $client->id,
-                'state' => $request->estado,
+                    'coupon_id' => $coupon->id,
+                    'client_id' => $client->id,
+                    'state' => $request->estado,
+                    'source' => $request->utm_souce
             ]);
             }
         }

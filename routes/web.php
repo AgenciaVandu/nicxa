@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SistemaController;
 use App\Models\View;
-use  Illuminate\Http\Request;
+use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade as PDF;
 
 /*
@@ -18,45 +18,105 @@ use Barryvdh\DomPDF\Facade as PDF;
 */
 
 Route::get('/', function (Request $request) {
-    View::create([
-        'ip' => $request->ip(),
-        'url' => $request->fullUrl(),
-        'session_id' => $request->session()->getId(),
-        'browser' => $request->header('User-Agent'),
-    ]);
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('index');
 });
-Route::get('/negocios', function () {
+Route::get('/negocios', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('negocios');
 });
-Route::get('/franquicia', function () {
+Route::get('/franquicia', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('franquicia');
 });
 Route::get('/responsabilidad-social', function (Request $request) {
-    View::create([
-        'ip' => $request->ip(),
-        'url' => $request->fullUrl(),
-        'session_id' => $request->session()->getId(),
-        'browser' => $request->header('User-Agent'),
-    ]);
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('responsabilidad-social');
 });
-Route::get('/unete-a-la-famila-nicxa', function () {
+Route::get('/unete-a-la-famila-nicxa', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('bolsa-de-trabajo');
 });
 
 
 
-Route::get('/promociones-nicxa', function () {
+Route::get('/promociones-nicxa', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('promociones');
 });
 
 Route::post('/enviar', [SistemaController::class,'store'])->name('enviar');
 
-Route::get('/tankcupon', function () {
+Route::get('/tankcupon', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('pdf');
 });
-Route::get('/bolsa-de-trabajo', function () {
+Route::get('/bolsa-de-trabajo', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('cultura-nicxa');
 });
 
@@ -78,43 +138,151 @@ Route::get('/facebook', function () {
 });
 
 // Rutas BBK
-Route::get('/bbk-santa-elena', function () {
+Route::get('/bbk-santa-elena', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('sucursales.bbk-santa-elena');
 });
-Route::get('/bbk-diana-cazadora', function () {
+Route::get('/bbk-diana-cazadora', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('sucursales.bbk-diana-cazadora');
 });
-Route::get('/bbk-sendero-vhsa', function () {
+Route::get('/bbk-sendero-vhsa', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('sucursales.bbk-sendero-vhsa');
 });
-Route::get('/bbk-tuxtla', function () {
+Route::get('/bbk-tuxtla', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('sucursales.bbk-tuxtla');
 });
-Route::get('/bbk-malecon-americas', function () {
+Route::get('/bbk-malecon-americas', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('sucursales.bbk-malecon-americas');
 });
-Route::get('/bbk-tizimin', function () {
+Route::get('/bbk-tizimin', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('sucursales.bbk-tizimin');
 });
 
 // Rutas KFC
-Route::get('/kfc-oriente', function () {
+Route::get('/kfc-oriente', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('sucursales.kfc-oriente');
 });
-Route::get('/kfc-chetum', function () {
+Route::get('/kfc-chetum', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('sucursales.kfc-chetum');
 });
-Route::get('/kfc-labna', function () {
+Route::get('/kfc-labna', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('sucursales.kfc-labna');
 });
-Route::get('/kfc-gp-cun', function () {
+Route::get('/kfc-gp-cun', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('sucursales.kfc-gp-cun');
 });
-Route::get('/kfc-malecon', function () {
+Route::get('/kfc-malecon', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('sucursales.kfc-malecon');
 });
 
 //Rutas PH
-Route::get('/ph-oriente', function () {
+Route::get('/ph-oriente', function (Request $request) {
+    $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
+    if (!$view) {
+        View::create([
+            'ip' => $request->ip(),
+            'url' => $request->fullUrl(),
+            'session_id' => $request->session()->getId(),
+            'browser' => $request->header('User-Agent'),
+        ]);
+    }
     return view('sucursales.ph-oriente');
 });
