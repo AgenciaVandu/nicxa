@@ -79,14 +79,14 @@
                         <select class="mb-3 input_bg form-control" name="estado" id="estado" required>
                             {{-- options todos los estados de mexico --}}
                             <option value="" disabled selected>Selecciona un estado</option>
-                            <option value="aguas calientes">Aguas Calientes</option>
+                            {{-- <option value="aguas calientes">Aguas Calientes</option>
                             <option value="baja california">Baja California</option>
-                            <option value="baja california sur">Baja California Sur</option>
+                            <option value="baja california sur">Baja California Sur</option> --}}
                             <option value="campeche">Campeche</option>
-                            <option value="coahuila de Zaragoza">Coahuila de Zaragoza</option>
-                            <option value="colima">Colima</option>
+                           {{--  <option value="coahuila de Zaragoza">Coahuila de Zaragoza</option>
+                            <option value="colima">Colima</option> --}}
                             <option value="chiapas">Chiapas</option>
-                            <option value="chihuahua">Chihuahua</option>
+                           {{--  <option value="chihuahua">Chihuahua</option>
                             <option value="cdmx">Ciudad de México</option>
                             <option value="durango">Durango</option>
                             <option value="guanajuato">Guanajuato</option>
@@ -103,13 +103,13 @@
                             <option value="quintana roo">Quintana Roo</option>
                             <option value="san luis potosi">San Luis Potosí</option>
                             <option value="sinaloa">Sinaloa</option>
-                            <option value="sonora">Sonora</option>
+                            <option value="sonora">Sonora</option> --}}
                             <option value="tabasco">Tabasco</option>
-                            <option value="tamaulipas">Tamaulipas</option>
+                          {{--   <option value="tamaulipas">Tamaulipas</option>
                             <option value="tlaxcala">Tlaxcala</option>
-                            <option value="veracruz">Veracruz</option>
+                            <option value="veracruz">Veracruz</option> --}}
                             <option value="yucatan">Yucatán</option>
-                            <option value="zacatecas">Zacatecas</option>
+                            {{-- <option value="zacatecas">Zacatecas</option> --}}
                         </select>
                         <label for="email" style="color: #000">Correo</label>
                         <input type="email" class="mb-3 input_bg form-control" name="correo" placeholder="Ingresa tu correo" required />

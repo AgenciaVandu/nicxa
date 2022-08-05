@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
+use App\Models\ClientCoupon;
 use App\Models\Coupon;
 use Illuminate\Http\Request;
 
@@ -28,9 +29,11 @@ class SistemaController extends Controller
             $coupon = Coupon::where('coupon', $request->cupon)->first();
             if ($coupon) {
                 //Si existe el cupon en la base de datos solo asignamos el cupon al cliente en la tabla client_coupon
-                $client->coupons()->attach([
-                    'coupon_id' => $coupon->id,
-                ]);
+                ClientCoupon::create([
+                'coupon_id' => $coupon->id,
+                'client_id' => $client->id,
+                'state' => $request->estado,
+            ]);
             } else {
                 //Si no existe el cupon en la base de datos lo creamos y lo asignamos al cliente en la tabla client_coupon
                 $coupon = Coupon::create([
@@ -38,9 +41,11 @@ class SistemaController extends Controller
                     'franchise' => $request->marca,
                     'source' => $request->utm_souce,
                 ]);
-                $client->coupons()->attach([
-                    'coupon_id' => $coupon->id,
-                ]);
+                ClientCoupon::create([
+                'coupon_id' => $coupon->id,
+                'client_id' => $client->id,
+                'state' => $request->estado,
+            ]);
             }
 
         //Si no
@@ -50,15 +55,30 @@ class SistemaController extends Controller
                 'name' => $request->nombre,
                 'phone' => $request->telefono,
                 'email' => $request->correo,
-                'state' => $request->estado,
                 'ip_address' => $request->ip()
             ]);
-            //Almacenamos el coupon nuevo en la tabla client_coupon relacionado al cliente que acaba de registrarse
-            $client->coupons()->create([
-                'coupon' => $request->cupon,
-                'source' => $request->utm_souce,
-                'franchise' => $request->marca,
+            //Validamos si el cupon ya existe en la tabla coupon
+            $coupon = Coupon::where('coupon', $request->cupon)->first();
+            if ($coupon) {
+                //Si existe el cupon en la base de datos solo asignamos el cupon al cliente en la tabla client_coupon
+                ClientCoupon::create([
+                'coupon_id' => $coupon->id,
+                'client_id' => $client->id,
+                'state' => $request->estado,
             ]);
+            } else {
+                //Si no existe el cupon en la base de datos lo creamos y lo asignamos al cliente en la tabla client_coupon
+                $coupon = Coupon::create([
+                    'coupon' => $request->cupon,
+                    'franchise' => $request->marca,
+                    'source' => $request->utm_souce,
+                ]);
+                ClientCoupon::create([
+                'coupon_id' => $coupon->id,
+                'client_id' => $client->id,
+                'state' => $request->estado,
+            ]);
+            }
         }
         //Retornamos un mensaje de exito con parametros necesarios para mostrar la vista pdf
         $datos_vista = ['nombre' => $request->nombre, 'cupon' => $request->cupon, 'url' => $request->url_cupon];

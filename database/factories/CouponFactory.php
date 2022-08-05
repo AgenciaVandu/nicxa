@@ -14,8 +14,9 @@ class CouponFactory extends Factory
     public function definition()
     {
         return [
-            'coupon' => $this->faker->unique()->randomNumber(6),
+            'coupon' => $this->faker->randomElement(['Alitas + Refresco','Combo Whopper + 4 Nuggets','2 Bisquets gratis en tu primera compra*','10 Nuggets + papas grandes']),
             'franchise' => $this->faker->randomElement(['Pizza Hut','Burger King','LBB Obregon','KFC']),
+            'state' => $this->faker->randomElement(['campeche','chiapas','tabasco','yucatan']),
             'source' => 'landing',
             'campaign' => 'Cupones Impresos',
             'chanel' => 'web',

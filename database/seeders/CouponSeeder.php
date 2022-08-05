@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Client;
+use App\Models\ClientCoupon;
 use App\Models\Coupon;
 use App\Models\CouponClient;
 use App\Models\User;
@@ -27,10 +28,49 @@ class CouponSeeder extends Seeder
             'email' => 'ab@agenciavandu.com',
             'password' => bcrypt('password'),
         ]);
-        /* $coupons = Coupon::factory(60)->create();
+        /* Coupon::factory(60)->create(); */
 
+        $coupons = [
+            [
+            'coupon' => 'Alitas + Refresco',
+            'franchise' => 'Pizza Hut',
+            'source' => 'landing',
+            'campaign' => 'Cupones Impresos',
+            'chanel' => 'web',
+            ],
+            [
+            'coupon' => 'Combo Whopper + 4 Nuggets',
+            'franchise' => 'Burger King',
+            'source' => 'landing',
+            'campaign' => 'Cupones Impresos',
+            'chanel' => 'web',
+            ],
+            [
+            'coupon' => '2 Bisquets gratis en tu primera compra*',
+            'franchise' => 'LBB Obregon',
+            'source' => 'landing',
+            'campaign' => 'Cupones Impresos',
+            'chanel' => 'web',
+            ],
+            [
+            'coupon' => '10 Nuggets + papas grandes',
+            'franchise' => 'KFC',
+            'source' => 'landing',
+            'campaign' => 'Cupones Impresos',
+            'chanel' => 'web',
+            ],
+        ];
         foreach ($coupons as $coupon) {
-            $coupon->clients()->attach(Client::all()->random()->id);
-        } */
+            Coupon::create($coupon);
+        }
+        $states = ['campeche','chiapas','tabasco','yucatan'];
+        $clients = Client::all();
+        foreach ($clients as $client) {
+            ClientCoupon::create([
+                'coupon_id' => Coupon::all()->random()->id,
+                'client_id' => $client->id,
+                'state' => $states[array_rand($states)],
+            ]);
+        }
     }
 }

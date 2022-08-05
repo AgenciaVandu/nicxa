@@ -43,6 +43,16 @@
                     <span class="font-bold">{{ $coupon_mas_repetido->coupon->franchise }}</span>
                 </p>
             </div>
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg mb-4">
+                <p class="text-center">
+                    Total de clientes registrados:
+                    <span class="mr-2 font-bold">{{ $total_clientes }}</span>
+
+                    <span class="ml-4">Total de cupones descargados:</span>
+                    <span class="mr-2 font-bold">{{ $total_cupones }}</span>
+                </p>
+            </div>
+
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <a href="{{ route('reports.filters', 'total-coupons') }}">
                     <div class="p-6 hover:bg-red-500 hover:text-white">
@@ -57,7 +67,16 @@
                     <div class="p-6 hover:bg-red-500 hover:text-white">
                         <p class="font-bold text-xl">Reporte de cupones por clientes</p>
                         <span class="text-gray-300 text-sm">Total de cupones descargados un cliente en un rango de
-                            fecha</span>
+                            fechas</span>
+                    </div>
+                </a>
+            </div>
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg mt-4">
+                <a href="{{ route('reports.filters', 'state-coupons') }}">
+                    <div class="p-6 hover:bg-red-500 hover:text-white">
+                        <p class="font-bold text-xl">Reporte de cupones por ciudad</p>
+                        <span class="text-gray-300 text-sm">Total de cupones descargados por estado en un rango de
+                            fechas</span>
                     </div>
                 </a>
             </div>

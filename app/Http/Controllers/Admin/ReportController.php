@@ -50,7 +50,16 @@ class ReportController extends Controller
         //Obtener el cupon mas repetido de la franchise LBB Obregon
         $coupon_mas_repetido_lbb = ClientCoupon::getMostRepeatedCouponLBB();
 
-        return view('dashboard', compact('coupon_mas_repetido','coupon_kfc', 'coupon_bk', 'coupon_ph', 'coupon_lbb','coupon_mas_repetido_bk','coupon_mas_repetido_kfc','coupon_mas_repetido_ph','coupon_mas_repetido_lbb'));
+        /* //Obtener el promedio de cupones por cliente
+        $promedio_cupones = ClientCoupon::getAverageCouponByClient(); */
+
+        //Total de clientes
+        $total_clientes = Client::count();
+
+        //Total de cupones
+        $total_cupones = ClientCoupon::count();
+
+        return view('dashboard', compact('coupon_mas_repetido','coupon_kfc', 'coupon_bk', 'coupon_ph', 'coupon_lbb','coupon_mas_repetido_bk','coupon_mas_repetido_kfc','coupon_mas_repetido_ph','coupon_mas_repetido_lbb','total_clientes','total_cupones'));
     }
 
     public function filters($value){
@@ -61,6 +70,9 @@ class ReportController extends Controller
             case 'client-coupons':
                 $clients = Client::all();
                 return view('admin.reports.filters.client-coupon-filter',compact('clients'));
+                break;
+            case 'state-coupons':
+                return view('admin.reports.filters.state-coupon-filter');
                 break;
             default:
                 # code...
@@ -124,12 +136,25 @@ class ReportController extends Controller
                         break;
                 }
                 break;
-                case 'value':
-
-                break;
-
-            default:
             case 'client-coupons':
+                    $request->validate([
+                        //que start_date sea menor que end_date
+                        'start_date' => 'required|date|before:end_date',
+                        'end_date' => 'required'
+                    ]);
+                    $start_date = $request->start_date;
+                    $end_date = $request->end_date;
+                    $client_id = $request->client_id;
+                    if ($request->client_id == 'all') {
+                        $coupons = ClientCoupon::whereBetween('created_at', [$request->start_date, $request->end_date])->get();
+                        return view('admin.reports.result.client-coupon-report', compact('coupons','start_date','end_date','value','client_id'));
+                    }else{
+                        //Todos los cupones de un cliente por client_id
+                        $coupons = ClientCoupon::whereBetween('created_at', [$request->start_date, $request->end_date])->where('client_id', $request->client_id)->get();
+                        return view('admin.reports.result.client-coupon-report', compact('coupons','start_date','end_date','value','client_id'));
+                    }
+                    break;
+            case 'state-coupons':
                 $request->validate([
                     //que start_date sea menor que end_date
                     'start_date' => 'required|date|before:end_date',
@@ -137,16 +162,17 @@ class ReportController extends Controller
                 ]);
                 $start_date = $request->start_date;
                 $end_date = $request->end_date;
-                $client_id = $request->client_id;
-                if ($request->client_id == 'all') {
+                $state = $request->state;
+                if ($request->state == 'all') {
                     $coupons = ClientCoupon::whereBetween('created_at', [$request->start_date, $request->end_date])->get();
-                    return view('admin.reports.result.client-coupon-report', compact('coupons','start_date','end_date','value','client_id'));
+                    return view('admin.reports.result.state-coupon-report', compact('coupons','start_date','end_date','value','state'));
                 }else{
                     //Todos los cupones de un cliente por client_id
-                    $coupons = ClientCoupon::whereBetween('created_at', [$request->start_date, $request->end_date])->where('client_id', $request->client_id)->get();
-                    return view('admin.reports.result.client-coupon-report', compact('coupons','start_date','end_date','value','client_id'));
+                    $coupons = ClientCoupon::whereBetween('created_at', [$request->start_date, $request->end_date])->where('state', $request->state)->get();
+                    return view('admin.reports.result.state-coupon-report', compact('coupons','start_date','end_date','value','state'));
                 }
-            break;
+                break;
+            default:
                 break;
         }
     }
@@ -158,7 +184,7 @@ class ReportController extends Controller
                 return Excel::download(new TotalCouponExport($coupons), 'total-coupon-report.xlsx');
                 break;
             default:
-                
+
                 break;
         }
 
@@ -169,9 +195,18 @@ class ReportController extends Controller
             $coupons = ClientCoupon::whereBetween('created_at', [$start_date, $end_date])->get();
             return Excel::download(new ClientCouponExport($coupons), 'client-coupon-report.xlsx');
         } else {
-            # code...
+            $coupons = ClientCoupon::whereBetween('created_at', [$start_date, $end_date])->where('client_id', $client_id)->get();
+            return Excel::download(new ClientCouponExport($coupons), 'client-coupon-report.xlsx');
         }
+    }
 
-
+    public function exportCouponState($start_date, $end_date, $state){
+        if ($state == 'all') {
+            $coupons = ClientCoupon::whereBetween('created_at', [$start_date, $end_date])->get();
+            return Excel::download(new ClientCouponExport($coupons), 'state-coupon-report.xlsx');
+        } else {
+            $coupons = ClientCoupon::whereBetween('created_at', [$start_date, $end_date])->where('state', $state)->get();
+            return Excel::download(new ClientCouponExport($coupons), 'state-coupon-report.xlsx');
+       }
     }
 }

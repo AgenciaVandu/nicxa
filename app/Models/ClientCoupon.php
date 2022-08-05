@@ -89,5 +89,14 @@ class ClientCoupon extends Model
         return $coupon_mas_repetido;
     }
 
+    //Funcion para obtener el promedio de los cupones por cliente
+    public static function getAverageCouponByClient()
+    {
+        $promedio = ClientCoupon::select('client_id', DB::raw('count(*) as total'))
+            ->groupBy('client_id')
+            ->orderBy('total', 'desc');
+        return $promedio;
+    }
+
 
 }
