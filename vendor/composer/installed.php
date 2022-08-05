@@ -6,11 +6,20 @@
     'aliases' => 
     array (
     ),
-    'reference' => '396e9e2d361c641c222797e32c6c6f1167d2ec87',
+    'reference' => '6cc4b0656740684142e6b3ef9d00c8509fdabc0f',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
   array (
+    'arielmejiadev/larapex-charts' => 
+    array (
+      'pretty_version' => '4.1.0',
+      'version' => '4.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9e1f7e08cb5a5fa662ff8c83464d8e78379b4031',
+    ),
     'asm89/stack-cors' => 
     array (
       'pretty_version' => 'v2.1.1',
@@ -37,6 +46,24 @@
       array (
       ),
       'reference' => 'ca57d18f028f84f777b2168cd1911b0dee2343ae',
+    ),
+    'chartisan/php' => 
+    array (
+      'pretty_version' => '1.2.1',
+      'version' => '1.2.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '85d2352077800e9bcb411aec1ff7e4d23eef93a1',
+    ),
+    'consoletvs/charts' => 
+    array (
+      'pretty_version' => '7.3.0',
+      'version' => '7.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b6c47dedeebf95c690f3604355ddb002677b6ae6',
     ),
     'cordoval/hamcrest-php' => 
     array (
@@ -499,7 +526,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '396e9e2d361c641c222797e32c6c6f1167d2ec87',
+      'reference' => '6cc4b0656740684142e6b3ef9d00c8509fdabc0f',
     ),
     'laravel/sail' => 
     array (

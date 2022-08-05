@@ -95,10 +95,13 @@ return array(
     'Database\\Factories\\' => array($baseDir . '/database/factories'),
     'DASPRiD\\Enum\\' => array($vendorDir . '/dasprid/enum/src'),
     'Cron\\' => array($vendorDir . '/dragonmantank/cron-expression/src/Cron'),
+    'ConsoleTVs\\Charts\\' => array($vendorDir . '/consoletvs/charts/src'),
     'Complex\\' => array($vendorDir . '/markbaker/complex/classes/src'),
+    'Chartisan\\PHP\\' => array($vendorDir . '/chartisan/php/src'),
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),
     'Brick\\Math\\' => array($vendorDir . '/brick/math/src'),
     'BaconQrCode\\' => array($vendorDir . '/bacon/bacon-qr-code/src'),
     'Asm89\\Stack\\' => array($vendorDir . '/asm89/stack-cors/src'),
+    'ArielMejiaDev\\LarapexCharts\\' => array($vendorDir . '/arielmejiadev/larapex-charts/src'),
     'App\\' => array($baseDir . '/app'),
 );

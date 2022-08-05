@@ -31,8 +31,8 @@ class ComposerStaticInit41ce676b55e87650a2f4c85858705d31
         'c7a3c339e7e14b60e06a2d7fcce9476b' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Events/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
+        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         '40275907c8566c390185147049ef6e5d' => __DIR__ . '/..' . '/livewire/livewire/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
@@ -186,7 +186,9 @@ class ComposerStaticInit41ce676b55e87650a2f4c85858705d31
         'C' => 
         array (
             'Cron\\' => 5,
+            'ConsoleTVs\\Charts\\' => 18,
             'Complex\\' => 8,
+            'Chartisan\\PHP\\' => 14,
             'Carbon\\' => 7,
         ),
         'B' => 
@@ -197,6 +199,7 @@ class ComposerStaticInit41ce676b55e87650a2f4c85858705d31
         'A' => 
         array (
             'Asm89\\Stack\\' => 12,
+            'ArielMejiaDev\\LarapexCharts\\' => 28,
             'App\\' => 4,
         ),
     );
@@ -562,9 +565,17 @@ class ComposerStaticInit41ce676b55e87650a2f4c85858705d31
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
         ),
+        'ConsoleTVs\\Charts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/consoletvs/charts/src',
+        ),
         'Complex\\' => 
         array (
             0 => __DIR__ . '/..' . '/markbaker/complex/classes/src',
+        ),
+        'Chartisan\\PHP\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/chartisan/php/src',
         ),
         'Carbon\\' => 
         array (
@@ -581,6 +592,10 @@ class ComposerStaticInit41ce676b55e87650a2f4c85858705d31
         'Asm89\\Stack\\' => 
         array (
             0 => __DIR__ . '/..' . '/asm89/stack-cors/src',
+        ),
+        'ArielMejiaDev\\LarapexCharts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src',
         ),
         'App\\' => 
         array (
@@ -654,6 +669,23 @@ class ComposerStaticInit41ce676b55e87650a2f4c85858705d31
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\View\\Components\\AppLayout' => __DIR__ . '/../..' . '/app/View/Components/AppLayout.php',
         'App\\View\\Components\\GuestLayout' => __DIR__ . '/../..' . '/app/View/Components/GuestLayout.php',
+        'ArielMejiaDev\\LarapexCharts\\AreaChart' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/AreaChart.php',
+        'ArielMejiaDev\\LarapexCharts\\BarChart' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/BarChart.php',
+        'ArielMejiaDev\\LarapexCharts\\Contracts\\MustAddComplexData' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/Contracts/MustAddComplexData.php',
+        'ArielMejiaDev\\LarapexCharts\\Contracts\\MustAddSimpleData' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/Contracts/MustAddSimpleData.php',
+        'ArielMejiaDev\\LarapexCharts\\DonutChart' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/DonutChart.php',
+        'ArielMejiaDev\\LarapexCharts\\Facades\\LarapexChart' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/Facades/LarapexChart.php',
+        'ArielMejiaDev\\LarapexCharts\\HeatMapChart' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/HeatMapChart.php',
+        'ArielMejiaDev\\LarapexCharts\\HorizontalBar' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/HorizontalBar.php',
+        'ArielMejiaDev\\LarapexCharts\\LarapexChart' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/LarapexChart.php',
+        'ArielMejiaDev\\LarapexCharts\\LarapexChartsServiceProvider' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/LarapexChartsServiceProvider.php',
+        'ArielMejiaDev\\LarapexCharts\\LineChart' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/LineChart.php',
+        'ArielMejiaDev\\LarapexCharts\\PieChart' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/PieChart.php',
+        'ArielMejiaDev\\LarapexCharts\\PolarAreaChart' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/PolarAreaChart.php',
+        'ArielMejiaDev\\LarapexCharts\\RadarChart' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/RadarChart.php',
+        'ArielMejiaDev\\LarapexCharts\\RadialChart' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/RadialChart.php',
+        'ArielMejiaDev\\LarapexCharts\\Traits\\ComplexChartDataAggregator' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/Traits/ComplexChartDataAggregator.php',
+        'ArielMejiaDev\\LarapexCharts\\Traits\\SimpleChartDataAggregator' => __DIR__ . '/..' . '/arielmejiadev/larapex-charts/src/Traits/SimpleChartDataAggregator.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/CorsService.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -810,11 +842,20 @@ class ComposerStaticInit41ce676b55e87650a2f4c85858705d31
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
         'Carbon\\TranslatorImmutable' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/TranslatorImmutable.php',
         'Carbon\\TranslatorStrongTypeInterface' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/TranslatorStrongTypeInterface.php',
+        'Chartisan\\PHP\\ChartData' => __DIR__ . '/..' . '/chartisan/php/src/ChartData.php',
+        'Chartisan\\PHP\\Chartisan' => __DIR__ . '/..' . '/chartisan/php/src/Chartisan.php',
+        'Chartisan\\PHP\\DatasetData' => __DIR__ . '/..' . '/chartisan/php/src/DatasetData.php',
+        'Chartisan\\PHP\\ServerData' => __DIR__ . '/..' . '/chartisan/php/src/ServerData.php',
         'Complex\\Complex' => __DIR__ . '/..' . '/markbaker/complex/classes/src/Complex.php',
         'Complex\\Exception' => __DIR__ . '/..' . '/markbaker/complex/classes/src/Exception.php',
         'Complex\\Functions' => __DIR__ . '/..' . '/markbaker/complex/classes/src/Functions.php',
         'Complex\\Operations' => __DIR__ . '/..' . '/markbaker/complex/classes/src/Operations.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'ConsoleTVs\\Charts\\BaseChart' => __DIR__ . '/..' . '/consoletvs/charts/src/BaseChart.php',
+        'ConsoleTVs\\Charts\\ChartsController' => __DIR__ . '/..' . '/consoletvs/charts/src/ChartsController.php',
+        'ConsoleTVs\\Charts\\ChartsServiceProvider' => __DIR__ . '/..' . '/consoletvs/charts/src/ChartsServiceProvider.php',
+        'ConsoleTVs\\Charts\\Commands\\CreateChart' => __DIR__ . '/..' . '/consoletvs/charts/src/Commands/CreateChart.php',
+        'ConsoleTVs\\Charts\\Registrar' => __DIR__ . '/..' . '/consoletvs/charts/src/Registrar.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
