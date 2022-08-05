@@ -28,6 +28,11 @@ class CouponSeeder extends Seeder
             'email' => 'ab@agenciavandu.com',
             'password' => bcrypt('password'),
         ]);
+        User::create([
+            'name' => 'Nicxa Pruebas',
+            'email' => 'pruebas@nicxa.com',
+            'password' => bcrypt('password'),
+        ]);
         /* Coupon::factory(60)->create(); */
 
         $coupons = [
