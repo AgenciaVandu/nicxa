@@ -147,7 +147,7 @@ class ReportController extends Controller
                     $end_date = $request->end_date;
                     $client_id = $request->client_id;
                     if ($request->client_id == 'all') {
-                        $coupons = ClientCoupon::whereBetween('created_at', [$request->start_date, $request->end_date])->get();
+                        $coupons = ClientCoupon::whereBetween('created_at', [$request->start_date, $request->end_date])->orderBy('client_id')->get();
                         return view('admin.reports.result.client-coupon-report', compact('coupons','start_date','end_date','value','client_id'));
                     }else{
                         //Todos los cupones de un cliente por client_id

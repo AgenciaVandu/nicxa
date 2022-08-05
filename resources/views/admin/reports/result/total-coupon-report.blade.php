@@ -19,7 +19,6 @@
                         <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
                             <tr>
                                 <th class="text-center p-2">#</th>
-                                <th class="text-center p-2">Fecha</th>
                                 <th class="text-center p-2">Franquicia</th>
                                 <th class="text-center p-2">Canal</th>
                                 <th class="text-center p-2">Cupon</th>
@@ -30,7 +29,6 @@
                             @foreach ($coupons as $coupon)
                                 <tr>
                                     <td class="text-center">{{ $loop->iteration }}</td>
-                                    <td class="text-center">{{ $coupon->created_at }}</td>
                                     <td class="text-center">{{ $coupon->franchise }}</td>
                                     <td class="text-center">{{ $coupon->source }}</td>
                                     <td class="text-center">{{ $coupon->coupon }}</td>

@@ -28,7 +28,6 @@
             <th>Franquicia</th>
             <th>Cupon descargado</th>
             <th>Estado</th>
-            <th>Email</th>
         </tr>
     </thead>
     <tbody>
@@ -39,7 +38,6 @@
                 <td>{{ $coupon->coupon->franchise }}</td>
                 <td>{{ $coupon->coupon->coupon }}</td>
                 <td>{{ $coupon->state }}</td>
-                <td>{{ $coupon->client->email }}</td>
             </tr>
         @endforeach
     </tbody>

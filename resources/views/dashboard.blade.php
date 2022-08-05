@@ -50,6 +50,8 @@
 
                     <span class="ml-4">Total de cupones descargados:</span>
                     <span class="mr-2 font-bold">{{ $total_cupones }}</span>
+                    <span class="ml-4">Promedio de cupones por cliente:</span>
+                    <span class="mr-2 font-bold">{{ $total_cupones/$total_clientes }}</span>
                 </p>
             </div>
 
