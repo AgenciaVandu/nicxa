@@ -24,9 +24,9 @@
     <thead>
         <tr>
             <th>#</th>
-            <th>Franchise</th>
-            <th>Coupon</th>
-            <th>Downloads</th>
+            <th>Fanquicia</th>
+            <th>Cupon</th>
+            <th>Descargas</th>
         </tr>
     </thead>
     <tbody>

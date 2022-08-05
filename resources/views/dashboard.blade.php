@@ -38,9 +38,9 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg mb-4">
                 <p class="text-center">
                     Cupón mas descargado:
-                    <span class="ml-2 font-bold">{{ $coupon_mas_repetido->coupon->coupon }}</span>
+                    <span class="ml-2 font-bold">{{ $coupon_mas_repetido->coupon }}</span>
                     <span>de</span>
-                    <span class="font-bold">{{ $coupon_mas_repetido->coupon->franchise }}</span>
+                    <span class="font-bold">{{ $coupon_mas_repetido->franchise }}</span>
                 </p>
             </div>
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg mb-4">
@@ -51,7 +51,7 @@
                     <span class="ml-4">Total de cupones descargados:</span>
                     <span class="mr-2 font-bold">{{ $total_cupones }}</span>
                     <span class="ml-4">Promedio de cupones por cliente:</span>
-                    <span class="mr-2 font-bold">{{ $total_cupones/$total_clientes }}</span>
+                    <span class="mr-2 font-bold">{{ number_format($total_cupones/$total_clientes)}}</span>
                 </p>
             </div>
 

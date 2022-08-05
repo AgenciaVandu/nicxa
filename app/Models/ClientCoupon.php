@@ -31,7 +31,7 @@ class ClientCoupon extends Model
             ->groupBy('coupon_id')
             ->orderBy('total', 'desc')
             ->first();
-        $coupon_mas_repetido = ClientCoupon::find($coupon_mas_repetido->coupon_id);
+        $coupon_mas_repetido = Coupon::find($coupon_mas_repetido->coupon_id);
         return $coupon_mas_repetido;
     }
 
