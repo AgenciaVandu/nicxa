@@ -34,28 +34,24 @@ class CouponSeeder extends Seeder
             [
             'coupon' => 'Alitas + Refresco',
             'franchise' => 'Pizza Hut',
-            'source' => 'landing',
             'campaign' => 'Cupones Impresos',
             'chanel' => 'web',
             ],
             [
             'coupon' => 'Combo Whopper + 4 Nuggets',
             'franchise' => 'Burger King',
-            'source' => 'landing',
             'campaign' => 'Cupones Impresos',
             'chanel' => 'web',
             ],
             [
             'coupon' => '2 Bisquets gratis en tu primera compra*',
             'franchise' => 'LBB Obregon',
-            'source' => 'landing',
             'campaign' => 'Cupones Impresos',
             'chanel' => 'web',
             ],
             [
             'coupon' => '10 Nuggets + papas grandes',
             'franchise' => 'KFC',
-            'source' => 'landing',
             'campaign' => 'Cupones Impresos',
             'chanel' => 'web',
             ],
