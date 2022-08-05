@@ -929,6 +929,10 @@ select{
   margin-left: auto;
   margin-right: auto;
 }
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
 .ml-3{
   margin-left: 0.75rem;
 }
@@ -1510,14 +1514,14 @@ select{
 .pt-3{
   padding-top: 0.75rem;
 }
+.pl-2{
+  padding-left: 0.5rem;
+}
 .pb-2{
   padding-bottom: 0.5rem;
 }
 .pr-2{
   padding-right: 0.5rem;
-}
-.pl-2{
-  padding-left: 0.5rem;
 }
 .pt-8{
   padding-top: 2rem;
