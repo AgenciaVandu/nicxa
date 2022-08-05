@@ -17,6 +17,9 @@ use Barryvdh\DomPDF\Facade as PDF;
 */
 
 Route::get('/', function (Request $request) {
+    //Obtener el valor del navegador
+    $value = $request->header('User-Agent');
+    return $value;
     return view('index');
 });
 Route::get('/negocios', function () {
