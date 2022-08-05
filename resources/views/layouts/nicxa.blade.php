@@ -16,6 +16,7 @@
     <meta name=»theme-color» content=»#EB0028»>
     <title>Grupo Nicxa - Nuestra meta eres tú</title>
     <meta name="facebook-domain-verification" content="qhqtbupunltndj8a4lurqu5e5ocshg" />
+    <meta name="google-site-verification" content="q61Lt_yavm_0AcKrsM5i_85AaX7U7w9-hACnBVtjVH8" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     @stack('css')
     <link rel="stylesheet" href="{{asset('/css/font.css')}}">
@@ -82,7 +83,7 @@
                         <a class="nav-link" href="/unete-a-la-famila-nicxa">Únete a la familia Nicxa <br class="d-block d-sm-block-d-md-none d-lg-none"> <span class="vacantes">¡Vacantes disponibles!</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://facturacion.gruponicxa.com.mx:6868/" target="_blank">Facturación</a>
+                        <a class="nav-link" href="http://facturacion.gruponicxa.com.mx:8081/facturacioncliente/" target="_blank">Facturación</a>
                     </li>
                   </ul>
               </div>
@@ -139,7 +140,7 @@
                                       <a href="/unete-a-la-famila-nicxa">Únete a la familia Nicxa</a>
                                   </li>
                                   <li>
-                                      <a href="http://facturacion.gruponicxa.com.mx:6868/" target="_blank">
+                                      <a href="http://facturacion.gruponicxa.com.mx:8081/facturacioncliente/" target="_blank">
                                           Facturación
                                       </a>
                                   </li>

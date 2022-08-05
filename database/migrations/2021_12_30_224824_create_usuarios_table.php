@@ -22,7 +22,6 @@ class CreateUsuariosTable extends Migration
             $table->string('origen');
             $table->string('cupon');
             $table->string('campaña');
-
             $table->timestamps();
         });
     }

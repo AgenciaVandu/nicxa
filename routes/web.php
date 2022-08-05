@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SistemaController;
+use App\Models\View;
 use  Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade as PDF;
 
@@ -16,7 +17,13 @@ use Barryvdh\DomPDF\Facade as PDF;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function (Request $request) {
+    View::create([
+        'ip' => $request->ip(),
+        'url' => $request->fullUrl(),
+        'session_id' => $request->session()->getId(),
+        'browser' => $request->header('User-Agent'),
+    ]);
     return view('index');
 });
 Route::get('/negocios', function () {
@@ -25,7 +32,13 @@ Route::get('/negocios', function () {
 Route::get('/franquicia', function () {
     return view('franquicia');
 });
-Route::get('/responsabilidad-social', function () {
+Route::get('/responsabilidad-social', function (Request $request) {
+    View::create([
+        'ip' => $request->ip(),
+        'url' => $request->fullUrl(),
+        'session_id' => $request->session()->getId(),
+        'browser' => $request->header('User-Agent'),
+    ]);
     return view('responsabilidad-social');
 });
 Route::get('/unete-a-la-famila-nicxa', function () {
@@ -59,18 +72,6 @@ Route::get('/descargar/{nombre}/{cupon}', function ($nombre,$cupon) {
 
 Route::get('/test_cupones', [SistemaController::class,'factory_test']);
 */
-
-
-
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
 
 Route::get('/facebook', function () {
     return redirect('https://www.facebook.com/GrupoNicxa');
