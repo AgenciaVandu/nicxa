@@ -33,7 +33,7 @@
                                     <td class="text-center">{{ $loop->iteration }}</td>
                                     <td class="text-center">{{ $coupon->created_at }}</td>
                                     <td class="text-center">{{ $coupon->coupon->franchise }}</td>
-                                    <td class="text-center">{{ $coupon->coupon->source }}</td>
+                                    <td class="text-center">{{ $coupon->source }}</td>
                                     <td class="text-center">{{ $coupon->coupon->coupon }}</td>
                                     <td class="text-center">{{ $coupon->client->email }}</td>
                                     <td class="text-center">{{ $coupon->client->phone }}</td>

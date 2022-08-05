@@ -129,7 +129,7 @@
                             <input type="hidden" name="utm_souce" value="' . $utm_source . '"/>');
                         } else {
                             echo ('
-                            <input type="hidden" name="utm_souce" value="none"/>');
+                            <input type="hidden" name="utm_souce" value="landing"/>');
                         }
                         ?>
                         <input id="campo_cupon" type="hidden" name="cupon" value="none" />
