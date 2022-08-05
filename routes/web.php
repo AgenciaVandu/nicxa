@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SistemaController;
+use App\Models\View;
 use  Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade as PDF;
 
@@ -17,9 +18,12 @@ use Barryvdh\DomPDF\Facade as PDF;
 */
 
 Route::get('/', function (Request $request) {
-    //Obtener el valor del navegador
-    $value = $request->header('User-Agent');
-    return $value;
+    View::create([
+        'ip' => $request->ip(),
+        'url' => $request->fullUrl(),
+        'session_id' => $request->session()->getId(),
+        'browser' => $request->header('User-Agent'),
+    ]);
     return view('index');
 });
 Route::get('/negocios', function () {
@@ -28,7 +32,13 @@ Route::get('/negocios', function () {
 Route::get('/franquicia', function () {
     return view('franquicia');
 });
-Route::get('/responsabilidad-social', function () {
+Route::get('/responsabilidad-social', function (Request $request) {
+    View::create([
+        'ip' => $request->ip(),
+        'url' => $request->fullUrl(),
+        'session_id' => $request->session()->getId(),
+        'browser' => $request->header('User-Agent'),
+    ]);
     return view('responsabilidad-social');
 });
 Route::get('/unete-a-la-famila-nicxa', function () {

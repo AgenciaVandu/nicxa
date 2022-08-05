@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class View extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'ip',
+        'url',
+        'session_id',
+        'browser',
+    ];
 }

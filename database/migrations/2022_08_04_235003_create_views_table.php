@@ -18,7 +18,7 @@ class CreateViewsTable extends Migration
             $table->string('ip');
             $table->string('url');
             $table->string('session_id');
-            $table->string('navegador');
+            $table->string('browser');
             $table->timestamps();
         });
     }
