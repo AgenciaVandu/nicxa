@@ -25,7 +25,6 @@
         <tr>
             <th>#</th>
             <th>Franchise</th>
-            <th>Chanel</th>
             <th>Coupon</th>
             <th>Downloads</th>
         </tr>
@@ -35,7 +34,6 @@
             <tr>
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $coupon->franchise }}</td>
-                <td>{{ $coupon->source }}</td>
                 <td>{{ $coupon->coupon }}</td>
                 <td>{{ $coupon->clients_count }}</td>
             </tr>
