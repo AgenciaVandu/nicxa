@@ -12,17 +12,21 @@ class TotalCouponExport implements FromView
 
     use Exportable;
 
-    public $coupons;
+    public $coupons,$start_date,$end_date;
 
-
-    public function __construct($coupons){
+    public function __construct($coupons,$start_date,$end_date)
+    {
         $this->coupons = $coupons;
+        $this->start_date = $start_date;
+        $this->end_date = $end_date;
     }
 
     public function view(): View
     {
         return view('admin.reports.exports.total-coupon-export', [
-            'coupons' => $this->coupons
+            'coupons' => $this->coupons,
+            'start_date' => $this->start_date,
+            'end_date' => $this->end_date
         ]);
     }
 }

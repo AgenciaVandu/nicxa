@@ -9,7 +9,7 @@
         <tr>
             <td></td>
             <td>
-                REPORTE DE CUPONES POR CLIENTE
+                REPORTE DE CUPONES POR ESTADO
             </td>
         </tr>
         <tr>
@@ -26,10 +26,9 @@
             <th>#</th>
             <th>Fecha</th>
             <th>Franquicia</th>
-            <th>Canal</th>
             <th>Cupon descargado</th>
+            <th>Estado</th>
             <th>Email</th>
-            <th>Phone</th>
         </tr>
     </thead>
     <tbody>
@@ -38,10 +37,9 @@
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $coupon->created_at }}</td>
                 <td>{{ $coupon->coupon->franchise }}</td>
-                <td>{{ $coupon->coupon->source }}</td>
                 <td>{{ $coupon->coupon->coupon }}</td>
+                <td>{{ $coupon->state }}</td>
                 <td>{{ $coupon->client->email }}</td>
-                <td>{{ $coupon->client->phone }}</td>
             </tr>
         @endforeach
     </tbody>

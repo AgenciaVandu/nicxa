@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Exports\ClientCouponExport;
+use App\Exports\StateCouponExport;
 use App\Exports\TotalCouponExport;
 use App\Http\Controllers\Controller;
 use App\Models\Client;
@@ -172,41 +173,51 @@ class ReportController extends Controller
                     return view('admin.reports.result.state-coupon-report', compact('coupons','start_date','end_date','value','state'));
                 }
                 break;
-            default:
-                break;
         }
     }
 
-    public function exportCoupon($value, $start_date, $end_date, $franchise){
-        switch ($value) {
-            case 'total-coupons':
+    public function exportTotalCoupon($start_date, $end_date, $franchise){
+        switch ($franchise) {
+            case 'all':
                 $coupons = Coupon::whereBetween('created_at', [$start_date, $end_date])->withCount('clients')->get();
-                return Excel::download(new TotalCouponExport($coupons), 'total-coupon-report.xlsx');
+                return Excel::download(new TotalCouponExport($coupons,$start_date,$end_date), 'total-coupon-report.xlsx');
                 break;
-            default:
-
+            case 'KFC':
+                $coupons = Coupon::whereBetween('created_at', [$start_date, $end_date])->where('franchise', 'KFC')->withCount('clients')->get();
+                return Excel::download(new TotalCouponExport($coupons,$start_date,$end_date), 'total-coupon-report.xlsx');
+                break;
+            case 'LBB Obregon':
+                $coupons = Coupon::whereBetween('created_at', [$start_date, $end_date])->where('franchise', 'LBB Obregon')->withCount('clients')->get();
+                return Excel::download(new TotalCouponExport($coupons,$start_date,$end_date), 'total-coupon-report.xlsx');
+                break;
+            case 'Pizza Hut':
+                $coupons = Coupon::whereBetween('created_at', [$start_date, $end_date])->where('franchise', 'Pizza Hut')->withCount('clients')->get();
+                return Excel::download(new TotalCouponExport($coupons,$start_date,$end_date), 'total-coupon-report.xlsx');
+                break;
+            case 'Burger King':
+                $coupons = Coupon::whereBetween('created_at', [$start_date, $end_date])->where('franchise', 'Burger King')->withCount('clients')->get();
+                return Excel::download(new TotalCouponExport($coupons,$start_date,$end_date), 'total-coupon-report.xlsx');
                 break;
         }
-
     }
 
     public function exportCouponClients($start_date, $end_date, $client_id){
         if ($client_id == 'all') {
             $coupons = ClientCoupon::whereBetween('created_at', [$start_date, $end_date])->get();
-            return Excel::download(new ClientCouponExport($coupons), 'client-coupon-report.xlsx');
+            return Excel::download(new ClientCouponExport($coupons,$start_date,$end_date), 'client-coupon-report.xlsx');
         } else {
             $coupons = ClientCoupon::whereBetween('created_at', [$start_date, $end_date])->where('client_id', $client_id)->get();
-            return Excel::download(new ClientCouponExport($coupons), 'client-coupon-report.xlsx');
+            return Excel::download(new ClientCouponExport($coupons,$start_date,$end_date), 'client-coupon-report.xlsx');
         }
     }
 
     public function exportCouponState($start_date, $end_date, $state){
         if ($state == 'all') {
             $coupons = ClientCoupon::whereBetween('created_at', [$start_date, $end_date])->get();
-            return Excel::download(new ClientCouponExport($coupons), 'state-coupon-report.xlsx');
+            return Excel::download(new StateCouponExport($coupons,$start_date,$end_date), 'state-coupon-report.xlsx');
         } else {
             $coupons = ClientCoupon::whereBetween('created_at', [$start_date, $end_date])->where('state', $state)->get();
-            return Excel::download(new ClientCouponExport($coupons), 'state-coupon-report.xlsx');
-       }
+            return Excel::download(new StateCouponExport($coupons,$start_date,$end_date), 'state-coupon-report.xlsx');
+        }
     }
 }

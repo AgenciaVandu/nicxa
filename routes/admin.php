@@ -13,9 +13,9 @@ Route::get('/', [ReportController::class,'dashboard'])->name('dashboard');
 Route::get('reports/filters/{value}',[ReportController::class,'filters'])->name('reports.filters');
 Route::post('reports/filters/{value}/search',[ReportController::class,'search'])->name('reports.search');
 
-Route::get('export/{value}/{start_date}/{end_date}/{franchise}',[ReportController::class,'exportCoupon'])->name('export.coupons');
-Route::get('export/{start_date}/{end_date}/{client_id}',[ReportController::class,'exportCouponClients'])->name('export.coupons.clients');
-Route::get('export/{start_date}/{end_date}/{state}',[ReportController::class,'exportCouponState'])->name('export.coupons.states');
+Route::get('export/coupons/{start_date}/{end_date}/{franchise}',[ReportController::class,'exportTotalCoupon'])->name('export.coupons');
+Route::get('export/clients/{start_date}/{end_date}/{client_id}',[ReportController::class,'exportCouponClients'])->name('export.coupons.clients');
+Route::get('export/states/{start_date}/{end_date}/{state}',[ReportController::class,'exportCouponState'])->name('export.coupons.states');
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'),'verified'])->group(function () {
     Route::get('/dashboard', [ReportController::class,'dashboard'])->name('dashboard');
