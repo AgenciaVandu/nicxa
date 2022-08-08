@@ -31,7 +31,11 @@ class ClientCoupon extends Model
             ->groupBy('coupon_id')
             ->orderBy('total', 'desc')
             ->first();
-        $coupon_mas_repetido = Coupon::find($coupon_mas_repetido->coupon_id);
+        if ($coupon_mas_repetido) {
+            $coupon_mas_repetido = Coupon::find($coupon_mas_repetido->coupon_id);
+        }else{
+            $coupon_mas_repetido = null;
+        }
         return $coupon_mas_repetido;
     }
 
@@ -46,7 +50,12 @@ class ClientCoupon extends Model
             ->orderBy('total', 'desc')
             ->first();
 
-        $coupon_mas_repetido = Coupon::find($coupon_mas_repetido->coupon_id);
+        if ($coupon_mas_repetido) {
+            $coupon_mas_repetido = Coupon::find($coupon_mas_repetido->coupon_id);
+        }else{
+            $coupon_mas_repetido = null;
+        }
+
         return $coupon_mas_repetido;
     }
     //Funcion para obtener el cupon mas repetido de la franchise kfc
@@ -59,7 +68,11 @@ class ClientCoupon extends Model
             ->groupBy('coupon_id')
             ->orderBy('total', 'desc')
             ->first();
-        $coupon_mas_repetido = Coupon::find($coupon_mas_repetido->coupon_id);
+        if ($coupon_mas_repetido) {
+            $coupon_mas_repetido = Coupon::find($coupon_mas_repetido->coupon_id);
+        }else{
+            $coupon_mas_repetido = null;
+        }
         return $coupon_mas_repetido;
     }
     //Funcion para obtener el cupon mas repetido de la franchise pizza hut
@@ -72,7 +85,11 @@ class ClientCoupon extends Model
             ->groupBy('coupon_id')
             ->orderBy('total', 'desc')
             ->first();
-        $coupon_mas_repetido = Coupon::find($coupon_mas_repetido->coupon_id);
+        if ($coupon_mas_repetido) {
+            $coupon_mas_repetido = Coupon::find($coupon_mas_repetido->coupon_id);
+        }else{
+            $coupon_mas_repetido = null;
+        }
         return $coupon_mas_repetido;
     }
     //Funcion para obtener el cupon mas repetido de la franchise LBB Obregon
@@ -85,7 +102,11 @@ class ClientCoupon extends Model
             ->groupBy('coupon_id')
             ->orderBy('total', 'desc')
             ->first();
-        $coupon_mas_repetido = Coupon::find($coupon_mas_repetido->coupon_id);
+        if ($coupon_mas_repetido) {
+            $coupon_mas_repetido = Coupon::find($coupon_mas_repetido->coupon_id);
+        }else{
+            $coupon_mas_repetido = null;
+        }
         return $coupon_mas_repetido;
     }
 
@@ -95,7 +116,11 @@ class ClientCoupon extends Model
         $promedio = ClientCoupon::select('client_id', DB::raw('count(*) as total'))
             ->groupBy('client_id')
             ->orderBy('total', 'desc');
-        return $promedio;
+        if ($promedio->count() > 0) {
+            return $promedio;
+        }else{
+            return null;
+        }
     }
 
 

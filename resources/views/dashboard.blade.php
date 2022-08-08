@@ -29,18 +29,30 @@
                     </p>
                 </div>
                 <div class="grid grid-cols-4 items-center justify-items-center gap-4 px-6 mb-6">
+                    @if ($coupon_mas_repetido_bk)
                     <div class="text-sm text-center">{{ $coupon_mas_repetido_bk->coupon }}</div>
+                    @endif
+                    @if ($coupon_mas_repetido_kfc)
                     <div class="text-sm text-center">{{ $coupon_mas_repetido_kfc->coupon }}</div>
+                    @endif
+                    @if ($coupon_mas_repetido_ph)
                     <div class="text-sm text-center">{{ $coupon_mas_repetido_ph->coupon }}</div>
+                    @endif
+                    @if ($coupon_mas_repetido_lbb)
                     <div class="text-sm text-center">{{ $coupon_mas_repetido_lbb->coupon }}</div>
+                    @endif
                 </div>
             </div>
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg mb-4">
                 <p class="text-center">
                     Cupón mas descargado:
+                    @if ($coupon_mas_repetido)
                     <span class="ml-2 font-bold">{{ $coupon_mas_repetido->coupon }}</span>
+                    @endif
                     <span>de</span>
+                    @if ($coupon_mas_repetido)
                     <span class="font-bold">{{ $coupon_mas_repetido->franchise }}</span>
+                    @endif
                 </p>
             </div>
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg mb-4">
