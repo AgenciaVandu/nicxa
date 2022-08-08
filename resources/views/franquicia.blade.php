@@ -377,6 +377,14 @@
                             <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Just For 2', '{{url('/img/cupones-1/uno/18-julio/just4-2.png')}}', 'KFC' ,'{{url('/img/cupones-1/terminos-franquicia/18-julio/legales-11.jpg')}}')">Descargar cupón</button>
                         </div>
                     </div>
+                    <div class="col-lg col-md-6 col-sm-6">
+                        <figure class="ordena-ahora__cupon">
+                            <img src="{{asset('/img/cupones-1/uno/18-julio/hamburguesa.png')}}" class="img-fluid" alt="cuponera Nicxa">
+                        </figure>
+                        <div class="text-center">
+                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('King Box', '{{url('/img/cupones-1/uno/18-julio/hamburguesa.png')}}', 'KFC' ,'{{url('/img/cupones-1/terminos-franquicia/18-julio/hamburguesa.png')}}')">Descargar cupón</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
