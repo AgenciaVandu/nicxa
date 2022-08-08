@@ -14,7 +14,7 @@
                     </a>
                 </div>
                 {{-- Table with tailwind v2.0 --}}
-                <div class="table-responsive p-4">
+                <div class="table-responsive p-4 overflow-x-auto relative">
                     <table class="table-auto w-full">
                         <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
                             <tr>

@@ -146,6 +146,12 @@
             <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link class="font-raleway" href="{{ route('views.index') }}" :active="request()->routeIs('views.*')">
+                {{ __('Views') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link class="font-raleway" href="{{ route('users.index') }}" :active="request()->routeIs('users.*')">
+                {{ __('Users') }}
+            </x-jet-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
@@ -158,8 +164,8 @@
                 @endif
 
                 <div>
-                    <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
-                    <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
+                    <div class="font-medium text-base text-white">{{ Auth::user()->name }}</div>
+                    <div class="font-medium text-sm text-gray-200">{{ Auth::user()->email }}</div>
                 </div>
             </div>
 
