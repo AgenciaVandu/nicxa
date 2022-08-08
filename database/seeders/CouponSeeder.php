@@ -35,7 +35,7 @@ class CouponSeeder extends Seeder
         ]);
         /* Coupon::factory(60)->create(); */
 
-        $coupons = [
+        /* $coupons = [
             [
             'coupon' => 'Alitas + Refresco',
             'franchise' => 'Pizza Hut',
@@ -72,6 +72,6 @@ class CouponSeeder extends Seeder
                 'client_id' => $client->id,
                 'state' => $states[array_rand($states)],
             ]);
-        }
+        } */
     }
 }
