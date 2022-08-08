@@ -37,11 +37,11 @@
                                         </button>
                                     @else
                                         <a
-                                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded inline-block cursor-pointer">
+                                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-0.5 px-2 mt-2 lg:py-1 lg:px-4 rounded block lg:inline-block cursor-pointer">
                                             Edit
                                         </a>
                                         <a wire:click="delete({{ $user->id }})"
-                                            class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 rounded inline-block cursor-pointer">
+                                            class="bg-red-500 hover:bg-red-700 text-white font-bold py-0.5 px-2 mt-2 lg:py-1 lg:px-4 rounded block lg:inline-block cursor-pointer">
                                             Delete
                                         </a>
                                     @endif
