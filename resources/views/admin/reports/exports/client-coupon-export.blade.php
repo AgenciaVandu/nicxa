@@ -38,7 +38,7 @@
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $coupon->created_at }}</td>
                 <td>{{ $coupon->coupon->franchise }}</td>
-                <td>{{ $coupon->coupon->source }}</td>
+                <td>{{ $coupon->source }}</td>
                 <td>{{ $coupon->coupon->coupon }}</td>
                 <td>{{ $coupon->client->email }}</td>
                 <td>{{ $coupon->client->phone }}</td>
