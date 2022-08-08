@@ -14,7 +14,11 @@ module.exports = {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
                 raleway: ['Raleway']
             },
+            colors: {
+                'rojo': '#EB0028',
+            }
         },
+
     },
 
     plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],

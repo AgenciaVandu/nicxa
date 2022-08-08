@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\ReportController;
 use App\Http\Controllers\Admin\ViewController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SistemaController;
+use App\Http\Livewire\Admin\UserComponent;
 use  Illuminate\Http\Request;
 
 
@@ -19,6 +20,7 @@ Route::get('export/clients/{start_date}/{end_date}/{client_id}',[ReportControlle
 Route::get('export/states/{start_date}/{end_date}/{state}',[ReportController::class,'exportCouponState'])->name('export.coupons.states');
 
 Route::get('/views',[ViewController::class,'index'])->name('views.index');
+Route::get('/users',UserComponent::class)->name('users.index');
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'),'verified'])->group(function () {
     Route::get('/dashboard', [ReportController::class,'dashboard'])->name('dashboard');

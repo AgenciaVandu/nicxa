@@ -1,3 +1,3 @@
 <a href="/">
-    <img src="{{ asset('assets/img/logo.png') }}" class="w-1/3 mx-auto" alt="">
+    <img src="{{ asset('img/logo-nicxa.svg') }}" class="w-72 mx-auto mb-4" alt="">
 </a>

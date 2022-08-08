@@ -1,6 +1,6 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+<nav x-data="{ open: false }" class="bg-rojo border-b border-gray-100">
     <!-- Primary Navigation Menu -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-24">
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
@@ -17,6 +17,9 @@
                     </x-jet-nav-link>
                     <x-jet-nav-link class="font-raleway" href="{{ route('views.index') }}" :active="request()->routeIs('views.*')">
                         {{ __('Views') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link class="font-raleway" href="{{ route('users.index') }}" :active="request()->routeIs('users.*')">
+                        {{ __('Users') }}
                     </x-jet-nav-link>
                 </div>
             </div>

@@ -37,7 +37,6 @@
                     </table>
                 </div>
                 {{-- Fin de la tabla --}}
-
             </div>
         </div>
     </div>

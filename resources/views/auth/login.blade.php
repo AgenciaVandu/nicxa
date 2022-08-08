@@ -32,17 +32,19 @@
                 </label>
             </div>
 
+            <x-jet-button class="w-full mt-4 justify-center  bg-rojo">
+                {{ __('Log in') }}
+            </x-jet-button>
             <div class="flex items-center justify-end mt-4">
                 @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
+                    <a class="underline text-sm text-gray-600 hover:text-gray-800" href="{{ route('password.request') }}">
                         {{ __('Forgot your password?') }}
                     </a>
                 @endif
-
-                <x-jet-button class="ml-4">
-                    {{ __('Log in') }}
-                </x-jet-button>
             </div>
         </form>
+        <div class="text-center text-gray-400 text-sm mt-10">
+            Sistema desarrollado por <a href="https://agenciavandu.com">Agencia Vandu</a>
+        </div>
     </x-jet-authentication-card>
 </x-guest-layout>
