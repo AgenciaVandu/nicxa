@@ -11,28 +11,32 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <figure>
-                        <a href="https://www.gruponicxa.com.mx/promociones-nicxa/"><img src="{{asset('/img/logos/burger-logo.svg')}}" width="90" alt=""></a>
+                    <img src="{{asset('/img/logos/burger-logo.svg')}}" width="90" alt="">
+                        <!-- <a href="https://www.gruponicxa.com.mx/promociones-nicxa/"><img src="{{asset('/img/logos/burger-logo.svg')}}" width="90" alt=""></a> -->
                     </figure>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 m-auto">
                     <figure>
-                        <a href="https://www.gruponicxa.com.mx/promociones-nicxa/">
+                    <img src="{{asset('/img/logos/KFC.svg')}}" width="90" alt="">
+                        <!-- <a href="https://www.gruponicxa.com.mx/promociones-nicxa/">
                             <img src="{{asset('/img/logos/KFC.svg')}}" width="90" alt="">
-                        </a>
+                        </a> -->
                     </figure>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 m-auto">
                     <figure>
-                        <a href="https://www.gruponicxa.com.mx/promociones-nicxa/">
+                        <img src="{{asset('/img/logos/Frame.svg')}}" width="170" alt="">
+                        <!-- <a href="https://www.gruponicxa.com.mx/promociones-nicxa/">
                             <img src="{{asset('/img/logos/Frame.svg')}}" width="170" alt="">
-                        </a>
+                        </a> -->
                     </figure>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <figure>
-                        <a href="https://www.gruponicxa.com.mx/promociones-nicxa/">
+                        <img src="{{asset('/img/logos/PHUT.svg')}}" width="90" alt="">
+                        <!-- <a href="https://www.gruponicxa.com.mx/promociones-nicxa/">
                             <img src="{{asset('/img/logos/PHUT.svg')}}" width="90" alt="">
-                        </a>
+                        </a> -->
                     </figure>
                 </div>
             </div>
