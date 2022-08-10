@@ -36,12 +36,12 @@
                                             Restore
                                         </button>
                                     @else
-                                        <a
-                                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded inline-block cursor-pointer">
+                                        <a wire:click="edit({{ $user->id }})"
+                                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-0.5 px-2 mt-2 lg:py-1 lg:px-4 rounded block lg:inline-block cursor-pointer">
                                             Edit
                                         </a>
                                         <a wire:click="delete({{ $user->id }})"
-                                            class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-4 rounded inline-block cursor-pointer">
+                                            class="bg-red-500 hover:bg-red-700 text-white font-bold py-0.5 px-2 mt-2 lg:py-1 lg:px-4 rounded block lg:inline-block cursor-pointer">
                                             Delete
                                         </a>
                                     @endif
@@ -50,41 +50,83 @@
                         @endforeach
                     </tbody>
                 </table>
-                {{-- modal jetstream --}}
-                <x-jet-dialog-modal wire:model="modalAdd">
-                    <x-slot name="title">
-                        {{ __('Add User') }}
-                    </x-slot>
-                    <x-slot name="content">
-                        {{-- Formulario para agregar un usuario --}}
-                        <div class="px-4 py-3">
-                            <form>
-                                <div>
-                                    <x-jet-label value="Name" />
-                                    <x-jet-input class="block mt-1 w-full" type="text" wire:model="name" />
-                                </div>
-                                <div class="mt-4">
-                                    <x-jet-label value="Email" />
-                                    <x-jet-input class="block mt-1 w-full" type="email" wire:model="email" />
-                                </div>
-                                <div class="mt-4">
-                                    <x-jet-label value="Password" />
-                                    <x-jet-input class="block mt-1 w-full" type="password" wire:model="password" />
-                                </div>
-                                <div class="mt-4">
-                                    <x-jet-label value="Confirm Password" />
-                                    <x-jet-input class="block mt-1 w-full" type="password"
-                                        wire:model="password_confirmation" />
+                <div>
+                    {{-- modal jetstream --}}
+                    <x-jet-dialog-modal wire:model="modalAdd">
+                        <x-slot name="title">
+                            {{ __('Add User') }}
+                        </x-slot>
+                        <x-slot name="content">
+                            {{-- Formulario para agregar un usuario --}}
+                            <div class="px-4 py-3">
+                                <form>
+                                    <div>
+                                        <x-jet-label value="Name" />
+                                        <x-jet-input class="block mt-1 w-full" type="text" wire:model="name" />
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-jet-label value="Email" />
+                                        <x-jet-input class="block mt-1 w-full" type="email" wire:model="email" />
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-jet-label value="Password" />
+                                        <x-jet-input class="block mt-1 w-full" type="password" wire:model="password" />
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-jet-label value="Confirm Password" />
+                                        <x-jet-input class="block mt-1 w-full" type="password"
+                                            wire:model="password_confirmation" />
 
-                                </div>
-                            </form>
-                    </x-slot>
-                    <x-slot name="footer">
-                        <x-jet-button class="ml-2" wire:click="add" wire:loading.attr="disabled">
-                            {{ __('Save') }}
-                        </x-jet-button>
-                    </x-slot>
-                </x-jet-dialog-modal>
+                                    </div>
+                                </form>
+                        </x-slot>
+                        <x-slot name="footer">
+                            <x-jet-button class="ml-2" wire:click="add" wire:loading.attr="disabled">
+                                {{ __('Save') }}
+                            </x-jet-button>
+                        </x-slot>
+                    </x-jet-dialog-modal>
+                </div>
+
+                <div>
+                    {{-- modal jetstream --}}
+                    <x-jet-dialog-modal wire:model="modalEdit" id="modalEdit">
+                        <x-slot name="title">
+                            {{ __('Edit User') }}
+
+                            {{ $userEdit }}
+                        </x-slot>
+                        <x-slot name="content">
+                            {{-- Formulario para agregar un usuario --}}
+                            <div class="px-4 py-3">
+                                <form>
+                                    <div>
+                                        <x-jet-label value="Name" />
+                                        <x-jet-input class="block mt-1 w-full" type="text" wire:model="name" />
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-jet-label value="Email" />
+                                        <x-jet-input class="block mt-1 w-full" type="email" wire:model="email" />
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-jet-label value="Password" />
+                                        <x-jet-input class="block mt-1 w-full" type="password" wire:model="password" />
+                                    </div>
+                                    <div class="mt-4">
+                                        <x-jet-label value="Confirm Password" />
+                                        <x-jet-input class="block mt-1 w-full" type="password"
+                                            wire:model="password_confirmation" />
+
+                                    </div>
+                                </form>
+                        </x-slot>
+                        <x-slot name="footer">
+                            <x-jet-button class="ml-2" wire:click="update({{ $userEdit }})" wire:loading.attr="disabled">
+                                {{ __('Save') }}
+                            </x-jet-button>
+                        </x-slot>
+                    </x-jet-dialog-modal>
+                </div>
             </div>
         </div>
     </div>

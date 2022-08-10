@@ -13,13 +13,13 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link class="font-raleway" href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('Panel') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link class="font-raleway" href="{{ route('views.index') }}" :active="request()->routeIs('views.*')">
-                        {{ __('Views') }}
+                        {{ __('Visitas') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link class="font-raleway" href="{{ route('users.index') }}" :active="request()->routeIs('users.*')">
-                        {{ __('Users') }}
+                        {{ __('Usuarios') }}
                     </x-jet-nav-link>
                 </div>
             </div>
@@ -144,7 +144,13 @@
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
             <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
+                {{ __('Panel') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link class="font-raleway" href="{{ route('views.index') }}" :active="request()->routeIs('views.*')">
+                {{ __('Visitas') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link class="font-raleway" href="{{ route('users.index') }}" :active="request()->routeIs('users.*')">
+                {{ __('Usuarios') }}
             </x-jet-responsive-nav-link>
         </div>
 
@@ -158,8 +164,8 @@
                 @endif
 
                 <div>
-                    <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
-                    <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
+                    <div class="font-medium text-base text-white">{{ Auth::user()->name }}</div>
+                    <div class="font-medium text-sm text-gray-200">{{ Auth::user()->email }}</div>
                 </div>
             </div>
 

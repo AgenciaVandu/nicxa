@@ -8,10 +8,12 @@ use Livewire\Component;
 class UserComponent extends Component
 {
     public $modalAdd = false;
+    public $modalEdit = false;
     public $name;
     public $email;
     public $password;
     public $password_confirmation;
+    public $userEdit;
 
 
     //Function to add a new user
@@ -29,6 +31,34 @@ class UserComponent extends Component
         ]);
         $this->reset('name','email','password','password_confirmation');
         $this->modalAdd = false;
+    }
+
+    //Function to edit a user
+    public function edit($id)
+    {
+        $user = User::find($id);
+        $this->userEdit = $user;
+        $this->name = $user->name;
+        $this->email = $user->email;
+        $this->modalEdit = true;
+    }
+    //Function to update a user
+    public function update(User $user)
+    {
+        $this->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users,email,'.$user->id,
+            'password' => 'nullable|string|min:6|confirmed',
+        ]);
+        $user->name = $this->name;
+        $user->email = $this->email;
+        if($this->password != null)
+        {
+            $user->password = bcrypt($this->password);
+        }
+        $user->save();
+        $this->reset('name','email','password','password_confirmation');
+        $this->modalEdit = false;
     }
 
     //Function to delete a user
