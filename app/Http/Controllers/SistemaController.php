@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Client;
+use App\Models\ClientCoupon;
+use App\Models\Coupon;
 use App\Models\Cupones;
 use App\Models\trabajos;
 use App\Models\Usuarios;

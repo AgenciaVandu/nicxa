@@ -238,7 +238,7 @@
                 <div class="col-md-8" id="unete">
                     <div id="registro" class="activo">
                         <h1 class="py-3 text-center">¡Comparte tu información!</h1>
-                        <form id="formulario" action="/enviando" method="POST" class="">
+                        <form id="formulario" action="{{ route('rhnicxa') }}" method="POST" class="">
                             @csrf
                             <input type="text" name="nombre" placeholder="Escribe tu nombre" value="" required />
                             <input type="tel" name="telefono" placeholder="Escribe tu numero de teléfono" value=""
