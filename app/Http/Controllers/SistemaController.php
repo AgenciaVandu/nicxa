@@ -205,7 +205,7 @@ class SistemaController extends Controller
             //curl_close($request_ac); // close curl object
 
             //if (!$response) {
-                die('Nothing was returned. Do you have a connection to Email Marketing server?');
+                //die('Nothing was returned. Do you have a connection to Email Marketing server?');
             //}
 
             // This line takes the response and breaks it into an array using:
