@@ -23,6 +23,7 @@
                                 <th class="text-center p-2">Franquicia</th>
                                 <th class="text-center p-2">Canal</th>
                                 <th class="text-center p-2">Cupon descargado</th>
+                                <th class="text-center p-2">Estado</th>
                                 <th class="text-center p-2">Email</th>
                                 <th class="text-center p-2">Phone</th>
                             </tr>
@@ -35,6 +36,7 @@
                                     <td class="text-center">{{ $coupon->coupon->franchise }}</td>
                                     <td class="text-center">{{ $coupon->source }}</td>
                                     <td class="text-center">{{ $coupon->coupon->coupon }}</td>
+                                    <td class="text-center">{{ $coupon->state }}</td>
                                     <td class="text-center">{{ $coupon->client->email }}</td>
                                     <td class="text-center">{{ $coupon->client->phone }}</td>
                                 </tr>

@@ -28,6 +28,7 @@
             <th>Franquicia</th>
             <th>Canal</th>
             <th>Cupon descargado</th>
+            <th>Estado</th>
             <th>Email</th>
             <th>Phone</th>
         </tr>
@@ -40,6 +41,7 @@
                 <td>{{ $coupon->coupon->franchise }}</td>
                 <td>{{ $coupon->source }}</td>
                 <td>{{ $coupon->coupon->coupon }}</td>
+                <td>{{ $coupon->state }}</td>
                 <td>{{ $coupon->client->email }}</td>
                 <td>{{ $coupon->client->phone }}</td>
             </tr>
