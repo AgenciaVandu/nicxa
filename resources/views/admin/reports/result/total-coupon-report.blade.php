@@ -28,9 +28,9 @@
                             @foreach ($coupons as $coupon)
                                 <tr>
                                     <td class="text-center">{{ $loop->iteration }}</td>
-                                    <td class="text-center">{{ $coupon->franchise }}</td>
-                                    <td class="text-center">{{ $coupon->coupon }}</td>
-                                    <td class="text-center">{{ $coupon->clients_count }}</td>
+                                    <td class="text-center">{{ $coupon->coupon->franchise }}</td>
+                                    <td class="text-center">{{ $coupon->coupon->coupon }}</td>
+                                    <td class="text-center">{{ $coupon->total }}</td>
                                 </tr>
                             @endforeach
                         </tbody>

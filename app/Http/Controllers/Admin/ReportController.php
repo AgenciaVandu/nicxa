@@ -10,6 +10,7 @@ use App\Models\Client;
 use App\Models\ClientCoupon;
 use App\Models\Coupon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Maatwebsite\Excel\Facades\Excel;
 
 class ReportController extends Controller
@@ -90,24 +91,39 @@ class ReportController extends Controller
                 ]);
                 switch ($request->franchise) {
                     case 'all':
-                        //consultar entre las dos fechas
-                        $coupons = Coupon::whereBetween('created_at', [$request->start_date, $request->end_date])->withCount('clients')->get();
+                        $coupons = ClientCoupon::select('coupon_id', DB::raw('count(*) as total'))
+                                                ->whereBetween('created_at', [$request->start_date, $request->end_date])
+                                                ->groupBy('coupon_id')
+                                                ->orderBy('total', 'desc')
+                                                ->get();
                         $start_date = $request->start_date;
                         $end_date = $request->end_date;
                         $franchise = $request->franchise;
                         return view('admin.reports.result.total-coupon-report', compact('coupons', 'start_date', 'end_date', 'franchise', 'value'));
                         break;
                     case 'KFC':
-                        //consultar entre las dos fechas
-                        $coupons = Coupon::whereBetween('created_at', [$request->start_date, $request->end_date])->where('franchise', 'KFC')->withCount('clients')->get();
+                        $coupons = ClientCoupon::select('coupon_id', DB::raw('count(*) as total'))
+                                                ->whereHas('coupon', function ($query) {
+                                                    $query->where('franchise', 'KFC');
+                                                })
+                                                ->whereBetween('created_at', [$request->start_date, $request->end_date])
+                                                ->groupBy('coupon_id')
+                                                ->orderBy('total', 'desc')
+                                                ->get();
                         $start_date = $request->start_date;
                         $end_date = $request->end_date;
                         $franchise = $request->franchise;
                         return view('admin.reports.result.total-coupon-report', compact('coupons', 'start_date', 'end_date', 'franchise', 'value'));
                         break;
                     case 'LBB Obregon':
-                        //consultar entre las dos fechas
-                        $coupons = Coupon::whereBetween('created_at', [$request->start_date, $request->end_date])->where('franchise', 'LBB Obregon')->withCount('clients')->get();
+                        $coupons = ClientCoupon::select('coupon_id', DB::raw('count(*) as total'))
+                                                ->whereHas('coupon', function ($query) {
+                                                    $query->where('franchise', 'LBB Obregon');
+                                                })
+                                                ->whereBetween('created_at', [$request->start_date, $request->end_date])
+                                                ->groupBy('coupon_id')
+                                                ->orderBy('total', 'desc')
+                                                ->get();
                         $start_date = $request->start_date;
                         $start_date = $request->start_date;
                         $end_date = $request->end_date;
@@ -116,7 +132,14 @@ class ReportController extends Controller
                         break;
                     case 'Pizza Hut':
                         //consultar entre las dos fechas
-                        $coupons = Coupon::whereBetween('created_at', [$request->start_date, $request->end_date])->where('franchise', 'Pizza Hut')->withCount('clients')->get();
+                        $coupons = ClientCoupon::select('coupon_id', DB::raw('count(*) as total'))
+                                                ->whereHas('coupon', function ($query) {
+                                                    $query->where('franchise', 'Pizza Hut');
+                                                })
+                                                ->whereBetween('created_at', [$request->start_date, $request->end_date])
+                                                ->groupBy('coupon_id')
+                                                ->orderBy('total', 'desc')
+                                                ->get();
                         $start_date = $request->start_date;
                         $start_date = $request->start_date;
                         $end_date = $request->end_date;
@@ -125,7 +148,14 @@ class ReportController extends Controller
                         break;
                     case 'Burger King':
                         //consultar entre las dos fechas
-                        $coupons = Coupon::whereBetween('created_at', [$request->start_date, $request->end_date])->where('franchise', 'Burger King')->withCount('clients')->get();
+                        $coupons = ClientCoupon::select('coupon_id', DB::raw('count(*) as total'))
+                                                ->whereHas('coupon', function ($query) {
+                                                    $query->where('franchise', 'Burger King');
+                                                })
+                                                ->whereBetween('created_at', [$request->start_date, $request->end_date])
+                                                ->groupBy('coupon_id')
+                                                ->orderBy('total', 'desc')
+                                                ->get();
                         $start_date = $request->start_date;
                         $start_date = $request->start_date;
                         $end_date = $request->end_date;
