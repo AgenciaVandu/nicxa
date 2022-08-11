@@ -1,4 +1,5 @@
 
+/*
 const formulario = document.getElementById('formulario');
 const registro = document.getElementById('registro');
 const exito = document.getElementById('exito');
@@ -32,6 +33,7 @@ formulario.addEventListener('submit', (e) => {
         exito.classList.add('activo');
     }
 });
+*/
 
 const franquicia = document.getElementById('franquicia');
 const estado = document.getElementById('estado');

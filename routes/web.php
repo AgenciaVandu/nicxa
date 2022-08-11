@@ -119,8 +119,10 @@ Route::get('/bolsa-de-trabajo', function (Request $request) {
     }
     return view('cultura-nicxa');
 });
-
-
+Route::post('/enviando', [SistemaController::class,'rhNicxa'])->name('rhnicxa');
+Route::get('/gracias', function(){
+    return view('gracias');
+})->name('gracias');
 
 /*
 Route::get('/descargar/{nombre}/{cupon}', function ($nombre,$cupon) {

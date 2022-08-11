@@ -238,7 +238,8 @@
                 <div class="col-md-8" id="unete">
                     <div id="registro" class="activo">
                         <h1 class="py-3 text-center">¡Comparte tu información!</h1>
-                        <form id="formulario" class="">
+                        <form id="formulario" action="/enviando" method="POST" class="">
+                            @csrf
                             <input type="text" name="nombre" placeholder="Escribe tu nombre" value="" required />
                             <input type="tel" name="telefono" placeholder="Escribe tu numero de teléfono" value=""
                                 required />
@@ -278,7 +279,7 @@
                                     <option value="Empleado General">
                                         Empleado General (Asociado).
                                     </option>
-                                    <option value="Repart idor">Repartidor</option>
+                                    <option value="Repartidor">Repartidor</option>
                                     <option value="Cocinero">Cocinero</option>
                                 </select>
                             </div>
