@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Cupones;
 use App\Models\Usuarios;
+use App\Models\trabajos;
 use Illuminate\Http\Request;
 
 class SistemaController extends Controller
@@ -121,7 +122,7 @@ class SistemaController extends Controller
             // additional options may be required depending upon your server configuration
             // you can find documentation on curl options at http://www.php.net/curl_setopt
             curl_close($request_ac); // close curl object
-            
+
             if (!$response) {
                 die('Nothing was returned. Do you have a connection to Email Marketing server?');
             }
@@ -139,4 +140,26 @@ class SistemaController extends Controller
         return view('pdf')->with(['datos' => $datos_vista]);
     }
 
+    public function rhNicxa(Request $request)
+    { 
+        $request->validate([
+            'nombre' => 'required|min:3',
+            'telefono' => 'required|min:6',
+            'correo' => 'required|email',
+            'franquicia' => 'required',
+            'vacantes' => 'required',
+        ]);
+        
+        $registro = new trabajos();
+        $registro->nombre = $request->nombre;
+        $registro->telefono = $request->telefono;
+        $registro->correo = $request->correo;
+        $registro->estado = $request->estado;
+        $registro->ciudad = $request->ciudad;
+        $registro->canal = 'Landing Page';
+        $registro->franquicia = $request->franquicia;
+        $registro->vacante = $request->vacantes;
+        $registro->save();
+        return view('gracias');
+    }
 }
