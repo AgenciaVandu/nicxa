@@ -46,8 +46,10 @@ Route::get('/tankcupon', function () {
 Route::get('/bolsa-de-trabajo', function () {
     return view('cultura-nicxa');
 });
-
-
+Route::post('/enviando', [SistemaController::class,'rhNicxa'])->name('rhnicxa');
+Route::get('/gracias', function(){
+    return view('gracias');
+})->name('gracias');
 
 /*
 Route::get('/descargar/{nombre}/{cupon}', function ($nombre,$cupon) {
