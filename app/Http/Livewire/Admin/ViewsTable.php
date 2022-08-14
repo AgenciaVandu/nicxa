@@ -2,9 +2,11 @@
 
 namespace App\Http\Livewire\Admin;
 
+use App\Exports\ViewsExport;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use Livewire\Component;
+use Maatwebsite\Excel\Facades\Excel;
 
 class ViewsTable extends Component
 {
@@ -14,6 +16,12 @@ class ViewsTable extends Component
         $this->start_date = Carbon::today();
         $this->end_date = Carbon::today()->addHours(23)->addMinute(59);
     }
+
+
+    public function export(){
+        return Excel::download(new ViewsExport($this->start_date, $this->end_date), 'views.xlsx');
+    }
+
     public function render()
     {
         //Obtener los registros de la tabla views y agrupar por url y numero de veces que se repite por un rango de fechas

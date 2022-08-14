@@ -11,6 +11,9 @@
             <x-jet-input type="datetime-local" wire:model="end_date" />
         </div>
     </div>
+    <div class="flex justify-end">
+        <a wire:click="export">Exportar en excel</a>
+    </div>
     @foreach ($views as $view)
         <div class="flex justify-between p-4">
             <div class="font-bold">
