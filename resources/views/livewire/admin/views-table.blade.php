@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="flex justify-end">
-        <a wire:click="export" class="cursor-pointer">Exportar en excel</a>
+        <a wire:click="export" class="cursor-pointer mr-4">Exportar en excel</a>
     </div>
     @foreach ($views as $view)
         <div class="flex justify-between p-4">
