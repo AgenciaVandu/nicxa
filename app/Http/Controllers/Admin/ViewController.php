@@ -10,7 +10,7 @@ class ViewController extends Controller
 {
     public function index(){
         //Obtener los registros de la tabla views y agrupar por url y numero de veces que se repite
-        $views = DB::table('views')->select(DB::raw('url, count(*) as total'))->groupBy('url')->get();
+        $views = DB::table('views')->select(DB::raw('url, count(*) as total'))->groupBy('url')->orderBy('total')->get();
         return view('admin.views.index', compact('views'));
     }
 }
