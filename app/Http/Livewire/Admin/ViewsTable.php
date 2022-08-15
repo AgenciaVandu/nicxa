@@ -26,7 +26,7 @@ class ViewsTable extends Component
     {
         //Obtener los registros de la tabla views y agrupar por url y numero de veces que se repite por un rango de fechas
         return view('livewire.admin.views-table',[
-            'views' => DB::table('views')->select(DB::raw('url, count(*) as total'))->whereBetween('created_at', [$this->start_date, $this->end_date])->groupBy('url')->get(),
+            'views' => DB::table('views')->select(DB::raw('url, count(*) as total'))->whereBetween('created_at', [$this->start_date, $this->end_date])->groupBy('url')->orderBy('total','desc')->get(),
         ]);
     }
 }
