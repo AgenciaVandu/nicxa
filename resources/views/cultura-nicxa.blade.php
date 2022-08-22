@@ -133,11 +133,11 @@
             <h1 class="title_three">Super Empresa</h1>
         </div>
     </div>
-    <div class="row section_three mb-5">
-        <div class="col-md-6">
-            <img class="super_empresa" src="assets/img/super_empresa.png" alt="" />
+    <div class="row section_three mb-5 ">
+        <div class="col-md-6 text-center m-auto pb-1" >
+            <img class="super_empresa" src="img/super-empresas.png" style="box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);" alt="" />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 m-auto">
             <p class="text-section_two">
                 Grupo NICXA, gracias a todos nuestros colaboradores, se encuentra
                 dentro de la clasificación de TOP Companies como Súper Empresa.
