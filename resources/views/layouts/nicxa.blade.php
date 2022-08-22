@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=»theme-color» content=»#EB0028»>
     <title>Grupo Nicxa - Nuestra meta eres tú</title>
-    <meta name="facebook-domain-verification" content="qhqtbupunltndj8a4lurqu5e5ocshg" />
+    <meta name="facebook-domain-verification" content="vp8t49mojkkhq2a11x7x5la1noduv8" />
     <meta name="google-site-verification" content="q61Lt_yavm_0AcKrsM5i_85AaX7U7w9-hACnBVtjVH8" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     @stack('css')
@@ -145,10 +145,10 @@
                                       </a>
                                   </li>
                               </div>
-                              <div class="col-12 mt-2" style="font-weight: 700;">
+                              <div class="col-8 mt-2" style="font-weight: 700;">
                                   <li><a href="/download/Aviso-de-Privacidad-2022.pdf" target="_blank">Aviso de privacidad</a></li>
                                   <li>
-                                      <img src="/img/super_empresa.png" class="img-fluid" alt="Logotipo super empresas expansión">
+                                      <img src="/img/top-companies.jpg" class="img-fluid" alt="Logotipo super empresas expansión">
                                   </li>
                               </div>
                           </div>
