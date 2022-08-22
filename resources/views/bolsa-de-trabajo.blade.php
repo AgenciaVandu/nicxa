@@ -57,7 +57,7 @@
                                         <figure>
                                             <img src="{{ '/img/colaboradores/m-zapata.png' }}" alt="">
                                             <div class="cta__contenedor--capa">
-                                                <h5>MARTHA ZAPATA</h5>
+                                                <h5>GILDA ZAPATA</h5>
                                                 <p>Lleva 29 años en la empresa, comenzando en el área de Operaciones de
                                                     restaurantes y actualmente ocupa una posición administrativa como
                                                     Coordinadora de retención de personal, ha tenido experiencia en las
@@ -108,7 +108,7 @@
                                         <figure>
                                             <img src="{{ '/img/colaboradores/m-castro.png' }}" alt="">
                                             <div class="cta__contenedor--capa">
-                                                <h5>MANUEL CASTRO</h5>
+                                                <h5>REYES CASTRO</h5>
                                                 <p>Lleva 29 años en la empresa, específicamente en la marca Burger King,
                                                     ingresó el 26 de Junio de 1992 a la organización, en donde fue creciendo
                                                     desde Empleado General hasta ser actualmente el Gerente de entrenamiento
@@ -124,7 +124,7 @@
                                         <figure>
                                             <img src="{{ '/img/colaboradores/j-ongay.png' }}" alt="">
                                             <div class="cta__contenedor--capa">
-                                                <h5>JORGE ONGAY</h5>
+                                                <h5>IVAN ONGAY</h5>
                                                 <p>Iván ingresó con nosotros desde el 21 de Septiembre del 2009, él ha
                                                     demostrado que con su esfuerzo y perseverancia se logran resultados
                                                     extraordinarios, comenzó su carrera en el departamento de Mercadotecnia

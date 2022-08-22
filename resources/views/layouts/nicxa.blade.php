@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=»theme-color» content=»#EB0028»>
+    <meta name="theme-color" content="#EB0028">
     <title>Grupo Nicxa - Nuestra meta eres tú</title>
     <meta name="facebook-domain-verification" content="vp8t49mojkkhq2a11x7x5la1noduv8" />
     <meta name="google-site-verification" content="q61Lt_yavm_0AcKrsM5i_85AaX7U7w9-hACnBVtjVH8" />
@@ -25,7 +25,7 @@
     <script src="/js/scrollreveal.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9111dc1fca.js" crossorigin="anonymous"></script>
-    <!-- Meta Pixel Code -->
+        <!-- Meta Pixel Code -->
         <script>
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -39,8 +39,8 @@
             fbq('track', 'PageView');
             </script>
             <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=313957290799065&ev=PageView&noscript=1"
-        /></noscript>
+            src="https://www.facebook.com/tr?id=313957290799065&ev=PageView&noscript=1"/>
+        </noscript>
         <!-- End Meta Pixel Code -->
 </head>
 <body>
