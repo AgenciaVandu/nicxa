@@ -27,7 +27,6 @@
     <!-- Meta Pixel Code -->
     <!-- Meta Pixel Code -->
     <script>
-<<<<<<< HEAD
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -43,11 +42,8 @@
         src="https://www.facebook.com/tr?id=313957290799065&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
-   {{--  <script>
-        !(function(f, b, e, v, n, t, s) {
-=======
+    {{--  <script>
         ! function(f, b, e, v, n, t, s) {
->>>>>>> plog
             if (f.fbq) return;
             n = f.fbq = function() {
                 n.callMethod ?
@@ -68,12 +64,11 @@
         fbq('init', '374537884510729');
         fbq('track', 'PageView');
     </script>
-<<<<<<< HEAD
+
     <noscript><img height="1" width="1" style="display: none"
             src="https://www.facebook.com/tr?id=1023554805232589&ev=PageView&noscript=1" /></noscript> --}}
-=======
+
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=374537884510729&ev=PageView&noscript=1" /></noscript>
->>>>>>> plog
     <!-- End Meta Pixel Code -->
 
 </head>
