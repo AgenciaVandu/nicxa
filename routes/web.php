@@ -79,7 +79,7 @@ Route::get('/unete-a-la-famila-nicxa', function (Request $request) {
 });
 
 
-
+/* 
 Route::get('/promociones-nicxa', function (Request $request) {
     $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
     if (!$view) {
@@ -91,7 +91,7 @@ Route::get('/promociones-nicxa', function (Request $request) {
         ]);
     }
     return view('promociones');
-});
+}); */
 
 Route::post('/enviar', [SistemaController::class,'store'])->name('enviar');
 
