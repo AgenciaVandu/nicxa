@@ -42,6 +42,7 @@
         src="https://www.facebook.com/tr?id=313957290799065&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+    ≤
     {{--  <script>
         ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;
@@ -70,7 +71,36 @@
 
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=374537884510729&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
+        <!-- Messenger Plugin de chat Code -->
+        <div id="fb-root"></div>
 
+        <!-- Your Plugin de chat code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+
+        <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "130218757036518");
+        chatbox.setAttribute("attribution", "biz_inbox");
+        </script>
+
+        <!-- Your SDK code -->
+        <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+            xfbml            : true,
+            version          : 'v14.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
 </head>
 
 <body>
