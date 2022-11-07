@@ -225,6 +225,11 @@
                                       </span>
                                   </li>
                               </div>
+                              <div class="col-8 mt-2">
+                                  <li style="font-weight: 700;"> Contacto facturación
+                                    <a href="mailto:facturacion@gruponicxa.com.mx" style="font-weight: 300;" target="_blank">facturacion@gruponicxa.com.mx</a>
+                                  </li>
+                              </div>
                           </div>
                       </div>
                   </div>
