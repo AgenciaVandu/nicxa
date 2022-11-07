@@ -288,3 +288,9 @@ Route::get('/ph-oriente', function (Request $request) {
     }
     return view('sucursales.ph-oriente');
 });
+
+// Ruta mundial
+
+Route::get('/mundial-burgerking', function () {
+    return view('mundial-bbk');
+});
