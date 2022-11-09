@@ -5,6 +5,9 @@
     body {
         background-color: "#f7f3ed";
     }
+    .quienes-somos {
+        text-align: justify center;
+    }
     .bbk-mundial {
     margin-top: 3em;
     background-image: url('img/mundial/banner.png');
@@ -29,6 +32,8 @@
             font-size:1.2em;
         }
     }
+
+
  </style>
 @endpush
 
@@ -38,6 +43,9 @@
     <div class="container">
         <div class="text-center">
             <p style="font-size:1.7em;"><b>Burger King</b> y <b>Grupo Nicxa</b> estarán presentes en el evento de fútbol más grande del mundo con diferentes dinámicas. Porque la pasión se disfruta más con una hamburguesa en mano.</p>
+            <p style="font-size:1.6em;"><b>Disfruta de la transmisión de los partidos de México, asi como semifinales y la final del Mundial de fútbol en Burger King</b> 
+            Las sucursales en donde se transmitirán son las siguientes: Altabrisa MID (sucursal en estacionamiento), Dorada MID (sucursal en estacionamiento), Paseo de Montejo MID, Norte MID, Las Avenidas CUN, Cinépolis VHSA, Tapachula Chis. y Cárdenas TAB.
+            </p>
             <figure>
                 <img src="img/mundial/dinamicas.png" class="img-fluid mt-3 mb-4">
                 <img src="img/mundial/banner-verde.png" alt="whopper jr gratis" class="img-fluid mb-3">
