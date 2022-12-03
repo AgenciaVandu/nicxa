@@ -294,3 +294,7 @@ Route::get('/ph-oriente', function (Request $request) {
 Route::get('/mundial-burgerking', function () {
     return view('mundial-bbk');
 });
+// Ruta navidad
+Route::get('/buzon-de-santa', function () {
+    return view('buzons');
+});
