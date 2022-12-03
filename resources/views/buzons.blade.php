@@ -57,6 +57,11 @@
         text-align: center;
         }   
     }
+    li {
+        list-style: none;
+        color: #512314;
+        font-size: 1.3em;
+    }
     .arrow {
         background-image: url('img/navidad2022/arrow2.png');
         background-position: 500px 80px;
@@ -136,6 +141,21 @@
                     <img src="{{asset('img/navidad2022/duende.png')}}" class="img-fluid">
                 </figure>
             </div>
+        </div>
+        <div class="col-12 text-center pt-5 pb-5">
+        <h1 class="text-center pt-2 pb-2" style="font-family: flame-regular;">
+        TÉRMINOS Y CONDICIONES
+        </h2>
+            <li style="font-family: flame-regular; font-weight:300">-Participantes no mayores de 10 años.</li>
+            <li style="font-family: flame-regular; font-weight:300">-Premio: whopperJr. sin queso con papas kids.</li>
+            <li style="font-family: flame-regular; font-weight:300">-Máximo un whopper con papas por día.</li>
+            <li style="font-family: flame-regular; font-weight:300">-Concurso abierto hasta el 1 de Enero del 2023.</li>
+            <li style="font-family: flame-regular; font-weight:300">-Válido de Apertura a cierre.</li>
+            <li style="font-family: flame-regular; font-weight:300">-El premio aplica únicamente en mostrador.</li>
+            <li style="font-family: flame-regular; font-weight:300">-Para hacer válido tu premio el niño/a ganador deberá presentar una identificación con foto.</li>
+            <li style="font-family: flame-regular; font-weight:300">-El premio únicamente podrá cobrarse con el niño/a ganador presente.</li>
+            <li style="font-family: flame-regular; font-weight:300">-El ganador deberá escoger la sucursal en la cual cobrará sus premios.</li>
+            <li style="font-family: flame-regular; font-weight:300">-El ganador se dará a conocer el día 9 de Enero en nuestras redes sociales. </li>
         </div>
     </div>
 </div>
