@@ -291,10 +291,10 @@ Route::get('/ph-oriente', function (Request $request) {
 
 // Ruta mundial
 
-Route::get('/mundial-burgerking', function () {
-    return view('mundial-bbk');
-});
+// Route::get('/mundial-burgerking', function () {
+//     return view('mundial-bbk');
+// });
 // Ruta navidad
-Route::get('/buzon-de-santa', function () {
-    return view('buzons');
-});
+// Route::get('/buzon-de-santa', function () {
+//     return view('buzons');
+// });
