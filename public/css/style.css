@@ -353,7 +353,19 @@ html {
 }
 
 .bg-cupon-2 {
-    background-color: #EB0006;
+    background-image: url(/img/deg-5.jpg);
+    /* background-color: #EB0006; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 2em;
+}
+.bg-cupon-3 {
+    background-image: url(/img/deg1-.jpg);
+    /* background-color: #EB0006; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-bottom: 2em;
 }
 /*Carousel*/

@@ -3,9 +3,9 @@
 <header class="portada-franquicia">
     <div id="slider-franquicia" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="{{asset('/img/portada-alimentos.jpg')}}" class="d-block w-100" alt="Fotografía Hamburguesas">
-          </div>
+            <header class="negocios-portada">
+                <video src="{{asset('/video/REEL_GRUPO NICXA_3.mp4')}}" width="100%" controls autoplay loop muted></video>
+            </header>
           {{-- <div class="carousel-item">
             <img src="/img/portada-alimentos.jpg" class="d-block w-100" alt="Fotografía Hamburguesas">
           </div>
@@ -13,14 +13,14 @@
             <img src="/img/portada-alimentos.jpg" class="d-block w-100" alt="Fotografía Hamburguesas">
           </div> --}}
         </div>
-       <button class="carousel-control-prev" type="button" data-target="#slider-franquicia" data-slide="prev">
+      {{--  <button class="carousel-control-prev" type="button" data-target="#slider-franquicia" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-target="#slider-franquicia" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
-        </button>
+        </button> --}}
     </div>
 </header>
 

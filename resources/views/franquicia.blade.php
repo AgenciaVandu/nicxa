@@ -223,7 +223,7 @@
     {{-- Segunda fila --}}
     <div class="container-fluid pb-4">
         <div class="row ordena-ahora__espacio">
-            
+         
             <div class="col-lg col-md-6 col-sm-6">
                 <figure  class="ordena-ahora__cupon">
                     <img src="{{asset('/img/cupones-1/antojo/cuatro-a.png')}}" class="img-fluid" alt="cuponera Nicxa">
@@ -248,7 +248,12 @@
                     <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Oferton 99', '{{url('/img/cupones-1/antojo/dos-a.png')}}', 'Pizza hut' ,'{{url('/img/cupones-1/terminos-franquicia/8-febrero/legales-13.jpg')}}')">Descargar cupón</button>
                 </div>
             </div>
-           
+            <div class="col-lg col-md-6 col-sm-6">
+                <figure  >
+                    <img src="{{asset('/img/nico/nico-1.png')}}" class="img-fluid" alt="cuponera Nicxa">
+                </figure>
+               
+            </div>
             {{-- <div class="col-lg-4 col-md-6 col-sm-6 mt-4">
                 <figure class="ordena-ahora__cupon">
                     <img src="{{asset('/img/cupones-1/uno/18-julio/kfc-2.png')}}" class="img-fluid" alt="cuponera Nicxa">
@@ -282,6 +287,12 @@
                     <h3 style="color: #fff;">¿EN PAREJA?</h3>
                 </div>
                 <div class="row ordena-ahora__espacio">
+                    <div class="col-lg col-md-6 col-sm-6">
+                        <figure  >
+                            <img src="{{asset('/img/nico/nico-4.png')}}" class="img-fluid" alt="cuponera Nicxa">
+                        </figure>
+                       
+                    </div>
                     <div class="col-lg col-md-6 col-sm-6">
                         <figure class="ordena-ahora__cupon">
                             <img src="{{asset('/img/cupones-1/visita/uno-v.png')}}" class="img-fluid" alt="Cuponera Nicxa">
@@ -372,20 +383,31 @@
                             <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Gran Hut', '{{url('/img/cupones-1/familia/dos-f.png')}}', 'Pizza Hut' ,'{{url('/img/cupones-1/terminos-franquicia/8-febrero/legales-13.jpg')}}')">Descargar cupón</button>
                         </div>
                     </div>
-                   
+                    <div class="col-lg col-md-6 col-sm-6">
+                        <figure  >
+                            <img src="{{asset('/img/nico/nico-3.png')}}" class="img-fluid" alt="cuponera Nicxa">
+                        </figure>
+                       
+                    </div>
                   
                 </div>
                 
             </div>
         </div>
     </div>
-    <div class="bg-cupon-2">
+    <div class="bg-cupon-3">
         <div class="container-fluid">
             <div class="text-center">
                 <div class="col-12 text-center pt-5">
                     <h3 style="color: #FFF;">PARA CERRAR, ¿UN POSTRECITO? ¿POR QUÉ NO?</h3>
                 </div>
                 <div class="row ordena-ahora__espacio">
+                    <div class="col-lg col-md-6 col-sm-6">
+                        <figure  >
+                            <img src="{{asset('/img/nico/nico-2.png')}}" class="img-fluid" alt="cuponera Nicxa">
+                        </figure>
+                       
+                    </div>
                     <div class="col-lg col-md-6 col-sm-6">
                         <figure class="ordena-ahora__cupon">
                             <img src="{{asset('/img/cupones-1/antojo/tres-a.png')}}" class="img-fluid" alt="cuponera Nicxa">
