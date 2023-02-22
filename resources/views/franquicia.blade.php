@@ -287,12 +287,12 @@
                     <h3 style="color: #fff;">¿EN PAREJA?</h3>
                 </div>
                 <div class="row ordena-ahora__espacio">
-                    <div class="col-lg col-md-6 col-sm-6">
+                    {{-- <div class="col-lg col-md-6 col-sm-6">
                         <figure  >
                             <img src="{{asset('/img/nico/nico-4.png')}}" class="img-fluid" alt="cuponera Nicxa">
                         </figure>
                        
-                    </div>
+                    </div> --}}
                     <div class="col-lg col-md-6 col-sm-6">
                         <figure class="ordena-ahora__cupon">
                             <img src="{{asset('/img/cupones-1/visita/uno-v.png')}}" class="img-fluid" alt="Cuponera Nicxa">
@@ -402,12 +402,12 @@
                     <h3 style="color: #FFF;">PARA CERRAR, ¿UN POSTRECITO? ¿POR QUÉ NO?</h3>
                 </div>
                 <div class="row ordena-ahora__espacio">
-                    <div class="col-lg col-md-6 col-sm-6">
+                   {{--  <div class="col-lg col-md-6 col-sm-6">
                         <figure  >
                             <img src="{{asset('/img/nico/nico-2.png')}}" class="img-fluid" alt="cuponera Nicxa">
                         </figure>
                        
-                    </div>
+                    </div> --}}
                     <div class="col-lg col-md-6 col-sm-6">
                         <figure class="ordena-ahora__cupon">
                             <img src="{{asset('/img/cupones-1/antojo/tres-a.png')}}" class="img-fluid" alt="cuponera Nicxa">

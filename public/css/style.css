@@ -5,8 +5,8 @@ html {
     /* background-color: #EB0028; */
     background: linear-gradient(
       217deg,
-      rgba(255, 0, 0, 0.8),
-      rgba(39, 39, 39, 0.8) 100%
+      rgba(255, 0, 0, 1),
+      rgba(39, 39, 39, 1) 100%
     ), linear-gradient(127deg, rgba(85, 85, 85, 91), rgba(255, 0, 0, 0) 100%),
     linear-gradient(336deg, rgba(255, 0, 0, 0.8), rgba(227, 48, 48, 0) 70.71%);
 }
@@ -58,7 +58,7 @@ html {
     padding-bottom: 2em;
 }
 .timeline {
-    background-image: url(/img/gn-logo.png);
+    background-image: url(/img/gn-logo-1.png);
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -254,7 +254,7 @@ html {
     }
 }
 .inmobiliaria {
-    background-image: url(/img/gn-logo-bco-1.png);
+    background-image: url(/img/gn-logo-1.png);
     background-color: #333A41;
     background-repeat: no-repeat;
     background-position: center right;
