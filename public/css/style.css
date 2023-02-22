@@ -81,7 +81,8 @@ html {
 .bg-negocios {
    /*  background-image: url(/img/fondo-1.png); */
     background-image: url(/img/fondo-1.png);
-    background-position: center 28em;
+    background-position: center 28;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .bg-negocios-1 {
