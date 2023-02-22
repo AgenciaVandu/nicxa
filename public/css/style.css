@@ -2,7 +2,13 @@ html {
     scroll-behavior: smooth;
 }
 .bg-nicxa {
-    background-color: #EB0028;
+    /* background-color: #EB0028; */
+    background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(39, 39, 39, 0.8) 100%
+    ), linear-gradient(127deg, rgba(85, 85, 85, 91), rgba(255, 0, 0, 0) 100%),
+    linear-gradient(336deg, rgba(255, 0, 0, 0.8), rgba(227, 48, 48, 0) 70.71%);
 }
 .nav-link {
     color: #fff !important;
