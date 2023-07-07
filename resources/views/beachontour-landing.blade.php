@@ -205,7 +205,7 @@
         <div class="container">
             <div class="text-center pt-5 pb-5">
                 <h5>Restricciones</h5>
-                <p>Los cupones son válidos hasta agostar existencia. No acumulable con otras promociones o descuentos. No
+                <p>Los cupones son válidos hasta el 12 de septiembre del 2023. No acumulable con otras promociones o descuentos. No
                     canjeable por dinero en efectivo. No transferible. Sujeto a disponibilidad en el restaurante
                     participante. No válido en servicios de entrega a domicilio. Aplican términos y condiciones adicionales.
                     Burger King® de Grupo Nicxa®, empresas aliadas y dependencias gubernamentales que participan en la
