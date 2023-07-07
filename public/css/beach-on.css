@@ -1,0 +1,93 @@
+
+
+.cupones-beach {
+    padding: 2em 3em 0 3em;
+} @media (max-width:1000px) {
+    .cupones-beach h1 {
+        padding-top: 2em;
+    }
+    .cupones-beach .cup{
+        padding: 0;
+    }
+    
+}
+.descubre-mas {
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+.redes {
+    background-image: url(/img/beach/banner/palmeras.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.centrado-beach {
+    padding: 8em;
+}@media(max-width:1000px) {
+    .centrado-beach {
+        padding: 5em;
+    }
+}@media(max-width:1000px) {
+    .centrado-beach {
+        padding: 5em;
+    }
+}
+
+.mov-texto {
+    order: 0;
+} @media (max-width:1000px) {
+    .mov-texto {
+        order: 1;
+    }
+}
+.mov-video {
+    order: 1;
+}@media (max-width:1000px) {
+    .mov-video {
+        order: 0;
+        padding-bottom: 3em;
+    }
+}
+.conciencia {
+    padding-top: 4em;
+}
+.conciencia .pasos {
+    padding-top: 4em;
+}
+
+@media (max-width:1000px) {
+    .conciencia h1 {
+        text-align: center;
+    }
+}
+
+.conciencia .titular {
+    padding-bottom: 2em;
+}
+.restricciones-beach {
+    background-color: #003227;
+    color: #F2E2D1;
+}
+
+.sets-real-whopper {
+    background-image: url(/img/beach/onda-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.segmentacion p{
+    padding: 0 7em 3em 7em;
+} @media (max-width:950px) {
+    .segmentacion p {
+        padding: 0 2em 1em 2em;
+    }
+}
+
+.aliados {
+    padding-top: 5em;
+    padding-bottom: 5em;
+} 

@@ -17,6 +17,17 @@
     font-weight: 800;
 }
 
+.font-flame {
+    font-family: 'flame-bold';
+    font-weight: 700;
+    src: url('../font/flame-bold.ttf');
+}
+.font-flame-regular {
+    font-family: 'flame-regular';
+    font-weight: 500;
+    src: url('../font/flame-regular.ttf');
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Raleway';
     font-weight: 800;

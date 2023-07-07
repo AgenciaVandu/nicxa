@@ -139,6 +139,17 @@ Route::get('/facebook', function () {
     return redirect('https://www.facebook.com/GrupoNicxa');
 });
 
+// Rutas LBO
+Route::get('/lbo-centro', function () {
+    return view('sucursales.lbo-centro');
+});
+Route::get('/lbo-clinica', function () {
+    return view('sucursales.lbo-clinica');
+});
+Route::get('/lbo-norte', function () {
+    return view('sucursales.lbo-norte');
+});
+
 // Rutas BBK
 Route::get('/bbk-santa-elena', function (Request $request) {
     $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
@@ -291,9 +302,18 @@ Route::get('/ph-oriente', function (Request $request) {
 
 // Ruta mundial
 
-// Route::get('/mundial-burgerking', function () {
-//     return view('mundial-bbk');
-// });
+Route::get('/beach-on-tour-cupones', function () {
+    return view('beachontour');
+});
+Route::get('/beach-on-tour-cupones-geo', function () {
+    return view('sucursales.beach-cupones-geo');
+});
+Route::get('/beach-on-tour', function () {
+    return view('beachontour-landing');
+});
+Route::get('/beach-on-tour-geo', function () {
+    return view('sucursales.beach-landing-geo');
+});
 // Ruta navidad
 // Route::get('/buzon-de-santa', function () {
 //     return view('buzons');
