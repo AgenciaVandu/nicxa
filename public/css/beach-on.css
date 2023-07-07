@@ -78,6 +78,13 @@
     background-position: center;
     min-height: 100vh;
 }
+.sets-real-whopper .actividades {
+    padding-top: 8em;
+} @media (max-width:1000px) {
+    .sets-real-whopper .actividades {
+        padding-top: 13em;
+    }
+}
 
 .segmentacion p{
     padding: 0 7em 3em 7em;

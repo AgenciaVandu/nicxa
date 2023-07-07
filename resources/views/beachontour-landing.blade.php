@@ -45,7 +45,7 @@
             <div class="text-center pasos">
                 <div class="titular">
                     <h2 class="font-flame" style="color:#003227;">PASOS PARA LA RECOLECCIÓN</h2>
-                <p>Contribuye a mantener nuestras playas limpias y proteger el medio ambiente <br> con estos simples pasos de recolección.</p>
+                <p>Contribuye a mantener nuestras playas limpias y proteger el medio ambiente <br class="d-none d-sm-none d-md-block d-lg-block"> con estos simples pasos de recolección.</p>
                 </div>
                 <div class="d-none d-sm-none d-md-block d-lg-block">
                     <img src="{{asset('img/beach/banner/playas.png')}}" class="img-fluid">
@@ -67,7 +67,7 @@
                             </div>
                             <div class="col-8 text-left">
                                 <h4 class="font-flame" style="color:#003227;">LIMPIA</h4>
-                                <small>Recolecta todos los elementos artificiales que encuentres contaminando <b>la playa y sus al rededores.</b></small>
+                                <small>Recolecta todos los elementos artificiales que encuentres contaminando <b>la playa y sus alrededores.</b></small>
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
    </div>
    <section class="sets-real-whopper" style="background-color: #F2E2D1;">
     <div class="container">
-        <div class="text-center" style="padding-top: 8em">
+        <div class="text-center actividades" >
             <h2 class="font-flame" style="color:#003227;">Actividades</h2>
             <p>¡Únete a nuestras actividades, recolecta masiva y hagamos la diferencia juntos!</p>
         </div>
