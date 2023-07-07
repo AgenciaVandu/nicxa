@@ -86,7 +86,7 @@
 
             <div class="descubre-mas text-center">
                 <a href="gruponicxa.com.mx/beach-on-tour" target="blank_">
-                    <img src="{{ asset('img/beach/boton-1.svg') }}" class="120" alt="">
+                    <img src="{{ asset('img/beach/boton-1.svg') }}" class="img-fluid" alt="">
                 </a>
             </div>
         </div>
