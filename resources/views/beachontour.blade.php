@@ -139,7 +139,7 @@
                 </p>
                 <div class="d-none d-sm-none d-md-block d-lg-block">
                     <figure class="pt-3">
-                        <img src="{{ asset('img/beach/logos.svg') }}" class="200" alt="">
+                        <img src="{{ asset('img/beach/logos.png') }}" class="200" alt="">
                     </figure>
                 </div>
                 <div class="d-block d-sm-block d-md-none d-lg-none">
