@@ -31,7 +31,7 @@
                         alt="">
                     <div>
                         <a href="img/beach/cupones/CUPONES-REAL-WHOPPER-BEACH-01.png" download="2x1 en papas medianas">
-                            <img src="{{ asset('img/beach/boton-v.svg') }}" class="120" alt="">
+                            <img src="{{ asset('img/beach/boton-v.svg') }}" class="img-fluid" alt="">
                         </a>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                         alt="">
                     <div>
                         <a href="img/beach/cupones/CUPONES-REAL-WHOPPER-BEACH-02.png" download="Family King">
-                            <img src="{{ asset('img/beach/boton-v.svg') }}" class="120" alt="">
+                            <img src="{{ asset('img/beach/boton-v.svg') }}" class="img-fluid" alt="">
                         </a>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                         alt="">
                     <div>
                         <a href="img/beach/cupones/CUPONES-REAL-WHOPPER-BEACH-03.png" download="2x1 en cono sencillo">
-                            <img src="{{ asset('img/beach/boton-v.svg') }}" class="120" alt="">
+                            <img src="{{ asset('img/beach/boton-v.svg') }}" class="img-fluid" alt="">
                         </a>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                         alt="">
                     <div>
                         <a href="img/beach/cupones/CUPONES-REAL-WHOPPER-BEACH-04.png" download="Combo chico w/squeso">
-                            <img src="{{ asset('img/beach/boton-v.svg') }}" class="120" alt="">
+                            <img src="{{ asset('img/beach/boton-v.svg') }}" class="img-fluid" alt="">
                         </a>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                         alt="">
                     <div>
                         <a href="img/beach/cupones/CUPONES-REAL-WHOPPER-BEACH-06.png" download="2x1 en nuggets">
-                            <img src="{{ asset('img/beach/boton-v.svg') }}" class="120" alt="">
+                            <img src="{{ asset('img/beach/boton-v.svg') }}" class="img-fluid" alt="">
                         </a>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                         alt="">
                     <div>
                         <a href="img/beach/cupones/CUPONES-REAL-WHOPPER-BEACH-02.png" download="Combo chico">
-                            <img src="{{ asset('img/beach/boton-v.svg') }}" class="120" alt="">
+                            <img src="{{ asset('img/beach/boton-v.svg') }}" class="img-fluid" alt="">
                         </a>
                     </div>
                 </div>
