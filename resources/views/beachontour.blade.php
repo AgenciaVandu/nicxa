@@ -103,17 +103,17 @@
                     <div class="row text-center">
                         <div class="col-lg-4 col-md-12 col-sm-12">
                             <a href="https://www.facebook.com/gruponicxa" target="blank_">
-                                <img src="{{ asset('img/beach/redes/fb.png') }}" class="120" alt="logo facebook">
+                                <img src="{{ asset('img/beach/redes/fb.png') }}" class="img-fluid" alt="logo facebook">
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-12 col-sm-12">
                             <a href="https://www.instagram.com/gruponicxaoficial/" target="blank_">
-                                <img src="{{ asset('img/beach/redes/ig.png') }}" class="120" alt="logo instagram">
+                                <img src="{{ asset('img/beach/redes/ig.png') }}" class="img-fluid" alt="logo instagram">
                             </a>
                         </div>
                         <div class="col-lg-4 col-md-12 col-sm-12">
                             <a href="https://www.tiktok.com/@gruponicxa" target="blank_">
-                                <img src="{{ asset('img/beach/redes/tk.png') }}" class="120" alt="logo tiktok">
+                                <img src="{{ asset('img/beach/redes/tk.png') }}" class="img-fluid" alt="logo tiktok">
                             </a>
                         </div>
                     </div>
