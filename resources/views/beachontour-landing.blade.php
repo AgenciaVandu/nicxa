@@ -27,12 +27,12 @@
                         Conciencia <br> Medioambiental
                     </h1>
                     <p class="text-justify">
-                        En Burger King®, este verano nos enfocamos en generar conciencia medioambiental con nuestra campaña
+                        En Burger King®, este verano nos enfocamos en generar <b>conciencia medioambiental</b> con nuestra campaña
                         "Real Whopper® Beach on Tour". Promovemos comida real para gente real, eliminando saborizantes,
                         colorantes y conservadores.
                         <br><br>
-                        En 2023, queremos que nuestras playas sean como nuestras Whopper®: sin artificiales. Es por ello que
-                        en Playa Puerto Progreso, hemos establecido puntos de recolección fijos, invitando a todos los
+                        En <b>2023</b>, queremos que nuestras playas sean como nuestras Whopper®: sin artificiales. Es por ello que
+                        en <b>Playa Puerto Progreso</b>, hemos establecido <b>puntos de recolección fijos</b>, invitando a todos los
                         yucatecos y turistas a unirse a nosotros en la tarea de conservar nuestros espacios recreativos y
                         mantener nuestras playas limpias.
                     </p>
