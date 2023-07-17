@@ -85,7 +85,15 @@
         padding-top: 13em;
     }
 }
-
+.actividades-sets {
+    padding-right: 8em;
+    padding-left: 8em;
+}@media (max-width:1000px) {
+    .actividades-sets {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+}
 .segmentacion p{
     padding: 0 7em 3em 7em;
 } @media (max-width:950px) {

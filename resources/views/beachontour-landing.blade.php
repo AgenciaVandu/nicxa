@@ -107,32 +107,23 @@
             <h2 class="font-flame" style="color:#003227;">Actividades</h2>
             <p>¡Únete a nuestras actividades, recolecta masiva y hagamos la diferencia juntos!</p>
         </div>
-        <div class="row pt-4 text-center">
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <div >
-                    <img src="{{asset('img/beach/cta/cta-1.png')}}" alt="" class="img-fluid">
-                </div>
-                <div class="text-center pt-3">
-                    <img src="{{asset('img/beach/cta/1.png')}}" class="img-fluid" alt="">
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-sm-12">
+        <div class="row pt-4 actividades-sets text-center">
+            <div class="col-lg-6 col-md-12 col-sm-12">
                 <div >
                     <img src="{{asset('img/beach/cta/cta-2.png')}}" alt="" class="img-fluid">
                 </div>
-                <div class="text-center pt-3">
-                    <img src="{{asset('img/beach/cta/2.png')}}" class="img-fluid" alt="">
-                </div>
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="col-lg-6 col-md-12 col-sm-12">
                 <div>
                     <img src="{{asset('img/beach/cta/cta-3.png')}}" alt="" class="img-fluid">
                 </div>
+            </div>
+            <div class="col-12">
                 <div class="text-center pt-3">
-                   <a href="https://forms.gle/vnsmLj5JDwjTYHis9" target="blank_">
-                    <img src="{{asset('img/beach/cta/3.png')}}" class="img-fluid" alt="">
-                   </a>
-                </div>
+                    <a href="https://forms.gle/vnsmLj5JDwjTYHis9" target="blank_">
+                     <img src="{{asset('img/beach/cta/3.png')}}" class="img-fluid" alt="">
+                    </a>
+                 </div>
             </div>
         </div>
         <div class="segmentacion pt-5">
