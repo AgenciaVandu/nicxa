@@ -39,7 +39,7 @@
 
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 m-auto mov-video">
-                    <video src="{{asset('/video/video-whopper.mp4')}}" width="100%" autoplay preload="metadata" loop muted controls></video>
+                    <video src="{{asset('/video/limpieza-whopper.mp4')}}" width="100%" autoplay preload="metadata" loop muted controls></video>
                 </div>
             </div>
             <div class="text-center pasos">

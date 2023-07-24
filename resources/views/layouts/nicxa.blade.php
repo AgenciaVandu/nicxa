@@ -98,6 +98,9 @@
                       <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/beach-on-tour">Real Whopper Beach On Tour <img src="" alt=""></a>
+                      </li>
+                    <li class="nav-item">
                       <a class="nav-link" href="/negocios">Negocios</a>
                     </li>
                     <li class="nav-item">
