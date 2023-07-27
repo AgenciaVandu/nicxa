@@ -120,7 +120,7 @@
             </div>
             <div class="col-12">
                 <div class="text-center pt-3">
-                    <a href="https://forms.gle/vnsmLj5JDwjTYHis9" target="blank_">
+                    <a href="https://chat.whatsapp.com/FMjcnTxMQXAIlFd1Xp9lKO" target="blank_">
                      <img src="{{asset('img/beach/cta/3.png')}}" class="img-fluid" alt="">
                     </a>
                  </div>
