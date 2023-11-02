@@ -428,10 +428,14 @@
                         <li class="ordena-ahora__opciones">
                             <div class="row">
                                 <div class="col">
-                                    <a href="https://globalreports.info/wolop/BurgerKingMX1/1" target="_blank" class="pizza-hutp pr-3">
+                                   <!--  <a href="https://globalreports.info/wolop/BurgerKingMX1/1" target="_blank" class="pizza-hutp pr-3">
                                         <i class="fa-solid fa-motorcycle"></i>
                                         Delivery
-                                    </a>
+                                    </a> -->
+                                    <a href="https://www.burgerking.com.mx" target="_blank" class="pizza-hut pr-3">
+                                        <i class="fa-solid fa-globe"></i>
+                                        burgerking.com.mx
+                                    </a> <br class="d-block d-sm-block d-md-none d-lg-none">
                                     <span class="pizza-hutp pr-2">
                                         <i class="fa-solid fa-rocket"></i>
                                         Pide por la app
@@ -454,7 +458,7 @@
                                     <a href="https://kfc.com.mx/" target="_blank" class="pizza-hut pr-3">
                                         <i class="fa-solid fa-globe"></i>
                                         kfc.com.mx
-                                    </a>
+                                    </a><br class="d-block d-sm-block d-md-none d-lg-none">
                                     <span class="pizza-hutp pr-2">
                                         <i class="fa-solid fa-rocket"></i>
                                         Pide por la app
@@ -477,7 +481,7 @@
                                     <a href="https://www.pizzahut.com.mx/home" target="_blank" class="pizza-hut pr-3">
                                         <i class="fa-solid fa-globe"></i>
                                         pizzahut.com.mx
-                                    </a>
+                                    </a><br class="d-block d-sm-block d-md-none d-lg-none">
                                     <span class="pizza-hutp pr-2">
                                         <i class="fa-solid fa-rocket"></i>
                                         Pide por la app
