@@ -2,8 +2,8 @@
 @section('content')
 
 <header class="negocios-portada">
-   {{--  <video src="{{asset('/video/REEL_GRUPO-NICXA.mp4')}}" width="100%" controls autoplay loop muted></video> --}}
-   <video src="{{asset('/video/REEL_GRUPO NICXA_3.mp4')}}" width="100%" controls autoplay loop muted></video>
+    {{-- <video src="{{asset('/video/REEL_GRUPO-NICXA.mp4')}}" width="100%" controls autoplay loop muted></video> --}}
+    <video src="{{asset('/video/REEL_GRUPO NICXA_3.mp4')}}" width="100%" controls autoplay loop muted></video>
 </header>
 <section class="franquicia">
     <div class="container">
@@ -12,13 +12,13 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <figure>
-                    <img src="{{asset('/img/logos/burger-logo.svg')}}" width="90" alt="">
+                        <img src="{{asset('/img/logos/burger-logo.svg')}}" width="90" alt="">
                         <!-- <a href="https://www.gruponicxa.com.mx/promociones-nicxa/"><img src="{{asset('/img/logos/burger-logo.svg')}}" width="90" alt=""></a> -->
                     </figure>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 m-auto">
                     <figure>
-                    <img src="{{asset('/img/logos/KFC.svg')}}" width="90" alt="">
+                        <img src="{{asset('/img/logos/KFC.svg')}}" width="90" alt="">
                         <!-- <a href="https://www.gruponicxa.com.mx/promociones-nicxa/">
                             <img src="{{asset('/img/logos/KFC.svg')}}" width="90" alt="">
                         </a> -->
@@ -88,10 +88,10 @@
                             <option value="baja california">Baja California</option>
                             <option value="baja california sur">Baja California Sur</option> --}}
                             <option value="campeche">Campeche</option>
-                           {{--  <option value="coahuila de Zaragoza">Coahuila de Zaragoza</option>
+                            {{-- <option value="coahuila de Zaragoza">Coahuila de Zaragoza</option>
                             <option value="colima">Colima</option> --}}
                             <option value="chiapas">Chiapas</option>
-                           {{--  <option value="chihuahua">Chihuahua</option>
+                            {{-- <option value="chihuahua">Chihuahua</option>
                             <option value="cdmx">Ciudad de México</option>
                             <option value="durango">Durango</option>
                             <option value="guanajuato">Guanajuato</option>
@@ -110,7 +110,7 @@
                             <option value="sinaloa">Sinaloa</option>
                             <option value="sonora">Sonora</option> --}}
                             <option value="tabasco">Tabasco</option>
-                          {{--   <option value="tamaulipas">Tamaulipas</option>
+                            {{-- <option value="tamaulipas">Tamaulipas</option>
                             <option value="tlaxcala">Tlaxcala</option>
                             <option value="veracruz">Veracruz</option> --}}
                             <option value="yucatan">Yucatán</option>
@@ -127,7 +127,7 @@
                                 $utm_source = 'Facebook';
                             } elseif ($utm_source == 'google') {
                                 $utm_source = 'Google';
-                            }elseif ($utm_source == 'sms') {
+                            } elseif ($utm_source == 'sms') {
                                 $utm_source = 'SMS';
                             }
                             echo ('
@@ -167,77 +167,41 @@
             <div class="col-12 text-center">
                 <h3 style="color: #2f3235;">¿SOLO ES MEJOR QUE ACOMPAÑADO?</h3>
             </div>
-            {{-- Primera Fila --}}
-            <!-- <div class="row ordena-ahora__espacio">
-                <div class="col-lg col-md-6 col-sm-6">
-                    <figure class="ordena-ahora__cupon">
-                        <img src="{{asset('/img/cupones-1/uno/12-julio/1.png')}}" class="img-fluid" alt="cuponera Nicxa">
-                    </figure>
-                    <div class="text-center">
-                        <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Nueva My Box', '{{url('/img/cupones-1/uno/12-julio/1.png')}}', 'Pizza Hut' ,'{{url('/img/cupones-1/terminos-franquicia/12-julio/mybox.png')}}')" >Descargar cupón</button>
-                    </div>
-                </div>
-                <div class="col-lg col-md-6 col-sm-6">
-                    <figure class="ordena-ahora__cupon">
-                        <img src="{{asset('/img/cupones-1/uno/12-julio/4.png')}}" class="img-fluid" alt="cuponera Nicxa">
-                    </figure>
-                    <div class="text-center">
-                        <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Alitas + Refresco', '{{url('/img/cupones-1/uno/12-julio/4.png')}}', 'Pizza Hut' ,'{{url('/img/cupones-1/terminos-franquicia/12-julio/alitas.png')}}')" >Descargar cupón</button>
-                    </div>
-                </div>
-                <div class="col-lg col-md-6 col-sm-6">
-                    <figure class="ordena-ahora__cupon">
-                        <img src="{{asset('/img/cupones-1/uno/18-julio/lbo-9.png')}}" class="img-fluid" alt="Cuponera Nicxa">
-                    {{-- <button data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Bastones de Cajeta', '{{url('/img/cupones-1/uno/18-julio/lbo-9.png')}}', 'Pizza Hut' ,'{{url('terminos/ph/LEGALES CUPONES PH.jpg')}}')" class="button-descargar-b">Descargar cupón</button> --}}
-                    </figure>
-                    <div class="text-center">
-                        <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('2 Bisquets gratis en tu primera compra*', '{{url('/img/cupones-1/uno/18-julio/lbo-9.png')}}', 'LBB Obregon' ,'{{url('/img/cupones-1/uno/18-julio/lbo-9.png')}}')" >Descargar cupón</button>
-                    </div>
-                </div>
-                <div class="col-lg col-md-6 col-sm-6">
-                    <figure  class="ordena-ahora__cupon">
-                        <img src="{{asset('/img/cupones-1/uno/new/burger/combo-whopper-99.png')}}" class="img-fluid" alt="cuponera Nicxa">
-                    </figure>
-                    <div class="text-center">
-                        <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Combo Whopper + 4 Nuggets', '{{url('/img/cupones-1/uno/new/burger/combo-whopper-99.png')}}', 'Burger King' ,'{{url('/img/cupones-1/terminos-franquicia/bk/combowhopper.jpg')}}')">Descargar cupón</button>
-                    </div>
-                </div>
-                <div class="col-lg col-md-6 col-sm-6">
-                    <figure class="ordena-ahora__cupon">
-                        <img src="{{asset('/img/cupones-1/uno/new/burger/10-nuggets-papas.png')}}" class="img-fluid" alt="cuponera Nicxa">
-                    </figure>
-                    <div class="text-center">{{-- modificar --}}
-                        <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('10 Nuggets + papas grandes', '{{url('/img/cupones-1/uno/new/burger/10-nuggets-papas.png')}}', 'Burger King' ,'{{url('/img/cupones-1/terminos-franquicia/bk/10nuggets.jpg')}}')">Descargar cupón</button>
-                    </div>
-                </div>
-                <div class="col-lg col-md-6 col-sm-6">
-                    <figure class="ordena-ahora__cupon">
-                        <img src="{{asset('/img/cupones-1/uno/new/burger/2-papas-medianas-39.png')}}" class="img-fluid" alt="cuponera Nicxa">
-                    </figure>
-                    <div class="text-center">{{-- modificar --}}
-                        <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('2 Papas medianas x 39', '{{url('/img/cupones-1/uno/new/burger/2-papas-medianas-39.png')}}', 'Burger King' ,'{{url('/img/cupones-1/terminos-franquicia/bk/2papasmedianas.jpg')}}')">Descargar cupón</button>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
     {{-- Segunda fila --}}
     <div class="container-fluid pb-4">
         <div class="row ordena-ahora__espacio">
             <div class="col-lg col-md-6 col-sm-6">
-                <figure  class="ordena-ahora__cupon">
-                    <img src="{{asset('/img/cupones-1/mayo/mayo-2.png')}}" class="img-fluid" alt="cuponera Nicxa">
+                <figure class="ordena-ahora__cupon">
+                    <img src="{{asset('/img/cupones-1/nov/1/bk3.png')}}" class="img-fluid" alt="cuponera Nicxa">
                 </figure>
                 <div class="text-center">
-                    <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('King box 99', '{{url('/img/cupones-1/mayo/mayo-2.png')}}', 'Burger King' ,'{{url('/img/cupones-1/terminos-franquicia/12-mayo/CUPONES-WEB_ABRIL-13.jpg')}}')">Descargar cupón</button>
+                    <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('King box 99', '{{url('/img/cupones-1/nov/1/bk3.png')}}', 'Burger King' ,'{{url('/img/cupones-1/nov/1/bk3.png')}}')">Descargar cupón</button>
                 </div>
             </div>
             <div class="col-lg col-md-6 col-sm-6">
                 <figure class="ordena-ahora__cupon">
-                    <img src="{{asset('/img/cupones-1/mayo/mayo-5.png')}}" class="img-fluid" alt="cuponera Nicxa">
+                    <img src="{{asset('/img/cupones-1/nov/1/bk4.png')}}" class="img-fluid" alt="cuponera Nicxa">
                 </figure>
                 <div class="text-center">
-                    <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Duble Kruncher x 109', '{{url('/img/cupones-1/mayo/mayo-5.png')}}', 'KFC' ,'{{url('/img/cupones-1/terminos-franquicia/12-mayo/CUPONES-WEB_ABRIL-13.jpg')}}')">Descargar cupón</button>
+                    <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Duble Kruncher x 109', '{{url('/img/cupones-1/nov/1/bk4.png')}}', 'KFC' ,'{{url('/img/cupones-1/nov/1/bk4.png')}}')">Descargar cupón</button>
+                </div>
+            </div>
+            <div class="col-lg col-md-6 col-sm-6">
+                <figure class="ordena-ahora__cupon">
+                    <img src="{{asset('/img/cupones-1/nov/1/kfc3.png')}}" class="img-fluid" alt="cuponera Nicxa">
+                </figure>
+                <div class="text-center">
+                    <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Duble Kruncher x 109', '{{url('/img/cupones-1/nov/1/kfc3.png')}}', 'KFC' ,'{{url('/img/cupones-1/nov/1/kfc3.png')}}')">Descargar cupón</button>
+                </div>
+            </div>
+            <div class="col-lg col-md-6 col-sm-6">
+                <figure class="ordena-ahora__cupon">
+                    <img src="{{asset('/img/cupones-1/nov/1/ph4.png')}}" class="img-fluid" alt="cuponera Nicxa">
+                </figure>
+                <div class="text-center">
+                    <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Duble Kruncher x 109', '{{url('/img/cupones-1/nov/1/ph4.png')}}', 'KFC' ,'{{url('/img/cupones-1/nov/1/ph4.png')}}')">Descargar cupón</button>
                 </div>
             </div>
         </div>
@@ -249,76 +213,49 @@
                     <h3 style="color: #fff;">¿EN PAREJA?</h3>
                 </div>
                 <div class="row ordena-ahora__espacio">
-                    {{-- <div class="col-lg col-md-6 col-sm-6">
-                        <figure  >
-                            <img src="{{asset('/img/nico/nico-4.png')}}" class="img-fluid" alt="cuponera Nicxa">
-                        </figure>
-                       
-                    </div> --}}
+
                     <div class="col-lg col-md-6 col-sm-6">
-                        <figure  >
+                        <figure>
                             <img src="{{asset('/img/nico/nico-1.png')}}" class="img-fluid" alt="cuponera Nicxa">
                         </figure>
-                       
+
                     </div>
                     <div class="col-lg col-md-6 col-sm-6 m-auto">
                         <figure class="ordena-ahora__cupon">
-                            <img src="{{asset('/img/cupones-1/mayo/mayo-1.png')}}" class="img-fluid" alt="Cuponera Nicxa">
+                            <img src="{{asset('/img/cupones-1/nov/2/bk2.png')}}" class="img-fluid" alt="cuponera Nicxa">
                         </figure>
                         <div class="text-center">
-                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Mix & Match', '{{url('/img/cupones-1/mayo/mayo-1.png')}}', 'Burger king' ,'{{url('/img/cupones-1/terminos-franquicia/12-mayo/CUPONES-WEB_ABRIL-13.jpg')}}')">Descargar cupón</button>
-                        </div>
-                    </div>
-                   
-                    <div class="col-lg col-md-6 col-sm-6 m-auto">
-                        <figure class="ordena-ahora__cupon">
-                            <img src="{{asset('/img/cupones-1/mayo/mayo-10.png')}}" class="img-fluid" alt="cuponera Nicxa">
-                        </figure>
-                        <div class="text-center">
-                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('6 ALITAS O BONELESS + PAPAS GAJO + REFRESCO', '{{url('/img/cupones-1/mayo/mayo-10.png')}}', 'Pizza Hut' ,'{{url('/img/cupones-1/terminos-franquicia/12-mayo/CUPONES-WEB_ABRIL-13.jpg')}}')">Descargar cupón</button>
+                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Duble Kruncher x 109', '{{url('/img/cupones-1/nov/2/bk2.png')}}', 'KFC' ,'{{url('/img/cupones-1/nov/2/bk2.png')}}')">Descargar cupón</button>
                         </div>
                     </div>
 
                     <div class="col-lg col-md-6 col-sm-6 m-auto">
                         <figure class="ordena-ahora__cupon">
-                            <img src="{{asset('/img/cupones-1/mayo/mayo-11.png')}}" class="img-fluid" alt="cuponera Nicxa">
+                            <img src="{{asset('/img/cupones-1/nov/2/ph2.png')}}" class="img-fluid" alt="cuponera Nicxa">
                         </figure>
                         <div class="text-center">
-                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('GRAN HUT MIX', '{{url('/img/cupones-1/mayo/mayo-11.png')}}', 'Pizza Hut' ,'{{url('/img/cupones-1/terminos-franquicia/12-mayo/CUPONES-WEB_ABRIL-13.jpg')}}')">Descargar cupón</button>
+                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Duble Kruncher x 109', '{{url('/img/cupones-1/nov/2/ph2.png')}}', 'KFC' ,'{{url('/img/cupones-1/nov/2/ph2.png')}}')">Descargar cupón</button>
                         </div>
                     </div>
-                    
-                   
-                   
-                
+
+                    <div class="col-lg col-md-6 col-sm-6 m-auto">
+                        <figure class="ordena-ahora__cupon">
+                            <img src="{{asset('/img/cupones-1/nov/2/ph3.png')}}" class="img-fluid" alt="cuponera Nicxa">
+                        </figure>
+                        <div class="text-center">
+                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Duble Kruncher x 109', '{{url('/img/cupones-1/nov/2/ph3.png')}}', 'KFC' ,'{{url('/img/cupones-1/nov/2/ph3.png')}}')">Descargar cupón</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg col-md-6 col-sm-6 m-auto">
+                        <figure class="ordena-ahora__cupon">
+                            <img src="{{asset('/img/cupones-1/nov/2/bk2.png')}}" class="img-fluid" alt="cuponera Nicxa">
+                        </figure>
+                        <div class="text-center">
+                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Duble Kruncher x 109', '{{url('/img/cupones-1/nov/2/bk2.png')}}', 'KFC' ,'{{url('/img/cupones-1/nov/2/bk2.png')}}')">Descargar cupón</button>
+                        </div>
+                    </div>
                 </div>
-                
-                <!-- <div class="row ordena-ahora__espacio">
-                    <div class="col-lg col-md-6 col-sm-6">
-                        <figure class="ordena-ahora__cupon">
-                            <img src="{{asset('/img/cupones-1/uno/18-julio/ph-sarten.png')}}" class="img-fluid" alt="Cuponera Nicxa">
-                        </figure>
-                        <div class="text-center">
-                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Pizza de sartén mediana', '{{url('/img/cupones-1/uno/18-julio/ph-sarten.png')}}', 'Pizza Hut' ,'{{url('/img/cupones-1/terminos-franquicia/18-julio/legales-10.jpg')}}')">Descargar cupón</button>
-                        </div>
-                    </div>
-                    <div class="col-lg col-md-6 col-sm-6">
-                        <figure class="ordena-ahora__cupon">
-                            <img src="{{asset('/img/cupones-1/uno/18-julio/just4-2.png')}}" class="img-fluid" alt="cuponera Nicxa">
-                        </figure>
-                        <div class="text-center">
-                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Just For 2', '{{url('/img/cupones-1/uno/18-julio/just4-2.png')}}', 'KFC' ,'{{url('/img/cupones-1/terminos-franquicia/18-julio/legales-11.jpg')}}')">Descargar cupón</button>
-                        </div>
-                    </div>
-                    <div class="col-lg col-md-6 col-sm-6">
-                        <figure class="ordena-ahora__cupon">
-                            <img src="{{asset('/img/cupones-1/uno/18-julio/hamburguesa.png')}}" class="img-fluid" alt="cuponera Nicxa">
-                        </figure>
-                        <div class="text-center">
-                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('King Box', '{{url('/img/cupones-1/uno/18-julio/hamburguesa.png')}}', 'KFC' ,'{{url('/img/cupones-1/terminos-franquicia/18-julio/hamburguesa.png')}}')">Descargar cupón</button>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
@@ -331,39 +268,30 @@
                 <div class="row ordena-ahora__espacio">
                     <div class="col-lg col-md-6 col-sm-6 m-auto">
                         <figure class="ordena-ahora__cupon">
-                            <img src="{{asset('/img/cupones-1/mayo/mayo-7.png')}}" class="img-fluid" alt="Cuponera Nicxa">
+                            <img src="{{asset('/img/cupones-1/nov/3/kfc1.png')}}" class="img-fluid" alt="cuponera Nicxa">
                         </figure>
                         <div class="text-center">
-                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('6 KE-TIRAS', '{{url('/img/cupones-1/mayo/mayo-7.png')}}', 'KFC' ,'{{url('/img/cupones-1/terminos-franquicia/8-febrero/legales-13.jpg')}}')">Descargar cupón</button>
+                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Duble Kruncher x 109', '{{url('/img/cupones-1/nov/3/kfc1.png')}}', 'KFC' ,'{{url('/img/cupones-1/nov/3/kfc1.png')}}')">Descargar cupón</button>
                         </div>
                     </div>
                     <div class="col-lg col-md-6 col-sm-6 m-auto">
                         <figure class="ordena-ahora__cupon">
-                            <img src="{{asset('/img/cupones-1/mayo/mayo-6.png')}}" class="img-fluid" alt="Cuponera Nicxa">
+                            <img src="{{asset('/img/cupones-1/nov/3/kfc2.png')}}" class="img-fluid" alt="cuponera Nicxa">
                         </figure>
                         <div class="text-center">
-                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('13 PIEZAS DE POLLO', '{{url('/img/cupones-1/mayo/mayo-6.png')}}', 'KFC' ,'{{url('/img/cupones-1/terminos-franquicia/12-mayo/CUPONES-WEB_ABRIL-13.jpg')}}')">Descargar cupón</button>
+                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Duble Kruncher x 109', '{{url('/img/cupones-1/nov/3/kfc2.png')}}', 'KFC' ,'{{url('/img/cupones-1/nov/3/kfc2.png')}}')">Descargar cupón</button>
                         </div>
                     </div>
                     <div class="col-lg col-md-6 col-sm-6 m-auto">
                         <figure class="ordena-ahora__cupon">
-                            <img src="{{asset('/img/cupones-1/mayo/mayo-12.png')}}" class="img-fluid" alt="Cuponera Nicxa">
+                            <img src="{{asset('/img/cupones-1/nov/3/ph1.png')}}" class="img-fluid" alt="cuponera Nicxa">
                         </figure>
                         <div class="text-center">
-                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('PIZZA 4 ESTACIONES', '{{url('/img/cupones-1/mayo/mayo-12.png')}}', 'PIZZA HUT' ,'{{url('/img/cupones-1/terminos-franquicia/12-mayo/CUPONES-WEB_ABRIL-13.jpg')}}')">Descargar cupón</button>
+                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Duble Kruncher x 109', '{{url('/img/cupones-1/nov/3/ph1.png')}}', 'KFC' ,'{{url('/img/cupones-1/nov/3/ph1.png')}}')">Descargar cupón</button>
                         </div>
                     </div>
-                    <div class="col-lg col-md-6 col-sm-6 m-auto">
-                        <figure class="ordena-ahora__cupon">
-                            <img src="{{asset('/img/cupones-1/mayo/mayo-4.png')}}" class="img-fluid" alt="Cuponera Nicxa">
-                        </figure>
-                        <div class="text-center">
-                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('FAMILY KING', '{{url('/img/cupones-1/mayo/mayo-4.png')}}', 'Burger king' ,'{{url('/img/cupones-1/terminos-franquicia/12-mayo/CUPONES-WEB_ABRIL-13.jpg')}}')">Descargar cupón</button>
-                        </div>
-                    </div>
-                  
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -374,46 +302,30 @@
                     <h3 style="color: #FFF;">PARA CERRAR, ¿UN POSTRECITO? ¿POR QUÉ NO?</h3>
                 </div>
                 <div class="row ordena-ahora__espacio">
-                   {{--  <div class="col-lg col-md-6 col-sm-6">
+                    {{-- <div class="col-lg col-md-6 col-sm-6">
                         <figure  >
                             <img src="{{asset('/img/nico/nico-2.png')}}" class="img-fluid" alt="cuponera Nicxa">
-                        </figure>
-                       
-                    </div> --}}
-                    <div class="col-lg col-md-6 col-sm-6 m-auto">
-                        <figure class="ordena-ahora__cupon">
-                            <img src="{{asset('/img/cupones-1/mayo/mayo-3.png')}}" class="img-fluid" alt="Cuponera Nicxa">
-                        </figure>
-                        <div class="text-center">
-                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('2 conos', '{{url('/img/cupones-1/mayo/mayo-3.png')}}', 'Burger king' ,'{{url('/img/cupones-1/terminos-franquicia/12-mayo/CUPONES-WEB_ABRIL-13.jpg')}}')">Descargar cupón</button>
-                        </div>
-                    </div>
-                    <div class="col-lg col-md-6 col-sm-6 m-auto">
-                        <figure class="ordena-ahora__cupon">
-                            <img src="{{asset('/img/cupones-1/mayo/mayo-8.png')}}" class="img-fluid" alt="Cuponera Nicxa">
-                        </figure>
-                        <div class="text-center">
-                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('4 BISQUETS', '{{url('/img/cupones-1/mayo/mayo-8.png')}}', 'KFC' ,'{{url('/img/cupones-1/terminos-franquicia/12-mayo/CUPONES-WEB_ABRIL-13.jpg')}}')">Descargar cupón</button>
-                        </div>
-                    </div>
-                    <div class="col-lg col-md-6 col-sm-6 m-auto">
-                        <figure class="ordena-ahora__cupon">
-                            <img src="{{asset('/img/cupones-1/mayo/mayo-13.png')}}" class="img-fluid" alt="Cuponera Nicxa">
-                        </figure>
-                        <div class="text-center">
-                            <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('BASTONES', '{{url('/img/cupones-1/mayo/mayo-13.png')}}', 'PIZZA HUT' ,'{{url('/img/cupones-1/terminos-franquicia/12-mayo/CUPONES-WEB_ABRIL-13.jpg')}}')">Descargar cupón</button>
-                        </div>
-                    </div>
-                    <div class="col-lg col-md-6 col-sm-6">
-                        <figure  >
-                            <img src="{{asset('/img/nico/nico-3.png')}}" class="img-fluid" alt="cuponera Nicxa">
-                        </figure>
-                       
+                    </figure>
+
+                </div> --}}
+                <div class="col-lg col-md-6 col-sm-6 m-auto">
+                    <figure class="ordena-ahora__cupon">
+                        <img src="{{asset('/img/cupones-1/nov/4/bk1.png')}}" class="img-fluid" alt="cuponera Nicxa">
+                    </figure>
+                    <div class="text-center">
+                        <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Duble Kruncher x 109', '{{url('/img/cupones-1/nov/4/bk1.png')}}', 'KFC' ,'{{url('/img/cupones-1/nov/4/bk1.png')}}')">Descargar cupón</button>
                     </div>
                 </div>
-                
+                <div class="col-lg col-md-6 col-sm-6">
+                    <figure>
+                        <img src="{{asset('/img/nico/nico-3.png')}}" class="img-fluid" alt="cuponera Nicxa">
+                    </figure>
+
+                </div>
             </div>
+
         </div>
+    </div>
     </div>
 </section>
 <section class="ordena-ahora pb-5">
@@ -428,7 +340,7 @@
                         <li class="ordena-ahora__opciones">
                             <div class="row">
                                 <div class="col">
-                                   <!--  <a href="https://globalreports.info/wolop/BurgerKingMX1/1" target="_blank" class="pizza-hutp pr-3">
+                                    <!--  <a href="https://globalreports.info/wolop/BurgerKingMX1/1" target="_blank" class="pizza-hutp pr-3">
                                         <i class="fa-solid fa-motorcycle"></i>
                                         Delivery
                                     </a> -->
