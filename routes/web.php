@@ -300,20 +300,32 @@ Route::get('/ph-oriente', function (Request $request) {
     return view('sucursales.ph-oriente');
 });
 
+
+// CAMPAÑA el buzón de santa
+
+Route::get('/el-buzon-de-santa', function () {
+    return view('navidad');
+});
+
+// ENDCAMPAÑA el buzon de santa
+
+
+
 // Ruta mundial
 
-Route::get('/beach-on-tour-cupones', function () {
-    return view('beachontour');
-});
-Route::get('/beach-on-tour-cupones-geo', function () {
-    return view('sucursales.beach-cupones-geo');
-});
-Route::get('/beach-on-tour', function () {
-    return view('beachontour-landing');
-});
-Route::get('/beach-on-tour-geo', function () {
+//Route::get('/beach-on-tour-cupones', function () {
+//    return view('beachontour');
+//});
+//Route::get('/beach-on-tour-cupones-geo', function () {
+//    return view('sucursales.beach-cupones-geo');
+// });
+// Route::get('/beach-on-tour', function () {
+//     return view('beachontour-landing');
+// });
+// Route::get('/beach-on-tour-geo', function () {
     return view('sucursales.beach-landing-geo');
-});
+// });
+
 // Ruta navidad
 // Route::get('/buzon-de-santa', function () {
 //     return view('buzons');

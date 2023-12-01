@@ -1,0 +1,306 @@
+html {
+    scroll-padding-top: 3.2em;
+}
+@font-face {
+    font-family: "flame-bold";
+    src: url("../font/flame-bold.ttf");
+}
+
+@font-face {
+    font-family: "flame-regular";
+    font-weight: 500;
+    src: url("../font/flame-regular.ttf");
+}
+@font-face {
+    font-family: "flame-sans";
+    font-weight: 400;
+    src: url("../font/FlameSans.otf");
+}
+body {
+    background-color: #f7f3e2;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "flame-bold" !important;
+}
+p {
+    font-family: "flame-sans";
+}
+.banner-premio {
+    padding: 6rem 0 2rem 0;
+    max-height: 820px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.conoce-mas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: movimiento 1.5s infinite ease;
+    color: #65290f;
+}
+@keyframes movimiento {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.conoce-mas a {
+    color: #65290f;
+    text-decoration: none;
+}
+
+.elbuzon {
+    background-image: url(/img/navidad/fondo-buzon3.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.elbuzon__contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 500px;
+    z-index: 1;
+    padding: 3.5rem 0;
+}
+
+.santa-salto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 420px;
+}
+
+.santa-salto .santa {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: -30px;
+    z-index: 1;
+    animation: giro 1s infinite ease-in;
+}
+
+@keyframes giro {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.santa-salto .buzon {
+    height: 350px;
+    width: auto;
+    position: absolute;
+    bottom: -30px;
+    z-index: 0;
+}
+.elbuzon__contenido .texto {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 400px;
+}
+@media (max-width: 767px) {
+    .elbuzon__contenido .texto {
+        align-items: center;
+    }
+}
+
+.sorteo {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+.sorteo__img {
+    max-width: 450px;
+}
+.sorteo h1,
+.sorteo__como {
+    color: #65290f;
+}
+
+.sorteo__como {
+    font-size: 1.2rem;
+}
+.sorteo__como span {
+    font-family: "flame-regular";
+}
+.sorteo__consideraciones {
+    color: #b58975;
+}
+.sorteo__consideraciones span {
+    font-family: "flame-regular";
+}
+.premios {
+    background-image: url(/img/navidad/fondo-buzon2.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 2rem 0;
+}
+.premios__informacion {
+    padding-top: 4rem;
+    padding-bottom: 2em;
+}
+.premios__informacion p {
+    font-size: 1.3rem;
+    font-family: "flame-sans";
+}
+.premios__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.premios__imagen {
+    max-width: 800px;
+    padding-bottom: 2em;
+}
+@media (max-width: 802px) {
+    .premios__imagen {
+        max-width: 500px;
+    }
+}
+@media (max-width: 509px) {
+    .premios__imagen {
+        max-width: 315px;
+    }
+}
+
+.ganadores {
+    min-height: 750px;
+    color: #65290f;
+    padding: 3rem 0;
+}
+
+.ganadores p {
+    font-size: 1.2em;
+}
+.ganadores span {
+    font-family: "flame-regular";
+}
+
+.anuncio {
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} /* @media (max-width:991px) {
+    .anuncio {
+        display: none;
+    }
+    
+} */
+
+.anuncio__posicion {
+    position: absolute;
+    top: 50px;
+}
+.destacados {
+    position: relative;
+}
+.cuadro {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+
+#uno,
+#dos {
+    z-index: 0;
+}
+
+#tres {
+    z-index: -3;
+}
+.anuncio .sobre {
+    width: 120px;
+    height: 80px;
+    z-index: 1;
+    position: absolute;
+    bottom: 20px;
+    left: 300px;
+}@media (max-width: 991px) {
+    .anuncio .sobre {
+        width: 80px;
+        height: 40px;
+        bottom: 20px;
+        left: 180px;
+    }
+}
+.anuncio .duende {
+    width: 120px;
+    height: 80px;
+    z-index: -1;
+    position: absolute;
+    top: -20px;
+    left: 320px;
+}
+@media (max-width: 1199px) {
+    .anuncio .duende {
+        left: 255px;
+    }
+}@media (max-width: 991px) {
+    .anuncio .duende {
+        width: 80px;
+        height: auto;
+        bottom: 20px;
+        left: 200px;
+    }
+}
+@media (max-width:767px) {
+    .anuncio-movil-contenedor {
+        position: relative;
+    }
+    .anuncio-movil-contenedor .sobre {
+        position: absolute;
+        top: 320px;
+        left: 10px;
+    }
+    .anuncio-movil-contenedor .duende {
+        position: absolute;
+        top: 420px;
+        right: -30px;
+        z-index: -1;
+    }
+}
+.restricciones {
+    background: #2d461e;
+    padding-top: 10em;
+    color: #fff;
+    padding-bottom: 3rem;
+} @media (max-width:767px) {
+    .restricciones {
+        padding-top: 4em;
+    }
+}
+
+.restricciones li {
+    font-family: "flame-sans";
+}
