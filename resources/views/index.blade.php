@@ -3,6 +3,12 @@
 @push('css')
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 @endpush
+@push('title')
+Nuestra meta eres tú
+@endpush
+@push('descripcion')
+<meta name="description" content="En Grupo Nicxa, nuestro objetivo principal es servirte de manera profesional y satisfactoria. Buscamos generar clientes en todos los lugares posibles y no descansaremos hasta llegar a ti. Nuestra meta es que como empleado o como cliente, estés feliz con nuestro servicio, es por eso que en Grupo Nicxa, nuestra meta eres tú.">
+@endpush
 <header class="header">
     <video src="{{asset('/video/index.mp4')}}" width="100%" autoplay preload="metadata" loop muted controls></video>
 </header>

@@ -1,4 +1,7 @@
 @extends('layouts.nicxa')
+@push('title')
+Bolsa de Trabajo
+@endpush
 @section('content')
     @push('css')
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">

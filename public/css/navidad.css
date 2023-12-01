@@ -239,6 +239,17 @@ p {
 #tres {
     z-index: -3;
 }
+@keyframes sobre {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
 .anuncio .sobre {
     width: 120px;
     height: 80px;
@@ -246,12 +257,24 @@ p {
     position: absolute;
     bottom: 20px;
     left: 300px;
+    animation: sobre 1.5s infinite ease;
 }@media (max-width: 991px) {
     .anuncio .sobre {
         width: 80px;
         height: 40px;
         bottom: 20px;
         left: 180px;
+    }
+}
+@keyframes duende {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0);
     }
 }
 .anuncio .duende {
@@ -261,6 +284,7 @@ p {
     position: absolute;
     top: -20px;
     left: 320px;
+    animation: duende 1s infinite ease;
 }
 @media (max-width: 1199px) {
     .anuncio .duende {
@@ -282,6 +306,7 @@ p {
         position: absolute;
         top: 320px;
         left: 10px;
+        animation: sobre 1.5s infinite ease;
     }
     .anuncio-movil-contenedor .duende {
         position: absolute;

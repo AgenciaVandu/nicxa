@@ -1,4 +1,10 @@
 @extends('layouts.nicxa')
+@push('title')
+Responsabilidad social
+@endpush
+@push('descripcion')
+<meta name="description" content="Como empresa tenemos el objetivo de generar impacto positivo en la comunidad, por ello, innovamos en nuestros procesos empresariales y corporativos para tener a la Responsabilidad Social como parte fundamental y meta de nuestra manera de trabajar.">
+@endpush
 @section('content')
 <header class="portada-fundacion">
     <video src="/video/fundacion.mp4#t=2" width="100%" autoplay preload="metadata" loop muted controls></video>

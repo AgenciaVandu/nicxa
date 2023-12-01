@@ -1,4 +1,7 @@
 @extends('layouts.nicxa')
+@push('title')
+Negocios
+@endpush
 @section('content')
 <header class="portada-franquicia">
     <div id="slider-franquicia" class="carousel slide" data-ride="carousel">

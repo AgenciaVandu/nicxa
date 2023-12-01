@@ -1,4 +1,7 @@
 @extends('layouts.nicxa')
+@push('title')
+¡Cupones Burger King, Pizza Hut, KFC & Los Bisquets Obregón!
+@endpush
 @section('content')
 
 <header class="negocios-portada">

@@ -2,6 +2,12 @@
 @push('css')
 <link rel="stylesheet" href="{{ asset('/css/navidad.css') }}">
 @endpush
+@push('title')
+El Buzón de Santa
+@endpush
+@push('descripcion')
+<meta name="description" content="Burger King (Operadora EXE) presenta El Buzón de Santa, una mágica campaña navideña que invita a los niños a escribir sus cartas y depositarlas en el Buzón de Santa. Esta iniciativa busca crear momentos especiales durante la temporada festiva, brindando a los pequeños la oportunidad de compartir sus sueños y deseos.">
+@endpush
 @section('content')
 
 
