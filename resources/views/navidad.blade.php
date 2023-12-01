@@ -8,6 +8,14 @@ El Buzón de Santa
 @push('descripcion')
 <meta name="description" content="Burger King (Operadora EXE) presenta El Buzón de Santa, una mágica campaña navideña que invita a los niños a escribir sus cartas y depositarlas en el Buzón de Santa. Esta iniciativa busca crear momentos especiales durante la temporada festiva, brindando a los pequeños la oportunidad de compartir sus sueños y deseos.">
 @endpush
+@push('opengraph')
+<!-- Open Graph data -->
+<meta property="og:title" content="El Buzón de Santa" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content=" gruponicxa.com.mx/" />
+<meta property="og:image" content="gruponicxa.com.mx/img/navidad/banner-1.png" />
+<meta property="og:description" content="Burger King (Operadora EXE) presenta El Buzón de Santa, una mágica campaña navideña que invita a los niños a escribir sus cartas y depositarlas en el Buzón de Santa." />
+@endpush
 @section('content')
 
 
