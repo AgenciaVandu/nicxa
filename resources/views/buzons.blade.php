@@ -219,5 +219,11 @@
         </div>
     </div>
 </div>
-
+@push ('scripts')
+<script>
+    $(document).ready(function() {
+        $('#myModal').modal('toggle')
+    });
+</script>
+@endpush
 @endsection

@@ -434,4 +434,9 @@ Bolsa de Trabajo
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="/js/partners.js"></script>
     <script src="{{asset('assets/app.js')}}"></script>
+    <script>
+    $(document).ready(function() {
+        $('#myModal').modal('toggle')
+    });
+</script>
 @endpush

@@ -27,19 +27,19 @@ Nuestra meta eres tú
             <div class="d-none d-sm-none d-md-none d-lg-block">
                 <div class="row">
                     <div class="col reveal">
-                        <img src="{{asset('img/timeline/up/1.svg')}}" class="img-fluid" >
+                        <img src="{{asset('img/timeline/up/1.svg')}}" class="img-fluid">
                     </div>
                     <div class="col reveal-2">
-                        <img src="{{asset('img/timeline/up/3.svg')}}" class="img-fluid" >
+                        <img src="{{asset('img/timeline/up/3.svg')}}" class="img-fluid">
                     </div>
                     <div class="col reveal-4">
-                        <img src="{{asset('img/timeline/up/5.svg')}}" class="img-fluid" >
+                        <img src="{{asset('img/timeline/up/5.svg')}}" class="img-fluid">
                     </div>
                     <div class="col reveal-6">
-                        <img src="{{asset('img/timeline/up/7.svg')}}" class="img-fluid" >
+                        <img src="{{asset('img/timeline/up/7.svg')}}" class="img-fluid">
                     </div>
                     <div class="col reveal-8">
-                        <img src="{{asset('img/timeline/up/9.svg')}}" class="img-fluid" >
+                        <img src="{{asset('img/timeline/up/9.svg')}}" class="img-fluid">
                     </div>
                 </div>
                 <div class="linea-tiempo reveal-line">
@@ -47,26 +47,26 @@ Nuestra meta eres tú
                 </div>
                 <div class="row">
                     <div class="col reveal-1">
-                        <img src="{{asset('img/timeline/down/2.svg')}}" width="220" >
+                        <img src="{{asset('img/timeline/down/2.svg')}}" width="220">
                     </div>
                     <div class="col reveal-3">
-                        <img src="{{asset('img/timeline/down/4.svg')}}" width="220" >
+                        <img src="{{asset('img/timeline/down/4.svg')}}" width="220">
                     </div>
                     <div class="col reveal-5">
-                        <img src="{{asset('img/timeline/down/6.svg')}}" width="220" >
+                        <img src="{{asset('img/timeline/down/6.svg')}}" width="220">
                     </div>
                     <div class="col reveal-7">
-                        <img src="{{asset('img/timeline/down/8.svg')}}" width="220" >
+                        <img src="{{asset('img/timeline/down/8.svg')}}" width="220">
                     </div>
                 </div>
             </div>
         </div>
         <div class="d-block d-sm-block d-md-block d-lg-none">
-           <div class="reveal">
-            <figure>
-                <img src="/img/timeline-m.svg" class="img-fluid" alt="linea del tiempo Grupo Nicxa">
-            </figure>
-           </div>
+            <div class="reveal">
+                <figure>
+                    <img src="/img/timeline-m.svg" class="img-fluid" alt="linea del tiempo Grupo Nicxa">
+                </figure>
+            </div>
         </div>
     </div>
 </section>
@@ -85,14 +85,14 @@ Nuestra meta eres tú
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <h2 class="cantidad">+<span id="cont3">30</span></h2>
-                <p class="">Años de historia</p>
+                    <p class="">Años de historia</p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <h2 class="cantidad">+
                         <span id="cont4"></span>
-                       
+
                     </h2>
-                <p class="">de clientes satisfechos</p>
+                    <p class="">de clientes satisfechos</p>
                 </div>
                 <span id="cont5"></span>
             </div>
@@ -120,7 +120,12 @@ Nuestra meta eres tú
     </div>
 </section>
 @push ('scripts')
-    <script src="/js/cont.js"></script> 
-    <script src="/js/timeline.js"></script>
+<script src="/js/cont.js"></script>
+<script src="/js/timeline.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#myModal').modal('toggle')
+    });
+</script>
 @endpush
 @endsection

@@ -18,7 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#EB0028">
-    <title>@stack('title') - Grupo Nicxa   </title>
+    <title>@stack('title') - Grupo Nicxa </title>
     @stack('descripcion')
     <meta name="facebook-domain-verification" content="vp8t49mojkkhq2a11x7x5la1noduv8" />
     <meta name="google-site-verification" content="q61Lt_yavm_0AcKrsM5i_85AaX7U7w9-hACnBVtjVH8" />
@@ -90,26 +90,19 @@
 </head>
 
 
-<div class="modal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade" style="min-height: 100vh; display: flex; align-items:center; justify-content:center;">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content" style="background-color: #F7F4E3;">
+            <div class="modal-body">
+                <img src="{{asset('./img/navidad/modal.png')}}" class="img-fluid">
+                <div class="text-center">
+                    <a href="/el-buzon-de-santa" class="btn btn-danger" >Conoce más</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-
 
 <body>
     <div class="fixed-top">

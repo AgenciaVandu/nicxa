@@ -424,5 +424,11 @@
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
     </script>
 </body>
-
+@push ('scripts')
+<script>
+    $(document).ready(function() {
+        $('#myModal').modal('toggle')
+    });
+</script>
+@endpush
 @include('app.footer')
