@@ -303,9 +303,9 @@ Route::get('/ph-oriente', function (Request $request) {
 
 // CAMPAÑA el buzón de santa
 
-Route::get('/el-buzon-de-santa', function () {
-    return view('navidad');
-});
+//Route::get('/el-buzon-de-santa', function () {
+//    return view('navidad');
+//});
 
 // ENDCAMPAÑA el buzon de santa
 

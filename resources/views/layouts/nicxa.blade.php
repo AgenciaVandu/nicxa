@@ -91,19 +91,6 @@
 </head>
 
 
-<!-- Modal HTML -->
-<div id="myModal" class="modal fade" style="min-height: 100vh; display: flex; align-items:center; justify-content:center;">
-    <div class="modal-dialog modal-login">
-        <div class="modal-content" style="background-color: #F7F4E3;">
-            <div class="modal-body">
-                <img src="{{asset('./img/navidad/modal.png')}}" class="img-fluid">
-                <div class="text-center">
-                    <a href="/el-buzon-de-santa" class="btn btn-danger" >Conoce más</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <body>
     <div class="fixed-top">
