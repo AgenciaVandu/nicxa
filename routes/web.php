@@ -79,7 +79,7 @@ Route::get('/unete-a-la-famila-nicxa', function (Request $request) {
 });
 
 
-/* 
+/*
 Route::get('/promociones-nicxa', function (Request $request) {
     $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
     if (!$view) {
@@ -309,6 +309,14 @@ Route::get('/ph-oriente', function (Request $request) {
 
 // ENDCAMPAÑA el buzon de santa
 
+// moms in shape
+
+Route::get('/moms-get-in-shape', function () {
+   return view('moms');
+});
+
+// END CAMPAÑA
+
 
 
 // Ruta mundial
@@ -328,5 +336,6 @@ Route::get('/ph-oriente', function (Request $request) {
 
 // Ruta navidad
 // Route::get('/buzon-de-santa', function () {
-//     return view('buzons');
+//
+ return view('buzons');
 // });
