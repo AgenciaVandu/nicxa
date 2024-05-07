@@ -24,13 +24,13 @@
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="contenido__interior">
-                            <img class="icono" src="{{ asset('/img/moms/calendario.svg') }}" width="30" alt="calendario">
+                            <img class="icono" src="{{ asset('/img/moms/reloj.svg') }}" width="30" alt="calendario">
                             <img src="{{ asset('/img/moms/hora.png') }}" class="img-fluid" alt="horario">
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="contenido__interior">
-                            <img class="icono" src="{{ asset('/img/moms/calendario.svg') }}" width="30" alt="calendario">
+                            <img class="icono" src="{{ asset('/img/moms/tag.svg') }}" width="30" alt="calendario">
                             <img src="{{ asset('/img/moms/lugar.png') }}" class="img-fluid" alt="horario">
                         </div>
                     </div>
