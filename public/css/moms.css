@@ -1,3 +1,199 @@
+@font-face {
+    font-family: "Anton";
+    src: url(/font/Anton-Regular.ttf);
+}
+@font-face {
+    font-family: "Gotham-bold";
+    src: url(/font/Gotham-Bold.otf);
+}
+@font-face {
+    font-family: "Gotham-light";
+    src: url(/font/Gotham-Light.otf);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Anton' ;
+}
+
+li {
+    font-family: 'Gotham-bold';
+    font-display: swap;
+}
+p {
+    font-family: 'Gotham-light';
+    font-display: swap;
+}
+
 body {
     background-color: #1A1A1A;
+}
+.titular_moms  .row{
+    border: 1px solid #06C167;
+
+}
+
+
+.contenido__interior {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2em;
+    text-align: center;
+
+    border: 1px solid #06C167 right;
+}
+
+.contenido__interior .icono {
+    padding-bottom: 1em;
+}
+.como-asistir {
+    padding-top: 5em;
+    padding-bottom: 4em;
+    color: #fff;
+}
+.como-asistir h1, .como-asistir li{
+    color: #06C167;
+}
+.como-asistir p {
+    padding-top: 1em;
+}
+.como-asistir ul {
+    padding-top: 1em;
+}
+.como-asistir li {
+    list-style: none;
+    padding-left: 0;
+}
+.coaches .conoce__contenido span {
+    font-size: 2.5em;
+}
+.coaches .conoce__contenido  h1{
+    color: #06C167;
+}
+.llevar{
+    padding-left: 9em;
+    color: #06C167;
+}@media (max-width:768px) {
+    .llevar {
+        display: none;
+    }
+}
+.llevar_uno {
+    display: none;
+    color: #06C167;
+}@media (max-width:768px) {
+    .llevar_uno {
+        display: block;
+        color: #06C167;
+    }
+}
+
+
+
+.coaches .conoce__contenido {
+    padding-left: 9em;
+} @media (max-width:768px) {
+    .coaches .conoce__contenido {
+        padding-left: 3em;
+        transition: .5s ease;
+    }
+}@media (max-width:390px) {
+    .coaches .conoce__contenido {
+        padding-left: 1em;
+        transition: .5s ease;
+    }
+}
+.coaches {
+    padding-top: 2em;
+    margin-bottom: 4em;
+}
+.coaches
+.mariel__contenido,
+.coaches
+.liz__contenido{
+    margin-top: 4em;
+    text-align: center;
+    padding: 5em;
+
+    border: 1px #06C167 solid;
+    border-radius: 1em;
+} @media (max-width: 600px) {
+    .coaches
+    .mariel__contenido,
+    .coaches
+    .liz__contenido {
+        padding: 3em;
+    }
+}
+
+.coaches .cuerpo__contenido {
+    margin-top: 4em;
+    text-align: center;
+    padding: 3em;
+
+    border: 1px #06C167 solid;
+    border-radius: 1em;
+}
+
+.coaches .cuerpo__contenido p{
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.coaches
+.mariel__contenido h4,
+.coaches
+.liz__contenido h4,
+.coaches .cuerpo__contenido h4 {
+    padding-top: 1em;
+    color: #06C167;
+}
+
+.coaches
+.mariel__contenido span,
+.coaches
+.liz__contenido span,
+.coaches .cuerpo__contenido span {
+    color: #fff;
+}
+
+.cta_moms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding-bottom: 3em;
+}
+
+.cta_moms
+ p {
+    color: #fff;
+    font-size: .8em;
+ }
+
+ .cta_moms .btn-primary {
+    background-color: #06C167;
+    color: #1A1A1A;
+
+    border: none;
+    border-radius: .6em;
+
+    padding: .4em 1em .4em 1em;
+
+    font-size: 2em;
+    font-family: 'Anton';
+ } @media (max-width:600px) {
+    .cta_moms .btn-primary {
+        font-size: 1.6em;
+    }
+ }
+.cta_moms .btn-primary:hover {
+    background-color: #fff;
+    color: #06C167;
+    border: none;
+    transition: .5s ease;
 }
