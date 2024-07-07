@@ -27,14 +27,11 @@
                         Conciencia <br> Medioambiental
                     </h1>
                     <p class="text-justify">
-                        En Burger King®, este verano nos enfocamos en generar <b>conciencia medioambiental</b> con nuestra campaña
-                        "Real Whopper® Beach on Tour". Promovemos comida real para gente real, eliminando saborizantes,
-                        colorantes y conservadores.
+                        Este verano, en Burger King®, continuamos con nuestro compromiso de generar <span class="font-flame-regular">conciencia medioambiental</span> a través de nuestra campaña "Real Whopper® Beach on Tour".
                         <br><br>
-                        En <b>2023</b>, queremos que nuestras playas sean como nuestras Whopper®: sin artificiales. Es por ello que
-                        en <b>Playa Puerto Progreso</b>, hemos establecido <b>puntos de recolección fijos</b>, invitando a todos los
-                        yucatecos y turistas a unirse a nosotros en la tarea de conservar nuestros espacios recreativos y
-                        mantener nuestras playas limpias.
+                        En <b class="font-flame-regular">2024</b>, queremos que nuestras playas sean como nuestras Whopper®: <span class="font-flame-regular">sin artificiales</span>. Por ello, regresamos a las playas del sureste mexicano con limpiezas colectivas y actividades para involucrar a la comunidad en la conservación de nuestros espacios recreativos.
+                        <br><br>
+                        Únete a nosotros en esta <span class="font-flame-regular">segunda edición</span> y contribuye a mantener nuestras playas limpias. Juntos podemos hacer una gran diferencia, porque en Burger King® creemos que el verdadero sabor viene de lo natural y lo auténtico, tanto en nuestra comida como en nuestro entorno.
                     </p>
 
                 </div>
@@ -42,62 +39,107 @@
                     <video src="{{asset('/video/limpieza-whopper.mp4')}}" width="100%" autoplay preload="metadata" loop muted controls></video>
                 </div>
             </div>
-            <div class="text-center pasos">
-                <div class="titular">
-                    <h2 class="font-flame" style="color:#003227;">PASOS PARA LA RECOLECCIÓN</h2>
-                <p>Contribuye a mantener nuestras playas limpias y proteger el medio ambiente <br class="d-none d-sm-none d-md-block d-lg-block"> con estos simples pasos de recolección.</p>
-                </div>
-                <div class="d-none d-sm-none d-md-block d-lg-block">
-                    <img src="{{asset('img/beach/banner/playas.png')}}" class="img-fluid">
-                   </div>
-                   <div class="d-block d-sm-block d-md-none d-lg-none">
-                    <div class="p-0">
-                        <img src="{{asset('img/beach/banner/playa-m.png')}}" class="img-fluid" alt="">
-                    </div>
-                   </div>
-               
-                <div class="text-center mt-5 mb-5">
-                    <img src="{{asset('img/beach/fecha.png')}}" class="img-fluid" alt="">
-                </div>
+        </div>
+    </div>
+    <div class="fondo-verde">
+        <div class="container">
+            <div class="text-center pt-5">
+                <h2>En nuestra 1era edición en 2023 logramos:</h2>
+            </div>
+            <div class="pt-5">
                 <div class="row">
-                    <div class="col-lg-4 col-md-12 col-sm-12 pt-4">
-                        <div class="row">
-                            <div class="col-4 ">
-                                <img src="{{asset('img/beach/banner/1.svg')}}" class="100" alt="">
-                            </div>
-                            <div class="col-8 text-left">
-                                <h4 class="font-flame" style="color:#003227;">LIMPIA</h4>
-                                <small>Recolecta todos los elementos artificiales que encuentres contaminando <b>la playa y sus alrededores.</b></small>
-                            </div>
+                    <div class="col-lg-3 col-md-6 col-12 text-center">
+                        <img src="{{asset('img/beach/banner/Vector-1.svg')}}" width="100" alt="">
+                        <h3 class="font-flame pt-3">+200</h3>
+                        <p class="font-flame-regular">Participantes</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 text-center">
+                        <img src="{{asset('img/beach/banner/Vector-2.svg')}}" width="116" alt="">
+                        <h3 class="font-flame pt-3">+300</h3>
+                        <p class="font-flame-regular">Participantes</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 text-center">
+                        <img src="{{asset('img/beach/banner/Vector-3.svg')}}" width="116" alt="">
+                        <h3 class="font-flame pt-3">+140</h3>
+                        <p class="font-flame-regular">Participantes</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 text-center">
+                        <img src="{{asset('img/beach/banner/Vector-4.svg')}}" width="137" alt="">
+                        <h3 class="font-flame pt-3">+1 Tonelada</h3>
+                        <p class="font-flame-regular">Participantes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="pasos-recoleccion">
+    <div class="container-fluid">
+        <div class="text-center pasos">
+            <div class="titular pb-4">
+                <h2 class="font-flame" style="color:#003227;">PASOS PARA LA RECOLECCIÓN</h2>
+            <p>Contribuye a mantener nuestras playas limpias y proteger el medio ambiente <br class="d-none d-sm-none d-md-block d-lg-block"> con estos simples pasos de recolección.</p>
+            </div>
+            <div class="d-none d-sm-none d-md-block d-lg-block">
+                <img src="{{asset('img/beach/banner/playas.png')}}" class="img-fluid">
+               </div>
+               <div class="d-block d-sm-block d-md-none d-lg-none">
+                <div class="p-0">
+                    <img src="{{asset('img/beach/banner/playa-m.png')}}" class="img-fluid" alt="">
+                </div>
+               </div>
+
+            <div class="text-center mt-5 mb-5">
+                <img src="{{asset('img/beach/fecha.png')}}" class="img-fluid" alt="">
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12 pt-4">
+                    <div class="row">
+                        <div class="col-4 ">
+                            <img src="{{asset('img/beach/banner/1.svg')}}" class="100" alt="">
+                        </div>
+                        <div class="col-8 text-left">
+                            <h4 class="font-flame" style="color:#003227;">LIMPIA</h4>
+                            <small>Recolecta todos los elementos artificiales que encuentres contaminando <b>la playa y sus alrededores.</b></small>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 pt-4">
-                        <div class="row">
-                            <div class="col-4 ">
-                                <img src="{{asset('img/beach/banner/2.svg')}}" class="100" alt="">
-                            </div>
-                            <div class="col-8 text-left">
-                                <h4 class="font-flame" style="color:#003227;">DEPOSITA</h4>
-                                <small>Coloca tu bolsa de desperdicios en cualquiera de nuestros <b>puntos de recolección.</b></small>
-                            </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 pt-4">
+                    <div class="row">
+                        <div class="col-4 ">
+                            <img src="{{asset('img/beach/banner/2.svg')}}" class="100" alt="">
+                        </div>
+                        <div class="col-8 text-left">
+                            <h4 class="font-flame" style="color:#003227;">DEPOSITA</h4>
+                            <small>Coloca tu bolsa de desperdicios en cualquiera de nuestros <b>puntos de recolección.</b></small>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 pt-4">
-                        <div class="row">
-                            <div class="col-4 ">
-                                <img src="{{asset('img/beach/banner/3.svg')}}" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-8 text-left">
-                                <h4 class="font-flame" style="color:#003227;">GANA</h4>
-                                <small>Escanea el código QR que encontrarás en los puntos de recolección y <b>canjea en cualquiera de nuestras sucursales de Burger King® de Grupo Nicxa®.</b></small>
-                            </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 pt-4">
+                    <div class="row">
+                        <div class="col-4 ">
+                            <img src="{{asset('img/beach/banner/3.svg')}}" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-8 text-left">
+                            <h4 class="font-flame" style="color:#003227;">GANA</h4>
+                            <small>Escanea el código QR que encontrarás en los puntos de recolección y <b>canjea en cualquiera de nuestras sucursales de Burger King® de Grupo Nicxa®.</b></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 pt-4">
+                    <div class="row">
+                        <div class="col-4 ">
+                            <img src="{{asset('img/beach/banner/4.svg')}}" class="100" alt="">
+                        </div>
+                        <div class="col-8 text-left">
+                            <h4 class="font-flame" style="color:#003227;">LIMPIA</h4>
+                            <small>Recolecta todos los elementos artificiales que encuentres contaminando <b>la playa y sus alrededores.</b></small>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+   </div>
    <div>
    </div>
    </div>
@@ -170,7 +212,7 @@
                         </h2>
                     </div>
                     <div class="row text-center">
-                        
+
                         <div class="col-lg-4 col-md-12 col-sm-12">
                             <a href="https://www.facebook.com/gruponicxa" target="blank_">
                                 <img src="{{ asset('img/beach/redes/fb.png') }}" class="img-fluid" alt="logo facebook">

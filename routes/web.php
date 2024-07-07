@@ -287,7 +287,7 @@ Route::get('/kfc-malecon', function (Request $request) {
 });
 
 //Rutas PH
-Route::get('/ph-oriente', function (Request $request) {
+Route::get('/ph-oriente', function (Request $request) { 
     $view = View::where('ip', $request->ip())->where('session_id', $request->session()->getId())->where('url',$request->fullUrl())->first();
     if (!$view) {
         View::create([
@@ -327,9 +327,9 @@ Route::get('/moms-get-in-shape', function () {
 //Route::get('/beach-on-tour-cupones-geo', function () {
 //    return view('sucursales.beach-cupones-geo');
 // });
-// Route::get('/beach-on-tour', function () {
-//     return view('beachontour-landing');
-// });
+Route::get('/beach-on-tour', function () {
+    return view('beachontour-landing');
+});
 // Route::get('/beach-on-tour-geo', function () {
     return view('sucursales.beach-landing-geo');
 // });
@@ -337,5 +337,5 @@ Route::get('/moms-get-in-shape', function () {
 // Ruta navidad
 // Route::get('/buzon-de-santa', function () {
 //
- return view('buzons');
+// return view('buzons');
 // });

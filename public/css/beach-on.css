@@ -1,5 +1,18 @@
+@font-face {
+    font-family: 'Flame-bold';
+    src: url(/font/flame-bold.ttf);
+}
+@font-face {
+    font-family: 'Flame-regular';
+    src: url(/font/flame-regular.ttf);
+}
 
-
+.font-flame {
+    font-family: 'Flame-bold';
+}
+.font-flame-regular {
+    font-family: 'Flame-regular';
+}
 .cupones-beach {
     padding: 2em 3em 0 3em;
 } @media (max-width:1000px) {
@@ -9,8 +22,8 @@
     .cupones-beach .cup{
         padding: 0;
     }
-    
 }
+
 .descubre-mas {
     padding-top: 6em;
     padding-bottom: 6em;
@@ -63,6 +76,10 @@
     }
 }
 
+.pasos-recoleccion {
+    padding-top: 4em;
+    padding-bottom: 3em;
+}
 .conciencia .titular {
     padding-bottom: 2em;
 }
@@ -70,7 +87,16 @@
     background-color: #003227;
     color: #F2E2D1;
 }
-
+.fondo-verde {
+    margin-top: 4em;
+    background-color: #003227;
+    min-height: 300px;
+    color: #F2E2D1;
+    padding-bottom: 3em;
+}
+.fondo-verde h2 {
+    color: #F2E2D1;
+}
 .sets-real-whopper {
     background-image: url(/img/beach/onda-2.png);
     background-size: cover;
@@ -105,4 +131,4 @@
 .aliados {
     padding-top: 5em;
     padding-bottom: 5em;
-} 
+}
