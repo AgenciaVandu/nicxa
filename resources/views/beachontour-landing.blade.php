@@ -8,6 +8,14 @@
             }
         </style>
     @endpush
+    @push('title')
+        ¡Únete a nuestra limpieza de playas! - Real Whopper Beac On Tour
+    @endpush
+
+    @push('descripcion')
+        <meta name="description"
+            content="Este verano, en Burger King®, continuamos con nuestro compromiso de generar conciencia medioambiental a través de nuestra campaña Real Whopper® Beach on Tour.">
+    @endpush
     <header class="beach-back" style="background-color: #F2E2D1;">
        <div class="d-none d-sm-none d-md-block d-lg-block">
         <img src="{{ asset('img/beach/banner/banner-2.png') }}" class="img-fluid w-100">
