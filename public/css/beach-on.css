@@ -75,7 +75,14 @@
         text-align: center;
     }
 }
+.btn-success {
+    padding: .6em 1.5em;
+    background-color: #003227;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 1em;
 
+}
 .pasos-recoleccion {
     padding-top: 4em;
     padding-bottom: 3em;
@@ -105,20 +112,51 @@
     min-height: 100vh;
 }
 .sets-real-whopper .actividades {
-    padding-top: 8em;
+    padding-top: 10em;
 } @media (max-width:1000px) {
     .sets-real-whopper .actividades {
         padding-top: 13em;
     }
 }
-.actividades-sets {
-    padding-right: 8em;
-    padding-left: 8em;
-}@media (max-width:1000px) {
-    .actividades-sets {
-    padding-right: 1em;
-    padding-left: 1em;
+.mapas-fechas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+} @media (max-width: 900px) {
+    .mapas-fechas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
+.mapas-fechas .republica {
+    width: 70%;
+    height: auto;
+}@media (max-width: 600px) {
+    .mapas-fechas .republica {
+        width: 100%;
+        height: auto;
+    }
+}
+.mapas-fechas .fechas {
+    width: 30%;
+    height: auto;
+} @media (max-width: 900px) {
+    .mapas-fechas .fechas {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+
+    }
+}
+.mapas-fechas .fechas img {
+    padding-bottom: 13px;
 }
 .segmentacion p{
     padding: 0 7em 3em 7em;

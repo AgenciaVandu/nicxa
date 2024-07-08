@@ -97,9 +97,12 @@
                         <div class="col-4 ">
                             <img src="{{asset('img/beach/banner/1.svg')}}" class="100" alt="">
                         </div>
-                        <div class="col-8 text-left">
-                            <h4 class="font-flame" style="color:#003227;">LIMPIA</h4>
-                            <small>Recolecta todos los elementos artificiales que encuentres contaminando <b>la playa y sus alrededores.</b></small>
+                        <div class="col-8 text-center">
+                            {{-- <h4 class="font-flame" style="color:#003227;">LIMPIA</h4> --}}
+                            <span>Registrate en el formulario</b></small>
+                            <a href="http://" class="btn btn-success mt-2">
+                                Registrate ahora
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -109,8 +112,7 @@
                             <img src="{{asset('img/beach/banner/2.svg')}}" class="100" alt="">
                         </div>
                         <div class="col-8 text-left">
-                            <h4 class="font-flame" style="color:#003227;">DEPOSITA</h4>
-                            <small>Coloca tu bolsa de desperdicios en cualquiera de nuestros <b>puntos de recolección.</b></small>
+                            <span>Elige la ciudad en la que te gustaría participar.</span>
                         </div>
                     </div>
                 </div>
@@ -120,8 +122,8 @@
                             <img src="{{asset('img/beach/banner/3.svg')}}" class="img-fluid" alt="">
                         </div>
                         <div class="col-8 text-left">
-                            <h4 class="font-flame" style="color:#003227;">GANA</h4>
-                            <small>Escanea el código QR que encontrarás en los puntos de recolección y <b>canjea en cualquiera de nuestras sucursales de Burger King® de Grupo Nicxa®.</b></small>
+                            <span>Únete al grupo de WhatsApp, seleccionando la ciudad a la que acudirás.</span> <br>
+                            <small>El link al grupo lo puedes encontrar al terminar el formulario.</small>
                         </div>
                     </div>
                 </div>
@@ -131,8 +133,7 @@
                             <img src="{{asset('img/beach/banner/4.svg')}}" class="100" alt="">
                         </div>
                         <div class="col-8 text-left">
-                            <h4 class="font-flame" style="color:#003227;">LIMPIA</h4>
-                            <small>Recolecta todos los elementos artificiales que encuentres contaminando <b>la playa y sus alrededores.</b></small>
+                            <span>¡Listo! Nos vemos en la playa.</span>
                         </div>
                     </div>
                 </div>
@@ -146,18 +147,23 @@
    <section class="sets-real-whopper" style="background-color: #F2E2D1;">
     <div class="container">
         <div class="text-center actividades" >
-            <h2 class="font-flame" style="color:#003227;">Actividades</h2>
-            <p>¡Únete a nuestras actividades, recolecta masiva y hagamos la diferencia juntos!</p>
+            <h2 class="font-flame" style="color:#003227;">LUGAR Y FECHAS</h2>
+            <p>¡Únete a nuestras recolectas masiva y hagamos la diferencia juntos!</p>
         </div>
-        <div class="row pt-4 actividades-sets text-center">
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div >
-                    <img src="{{asset('img/beach/cta/cta-2.png')}}" alt="" class="img-fluid">
+        <div class=" pt-4 actividades-sets text-center">
+            <div class="mapas-fechas">
+                <div class="republica">
+                    <img src="{{asset('img/beach/lugares/Mapa-RWBOT-01-1.png')}}" alt="Lugares whopper beach on tour" class="img-fluid">
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div>
-                    <img src="{{asset('img/beach/cta/cta-3.png')}}" alt="" class="img-fluid">
+                <div class="fechas">
+                    <img src="{{asset('img/beach/lugares/Mapa RWBOT-02.png')}}" alt="Fecha whopper beach on tour" class="img-fluid">
+                    <img src="{{asset('img/beach/lugares/Mapa RWBOT-03.png')}}" alt="Fecha whopper beach on tour" class="img-fluid">
+                    <img src="{{asset('img/beach/lugares/Mapa RWBOT-04.png')}}" alt="Fecha whopper beach on tour" class="img-fluid">
+                    <img src="{{asset('img/beach/lugares/Mapa RWBOT-05.png')}}" alt="Fecha whopper beach on tour" class="img-fluid">
+                    <img src="{{asset('img/beach/lugares/Mapa RWBOT-06.png')}}" alt="Fecha whopper beach on tour" class="img-fluid">
+                    <img src="{{asset('img/beach/lugares/Mapa RWBOT-07.png')}}" alt="Fecha whopper beach on tour" class="img-fluid">
+                    <img src="{{asset('img/beach/lugares/Mapa RWBOT-08.png')}}" alt="Fecha whopper beach on tour" class="img-fluid">
+
                 </div>
             </div>
             <div class="col-12">
@@ -188,7 +194,6 @@
             <div class="text-center">
                 <h2 class="font-flame" style="color:#003227;">ALIADOS</h3>
                 <p class="pb-4">Juntos, estamos comprometidos en hacer una diferencia y trabajar por un objetivo común.</p>
-                <div class="d-none d-sm-none d-md-block d-lg-block">
                     <figure>
                         <img src="{{asset('img/beach/aliados.png')}}" alt="aliados grupo nicxa" class="img-fluid">
                     </figure>
