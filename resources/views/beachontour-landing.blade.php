@@ -166,7 +166,7 @@
 
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 pb-5">
                 <div class="text-center pt-3">
                     <a href="https://chat.whatsapp.com/FMjcnTxMQXAIlFd1Xp9lKO" target="blank_">
                      <img src="{{asset('img/beach/cta/3.png')}}" class="img-fluid" alt="">
