@@ -174,7 +174,7 @@
                  </div>
             </div>
         </div>
-        <div class="segmentacion pt-5">
+        {{-- <div class="segmentacion pt-5">
             <div class="text-center">
                 <h2 class="font-flame" style="color:#003227;">UBICACIÓN</h2>
                 <p>Encuentra nuestros puntos fijos de recolección. Estos puntos están designados estratégicamente para que puedas realizar tus contribuciones y participar en nuestra iniciativa.
@@ -204,7 +204,7 @@
                     </figure>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
    </section>
     <section class="redes">
