@@ -118,7 +118,23 @@
                     <li>El concurso es individual y solo se premiara al titular del video y de la cuenta de TikTok</li>
                     <li>Si los participantes son menores de edad deberán de contar con la autorización de sus padres o tutor legal.</li>
                 </li>
+                <li style="padding: 0; list-style: none;">Bases para participar
+                    <li>El concurso sólo es válido para personas físicas que sean residentes de los estados de Quintana Roo y Yucatán.</li>
+                    <li>El concurso es individual y solo se premiara al titular del video y de la cuenta de TikTok</li>
+                    <li>Si los participantes son menores de edad deberán de contar con la autorización de sus padres o tutor legal.</li>
+                </li>
+                <li style="padding: 0; list-style: none;">Bases para participar
+                    <li>El concurso sólo es válido para personas físicas que sean residentes de los estados de Quintana Roo y Yucatán.</li>
+                    <li>El concurso es individual y solo se premiara al titular del video y de la cuenta de TikTok</li>
+                    <li>Si los participantes son menores de edad deberán de contar con la autorización de sus padres o tutor legal.</li>
+                </li>
+                <li style="padding: 0; list-style: none;">Bases para participar
+                    <li>El concurso sólo es válido para personas físicas que sean residentes de los estados de Quintana Roo y Yucatán.</li>
+                    <li>El concurso es individual y solo se premiara al titular del video y de la cuenta de TikTok</li>
+                    <li>Si los participantes son menores de edad deberán de contar con la autorización de sus padres o tutor legal.</li>
+                </li>
                 
+
 
             </div>
         </div>
