@@ -1,17 +1,18 @@
 @font-face {
-    font-family: 'Flame-bold';
-    src: url(/font/flame-bold.ttf);
+    font-family: 'national-extrabold';
+    src: url(/font/NATIONAL2COMPRESSED-EXTRABOLD.otf);
 }
 @font-face {
-    font-family: 'Flame-regular';
-    src: url(/font/flame-regular.ttf);
+    font-family: 'national-bold';
+    src: url(/font/NATIONAL2COMPRESSED-BOLD.otf);
 }
 
-.font-flame {
-    font-family: 'Flame-bold';
+
+.national {
+    font-family: 'national-extrabold';
 }
-.font-flame-regular {
-    font-family: 'Flame-regular';
+.national-bold {
+    font-family: 'national-bold';
 }
 .beach-back {
     padding-top: 3em;
@@ -44,6 +45,16 @@
     align-items: center;
 
 }
+.v-line{
+    border-left: thick solid #fff;
+    height:12%;
+    left: 50%;
+    position: absolute;
+} @media (max-width:767px) {
+    .v-line {
+        display: none;
+    }
+}
 .fechas-importantes {
     min-height: 350px;
 
@@ -73,6 +84,15 @@
     align-items: center;
 
     gap: 5px;
+} @media (max-width:768px) {
+    .fechas {
+        flex-direction: column;
+        padding: 2em 0;
+    }
+    .dia {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
 }
 .dia {
     height: auto;
@@ -179,7 +199,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#079507",endCo
     justify-content: center;
     align-items: center;
 
-    padding: 0 2em;
+    padding: 2em 2em;
 }
 .restricciones-power {
     background: #FF0000;

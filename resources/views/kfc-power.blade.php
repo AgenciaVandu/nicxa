@@ -28,7 +28,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 m-auto titulo-kfc">
-                    <h1>¿Qué es el reto #KFCChickenLegs?</h1>
+                    <h1 class="national">¿Qué es el reto #KFCChickenLegs?</h1>
                     <p>KFC te invita a unirte al reto #KFCChickenLegs. Demuestra tus habilidades físicas para tener la oportunidad de ganar increíbles premios. Este reto está abierto para todo el público.</p>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 text-center">
@@ -56,12 +56,12 @@
     <div class="premios">
         <div class="container">
             <div class="text-center">
-                <h1>PREMIOS</h1>
+                <h1 class="national">PREMIOS</h1>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-sm-12 m-auto">
                     <div class="contenido uno">
-                        <h1>1er lugar</h1>
+                        <h1 class="national">1er lugar</h1>
                         <small>iPhone 15 Pro Max</small>
                     </div>
 
@@ -80,7 +80,7 @@
                 </div>
                 <div class="col-lg-8 col-sm-12 m-auto orden-1">
                     <div class="contenido dos ">
-                        <h1>2do lugar</h1>
+                        <h1 class="national">2do lugar</h1>
                         <small>Samsung Galaxy Tab S9 FE+</small>
                     </div>
 
@@ -90,7 +90,7 @@
             <div class="row">
                 <div class="col-lg-8 col-sm-12 m-auto">
                     <div class="contenido  tres">
-                        <h1>3er lugar</h1>
+                        <h1 class="national">3er lugar</h1>
                         <small>Nintendo Switch OLED</small>
                     </div>
 
@@ -109,7 +109,7 @@
                 </div>
                 <div class="col-lg-8 col-sm-12 m-auto orden-1">
                     <div class="contenido cuatro">
-                        <h1>4er lugar</h1>
+                        <h1 class="national">4er lugar</h1>
                         <small>2500 en comida KFC</small>
                     </div>
 
@@ -122,11 +122,14 @@
             <h2>FECHAS IMPORTANTES</h2>
             <div class="fechas">
                 <div class="dia">
-                    <h2>12 DE AGOSTO</h2>
+                    <h1 class="national-bold">12 DE AGOSTO</h1>
                     <small>Cierre del conteo de visualizaciones</small>
                 </div>
+                <div class="v-line">
+
+                </div>
                 <div class="dia">
-                    <h2>13 DE AGOSTO</h2>
+                    <h1 class="national-bold">13 DE AGOSTO</h1>
                     <small>Anuncio de ganadores</small>
                 </div>
             </div>
@@ -140,9 +143,9 @@
             <div class="container">
                 <div class="centrado-beach">
                     <div class="pb-5 text-center">
-                        <h2 class="font-flame" style="color:#003227;">
+                        <h1 class="national-bold" style="color:#FF0000;">
                             DESCUBRE MÁS EN NUESTRAS REDES SOCIALES
-                        </h2>
+                        </h1>
                     </div>
                     <div class="row text-center">
 
