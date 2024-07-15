@@ -118,7 +118,7 @@
                                 <div class="col-8 text-center">
                                     {{-- <h4 class="font-flame" style="color:#003227;">LIMPIA</h4> --}}
                                     <span>Registrate en el formulario</b></small>
-                                        <a href="http://" class="btn btn-success mt-2">
+                                        <a href="https://forms.gle/Arg1dG7sYE2weyh57 " class="btn btn-success mt-2">
                                             Registrate ahora
                                         </a>
                                 </div>
@@ -194,7 +194,7 @@
                 </div>
                 <div class="col-12 pb-5">
                     <div class="text-center pt-3">
-                        <a href="https://chat.whatsapp.com/FMjcnTxMQXAIlFd1Xp9lKO" target="blank_">
+                        <a href="https://forms.gle/Arg1dG7sYE2weyh57 " target="blank_">
                             <img src="{{ asset('img/beach/cta/3.png') }}" class="img-fluid" alt="">
                         </a>
                     </div>

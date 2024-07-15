@@ -243,7 +243,7 @@
                     <li>Las Empresas se reservan el derecho de modificar o cancelar el concurso en cualquier momento sin previo aviso.</li>
                     <li>Las Empresas no son responsables de ningún daño o pérdida que pueda surgir como resultado de la participación en el concurso.</li>
                 </li>
-                <br><br>
+                <br>
                 <p>©2024 Grupo Nicxa®. Todos los derechos reservados.</p>
 
             </div>
