@@ -134,7 +134,7 @@
                 </div>
             </div>
             <div class="cta-fechas">
-                <div class="btn btn-danger btn-lg">¡Participa ahora y demuestra tus habilidades!</div>
+                <a href="https://www.tiktok.com/@gruponicxa" target="blank_" class="btn btn-danger btn-lg">¡Participa ahora y demuestra tus habilidades!</a>
             </div>
         </div>
     </div>
