@@ -49,6 +49,7 @@
                         <li>Publica tu video en TikTok usando el hashtag #KFCChickenLegs.</li>
                         <li>Asegúrate de etiquetar a @Gruponicxa en tu publicación</li>
                     </ol>
+                    <b>Las 4 personas con el mayor número de visualizaciones ganarán.</b>
                 </div>
             </div>
         </div>
