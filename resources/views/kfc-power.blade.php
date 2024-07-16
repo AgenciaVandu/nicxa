@@ -44,12 +44,15 @@
                     <h2>¿Cómo participar?</h2>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <ol>
-                        <li>Grábate replicando el <span>video del Coronel</span></li>
-                        <li>Publica tu video en TikTok usando el hashtag #KFCChickenLegs.</li>
-                        <li>Asegúrate de etiquetar a @Gruponicxa en tu publicación</li>
+                    <ol style="padding-left: 15px">
+                        <li>Grábate replicando el #KFCChickenlegs.</li>
+                        <li>⁠Publica tu video en Tiktok usando el #KFCChickenlegs. </li>
+                        <li>Asegúrate de etiquetar a @gruponicxa.</li>
                     </ol>
                     <b>Las 4 personas con el mayor número de visualizaciones ganarán.</b>
+                    <div class="cta-fechas pt-2">
+                        <a href="https://www.tiktok.com/@gruponicxa" target="blank_" class="btn btn-danger ">¡Participa ahora!</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -111,7 +114,7 @@
                 <div class="col-lg-8 col-sm-12 m-auto orden-1">
                     <div class="contenido cuatro">
                         <h1 class="national">4er lugar</h1>
-                        <small>2500 en comida KFC</small>
+                        <small>$2,500 en comida KFC</small>
                     </div>
 
                 </div>
@@ -134,9 +137,7 @@
                     <small>Anuncio de ganadores</small>
                 </div>
             </div>
-            <div class="cta-fechas">
-                <a href="https://www.tiktok.com/@gruponicxa" target="blank_" class="btn btn-danger btn-lg">¡Participa ahora y demuestra tus habilidades!</a>
-            </div>
+
         </div>
     </div>
     <section class="redes">
