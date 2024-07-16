@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'national-extrabold';
-    src: url(/font/NATIONAL2COMPRESSED-EXTRABOLD.otf);
+    src: url(/font/GothamBold.ttf);
 }
 @font-face {
     font-family: 'national-bold';
-    src: url(/font/NATIONAL2COMPRESSED-BOLD.otf);
+    src: url(/font/GothamBold.ttf);
 }
 
 
