@@ -73,17 +73,17 @@
                         <div class="col-lg-3 col-md-6 col-12 text-center">
                             <img src="{{ asset('img/beach/banner/Vector-2.svg') }}" width="116" alt="">
                             <h3 class="font-flame pt-3">+300</h3>
-                            <p class="font-flame-regular">Participantes</p>
+                            <p class="font-flame-regular">Bolsas entregadas</p>
                         </div>
                         <div class="col-lg-3 col-md-6 col-12 text-center">
                             <img src="{{ asset('img/beach/banner/Vector-3.svg') }}" width="116" alt="">
                             <h3 class="font-flame pt-3">+140</h3>
-                            <p class="font-flame-regular">Participantes</p>
+                            <p class="font-flame-regular">Costales recolectados</p>
                         </div>
                         <div class="col-lg-3 col-md-6 col-12 text-center">
                             <img src="{{ asset('img/beach/banner/Vector-4.svg') }}" width="137" alt="">
                             <h3 class="font-flame pt-3">+1 Tonelada</h3>
-                            <p class="font-flame-regular">Participantes</p>
+                            <p class="font-flame-regular">de basura recogida</p>
                         </div>
                     </div>
                 </div>
