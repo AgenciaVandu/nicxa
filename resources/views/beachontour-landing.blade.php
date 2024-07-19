@@ -30,7 +30,7 @@
         <div class="container">
             <div class="conciencia">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12 mov-texto">
+                    <div class="col-lg-8 col-md-12 col-sm-12 m-auto">
                         <h1 class="font-flame" style="color:#003227;">
                             Conciencia <br> Medioambiental
                         </h1>
@@ -51,8 +51,8 @@
                         </p>
 
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 m-auto mov-video">
-                        <video src="{{ asset('/video/limpieza-whopper.mp4') }}" width="100%" autoplay preload="metadata"
+                    <div class="col-lg-4 col-md-12 col-sm-12 m-auto mov-video">
+                        <video src="{{ asset('/video/BK_WHOPPERBEACH_Jul09.mp4') }}" width="100%" autoplay preload="metadata"
                             loop muted controls></video>
                     </div>
                 </div>
