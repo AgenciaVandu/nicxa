@@ -153,6 +153,8 @@
 
         overflow: hidden;
 
+        gap: 14px;
+
     }
 }
 .mapas-fechas .fechas img {
@@ -165,6 +167,11 @@
         padding: 0 2em 1em 2em;
     }
 }
+.fechasmovil {
+    display: none;
+}
+
+
 
 .aliados {
     padding-top: 5em;

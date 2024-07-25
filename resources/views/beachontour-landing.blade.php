@@ -189,8 +189,8 @@
                             class="img-fluid">
                         <img src="{{ asset('img/beach/lugares/Mapa RWBOT-08.png') }}" alt="Fecha whopper beach on tour"
                             class="img-fluid">
-
                     </div>
+                    
                 </div>
                 <div class="col-12 pb-5">
                     <div class="text-center pt-3">
