@@ -4,22 +4,18 @@
 @endpush
 @section('content')
 
-<header class="negocios-portada">
-    {{-- <video src="{{asset('/video/REEL_GRUPO-NICXA.mp4')}}" width="100%" controls autoplay loop muted></video> --}}
-    <video src="{{asset('/video/REEL_GRUPO NICXA_3.mp4')}}" width="100%" controls autoplay loop muted></video>
-</header>
 <section class="franquicia">
     <div class="container">
         <h1><span class="franquicia__nicxa">NICXA</span> FRANQUICIA</h1>
         <div class="franquicia__logos">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <figure>
                         <img src="{{asset('/img/logos/burger-logo.svg')}}" width="90" alt="">
                         <!-- <a href="https://www.gruponicxa.com.mx/promociones-nicxa/"><img src="{{asset('/img/logos/burger-logo.svg')}}" width="90" alt=""></a> -->
                     </figure>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 m-auto">
+                <div class="col-lg-4 col-md-6 col-sm-6 m-auto">
                     <figure>
                         <img src="{{asset('/img/logos/KFC.svg')}}" width="90" alt="">
                         <!-- <a href="https://www.gruponicxa.com.mx/promociones-nicxa/">
@@ -27,15 +23,7 @@
                         </a> -->
                     </figure>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 m-auto">
-                    <figure>
-                        <img src="{{asset('/img/logos/Frame.svg')}}" width="170" alt="">
-                        <!-- <a href="https://www.gruponicxa.com.mx/promociones-nicxa/">
-                            <img src="{{asset('/img/logos/Frame.svg')}}" width="170" alt="">
-                        </a> -->
-                    </figure>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <figure>
                         <img src="{{asset('/img/logos/PHUT.svg')}}" width="90" alt="">
                         <!-- <a href="https://www.gruponicxa.com.mx/promociones-nicxa/">
@@ -217,12 +205,7 @@
                 </div>
                 <div class="row ordena-ahora__espacio">
 
-                    <div class="col-lg col-md-6 col-sm-6">
-                        <figure>
-                            <img src="{{asset('/img/nico/nico-1.png')}}" class="img-fluid" alt="cuponera Nicxa">
-                        </figure>
 
-                    </div>
                     <div class="col-lg col-md-6 col-sm-6 m-auto">
                         <figure class="ordena-ahora__cupon">
                             <img src="{{asset('/img/cupones-1/nov/2/bk2.png')}}" class="img-fluid" alt="cuponera Nicxa">
@@ -316,14 +299,8 @@
                         <img src="{{asset('/img/cupones-1/nov/4/bk1.png')}}" class="img-fluid" alt="cuponera Nicxa">
                     </figure>
                     <div class="text-center">
-                        <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Duble Kruncher x 109', '{{url('/img/cupones-1/nov/4/bk1.png')}}', 'KFC' ,'{{url('/img/cupones-1/nov/4/bk1.png')}}')">Descargar cupón</button>
+                        <button class="btn btn-dark" data-toggle="modal" data-target="#exampleModalLong" onclick="cupones('Duble Kruncher x 109', '{{url('/img/cupones-1/nov/4/bk1.png')}}', 'KFC' ,'{{url('/img/cupones-1/nov/4/bk1.png')}}')">Descargar cupón</button>
                     </div>
-                </div>
-                <div class="col-lg col-md-6 col-sm-6">
-                    <figure>
-                        <img src="{{asset('/img/nico/nico-3.png')}}" class="img-fluid" alt="cuponera Nicxa">
-                    </figure>
-
                 </div>
             </div>
 
@@ -406,19 +383,6 @@
                                     <a href="tel:999153737" class="pizza-hut">
                                         <i class="fa-solid fa-headset"></i>
                                         9995 15 3737
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
-                    <h4>Los Bisquets Obregón</h5>
-                        <li class="ordena-ahora__opciones">
-                            <div class="row">
-                                <div class="col-12">
-                                    <a href="tel:9999480578" class="pizza-hut">
-                                        <i class="fa-solid fa-headset"></i>
-                                        9999 48 0578
                                     </a>
                                 </div>
                             </div>

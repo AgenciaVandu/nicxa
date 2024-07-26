@@ -160,7 +160,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-12 col-sm-12 m-auto text-center pt-3 orden">
                             <figure>
-                                <img src="{{asset('/img/marcas-footer-1.svg')}}" width="270" alt="">
+                                <img src="{{asset('/img/gestion2024/marcas-footer-actualizado.svg')}}" width="270" alt="">
                             </figure> <br>
                         </div>
                         <div class="col-lg-3 col-md-12 col-sm-12 orden-2">

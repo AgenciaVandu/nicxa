@@ -31,7 +31,7 @@ html {
     .negocios-portada {
         margin-top: 3.4em;
     }
-    
+
 }
 .header {
     padding-top: 1.5em;
@@ -94,12 +94,21 @@ html {
 
 /* Franquicia */
 .franquicia {
-    padding-top: 2em;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
+} @media (max-width: 991px) {
+.franquicia {
+    padding-top: 5em;
+}
 }
 .franquicia__nicxa {
     color: #EB0028;
-} 
+}
 .franquicia__nicxa_1 {
     color: #EB0006;
 }@media (max-width:992px) {
@@ -114,13 +123,6 @@ html {
 }
 .franquicia__logos {
     padding: 2em 12em 0em 12em;
-} @media (max-width:500px) {
-    .portada-franquicia {
-        margin-top: 3.77em;
-    }
-    .franquicia__logos {
-        padding: 0;
-    }
 }
 .bg-cupon-1 {
     padding-bottom: 2em;
@@ -146,14 +148,14 @@ html {
 }@media (max-width:457px) {
     .ordena-ahora__espacio {
         padding:1em 3em 1em 3em;
-    } 
+    }
     .ordena-ahora__cupon {
         padding-top: 1em;
     }
 }@media (max-width:383px) {
     .ordena-ahora__espacio {
         padding:1em 3em 1em 3em;
-    } 
+    }
     .ordena-ahora__cupon {
         padding-top: 1em;
     }
@@ -177,14 +179,14 @@ html {
 }@media (max-width:457px) {
     .ordena-ahora__espacio-center {
         padding:1em 3em 1em 3em;
-    } 
+    }
     .ordena-ahora__cupon {
         padding-top: 1em;
     }
 }@media (max-width:383px) {
     .ordena-ahora__espacio-center {
         padding:1em 3em 1em 3em;
-    } 
+    }
     .ordena-ahora__cupon-center {
         padding-top: 1em;
     }
@@ -206,6 +208,7 @@ html {
     border: none;
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
 }
+
 .btn-primary {
     background-color: #000;
     border-radius: .4em;
@@ -273,14 +276,14 @@ html {
 } @media (max-width:900px) {
     .inmobiliaria__texto {
         padding: 0 1em 0 1em;
-    } 
+    }
 }
 .bolsa-de-trabajo {
     background-image: url(/img/bolsa-de-trabajo.jpg);
     height: 487px;
     background-size: cover;
     background-position: center;
-    display: flex;     
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -302,7 +305,7 @@ html {
 }
 .glider-prev, .glider-next {
     font-size: 1em;
-} 
+}
 .negocios__card {
     padding: 0 4em 0 4em;
 } @media (max-width:1190px) {
@@ -320,7 +323,7 @@ html {
     background-image: url(/img/alimentos.png);
     transition: all 500ms ease-out;
     background-position: center;
-    
+
 }
 .negocios__fundacion {
     background-image: url(/img/FUNDACION-1.png);
@@ -332,7 +335,7 @@ html {
     background-image: url(/img/fundacion.png);
     transition: .5s ease-in-out;
     background-position: center;
-    
+
 }
 .negocios__inmobiliaria {
     background-image: url(/img/INMOBILIARIA-1.png);
@@ -344,7 +347,7 @@ html {
     background-image: url(/img/inmobiliaria.png);
     transition: .5s ease-in-out;
     background-position: center;
-    
+
 }
 .negocios__unidad {
     background-image: url(/img/bolita.png);
@@ -356,7 +359,7 @@ html {
     background-image: url(/img/bolita-1.png);
     transition: all 500ms ease-out;
     background-position: center;
-    
+
 }
 
 .bg-cupon-2 {
@@ -475,7 +478,7 @@ html {
 .cta__contenedor--capa p{
     color: #fff;
     font-size: .6em;
-    
+
 }
 .cta__contenedor--capa:hover h5{
     margin-top: 40px;
@@ -494,7 +497,7 @@ footer {
 } @media (max-width:1100px) {
     .footer__espacio {
         padding: 2em 2.2em 2em 2.2em;
-    } 
+    }
 } @media (max-width:991px) {
     .footer__espacio {
         padding: 2em 8em 2em 8em;
@@ -525,11 +528,11 @@ footer {
 }@media (max-width:550px) {
     .footer__espacio {
         padding: 1em;
-    } 
+    }
 } @media (max-width:320px) {
     .footer__espacio {
         padding: 0em;
-    } 
+    }
 }
 footer li {
     list-style: none;
