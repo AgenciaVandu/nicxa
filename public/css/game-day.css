@@ -99,6 +99,15 @@ body {
     width: 45%;
     font-size: .8em;
 }
+.lugares-premios  h1{
+    background-clip: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(3,185,187,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(3,185,187,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(3,185,187,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#03b9bb",GradientType=1);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 
 

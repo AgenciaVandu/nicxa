@@ -44,7 +44,21 @@
                     </p>
                 </div>
             </div>
-
+        </div>
+    </div>
+    <div class="premios">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="gotham-bold text-white">PREMIOS</h2>
+            </div>
+            <div class="lugares-premios">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-12 text-center">
+                        <h1 class="gotham-bold">$7,000</h1>
+                        <p class="gotham-bold text-white">Primer Lugar</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 @endsection
