@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'gotham-bold';
+    src: url(/font/Gotham-Bold.otf);
+}
+@font-face {
+    font-family: 'gotham-light';
+    src: url(/font/Gotham-Light.otf);
+}
+@font-face {
+    font-family: 'gotham-book';
+    src: url(/font/GothamBook.ttf);
+}
+
+body {
+    background: #090909;
+    position: relative;
+}
+
+.gotham-bold {
+    font-family: 'gotham-bold' ;
+}
+.gotham-light {
+    font-family: 'gotham-light' ;
+}
+.gotham-book {
+    font-family: 'gotham-book';
+}
+.green {
+    color: #4FAD6B;
+}
+
+.bg-green {
+    background: rgb(79,173,107);
+    background: -moz-linear-gradient(94deg, rgba(79,173,107,1) 50%, rgba(3,185,187,1) 100%);
+    background: -webkit-linear-gradient(94deg, rgba(79,173,107,1) 50%, rgba(3,185,187,1) 100%);
+    background: linear-gradient(94deg, rgba(79,173,107,1) 50%, rgba(3,185,187,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4fad6b",endColorstr="#03b9bb",GradientType=1);
+    border-radius: 3em;
+    padding: .3em .8em;
+}
+
+.gamer-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 722px;
+
+    background-image: url('/img/gestion2024/campains/pizzahut/gamer-day/header-2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gamer-titular {
+    text-align: center;
+
+    height: 725px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion {
+    background-image: url('/img/gestion2024/campains/pizzahut/gamer-day/fondo.png');
+    background-size: cover;
+}
+.descripcion .contenido {
+    display: flex;
+    flex-direction: column;
+    min-height: 700px;
+
+    justify-content: center;
+
+}
+
+.contenido {
+    position: relative;
+}
+.contenido .texto-contenido {
+    color: #fff;
+}
+
+.contenido .imagen {
+    z-index: -1;
+}
+.texto-contenido {
+    z-index: 1;
+    position: absolute;
+    left: 25px;
+}
+.texto-contenido hr {
+    border: 2px #fff solid;
+}
+
+.texto-contenido p {
+    width: 45%;
+    font-size: .8em;
+}
+
+
+
