@@ -27,7 +27,7 @@
             </div>
         </div>
     </header>
-    <div class="descripcion">
+    <section class="descripcion">
         <div class="container">
             <div class="contenido">
                 <div class="imagem">
@@ -45,20 +45,57 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="premios">
+    </section>
+    <section class="premios">
         <div class="container">
             <div class="text-center">
                 <h2 class="gotham-bold text-white">PREMIOS</h2>
             </div>
             <div class="lugares-premios">
                 <div class="row">
-                    <div class="col-lg-2 col-sm-12 text-center">
+                    <div class="col-lg col-12 text-center">
                         <h1 class="gotham-bold">$7,000</h1>
                         <p class="gotham-bold text-white">Primer Lugar</p>
+                    </div>
+                    <div class="col-lg col-12 text-center">
+                        <h1 class="gotham-bold">$5,000</h1>
+                        <p class="gotham-bold text-white">Segundo Lugar</p>
+                    </div>
+                    <div class="col-lg col-12 text-center">
+                        <h1 class="gotham-bold">$3,000</h1>
+                        <p class="gotham-bold text-white">Tercer Lugar</p>
+                    </div>
+                    <div class="col-lg col-12 text-center">
+                        <h1 class="gotham-bold">$1,000</h1>
+                        <p class="gotham-bold text-white">Cuarto Lugar</p>
+                    </div>
+                    <div class="col-lg col-12 text-center">
+                        <h1 class="gotham-bold">$500</h1>
+                        <p class="gotham-bold text-white">Quinto Lugar</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="sucursales">
+        <div class="container">
+            <h2 class="text-center gotham-bold text-white">ESCOGE TU SUCURSAL</h2>
+            <div class="sucursal">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <img src="{{asset('img/gestion2024/campains/pizzahut/gamer-day/sucursal-oriente.webp')}}" class="img-fluid" alt="Pizza Hut Sucursal oriente Mérida">
+                        <div class="detalles">
+                            <span class="gotham-bold">Pizza Hut Oriente</span> <span class="gotham-bold">10:00 A.M.</span>
+                        </div>
+                        <small class="text-white">Mérida</small>
+                        <div class="botones">
+                            <a href="" class="uno">INSCRÍBETE AHORA</a>
+                            <a href="" class="dos">VER UBICACIÓN</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection

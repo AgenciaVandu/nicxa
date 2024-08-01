@@ -99,14 +99,41 @@ body {
     width: 45%;
     font-size: .8em;
 }
+.lugares-premios {
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.5em 0;
+}
+.lugares-premios .row {
+    gap: 40px;
+} @media (max-width: 600px) {
+    .lugares-premios .row {
+        gap: 20px;
+    }
+}
 .lugares-premios  h1{
     background-clip: rgb(255,255,255);
     background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(3,185,187,1) 100%);
     background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(3,185,187,1) 100%);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(3,185,187,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 15%, rgba(3,185,187,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#03b9bb",GradientType=1);
     -webkit-background-clip: text;
     color: transparent;
+}
+
+.detalles {
+    color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+.detalles span {
+    width: 160px;
 }
 
 
