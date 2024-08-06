@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'gotham-bold';
     src: url(/font/Gotham-Bold.otf);
@@ -14,8 +15,24 @@
 body {
     background: #090909;
     position: relative;
-}
 
+    z-index: 2;
+
+}
+.red {
+    position: absolute;
+    z-index: -3;
+    left: 0;
+    bottom: 400px;
+    overflow-x: hidden;
+}
+.purple {
+    position: absolute;
+    z-index: -3;
+    right: 0;
+    top: 1000px;
+    overflow-x: hidden;
+}
 .gotham-bold {
     font-family: 'gotham-bold' ;
 }
@@ -45,11 +62,23 @@ body {
     align-items: center;
 
     min-height: 722px;
+    width: 100%;
 
     background-image: url('/img/gestion2024/campains/pizzahut/gamer-day/header-2.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+} @media (max-width: 991px) {
+    .gamer-header {
+        margin-top: 3.8em;
+        background-image: url('/img/gestion2024/campains/pizzahut/gamer-day/headerm.webp');
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 .gamer-titular {
@@ -81,6 +110,23 @@ body {
 }
 .contenido .texto-contenido {
     color: #fff;
+} @media (max-width:991px) {
+
+    .imagen-m {
+        margin-top: 3em;
+        margin-bottom: 5em;
+        min-height: 700px;
+        border: 4px solid #fff;
+        position: relative;
+    }
+    .texto-contenido-m {
+        padding: 2em;
+    }
+    .imagen-soccer {
+        position: absolute;
+        bottom: -40px;
+        right: 1px;
+    }
 }
 
 .contenido .imagen {
@@ -125,9 +171,20 @@ body {
     color: transparent;
 }
 
+.sucursales {
+    margin: 4em 0;
+}
+.sucursal .row{
+    min-height: 600px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .detalles {
     color: #fff;
-
     display: flex;
     flex-direction: row;
     gap: 150px;
@@ -135,6 +192,114 @@ body {
 .detalles span {
     width: 160px;
 }
+.fecha-fin {
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+}
+/* .cuenta {
+    background-image: url('/img/gestion2024/campains/pizzahut/gamer-day/rect-fondo1.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    margin: 3em 0;
+} */
+.cuenta {
+    margin: 5em 0;
+    position: relative;
+}
+.fondo {
+    min-height: 500px;
+    margin: 3em 0;
+    border: 4px solid #fff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.fondo .borde-rec {
+    z-index: -1;
+}
+.fondo .contenido-cuenta {
+margin: 2em;
+}
 
 
+#cuenta {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 40px;
+    position: relative;
+}
 
+.simply-amount {
+    width: 80px;
+    height: 80px;
+
+    font-size: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(3,185,187,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(3,185,187,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(3,185,187,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#03b9bb",GradientType=1);
+
+    font-family: 'gotham-bold';
+
+}
+.simply-seconds-section {
+    display: none;
+}
+.simply-word  {
+    font-family: 'gotham-light';
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+
+    margin-top: 13px;
+}
+
+
+.estrella1 {
+    display: flex;
+    flex-direction: column;
+
+    height: 80px;
+    width: 30px;
+
+    justify-content: center;
+
+    position: absolute;
+    left: 91px;
+
+
+}
+.estrella2 {
+    display: flex;
+    flex-direction: column;
+
+    height: 80px;
+    width: 30px;
+
+    justify-content: center;
+
+    position: absolute;
+    right: 81px;
+
+
+}
+
+
+.prefooter {
+    margin-bottom: 3em;
+}
