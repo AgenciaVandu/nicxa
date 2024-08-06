@@ -150,14 +150,26 @@
                         </div>
                         <small class="text-white">Mérida</small>
                         <div class="botones pt-3">
-                            <a href="https://forms.gle/HdTK4ZWNNFrVAeTF9" target="blank">
-                                <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-inscripcion.svg') }}"
-                                    width="220" alt="boton inscripcion">
-                            </a>
-                            <a href="https://maps.app.goo.gl/bmxXrrNWpTuPtfcd9" target="blank">
-                                <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-ubicacion.svg') }}"
-                                    width="220" alt="boton inscripcion">
-                            </a>
+                            <div class="d-none d-sm-none d-md-block d-lg-block">
+                                <a href="https://forms.gle/HdTK4ZWNNFrVAeTF9" target="blank">
+                                    <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-inscripcion.svg') }}"
+                                        width="180" alt="boton inscripcion">
+                                </a>
+                                <a href="https://maps.app.goo.gl/bmxXrrNWpTuPtfcd9" target="blank">
+                                    <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-ubicacion.svg') }}"
+                                        width="180" alt="boton inscripcion">
+                                </a>
+                            </div>
+                            <div class="d-block d-sm-block d-md-none d-lg-none">
+                                <a href="https://forms.gle/HdTK4ZWNNFrVAeTF9" target="blank">
+                                    <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-inscripcion.svg') }}"
+                                        width="140" alt="boton inscripcion">
+                                </a>
+                                <a href="https://maps.app.goo.gl/bmxXrrNWpTuPtfcd9" target="blank">
+                                    <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-ubicacion.svg') }}"
+                                        width="140" alt="boton inscripcion">
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 mt-5">
@@ -171,14 +183,26 @@
                         </div>
                         <small class="text-white">Mérida</small>
                         <div class="botones pt-3">
-                            <a href="https://www.start.gg/tournament/liga-hut-gaming-by-pizza-hut-fc-24/details" target="blank">
-                                <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-inscripcion.svg') }}"
-                                    width="220" alt="boton inscripcion">
-                            </a>
-                            <a href="https://maps.app.goo.gl/8SSosJRpT9Z27V7v7" target="blank">
-                                <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-ubicacion.svg') }}"
-                                    width="220" alt="boton inscripcion">
-                            </a>
+                            <div class="d-none d-sm-none d-md-block d-lg-block">
+                                <a href="https://www.start.gg/tournament/liga-hut-gaming-by-pizza-hut-fc-24/details" target="blank">
+                                    <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-inscripcion.svg') }}"
+                                        width="180" alt="boton inscripcion">
+                                </a>
+                                <a href="https://maps.app.goo.gl/8SSosJRpT9Z27V7v7" target="blank">
+                                    <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-ubicacion.svg') }}"
+                                        width="180" alt="boton inscripcion">
+                                </a>
+                            </div>
+                            <div class="d-block d-sm-block d-md-none d-lg-none">
+                                <a href="https://www.start.gg/tournament/liga-hut-gaming-by-pizza-hut-fc-24/details" target="blank">
+                                    <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-inscripcion.svg') }}"
+                                        width="140" alt="boton inscripcion">
+                                </a>
+                                <a href="https://maps.app.goo.gl/8SSosJRpT9Z27V7v7" target="blank">
+                                    <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-ubicacion.svg') }}"
+                                        width="140" alt="boton inscripcion">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
