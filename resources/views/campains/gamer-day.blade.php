@@ -31,7 +31,7 @@
                         <h2 class="gotham-bold text-white pt-3"> TORNEO GAMING <br> <span class="green">LIGA FÚTBOL
                                 2024</span>
                             </h3>
-                            <h2 class="bg-green gotham-bold">GANA HASTA $7,000</h2>
+                            <h2 class="bg-green gotham-bold">GANA HASTA $5,000</h2>
                             <h3 class="gotham-light text-white">29 DE AGOSTO</h4>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                     alt="Logotipo Gamer Day">
                 <h2 class="gotham-bold text-white pt-3"> TORNEO GAMING <br> <span class="green">LIGA FÚTBOL 2024</span>
                 </h2>
-                <h4 class="bg-green gotham-bold">GANA HASTA $7,000</h4>
+                <h4 class="bg-green gotham-bold">GANA HASTA $5,000</h4>
                 <h4 class="gotham-light text-white">29 DE AGOSTO</h3>
             </div>
         </header>
@@ -110,26 +110,32 @@
                 <h2 class="gotham-bold text-white">PREMIOS</h2>
             </div>
             <div class="lugares-premios">
-                <div class="row">
-                    <div class="col-lg col-12 text-center">
-                        <h1 class="gotham-bold">$7,000</h1>
+                <div class="row espacio_premios_uno">
+                    <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                        <h1 class="gotham-bold">$5,000</h1>
                         <p class="gotham-bold text-white">Primer Lugar</p>
                     </div>
-                    <div class="col-lg col-12 text-center">
-                        <h1 class="gotham-bold">$5,000</h1>
+                    <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+                        <h1 class="gotham-bold">$4,000</h1>
                         <p class="gotham-bold text-white">Segundo Lugar</p>
                     </div>
-                    <div class="col-lg col-12 text-center">
+                    <div class="col-lg-4 col-md-12 col-sm-12 text-center">
                         <h1 class="gotham-bold">$3,000</h1>
                         <p class="gotham-bold text-white">Tercer Lugar</p>
                     </div>
-                    <div class="col-lg col-12 text-center">
-                        <h1 class="gotham-bold">$1,000</h1>
+                </div>
+                <div class="row espacio_premios mt-4">
+                    <div class="col-lg-4  text-center">
+                        <h1 class="gotham-bold">$2,000</h1>
                         <p class="gotham-bold text-white">Cuarto Lugar</p>
                     </div>
-                    <div class="col-lg col-12 text-center">
-                        <h1 class="gotham-bold">$500</h1>
+                    <div class="col-lg-4  text-center">
+                        <h1 class="gotham-bold">$1,000</h1>
                         <p class="gotham-bold text-white">Quinto Lugar</p>
+                    </div>
+                    <div class="col-lg-4  text-center">
+                        <h1 class="gotham-bold">$500</h1>
+                        <p class="gotham-bold text-white">Sexto Lugar</p>
                     </div>
                 </div>
             </div>

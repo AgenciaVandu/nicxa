@@ -147,20 +147,29 @@ body {
 }
 .lugares-premios {
     min-height: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
     padding: 1.5em 0;
+} .lugares-premios .espacio_premios_uno {
+    padding: 0 7em;
 }
-.lugares-premios .row {
-    gap: 40px;
-} @media (max-width: 600px) {
-    .lugares-premios .row {
-        gap: 20px;
+.lugares-premios .espacio_premios {
+    padding: 0 14em;
+}
+@media (max-width:1199px) {
+    .lugares-premios .espacio_premios_uno {
+        padding: 0em 5em;
+    }
+    .lugares-premios .espacio_premios {
+        padding: 0 7em;
+    }
+}@media (max-width:767px) {
+    .lugares-premios .espacio_premios_uno {
+        padding: 0em;
+    }
+    .lugares-premios .espacio_premios {
+        padding: 0 0em;
     }
 }
+
 .lugares-premios  h1{
     background-clip: rgb(255,255,255);
     background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(3,185,187,1) 100%);
@@ -169,6 +178,7 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#03b9bb",GradientType=1);
     -webkit-background-clip: text;
     color: transparent;
+    font-size: 3em;
 }
 
 .sucursales {
@@ -185,7 +195,7 @@ body {
 @media (max-width:393px) {
     .botones {
         display: flex;
-        
+
     }
 }
 
