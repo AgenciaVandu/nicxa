@@ -163,11 +163,11 @@
                             <div class="d-block d-sm-block d-md-none d-lg-none">
                                 <a href="https://forms.gle/HdTK4ZWNNFrVAeTF9" target="blank">
                                     <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-inscripcion.svg') }}"
-                                        width="140" alt="boton inscripcion">
+                                        width="160" alt="boton inscripcion">
                                 </a>
                                 <a href="https://maps.app.goo.gl/bmxXrrNWpTuPtfcd9" target="blank">
                                     <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-ubicacion.svg') }}"
-                                        width="140" alt="boton inscripcion">
+                                        width="160" alt="boton inscripcion">
                                 </a>
                             </div>
                         </div>
@@ -196,11 +196,11 @@
                             <div class="d-block d-sm-block d-md-none d-lg-none">
                                 <a href="https://www.start.gg/tournament/liga-hut-gaming-by-pizza-hut-fc-24/details" target="blank">
                                     <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-inscripcion.svg') }}"
-                                        width="140" alt="boton inscripcion">
+                                        width="160" alt="boton inscripcion">
                                 </a>
                                 <a href="https://maps.app.goo.gl/8SSosJRpT9Z27V7v7" target="blank">
                                     <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-ubicacion.svg') }}"
-                                        width="140" alt="boton inscripcion">
+                                        width="160" alt="boton inscripcion">
                                 </a>
                             </div>
                         </div>
