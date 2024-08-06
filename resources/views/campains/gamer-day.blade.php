@@ -243,34 +243,59 @@
     </section>
     <div class="prefooter">
         <div class="container">
-            <div class="row">
-                <div class="col-6 m-auto">
+            <div class="row text-center">
+                <div class="col-3 m-auto">
                     <div class="d-none d-sm-none d-md-block d-lg-block">
                         <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/logo-pizzahut.svg') }}"
                             width="220" alt="">
                     </div>
                     <div class="d-block d-sm-block d-md-none d-lg-none">
-                       <div class="text-center">
+                       <div >
                         <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/pizzahutmovil.svg') }}"
-                        width="120" alt="">
+                        width="70" alt="">
                        </div>
                     </div>
                 </div>
-                <div class="col-6 m-auto">
+                <div class="col-3 m-auto">
                     <div class="d-none d-sm-none d-md-block d-lg-block">
-                       <div class="text-right">
+                       <div >
                         <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/uber-eats.svg') }}" width="120"
                         alt="">
                        </div>
                     </div>
                     <div class="d-block d-sm-block d-md-none d-lg-none">
-                       <div class="text-center">
-                        <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/uber-eats.svg') }}" width="90"
+                       <div >
+                        <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/uber-eats.svg') }}" width="70"
                         alt="">
                        </div>
                     </div>
                 </div>
-
+                <div class="col-3 m-auto">
+                    <div class="d-none d-sm-none d-md-block d-lg-block">
+                        <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/pcgamers.png') }}"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="d-block d-sm-block d-md-none d-lg-none">
+                       <div >
+                        <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/pcgamers.png') }}"
+                        width="90" alt="">
+                       </div>
+                    </div>
+                </div>
+                <div class="col-3 m-auto">
+                    <div class="d-none d-sm-none d-md-block d-lg-block">
+                       <div >
+                        <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/e-stom.svg') }}" width="90"
+                        alt="">
+                       </div>
+                    </div>
+                    <div class="d-block d-sm-block d-md-none d-lg-none">
+                       <div >
+                        <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/e-stom.svg') }}" width="60"
+                        alt="">
+                       </div>
+                    </div>
+                </div>
 
 
             </div>
