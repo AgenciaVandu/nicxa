@@ -152,7 +152,7 @@
                                 class="img-fluid contenido_sucursal" alt="Pizza Hut Sucursal oriente Mérida">
                         </div>
                         <div class="detalles">
-                            <span class="gotham-bold">Pizza Hut Oriente</span> <span class="gotham-bold">10:00 A.M.</span>
+                            <span class="gotham-bold">Pizza Hut Oriente</span> <span class="gotham-bold">04:00 P.M.</span>
                         </div>
                         <small class="text-white">Mérida</small>
                         <div class="botones pt-3">
@@ -184,8 +184,7 @@
                                 class="img-fluid contenido_sucursal" alt="Pizza Hut Sucursal oriente Mérida">
                         </div>
                         <div class="detalles">
-                            <span class="gotham-bold">Pizza Hut Portillo</span> <span class="gotham-bold">10:00
-                                A.M.</span>
+                            <span class="gotham-bold">Pizza Hut Portillo</span> <span class="gotham-bold">04:00 P.M.</span>
                         </div>
                         <small class="text-white">Mérida</small>
                         <div class="botones pt-3">
