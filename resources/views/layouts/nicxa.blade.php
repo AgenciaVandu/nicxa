@@ -141,6 +141,9 @@
                             <a class="nav-link" href="/kfc-power-challenge">KFC Power Challenge</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="/pizza-hut-gamer-day">Pizza Hut Gamer Day </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="http://facturacion.gruponicxa.com.mx:8081/facturacioncliente/" target="_blank">Facturación</a>
                         </li>
                     </ul>
@@ -269,7 +272,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     @stack('scripts')
     <script src="{{asset('app.js')}}"></script>
-    
+
 </body>
 
 </html>
