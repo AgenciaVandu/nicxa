@@ -93,6 +93,10 @@ html {
  }
 
 /* Franquicia */
+.header_franquicia {
+    margin-top: 3.5em;
+}
+
 .franquicia {
     min-height: 400px;
     display: flex;

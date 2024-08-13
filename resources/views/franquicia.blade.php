@@ -3,7 +3,32 @@
 ¡Cupones Burger King, Pizza Hut, KFC & Los Bisquets Obregón!
 @endpush
 @section('content')
-
+<section class="header_franquicia">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{{asset('img/gestion2024/imagenes/BK_Banner.webp')}}" class="d-block w-100" alt="Banner Burger King">
+          </div>
+          <div class="carousel-item">
+            <img src="{{asset('img/gestion2024/imagenes/KFC_Banner-02.webp')}}" class="d-block w-100" alt="Banner KFC">
+          </div>
+          <div class="carousel-item">
+            <img src="{{asset('img/gestion2024/imagenes/LBO_Banner.webp')}}" class="d-block w-100" alt="Banner LBO">
+          </div>
+          <div class="carousel-item">
+            <img src="{{asset('img/gestion2024/imagenes/PH_Banner.webp')}}" class="d-block w-100" alt="Banner Pizza Hut">
+          </div>
+        </div>
+       <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+</section>
 <section class="franquicia">
     <div class="container">
         <h1><span class="franquicia__nicxa">NICXA</span> FRANQUICIA</h1>
