@@ -23,7 +23,7 @@ body {
     position: absolute;
     z-index: -3;
     left: 0;
-    bottom: 400px;
+    bottom: 1700px;
     overflow-x: hidden;
 }
 .purple {
@@ -318,4 +318,10 @@ margin: 2em;
 
 .prefooter {
     margin-bottom: 3em;
+}
+
+.restricciones-power {
+    color: #fff;
+
+    padding: 2em 0;
 }
