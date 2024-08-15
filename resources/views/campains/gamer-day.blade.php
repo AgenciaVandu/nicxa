@@ -318,7 +318,7 @@
                 <li style="padding: 0; list-style: none;"><b>Mecanismo de Participación:</b>
                     <ol>
                         <li>Registrarse en el portal      correspondiente a tu ciudad.
-                            Mérida: <a href="https://forms.gle/rH3tG2uG4etzsmdF8">https://forms.gle/rH3tG2uG4etzsmdF8</a>. Cancún: <a href="https://www.start.gg/tournament/liga-hut-gaming-by-pizza-hut-fc-24/details">https://www.start.gg/tournament/liga-hut-gaming-by-pizza-hut-fc-24/details</a></li>
+                            Mérida: <a href="https://forms.gle/rH3tG2uG4etzsmdF8" style="color: red">https://forms.gle/rH3tG2uG4etzsmdF8</a>. Cancún: <a href="https://www.start.gg/tournament/liga-hut-gaming-by-pizza-hut-fc-24/details" style="color: red">https://www.start.gg/tournament/liga-hut-gaming-by-pizza-hut-fc-24/details</a></li>
                     <li>Concursar físicamente el      día del evento (29 de agosto).</li>
                     <li>Si la persona no está      previamente registrado en el portal, no podrá concursar en el torneo del      29 de agosto</li>
                     <li>Lograr los objetivos que      establezcan los organizadores el 29 de agosto en el juego de FC2024.</li>
