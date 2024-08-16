@@ -137,9 +137,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/beach-on-tour">Real Whopper Beach On Tour</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/kfc-power-challenge">KFC Power Challenge</a>
-                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="/pizza-hut-gamer-day">Pizza Hut Gamer Day </a>
                         </li>

@@ -10,7 +10,7 @@
             <img src="{{asset('img/gestion2024/imagenes/BK_Banner.webp')}}" class="d-block w-100" alt="Banner Burger King">
           </div>
           <div class="carousel-item">
-            <img src="{{asset('img/gestion2024/imagenes/KFC_Banner-02.webp')}}" class="d-block w-100" alt="Banner KFC">
+            <img src="{{asset('img/gestion2024/imagenes/KFC_Banner.webp')}}" class="d-block w-100" alt="Banner KFC">
           </div>
           <div class="carousel-item">
             <img src="{{asset('img/gestion2024/imagenes/LBO_Banner.webp')}}" class="d-block w-100" alt="Banner LBO">
@@ -34,13 +34,13 @@
         <h1><span class="franquicia__nicxa">NICXA</span> FRANQUICIA</h1>
         <div class="franquicia__logos">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <figure>
                         <img src="{{asset('/img/logos/burger-logo.svg')}}" width="90" alt="">
                         <!-- <a href="https://www.gruponicxa.com.mx/promociones-nicxa/"><img src="{{asset('/img/logos/burger-logo.svg')}}" width="90" alt=""></a> -->
                     </figure>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 m-auto">
+                <div class="col-lg-3 col-md-6 col-sm-6 m-auto">
                     <figure>
                         <img src="{{asset('/img/logos/KFC.svg')}}" width="90" alt="">
                         <!-- <a href="https://www.gruponicxa.com.mx/promociones-nicxa/">
@@ -48,9 +48,17 @@
                         </a> -->
                     </figure>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <figure>
                         <img src="{{asset('/img/logos/PHUT.svg')}}" width="90" alt="">
+                        <!-- <a href="https://www.gruponicxa.com.mx/promociones-nicxa/">
+                            <img src="{{asset('/img/logos/PHUT.svg')}}" width="90" alt="">
+                        </a> -->
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <figure>
+                        <img src="{{asset('img/gestion2024/imagenes/LBO_logo_web.svg')}}" width="85" alt="">
                         <!-- <a href="https://www.gruponicxa.com.mx/promociones-nicxa/">
                             <img src="{{asset('/img/logos/PHUT.svg')}}" width="90" alt="">
                         </a> -->
