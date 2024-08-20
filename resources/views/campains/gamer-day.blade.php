@@ -184,12 +184,14 @@
                                 class="img-fluid contenido_sucursal" alt="Pizza Hut Sucursal oriente Mérida">
                         </div>
                         <div class="detalles">
-                            <span class="gotham-bold">Pizza Hut Portillo</span> <span class="gotham-bold">04:00 P.M.</span>
+                            <span class="gotham-bold">Pizza Hut Portillo</span> <span class="gotham-bold">04:00
+                                P.M.</span>
                         </div>
                         <small class="text-white">Mérida</small>
                         <div class="botones pt-3">
                             <div class="d-none d-sm-none d-md-block d-lg-block">
-                                <a href="https://www.start.gg/tournament/liga-hut-gaming-by-pizza-hut-fc-24/details" target="blank">
+                                <a href="https://www.start.gg/tournament/liga-hut-gaming-by-pizza-hut-fc-24/details"
+                                    target="blank">
                                     <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-inscripcion.svg') }}"
                                         width="180" alt="boton inscripcion">
                                 </a>
@@ -199,7 +201,8 @@
                                 </a>
                             </div>
                             <div class="d-block d-sm-block d-md-none d-lg-none">
-                                <a href="https://www.start.gg/tournament/liga-hut-gaming-by-pizza-hut-fc-24/details" target="blank">
+                                <a href="https://www.start.gg/tournament/liga-hut-gaming-by-pizza-hut-fc-24/details"
+                                    target="blank">
                                     <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/btn-inscripcion.svg') }}"
                                         width="160" alt="boton inscripcion">
                                 </a>
@@ -255,24 +258,24 @@
                             width="220" alt="">
                     </div>
                     <div class="d-block d-sm-block d-md-none d-lg-none">
-                       <div >
-                        <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/pizzahutmovil.svg') }}"
-                        width="70" alt="">
-                       </div>
+                        <div>
+                            <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/pizzahutmovil.svg') }}"
+                                width="70" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="col-3 m-auto">
                     <div class="d-none d-sm-none d-md-block d-lg-block">
-                       <div >
-                        <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/uber-eats.svg') }}" width="120"
-                        alt="">
-                       </div>
+                        <div>
+                            <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/uber-eats.svg') }}"
+                                width="120" alt="">
+                        </div>
                     </div>
                     <div class="d-block d-sm-block d-md-none d-lg-none">
-                       <div >
-                        <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/uber-eats.svg') }}" width="70"
-                        alt="">
-                       </div>
+                        <div>
+                            <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/uber-eats.svg') }}"
+                                width="70" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="col-3 m-auto">
@@ -281,24 +284,24 @@
                             class="img-fluid" alt="">
                     </div>
                     <div class="d-block d-sm-block d-md-none d-lg-none">
-                       <div >
-                        <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/pcgamers.png') }}"
-                        width="90" alt="">
-                       </div>
+                        <div>
+                            <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/pcgamers.png') }}"
+                                width="90" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="col-3 m-auto">
                     <div class="d-none d-sm-none d-md-block d-lg-block">
-                       <div >
-                        <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/e-stom.svg') }}" width="90"
-                        alt="">
-                       </div>
+                        <div>
+                            <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/e-stom.svg') }}"
+                                width="90" alt="">
+                        </div>
                     </div>
                     <div class="d-block d-sm-block d-md-none d-lg-none">
-                       <div >
-                        <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/e-stom.svg') }}" width="60"
-                        alt="">
-                       </div>
+                        <div>
+                            <img src="{{ asset('img/gestion2024/campains/pizzahut/gamer-day/e-stom.svg') }}"
+                                width="60" alt="">
+                        </div>
                     </div>
                 </div>
 
@@ -309,62 +312,77 @@
     <div class="restricciones-power">
         <div class="container">
             <div class="text-left pt-5 pb-5">
-                <li style="padding: 0; list-style: none;"><b>TÉRMINOS Y CONDICIONES</b> <br>Bases para participar
-                    <li>El torneo Liga Hut Gaming by Pizza Hut sólo es válido para personas físicas que sean residentes de los estados de Quintana Roo y Yucatán.</li>
-                    <li>El concurso es individual y solo se premiará a las personas ganadoras que se hayan registrado en el portal correspondiente a su ciudad y que hayan logrado las metas establecidas por los organizadores de este torneo. (E-stom y/o Pc Gamers Cancun).</li>
-                    <li>Pizza Hut no se hace responsable de las mecánicas realizadas por el organizador del torneo. </li>
-                    <li>Este evento está organizado en conjunto con Pc Gamers Cancun “ADRIAN MORENO CARDONA” y E-stom “GRUPO ICOCO SA DE CV”. </li>
+                <li style="padding: 0; list-style: none;"><b>TÉRMINOS Y CONDICIONES</b><br><br>Bases para participar
+                <li>El torneo Liga Hut Gaming by Pizza Hut sólo es válido para personas físicas que sean residentes de los
+                    estados de Quintana Roo y Yucatán.
+                </li>
+                <li>El concurso es individual y solo se premiará a las personas ganadoras que se hayan registrado en el
+                    portal correspondiente a su ciudad y que hayan logrado las metas establecidas por los organizadores de
+                    este torneo. (E-stom y/o Pc Gamers Cancun) </li>
+                <li>Torneo solo valido para mayores de edad. </li>
+                <li>Pizza Hut no se hace responsable de las mecánicas realizadas por el organizador del torneo.</li>
+                <li>Este evento está organizado en conjunto con Pc Gamers Cancun “ADRIAN MORENO CARDONA” y E-stom “GRUPO
+                    ICOCO SA DE CV”.</li>
                 </li>
                 <li style="padding: 0; list-style: none;"><b>Mecanismo de Participación:</b>
                     <ol>
-                        <li>Registrarse en el portal      correspondiente a tu ciudad.
-                            Mérida: <a href="https://forms.gle/rH3tG2uG4etzsmdF8" style="color: red">https://forms.gle/rH3tG2uG4etzsmdF8</a>. Cancún: <a href="https://www.start.gg/tournament/liga-hut-gaming-by-pizza-hut-fc-24/details" style="color: red">https://www.start.gg/tournament/liga-hut-gaming-by-pizza-hut-fc-24/details</a></li>
-                    <li>Concursar físicamente el      día del evento (29 de agosto).</li>
-                    <li>Si la persona no está      previamente registrado en el portal, no podrá concursar en el torneo del      29 de agosto</li>
-                    <li>Lograr los objetivos que      establezcan los organizadores el 29 de agosto en el juego de FC2024.</li>
+                        <li>Registrarse en el portal correspondiente a tu ciudad.
+                            Mérida: <a href="https://forms.gle/rH3tG2uG4etzsmdF8"
+                                style="color: red">https://forms.gle/rH3tG2uG4etzsmdF8</a>. Cancún: <a
+                                href="https://www.start.gg/tournament/liga-hut-gaming-by-pizza-hut-fc-24/details"
+                                style="color: red">https://www.start.gg/tournament/liga-hut-gaming-by-pizza-hut-fc-24/details</a>
+                        </li>
+                        <li>Concursar físicamente el día del evento (29 de agosto).</li>
+                        <li>Si la persona no está previamente registrado en el portal, no podrá concursar en el torneo del
+                            29 de agosto</li>
+                        <li>Lograr los objetivos que establezcan los organizadores el 29 de agosto en el juego de FC2024.
+                        </li>
                     </ol>
                 </li>
                 <li style="padding: 0; list-style: none;"><b>Periodo de Participación:</b>
-                    <li>Duración del torneo de 5 a 6 horas máximo.</li>
-                    <li>Inscripción gratuita con cupo limitado para participar de 50 personas.</li>
-                    <li>Registro considerado: Del 15 al 24 de agosto 22024 o hasta lograr el cupo máximo de registros.</li>
-                    <li>El torneo se realizará el jueves 29 de agosto de 2024 iniciando a las 16:00 hrs en las sucursales Pizza Hut Portillo en Cancún, quintana Roo  y sucursal Pizza Hut Oriente en Mérida Yucatán.  </li>
+                <li>Duración del torneo de 5 a 6 horas máximo.</li>
+                <li>Inscripción gratuita con cupo limitado para participar de 50 personas.</li>
+                <li>Registro considerado: Del 15 al 24 de agosto 22024 o hasta lograr el cupo máximo de registros.</li>
+                <li>El torneo se realizará el jueves 29 de agosto de 2024 iniciando a las 16:00 hrs en las sucursales Pizza
+                    Hut Portillo en Cancún, quintana Roo y sucursal Pizza Hut Oriente en Mérida Yucatán. </li>
 
                 </li>
                 <li style="padding: 0; list-style: none;"><b>Fechas Importantes:</b>
-                    <li>1° lugar: $5,000 en efectivo.</li>
-                    <li>2° lugar: $4,000 en efectivo.</li>
-                    <li>3° lugar: $3,000 en efectivo.</li>
-                    <li>4° lugar: $2,000 en efectivo.</li>
-                    <li>5° lugar: $1,000 en efectivo.</li>
-                    <li>6° lugar: $500 en efectivo.</li>
-                </li>
-                <li style="padding: 0; list-style: none;"><b>Redes Participantes:</b>
-                    <li>El concurso solo se llevará a cabo exclusivamente en la plataforma de TikTok, los videos que se suban en otras plataformas no serán tomados en cuenta para definir a losganadores.</li>
-
+                <li>1° lugar: $5,000 en efectivo.</li>
+                <li>2° lugar: $4,000 en efectivo.</li>
+                <li>3° lugar: $3,000 en efectivo.</li>
+                <li>4° lugar: $2,000 en efectivo.</li>
+                <li>5° lugar: $1,000 en efectivo.</li>
+                <li>6° lugar: $500 en efectivo.</li>
                 </li>
                 <li style="padding: 0; list-style: none;"><b>Entrega de premios:</b>
-                    <li>Los ganadores se darán en conocer el ganador al finalizar el torneo a través de los organizadores PC Gamer Cancun y E-stom Mérida.</li>
-                    <li>Los premios se entregarán el viernes 30 de agosto en:
-                        Mérida: Directamente en las oficinas de grupo Nicxa (Calle 59 #253 Por 32 y, C. 32, San Ramón Nte, 97117 Mérida, Yuc.) en un horario de 9 a 15hrs.
-                        Cancún: Los premios se entregarán en sucursal Pizza hut Portillo (Av. José López Portillo Supermanzana 98 Manzana 51, 77537 Cancún, Q.R.) en un horario de 9 a 15hrs.</li>
-                        <li>Los ganadores tendrán que mostrar su identificación oficial y firmar una hoja donde acepten recibir el premio en efectivo.</li>
+                <li>Los ganadores se darán en conocer el ganador al finalizar el torneo a través de los organizadores PC
+                    Gamer Cancun y E-stom Mérida.</li>
+                <li>Los premios se entregarán el viernes 30 de agosto en:
+                    Mérida: Directamente en las oficinas de grupo Nicxa (Calle 59 #253 Por 32 y, C. 32, San Ramón Nte, 97117
+                    Mérida, Yuc.) en un horario de 9 a 15hrs.
+                    <br>
                 </li>
+                Cancún: Los premios se entregarán en sucursal Pizza hut Portillo (Av. José López Portillo Supermanzana 98
+                Manzana 51, 77537 Cancún, Q.R.) en un horario de 9 a 15hrs.
+                </li>
+                <li>Los ganadores tendrán que mostrar su identificación oficial y firmar una hoja donde acepten recibir el
+                    premio en efectivo.</li>
                 <li style="padding: 0; list-style: none;"><b>Derechos de Uso de Imagen:</b>
-                    <li>Al participar en el concurso, los participantes otorgan a Operadora de Franquicias AGN SA de CV y Operadora Nicxa SA de CV su consentimiento para utilizar, reproducir, distribuir, modificar, adaptar, y exhibir públicamente videos, nombre, imagen en cualquier medio, incluyendo, pero no limitado a, redes sociales, sitios web, materiales de marketing y publicidad, sin necesidad de obtener consentimiento adicional o solicitar compensación económica.</li>
-                </li>
+                <li>Al participar en el concurso, los participantes otorgan a Operadora de Franquicias AGN SA de CV y
+                    Operadora Nicxa SA de CV su consentimiento para utilizar, reproducir, distribuir, modificar, adaptar, y
+                    exhibir públicamente videos, nombre, imagen en cualquier medio, incluyendo, pero no limitado a, redes
+                    sociales, sitios web, materiales de marketing y publicidad, sin necesidad de obtener consentimiento
+                    adicional o solicitar compensación económica.</li>
                 <li style="padding: 0; list-style: none;"><b>Mecánica de Selección del Ganador:</b>
-                    <li>La mecánica para el torneo será establecida de acuerdo a los lineamentos establecidos por los organizadores (E-stom para el torneo de Mérida, Yucatán y Pc Gamers Cancún en Cancún, Quintana Roo).
-                     </li>
-                </li>
+                <li>La mecánica para el torneo será establecida de acuerdo a los lineamentos establecidos por los organizadores (E-stom para el torneo de Mérida, Yucatán y Pc Gamers Cancún en Cancún, Quintana Roo).</li>
                 <br>
                 <p>©2024 Grupo Nicxa®. Todos los derechos reservados.</p>
-
             </div>
         </div>
     </div>
     @push('scripts')
-    <script src="{{asset('js/contador.min.js')}}"></script>
-    <script src="{{asset('js/contconfig.js')}}"></script>
+        <script src="{{ asset('js/contador.min.js') }}"></script>
+        <script src="{{ asset('js/contconfig.js') }}"></script>
     @endpush
 @endsection
