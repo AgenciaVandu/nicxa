@@ -358,7 +358,7 @@
                 <li style="padding: 0; list-style: none;"><b>Entrega de premios:</b>
                 <li>Los ganadores se darán en conocer el ganador al finalizar el torneo a través de los organizadores PC
                     Gamer Cancun y E-stom Mérida.</li>
-                <li>Los premios se entregarán el viernes 30 de agosto en:
+                <li>Los premios se entregarán el 30 de septiembre en:
                     Mérida: Directamente en las oficinas de grupo Nicxa (Calle 59 #253 Por 32 y, C. 32, San Ramón Nte, 97117
                     Mérida, Yuc.) en un horario de 9 a 15hrs.
                     <br>
