@@ -139,9 +139,6 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="/pizza-hut-gamer-day">Pizza Hut Gamer Day </a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="http://facturacion.gruponicxa.com.mx:8081/facturacioncliente/" target="_blank">Facturación</a>
                         </li>
                     </ul>
