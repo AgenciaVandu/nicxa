@@ -333,7 +333,9 @@ Route::get('/beach-on-tour', function () {
 });
 
 
-
+Route::get('/pizza-hut-gamer-day', function () {
+    return view('campains.gamer-day');
+});
 // Route::get('/beach-on-tour-geo', function () {
     return view('sucursales.beach-landing-geo');
 // });

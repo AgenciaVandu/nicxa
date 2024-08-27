@@ -196,7 +196,7 @@
                 <li style="padding: 0; list-style: none;">Fechas Importantes:
                     <li>Inicio de concurso: 15 de julio de 2024.</li>
                     <li>Fin de concurso: 12 de agosto de 2024 a las 11:59 pm (hora del centro de México)</li>
-                    <li>Fecha de premiación: 13 de agosto de 2024 a la 1:00 pm (hora del centro de México).</li>
+                    <li>Fecha de premiación: 30 de septiembre de 2024 a la 1:00 pm (hora del centro de México).</li>
                 </li>
                 <li style="padding: 0; list-style: none;">Redes Participantes:
                     <li>El concurso solo se llevará a cabo exclusivamente en la plataforma de TikTok, los videos que se suban en otras plataformas no serán tomados en cuenta para definir a losganadores.</li>
