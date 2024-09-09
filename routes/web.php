@@ -328,14 +328,7 @@ Route::get('/moms-get-in-shape', function () {
 //    return view('sucursales.beach-cupones-geo');
 // });
 
-Route::get('/beach-on-tour', function () {
-    return view('beachontour-landing');
-});
 
-
-Route::get('/pizza-hut-gamer-day', function () {
-    return view('campains.gamer-day');
-});
 // Route::get('/beach-on-tour-geo', function () {
     return view('sucursales.beach-landing-geo');
 // });
