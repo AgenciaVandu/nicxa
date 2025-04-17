@@ -194,7 +194,16 @@
         </div>
     </div>
     {{-- Segunda fila --}}
-    <div class="container-fluid pb-4">
+
+    <div class="video">
+        <div class="container">
+            <div style="display: flex; flex-direction:column; justify-content: center; align-items:center;" class="pb-5">
+                <video src="/video/video-abril.mp4#t=2" width="30%" autoplay preload="metadata" loop muted controls></video>
+            </div>
+        </div>
+    </div>
+
+    {{-- <div class="container-fluid pb-4">
         <div class="row ordena-ahora__espacio">
             <div class="col-lg col-md-6 col-sm-6">
                 <figure class="ordena-ahora__cupon">
@@ -229,7 +238,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div class="bg-cupon-2">
         <div class="container-fluid">
             <div class="text-center">
