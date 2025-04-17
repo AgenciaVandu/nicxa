@@ -185,14 +185,14 @@
     </div>
 </div>
 <section class="cupones-nicxa">
-    <div class="container-fluid pb-4">
+    {{-- <div class="container-fluid pb-4">
         <h2 class="text-center pt-3 pb-2">¿Qué se te antoja hoy?</h2>
         <div class="text-center">
             <div class="col-12 text-center">
                 <h3 style="color: #2f3235;">¿SOLO ES MEJOR QUE ACOMPAÑADO?</h3>
             </div>
         </div>
-    </div>
+    </div> --}}
     {{-- Segunda fila --}}
 
     <div class="video">
