@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Flame-bold';
+    src: url(/font/flame-bold.ttf);
+}
+@font-face {
+    font-family: 'Flame-regular';
+    src: url(/font/flame-regular.ttf);
+}
+body {
+    background-color: #F9ECE4;
+}
+.olas {
+background-image: url('/img/beachon2025/mar-pleca.png');
+min-height: 184px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Flame-bold' !important;
+    color: #024C3E;
+}
+p, span {
+    font-family:  'Flame-regular' !important;
+    color: #024C3E;
+}
+
+
+
+.header .contenido {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.descripcion__contenido {
+    h1 { 
+        font-size: 5em;
+    }
+}
+.tercera-edicion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    background-color: #024C3E;
+    border-radius: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    padding-top: 1em;
+}
+.box h1, .box h2, .box h4 {
+    color: #F9ECE4 !important;
+}
+.box p {
+    color: #F9ECE4;
+}
+.grid-container {
+    display: grid;
+    grid-auto-columns: 200px;
+    grid-auto-rows: 200px;
+    gap: 1em;
+    grid-template-areas: 
+    "box-1 box-2 box-2 box-3 box-3"
+    "box-1 box-4 box-4 box-4 box-4"
+    "box-7 box-7 box-6 box-6 box-5"
+    "box-8 box-8 box-8 box-8 box-5";
+
+} @media (max-width: 56em) {
+   .grid-container {
+    grid-template-areas: 
+    "box-1 box-1 box-1"
+    "box-2 box-2 box-2"
+    "box-2 box-2 box-2"
+    "box-3 box-3 box-3"
+    "box-3 box-3 box-3"
+    "box-4 box-4 box-4"
+    "box-4 box-4 box-4"
+    "box-5 box-5 box-5"
+    "box-6 box-6 box-6"
+    "box-6 box-6 box-6"
+    "box-7 box-7 box-7"
+    "box-7 box-7 box-7"
+    "box-8 box-8 box-8"
+    "box-8 box-8 box-8";
+   }
+}@media (max-width: 42em) {
+    .grid-container {
+     grid-template-areas: 
+     "box-1 box-1"
+     "box-2 box-2"
+     "box-2 box-2"
+     "box-3 box-3"
+     "box-3 box-3"
+     "box-4 box-4"
+     "box-4 box-4"
+     "box-5 box-5"
+     "box-6 box-6"
+     "box-6 box-6"
+     "box-7 box-7"
+     "box-7 box-7"
+     "box-8 box-8"
+     "box-8 box-8";
+    }
+ }
+
+ .fechas {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+ }
+.fechas .botella {
+    position: absolute;
+    left: -140px;
+    top: -50px;
+    z-index: 0;
+}
+.fechas .estrella {
+    position: absolute;
+    right: -140px;
+    top: 20px;
+    z-index: 2;
+}
+ 
+.fechas__contenido {   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+
+.fechas__contenido a {
+    background-color: #F9ECE4 !important;
+    color: #024C3E !important;
+    border: 6px solid #024C3E !important;
+    border-radius: 3em !important;
+    font-size: 2em;
+    padding: 10px 55px;
+
+    font-family: 'Flame-bold' !important;
+    z-index: 1;
+}
+.footer {
+    background-color: #024C3E;
+    color: #F9ECE4 !important;
+    overflow: hidden;
+}
+.footer .enlaces {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
