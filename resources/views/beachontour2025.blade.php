@@ -1,9 +1,13 @@
 @extends('layouts.beach')
 @section('content')
+
     @push('css')
         <link rel="stylesheet" href="{{ asset('/css/beachon2025.css') }}">
        
     @endpush
+    @push('title')
+Beach on tour 2025
+@endpush
     <section class="header">
         <div class="container">
             <div class="contenido">
