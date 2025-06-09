@@ -23,7 +23,7 @@ Beach on tour 2025
             <img src="{{asset('img/beachon2025/logo-uber-eats.svg')}}" width="300" alt="">
         </div>
        </div>
-       <div class="d-block d-sm-block d-md-block d-lg-block">
+       <div class="d-block d-sm-block d-md-none d-lg-none">
         <div class="contenido__responsive text-center">
             <div >
                 <img src="{{asset('img/beachon2025/logo-sin-convervadores.svg')}}" width="300" alt="">
@@ -184,14 +184,14 @@ Beach on tour 2025
                 <div class="patrocinadores__contenido text-center">
                     <img src="{{asset('img/beachon2025/logo-patrocinadores.svg')}}" width="320" alt="">
                     <div class="row">
-                        <div class="col-md-4 col-md-12 m-auto">
-                            <img src="{{asset('img/beachon2025/logo-limpiemos-yuc.svg')}}" class="img-fluid" alt="">
+                        <div class="col-md-4 col-sm-12 m-auto">
+                            <img src="{{asset('img/beachon2025/logo-limpiemos-yuc.svg')}}" width="300" alt="">
                         </div>
-                        <div class="col-md-4 col-md-12 m-auto">
-                            <img src="{{asset('img/beachon2025/logo-bk-solid.svg')}}" class="img-fluid" alt="">
+                        <div class="col-md-4 col-sm-12 m-auto">
+                            <img src="{{asset('img/beachon2025/logo-bk-solid.svg')}}" width="300" alt="">
                         </div>
-                        <div class="col-md-4 col-md-12 m-auto">
-                            <img src="{{asset('img/beachon2025/logo-uber-eats-vertical.svg')}}" class="img-fluid" alt="">
+                        <div class="col-md-4 col-sm-12 m-auto">
+                            <img src="{{asset('img/beachon2025/logo-uber-eats-vertical.svg')}}" width="300" alt="">
                         </div>
                     </div>
                 </div>
