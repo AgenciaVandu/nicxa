@@ -17,7 +17,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#EB0028">
     <title>@stack('title') - Grupo Nicxa </title>
     @stack('descripcion')
     <meta name="facebook-domain-verification" content="vp8t49mojkkhq2a11x7x5la1noduv8" />

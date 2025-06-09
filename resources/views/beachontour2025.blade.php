@@ -15,12 +15,24 @@ Beach on tour 2025
                 <img src="{{ asset('img/beachon2025/logo-beach-on.svg') }}" class="img-fluid" alt="">
             </div>
         </div>
+       <div class="d-none d-sm-none d-md-block d-lg-block">
         <div class="izquierda-logo">
             <img src="{{asset('img/beachon2025/logo-sin-convervadores.svg')}}" width="300" alt="">
         </div>
         <div class="derecha-logo">
             <img src="{{asset('img/beachon2025/logo-uber-eats.svg')}}" width="300" alt="">
         </div>
+       </div>
+       <div class="d-block d-sm-block d-md-block d-lg-block">
+        <div class="contenido__responsive text-center">
+            <div >
+                <img src="{{asset('img/beachon2025/logo-sin-convervadores.svg')}}" width="300" alt="">
+            </div>
+            <div>
+                <img src="{{asset('img/beachon2025/logo-uber-eats.svg')}}" width="300" alt="">
+            </div>
+        </div>
+       </div>
     </section>
     <section class="descripcion">
         <div class="container">
@@ -172,13 +184,13 @@ Beach on tour 2025
                 <div class="patrocinadores__contenido text-center">
                     <img src="{{asset('img/beachon2025/logo-patrocinadores.svg')}}" width="320" alt="">
                     <div class="row">
-                        <div class="col m-auto">
+                        <div class="col-md-4 col-md-12 m-auto">
                             <img src="{{asset('img/beachon2025/logo-limpiemos-yuc.svg')}}" class="img-fluid" alt="">
                         </div>
-                        <div class="col m-auto">
+                        <div class="col-md-4 col-md-12 m-auto">
                             <img src="{{asset('img/beachon2025/logo-bk-solid.svg')}}" class="img-fluid" alt="">
                         </div>
-                        <div class="col m-auto">
+                        <div class="col-md-4 col-md-12 m-auto">
                             <img src="{{asset('img/beachon2025/logo-uber-eats-vertical.svg')}}" class="img-fluid" alt="">
                         </div>
                     </div>

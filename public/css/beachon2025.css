@@ -76,6 +76,14 @@ p, span {
   bottom: 40px;
   left: 10px;
 }
+.heaer .contenido__responsive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .header .derecha-logo {
   position: absolute;
   bottom: 40px;
@@ -175,6 +183,13 @@ p, span {
     right: -140px;
     top: 240px;
     z-index: 2;
+} @media (max-width: 42em) {
+  .fechas .estrella {
+    position: absolute;
+    right: -140px;
+    top: 850px !important;
+    z-index: 2;
+}
 }
  
 .fechas__contenido {   
@@ -183,6 +198,7 @@ p, span {
     justify-content: center;
     align-items: center;
     min-height: 200px;
+    z-index: 200;
 }
 
 
@@ -356,7 +372,7 @@ p, span {
 }
 .footer .brands {
   display: flex;
-  
+
   gap: 10px;
 }
 .footer .enlaces {
