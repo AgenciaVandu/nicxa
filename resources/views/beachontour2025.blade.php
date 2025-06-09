@@ -42,7 +42,7 @@ Beach on tour 2025
                     talleres educativos y activaciones con impacto positivo.</p>
                 <div class="row pt-5 pb-5">
                     <div class="col-md-6 col-sm-12">
-                        <video src="{{ asset('/video/BK_Spot_PreCampaña_4.mp4') }}" width="100%" autoplay preload="metadata"
+                        <video src="{{ asset('video/BK_Spot_PreCampaña_4.mp4') }}" width="100%" autoplay preload="metadata"
                         loop muted controls></video>
                     </div>
                     <div class="col-md-6 col-sm-12 text-center">
