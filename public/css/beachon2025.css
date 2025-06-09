@@ -7,7 +7,12 @@
     src: url(/font/flame-regular.ttf);
 }
 body {
-    background-color: #F9ECE4;
+  background-color: #F9ECE4;
+  /* background-image: url('/img/beachon2025/sand1.svg') !important; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 .olas {
 background-image: url('/img/beachon2025/mar-pleca.png');
@@ -24,8 +29,39 @@ p, span {
     font-family:  'Flame-regular' !important;
     color: #024C3E;
 }
+/* btn-wrapper */
+.boton-wrapper {
+  position: relative;
+  height: 100px;
+  margin-top: 1vh; /* simula que el botón está más abajo en la página */
+  background: transparent;
+}
 
+.boton-fijo {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 30px;
+  background: #111;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
 
+.boton-wrapper.stop .boton-fijo {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+/* end */
+.header {
+  position: relative;
+  min-height: 600px;
+}
 
 .header .contenido {
     min-height: 300px;
@@ -34,6 +70,16 @@ p, span {
     justify-content: center;
     align-items: center;
     
+}
+.header .izquierda-logo {
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+}
+.header .derecha-logo {
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
 }
 .descripcion__contenido {
     h1 { 
@@ -121,13 +167,13 @@ p, span {
 .fechas .botella {
     position: absolute;
     left: -140px;
-    top: -50px;
+    top: 250px;
     z-index: 0;
 }
 .fechas .estrella {
     position: absolute;
     right: -140px;
-    top: 20px;
+    top: 240px;
     z-index: 2;
 }
  
@@ -151,10 +197,167 @@ p, span {
     font-family: 'Flame-bold' !important;
     z-index: 1;
 }
+
+.inscripcion {
+  overflow: hidden;
+}
+#merch {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#merch img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 1s ease;
+  width: 180px;
+}
+
+/* Posiciones laterales, detrás */
+#merch.show .img0 {
+  left: calc(50% - 350px);
+  width: 300px;
+  height: auto;
+  z-index: 1;
+  opacity: 1;
+}
+
+#merch.show .img1 {
+  left: calc(50% - 250px);
+  width: 400px;
+  top: 210px;
+  height: auto;
+  z-index: 2;
+  opacity: 1;
+}
+
+#merch.show .img2 {
+  left: calc(50% - 100px);
+  width: 350px;
+  height: auto;
+  z-index: 4;
+  opacity: 1;
+}
+
+#merch.show .img3 {
+  left: calc(50% + 190px);
+  top: 270px;
+  width: 200px;
+  height: auto;
+  z-index: 3;
+  opacity: 1;
+}
+
+#merch.show .img4 {
+  left: calc(50% + 80px);
+  top: 190px;
+  width: 320px;
+  height: auto;
+  z-index: 2;
+  opacity: 1;
+}
+
+#merch.show .img5 {
+  left: calc(50% + 380px);
+  width: 200px;
+  height: auto;
+  z-index: 1;
+  opacity: 1;
+}
+
+
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  padding: 40px 5px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.carousel-slide {
+  flex: 0 0 33.3333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-slide.blur img {
+  filter: blur(5px);
+  transform: scale(0.95);
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid #00795c;
+  color: #00795c;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: 50%;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+}
+
+.nav.left {
+  left: 15px;
+}
+
+.nav.right {
+  right: 15px;
+}
+
+@media (max-width: 768px) {
+  .carousel-slide {
+    flex: 0 0 100%;
+  }
+
+  .nav {
+    font-size: 1.5rem;
+    padding: 4px 10px;
+  }
+}
+
 .footer {
     background-color: #024C3E;
     color: #F9ECE4 !important;
     overflow: hidden;
+}
+.footer .contacto {
+  color: #F9ECE4;
+}
+.footer .brands {
+  display: flex;
+  
+  gap: 10px;
 }
 .footer .enlaces {
     display: flex;

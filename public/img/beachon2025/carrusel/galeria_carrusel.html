@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería Carrusel</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      font-family: sans-serif;
+    }
+
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+      overflow: hidden;
+      padding: 40px 0;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease;
+      will-change: transform;
+    }
+
+    .carousel-slide {
+      flex: 0 0 33.3333%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      transition: filter 0.3s ease;
+    }
+
+    .carousel-slide.blur img {
+      filter: blur(5px);
+    }
+
+    .nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: 3px solid #00a58d;
+      color: #00a58d;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 5px 10px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .nav.left {
+      left: 10px;
+    }
+
+    .nav.right {
+      right: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-slide {
+        flex: 0 0 100%;
+      }
+
+      .nav {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carousel-container" ontouchstart="">
+    <button class="nav left" onclick="moveSlide(-1)">&#10094;</button>
+    <div class="carousel-track">
+      <div class="carousel-slide"><img src="/1.jpg" /></div>
+      <div class="carousel-slide"><img src="/2.jpg" /></div>
+      <div class="carousel-slide"><img src="/3.jpg" /></div>
+      <div class="carousel-slide"><img src="/4.jpg" /></div>
+      <div class="carousel-slide"><img src="/5.jpg" /></div>
+      <div class="carousel-slide"><img src="/6.jpg" /></div>
+    </div>
+    <button class="nav right" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+
+  <script>
+    let currentIndex = 0;
+    const track = document.querySelector(".carousel-track");
+    const slides = document.querySelectorAll(".carousel-slide");
+
+    function updateSlides() {
+      const slideWidth = slides[0].offsetWidth;
+      track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+      slides.forEach(slide => slide.classList.remove("blur"));
+      slides.forEach((slide, index) => {
+        if (window.innerWidth > 768) {
+          if (index !== currentIndex + 1) {
+            slide.classList.add("blur");
+          }
+        } else {
+          slide.classList.remove("blur");
+        }
+      });
+    }
+
+    function moveSlide(direction) {
+      const maxIndex = slides.length - (window.innerWidth > 768 ? 3 : 1);
+      currentIndex += direction;
+      if (currentIndex < 0) currentIndex = 0;
+      if (currentIndex > maxIndex) currentIndex = maxIndex;
+      updateSlides();
+    }
+
+    window.addEventListener("load", updateSlides);
+    window.addEventListener("resize", updateSlides);
+
+    // Soporte para swipe en móviles
+    let startX = 0;
+    let isDown = false;
+
+    track.addEventListener("touchstart", e => {
+      startX = e.touches[0].clientX;
+      isDown = true;
+    });
+
+    track.addEventListener("touchmove", e => {
+      if (!isDown) return;
+      let moveX = e.touches[0].clientX;
+      let diff = startX - moveX;
+      if (Math.abs(diff) > 50) {
+        moveSlide(diff > 0 ? 1 : -1);
+        isDown = false;
+      }
+    });
+
+    track.addEventListener("touchend", () => {
+      isDown = false;
+    });
+  </script>
+
+</body>
+</html>
