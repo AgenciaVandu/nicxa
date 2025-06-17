@@ -87,7 +87,7 @@ Beach on tour 2025
                     educativos, limpiezas masivas en playas de Yucatán y activaciones ambientales, sumando aliados y
                     voluntarios para generar impacto real en nuestras costas.</p>
             </div>
-            <div class="row">
+            <div class="row mt-5 mb-5">
                 <div class="col-md-6 col-sm-12">
                     <div class="imagenes text-center">
                         <h1>TALLERES</h1>
