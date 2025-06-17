@@ -10,20 +10,23 @@ Beach on tour 2025
 @endpush
     <section class="header">
         <div class="container">
-            <div class="contenido">
+            <div class="contenido text-center">
                 <img src="{{ asset('img/beachon2025/logo-bk-solid.svg') }}" width="300" alt="Logotipo Burger King">
-                <img src="{{ asset('img/beachon2025/logo-beach-on.svg') }}" class="img-fluid" alt="">
+                <div>
+                    <img src="{{ asset('img/beachon2025/logo-beach-on.svg') }}" class="beach-on-logo" alt="">
+
+                </div>
             </div>
         </div>
-       <div class="d-none d-sm-none d-md-block d-lg-block">
+       <div class="d-block d-sm-block d-md-block d-lg-block">
         <div class="izquierda-logo">
-            <img src="{{asset('img/beachon2025/logo-sin-convervadores.svg')}}" width="300" alt="">
+            <img src="{{asset('img/beachon2025/logo-sin-convervadores.svg')}}" width="200" alt="">
         </div>
         <div class="derecha-logo">
-            <img src="{{asset('img/beachon2025/logo-uber-eats.svg')}}" width="300" alt="">
+            <img src="{{asset('img/beachon2025/logo-uber-eats.svg')}}" width="200" alt="">
         </div>
        </div>
-       <div class="d-block d-sm-block d-md-none d-lg-none">
+       {{-- <div class="d-block d-sm-block d-md-none d-lg-none">
         <div class="contenido__responsive text-center">
             <div >
                 <img src="{{asset('img/beachon2025/logo-sin-convervadores.svg')}}" width="300" alt="">
@@ -32,7 +35,7 @@ Beach on tour 2025
                 <img src="{{asset('img/beachon2025/logo-uber-eats.svg')}}" width="300" alt="">
             </div>
         </div>
-       </div>
+       </div> --}}
     </section>
     <section class="descripcion">
         <div class="container">
@@ -40,8 +43,8 @@ Beach on tour 2025
                 <p class="text-center pb-4">Real Whopper Beach es una campaña de conciencia ambiental impulsada por Burger King y
                     aliados, que desde el año 2023 busca activar a las comunidades costeras a través de limpiezas de playa,
                     talleres educativos y activaciones con impacto positivo.</p>
-                <div class="row pt-5 pb-5">
-                    <div class="col-md-6 col-sm-12">
+                <div class="row pt-5 pb-5 ">
+                    <div class="col-md-6 col-sm-12 m-auto">
                         <video src="{{ asset('video/BK_Spot_PreCampana_4.mp4') }}" width="100%" autoplay preload="metadata"
                         loop muted controls></video>
                     </div>
@@ -84,58 +87,48 @@ Beach on tour 2025
                     educativos, limpiezas masivas en playas de Yucatán y activaciones ambientales, sumando aliados y
                     voluntarios para generar impacto real en nuestras costas.</p>
             </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="imagenes text-center">
+                        <h1>TALLERES</h1>
+                        <img src="{{asset('img/beachon2025/feedback-1/v-1.png')}}" class="img-fluid pt-2" alt="">
+                        <img src="{{asset('img/beachon2025/feedback-1/v-2.png')}}" class="img-fluid pt-4" alt="">
+                        <img src="{{asset('img/beachon2025/feedback-1/v-3.png')}}" class="img-fluid pt-4" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="imagenes text-center">
+                        <h1>LIMPIEZAS</h1>
+                       <div class="row">
+                        <div class="col-6">
+                            <img src="{{asset('img/beachon2025/feedback-1/1.png')}}" class="img-fluid pt-2" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="{{asset('img/beachon2025/feedback-1/2.png')}}" class="img-fluid pt-2" alt="">
+                        </div>
+                       </div>
+                       <div class="row">
+                        <div class="col-6">
+                            <img src="{{asset('img/beachon2025/feedback-1/3.png')}}" class="img-fluid pt-5" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="{{asset('img/beachon2025/feedback-1/4.png')}}" class="img-fluid pt-5" alt="">
+                        </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        {{-- Grid --}}
-        <div class="grid-container mt-5 mb-5">
-            <div class="box" style="grid-area: box-1" >
-               <h1>Talleres</h1>
-            </div>
-            <div class="box" style="grid-area: box-2">
-                <h4>Playas & Fauna</h4>
-                <p>Taller enfocado en la importancia de las playas y especies que la habitan. Acompañado de dinámicas interactivas ysesiones de dibujo.</p>
-                <span>19 de Julio / Sucursal Montejo / 12:00pm</span>
-
-            </div>
-            <div class="box" style="grid-area: box-3">
-                <h4>Invertebrados Marionos</h4>
-                <p>Interacción con ejemplares vivos y reptiles, y conocer su importancia en los ecosistemas.</p>
-                <span>2 de agosto / Sucursal Norte / 12:00pm</span>
-            </div>
-            <div class="box" style="grid-area: box-4">
-                <h4>Impacto ambiental sobre la costa en las tortugas</h4>
-                <p>Descubre la importancia ecológica de las tortugas marinas y cómo impacta el ser humanos en las costas que afectan a las tortugas.</p>
-                <span>9 de agosto / Sucursal Oriente / 12:00pm</span>
-            </div>
-            <div class="box" style="grid-area: box-5">
-                <h1>Limpiezas</h1>
-            </div>
-            <div class="box" style="grid-area: box-6">
-                <h4>Chicxulub</h4>
-                <p>5 de Julio <br> 7:00am</p>
-            </div>
-            <div class="box" style="grid-area: box-7">
-                <h4>Telchac Puerto</h4>
-                <p>12 de Julio <br> 7:00am</p>
-            </div>
-            <div class="box" style="grid-area: box-8">
-                <h4>Chuburná</h4>
-                <p>26 de Julio <br> 7:00am</p>
-            </div>
-            <div class="box" style="grid-area: box-8">
-                <h4>Progreso</h4>
-                <p>17 de Agosto <br> 7:00am</p>
-            </div>
-           
-        </div>
+       
     </section>
 
-    <section class="inscripcion">
+    <section class="inscripcion mt-5 mb-5">
         <div class="container">
             <div class="inscripcion__contenido text-center">
                 <h2>¡Sé de los primeros 45 en inscribirte y recibe merch oficial!</h2>
                 <span>Además, podrías tener la oportunidad de contar con transporte gratuito al evento.</span>
-               <div class="d-none d-sm-none d-md-block d-lg-block">
-                <div id="merch">
+               {{--<div class="d-none d-sm-none d-md-block d-lg-block">
+                 <div id="merch">
                     <img src="{{asset('img/beachon2025/seccion-bolsa/palmera-izq.png')}}" class="img0" />
                     <img src="{{asset('img/beachon2025/seccion-bolsa/habanico.png')}}" class="img1" />
                     <img src="{{asset('img/beachon2025/seccion-bolsa/bolsa.png')}}" class="img2" />
@@ -143,10 +136,8 @@ Beach on tour 2025
                     <img src="{{asset('img/beachon2025/seccion-bolsa/palmera-dere.png')}}" class="img4" />
                     <img src="{{asset('img/beachon2025/seccion-bolsa/gaviotas.png')}}" class="img5" />
                   </div>
-               </div>
-               <div class="d-block d-sm-block d-md-none d-lg-none">
-                <img src="{{asset('img/beachon2025/merch.png')}}" class="img-fluid">
-               </div>
+               </div> --}}
+               <img src="{{asset('img/beachon2025/merch.png')}}" class="img-fluid">
                 <p>En el malecón de Progreso realizaremos activaciones especiales con entrega de cupones, merch, dinámicas interactivas, bailes, juegos y un equipo de promo entregando Whoppers gratis.</p>
             </div>
         </div>
@@ -156,21 +147,32 @@ Beach on tour 2025
         <img src="{{asset('img/beachon2025/botella.png')}}" class="img-fluid botella" alt="botella">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-sm-12">
-                    <div class="carousel-container" ontouchstart="">
-                        <button class="nav left" onclick="moveSlide(-1)">&#10094;</button>
-                        <div class="carousel-track">
-                          <div class="carousel-slide"><img src="/img/beachon2025/carrusel/1.jpg" /></div>
-                          <div class="carousel-slide"><img src="/img/beachon2025/carrusel/2.jpg" /></div>
-                          <div class="carousel-slide"><img src="/img/beachon2025/carrusel/3.jpg" /></div>
-                          <div class="carousel-slide"><img src="/img/beachon2025/carrusel/4.jpg" /></div>
-                          <div class="carousel-slide"><img src="/img/beachon2025/carrusel/5.jpg" /></div>
-                          <div class="carousel-slide"><img src="/img/beachon2025/carrusel/6.jpg" /></div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="gallery-container">
+                        <div class="gallery">
+                          <button class="nav prev">&#10094;</button>
+                          <div class="images-wrapper">
+                            <img src="{{asset('img/beachon2025/carrusel/1.jpg')}}" class="slide active" alt="Imagen 1" />
+                            <img src="{{asset('img/beachon2025/carrusel/2.jpg')}}" class="slide" alt="Imagen 2" />
+                            <img src="{{asset('img/beachon2025/carrusel/3.jpg')}}" class="slide" alt="Imagen 3" />
+                            <img src="{{asset('img/beachon2025/carrusel/4.jpg')}}" class="slide" alt="Imagen 4" />
+                            <img src="{{asset('img/beachon2025/carrusel/5.jpg')}}" class="slide" alt="Imagen 5" />
+                            <img src="{{asset('img/beachon2025/carrusel/6.jpg')}}" class="slide" alt="Imagen 6" />
+                          </div>
+                          <button class="nav next">&#10095;</button>
                         </div>
-                        <button class="nav right" onclick="moveSlide(1)">&#10095;</button>
+                        <div class="dots">
+                          <span class="dot active" data-index="0"></span>
+                          <span class="dot" data-index="1"></span>
+                          <span class="dot" data-index="2"></span>
+                          <span class="dot" data-index="3"></span>
+                          <span class="dot" data-index="4"></span>
+                          <span class="dot" data-index="5"></span>
+                          <span class="dot" data-index="6"></span>
+                        </div>
                       </div>
                 </div>
-                <div class="col-md-4 col-sm-12 m-auto">
+                <div class="col-md-6 col-sm-12 m-auto">
                     <img src="{{asset('/img/beachon2025/calendario.svg')}}" class="img-fluid" alt="calendario">
                 </div>
             </div>
@@ -179,6 +181,7 @@ Beach on tour 2025
             </div>
         </div>
         <img src="{{asset('img/beachon2025/estrella.png')}}" class="img-fluid estrella" alt="estrella de mar">
+        
         <div class="patrocinadores">
             <div class="container">
                 <div class="patrocinadores__contenido text-center">
@@ -191,14 +194,14 @@ Beach on tour 2025
                             <img src="{{asset('img/beachon2025/logo-bk-solid.svg')}}" width="300" alt="">
                         </div>
                         <div class="col-md-4 col-sm-12 m-auto">
-                            <img src="{{asset('img/beachon2025/logo-uber-eats-vertical.svg')}}" width="300" alt="">
+                            <img src="{{asset('img/beachon2025/logo-uber-eats-vertical.svg')}}" width="250" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer mt-5">
         <div class="container">
             <div class="row pt-5 pb-5">
                 <div class="col-md-4 col-sm-12 pt-4">
@@ -274,80 +277,37 @@ const wrapper = document.getElementById('boton-wrapper');
         startCounter();
       }
     });
-/* counter */
 
-/* abanico */
+/* galería */
 
-const merch = document.getElementById('merch');
-    let activated = false;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    let current = 0;
 
-    function isInViewport(element) {
-      const rect = element.getBoundingClientRect();
-      return rect.top <= window.innerHeight && rect.bottom >= 0;
+    function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+        dots[i].classList.toggle('active', i === index);
+    });
+    current = index;
     }
 
-    function onScroll() {
-      if (!activated && isInViewport(merch)) {
-        activated = true;
-        merch.classList.add('show');
-        window.removeEventListener('scroll', onScroll);
-      }
-    }
-
-    window.addEventListener('scroll', onScroll);
-
-/* abanico */
-       let currentIndex = 0;
-    const track = document.querySelector(".carousel-track");
-    const slides = document.querySelectorAll(".carousel-slide");
-
-    function updateSlides() {
-      const slideWidth = slides[0].offsetWidth;
-      track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-
-      slides.forEach(slide => slide.classList.remove("blur"));
-      slides.forEach((slide, index) => {
-        if (window.innerWidth > 768) {
-          if (index !== currentIndex + 1) {
-            slide.classList.add("blur");
-          }
-        } else {
-          slide.classList.remove("blur");
-        }
-      });
-    }
-
-    function moveSlide(direction) {
-      const maxIndex = slides.length - (window.innerWidth > 768 ? 3 : 1);
-      currentIndex += direction;
-      if (currentIndex < 0) currentIndex = 0;
-      if (currentIndex > maxIndex) currentIndex = maxIndex;
-      updateSlides();
-    }
-
-    window.addEventListener("load", updateSlides);
-    window.addEventListener("resize", updateSlides);
-
-    let startX = 0;
-    let isDown = false;
-
-    track.addEventListener("touchstart", e => {
-      startX = e.touches[0].clientX;
-      isDown = true;
+    document.querySelector('.prev').addEventListener('click', () => {
+    const next = (current - 1 + slides.length) % slides.length;
+    showSlide(next);
     });
 
-    track.addEventListener("touchmove", e => {
-      if (!isDown) return;
-      let moveX = e.touches[0].clientX;
-      let diff = startX - moveX;
-      if (Math.abs(diff) > 50) {
-        moveSlide(diff > 0 ? 1 : -1);
-        isDown = false;
-      }
+    document.querySelector('.next').addEventListener('click', () => {
+    const next = (current + 1) % slides.length;
+    showSlide(next);
     });
 
-    track.addEventListener("touchend", () => {
-      isDown = false;
+    dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+        showSlide(Number(dot.dataset.index));
     });
+    });
+
+    showSlide(current);
       </script>
 @endsection
