@@ -145,9 +145,10 @@ Beach on tour 2025
 
     <section class="fechas">
         <img src="{{asset('img/beachon2025/botella.png')}}" class="img-fluid botella" alt="botella">
+        
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-12 mb-5">
+                <div class="col-md-6 col-sm-12 mb-5 mt-5">
                     <div class="gallery-container">
                         <div class="gallery">
                           <button class="nav prev">&#10094;</button>
@@ -174,7 +175,7 @@ Beach on tour 2025
                 </div>
                 <div class="col-md-6 col-sm-12 m-auto calendario-container mt-5">
                    
-                    <div class="image-container">
+                    <div class="image-container mt-4">
                         <div class="switch-container">
                             <div class="switch">
                                 <button id="julioBtn" class="active">JULIO</button>
@@ -184,12 +185,15 @@ Beach on tour 2025
                           <img id="imgJulio" class="active-img mt-2" src="{{asset('/img/beachon2025/calendario.svg')}}" alt="Julio">
                           <img id="imgAgosto" class="mt-2" src="{{asset('/img/beachon2025/cal-agosto.svg')}}" alt="Agosto">
                     </div>
+                    <img src="{{asset('/img/beachon2025/info.png')}}" class="img-fluid text-center" alt="">
                     {{-- <img src="{{asset('/img/beachon2025/calendario.svg')}}" class="img-fluid" alt="calendario"> --}}
                 </div>
             </div>
+            <img src="{{asset('img/beachon2025/botella.png')}}" class="botella-m" alt="botella">
             <div class="fechas__contenido boton-wrapper " id="boton-wrapper">
                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdMUtUw8F-XTycdhScNvoqvRCNxbV-8-OkpMAiMoSFDU51zCw/viewform?usp=header" target="blank_" class="btn btn-primary inscribete boton-fijo" >INSCRÍBETE</a>
             </div>
+            <img src="{{asset('img/beachon2025/estrella.png')}}" class="estrella-m" alt="">
         </div>
         <img src="{{asset('img/beachon2025/estrella.png')}}" class="img-fluid estrella" alt="estrella de mar">
         
@@ -217,22 +221,14 @@ Beach on tour 2025
                     <div class="d-block d-sm-block d-md-none d-lg-none">
                         <img src="{{asset('img/beachon2025/logo-patrocinadores.svg')}}" width="280" alt="">
 
-                        <div class="row">
-                            <div class="col m-auto">
-                                <img src="{{asset('img/beachon2025/logo-limpiemos-yuc.svg')}}" width="170" alt="">
-                            </div>
-                            <div class="col m-auto">
-                                <img src="{{asset('img/beachon2025/logo-bk-solid.svg')}}" width="170" alt="">
-                            </div>
+                        <div class="patrocinadores-m">
+                            <img src="{{asset('img/beachon2025/logo-limpiemos-yuc-m.svg')}}" width="90" alt="">
+                            <img src="{{asset('img/beachon2025/logo-bk-solid-m.svg')}}" width="90" alt="">
+                            <img src="{{asset('img/beachon2025/logo-uber-eats-vertical-m.svg')}}" width="50" alt="">
+                            <img src="{{asset('img/beachon2025/biologia.png')}}" width="60" alt="">
+                           
                         </div>
-                        <div class="row">
-                            <div class="col m-auto">
-                                <img src="{{asset('img/beachon2025/logo-uber-eats-vertical.svg')}}" width="100" alt="">
-                            </div>
-                            <div class="col m-auto">
-                                <img src="{{asset('img/beachon2025/biologia.png')}}" width="60" alt="">
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
