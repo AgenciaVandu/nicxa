@@ -71,8 +71,8 @@ Bolsa de Trabajo
                                         </figure>
                                     </div>
                                 </div>
-                                <div class="carousel__elemento">
-                                    <!--Elemento a-->
+                                {{-- <div class="carousel__elemento">
+                     
                                     <div class="cta__contenedor">
                                         <figure>
                                             <img src="{{ '/img/colaboradores/i-castillo.png' }}" alt="">
@@ -87,7 +87,7 @@ Bolsa de Trabajo
                                             </div>
                                         </figure>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <div class="carousel__elemento">
                                     <!--Elemento a-->
                                     <div class="cta__contenedor">
