@@ -20,10 +20,10 @@ Beach on tour 2025
         </div>
        <div class="d-block d-sm-block d-md-block d-lg-block">
         <div class="izquierda-logo">
-            <img src="{{asset('img/beachon2025/logo-sin-convervadores.svg')}}" width="200" alt="">
+            <img src="{{asset('img/beachon2025/logo-sin-convervadores.svg')}}" width="170" alt="">
         </div>
         <div class="derecha-logo">
-            <img src="{{asset('img/beachon2025/logo-uber-eats.svg')}}" width="200" alt="">
+            <img src="{{asset('img/beachon2025/logo-uber-eats.svg')}}" width="170" alt="">
         </div>
        </div>
        {{-- <div class="d-block d-sm-block d-md-none d-lg-none">
