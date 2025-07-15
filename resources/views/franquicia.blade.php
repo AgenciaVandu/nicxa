@@ -7,8 +7,8 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="{{asset('img/gestion2024/imagenes/BK_Banner.webp')}}" class="d-block w-100" alt="Banner Burger King">
-          </div>
+            <video src="{{asset ('/video/burger.mp4')}}" width="100%" autoplay preload="metadata" loop muted controls></video>
+        </div>
           <div class="carousel-item">
             <img src="{{asset('img/gestion2024/imagenes/KFC_Banner.webp')}}" class="d-block w-100" alt="Banner KFC">
           </div>
