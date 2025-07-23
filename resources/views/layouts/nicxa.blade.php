@@ -22,15 +22,17 @@
     @stack('descripcion')
     <meta name="facebook-domain-verification" content="vp8t49mojkkhq2a11x7x5la1noduv8" />
     <meta name="google-site-verification" content="q61Lt_yavm_0AcKrsM5i_85AaX7U7w9-hACnBVtjVH8" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <meta name="author" content="agenciavandu.com" />
     @stack('opengraph')
     @stack('css')
-    <link rel="stylesheet" href="{{asset('/css/font.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('/css/font.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
     {{-- <link rel="stylesheet" href="/main.css"> --}}
     <script src="/js/scrollreveal.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&amp;display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/9111dc1fca.js" crossorigin="anonymous"></script>
     <!-- Meta Pixel Code -->
     <script>
@@ -55,7 +57,8 @@
         fbq('init', '374537884510729');
         fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=374537884510729&ev=PageView&noscript=1" /></noscript>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=374537884510729&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
     <!-- Messenger Plugin de chat Code -->
     <div id="fb-root"></div>
@@ -97,10 +100,13 @@
         <nav class="navbar navbar-dark bg-nicxa">
             <div class="container">
                 <a class="navbar-brand" href="/">
-                    <img src="{{asset('/img/logo-nicxa.svg')}}" width="155" alt="">
+                    <img src="{{ asset('/img/logo-nicxa.svg') }}" width="155" alt="">
                 </a>
-                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="menu col-12 text-right m-auto" style="font-family: Raleway; font-weight:600; color:#fff; font-size:.7em;">
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="menu col-12 text-right m-auto"
+                        style="font-family: Raleway; font-weight:600; color:#fff; font-size:.7em;">
                         <span>Menú</span>
                     </div>
                     <!-- <div class="col-3">
@@ -133,22 +139,33 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/unete-a-la-famila-nicxa">Únete a la familia Nicxa <br class="d-block d-sm-block-d-md-none d-lg-none"> <span class="vacantes">¡Vacantes disponibles!</span></a>
+                            <a class="nav-link" href="/unete-a-la-famila-nicxa">Únete a la familia Nicxa <br
+                                    class="d-block d-sm-block-d-md-none d-lg-none"> <span class="vacantes">¡Vacantes
+                                    disponibles!</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/beach-on-tour">Beach on tour 2025<br class="d-block d-sm-block-d-md-none d-lg-none"></a>
+                            <a class="nav-link" href="/beach-on-tour">Beach on tour 2025<br
+                                    class="d-block d-sm-block-d-md-none d-lg-none"></a>
                         </li>
 
-                       
+
                         <li class="nav-item">
-                            <a class="nav-link" href="http://facturacion.gruponicxa.com.mx:8081/facturacioncliente/" target="_blank">Facturación</a>
+                            <a class="nav-link" href="http://facturacion.gruponicxa.com.mx:8081/facturacioncliente/"
+                                target="_blank">Facturación</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-
+    <div id="popup-overlay"></div>
+    <div id="welcome-popup">
+        <video controls autoplay muted playsinline>
+            <source src="{{asset ('/video/burger.mp4')}}" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+          </video>
+      <div><button id="close-popup">Cerrar</button></div>
+    </div>
     <main>
         @yield('content')
     </main>
@@ -160,7 +177,8 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-12 col-sm-12 m-auto text-center pt-3 orden">
                             <figure>
-                                <img src="{{asset('/img/gestion2024/imagenes/marcas-footer-actualizado.svg')}}" width="270" alt="">
+                                <img src="{{ asset('/img/gestion2024/imagenes/marcas-footer-actualizado.svg') }}"
+                                    width="270" alt="">
                             </figure> <br>
                         </div>
                         <div class="col-lg-3 col-md-12 col-sm-12 orden-2">
@@ -198,24 +216,31 @@
                                         <a href="/unete-a-la-famila-nicxa">Únete a la familia Nicxa</a>
                                     </li>
                                     <li>
-                                        <a href="http://facturacion.gruponicxa.com.mx:8081/facturacioncliente/" target="_blank">
+                                        <a href="http://facturacion.gruponicxa.com.mx:8081/facturacioncliente/"
+                                            target="_blank">
                                             Facturación
                                         </a>
                                     </li>
                                 </div>
                                 <div class="col-8 mt-2" style="font-weight: 700;">
-                                    <li><a href="/download/Aviso-de-Privacidad-2022.pdf" target="_blank">Aviso de privacidad</a></li>
+                                    <li><a href="/download/Aviso-de-Privacidad-2022.pdf" target="_blank">Aviso de
+                                            privacidad</a></li>
                                     <li>
-                                        <img src="/img/top-companies.jpg" class="img-fluid" alt="Logotipo super empresas expansión">
+                                        <img src="/img/top-companies.jpg" class="img-fluid"
+                                            alt="Logotipo super empresas expansión">
                                     </li>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-12 col-sm-12 orden-3"> <br class="d-block d-sm-block-d-md-none d-lg-none">
+                        <div class="col-lg-3 col-md-12 col-sm-12 orden-3"> <br
+                                class="d-block d-sm-block-d-md-none d-lg-none">
                             <h6 style="font-weight: 800;" class="pb-2">Ubica tu sucursal más cercana</h6>
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1IEhr-x0KGqmeM5H-UqXwwqSUK-hyO7bI&ehbc=2E312F" width="100%" height="280"></iframe>
+                            <iframe
+                                src="https://www.google.com/maps/d/embed?mid=1IEhr-x0KGqmeM5H-UqXwwqSUK-hyO7bI&ehbc=2E312F"
+                                width="100%" height="280"></iframe>
                         </div>
-                        <div class="col-lg-3 col-md-12 col-sm-12 orden-4"> <br class="d-block d-sm-block-d-md-none d-lg-none">
+                        <div class="col-lg-3 col-md-12 col-sm-12 orden-4"> <br
+                                class="d-block d-sm-block-d-md-none d-lg-none">
                             <h6 style="font-weight: 800;" class="pb-2">Contacto oficina corporativa</h6>
                             <div class="row">
                                 <div class="col-3">
@@ -242,12 +267,14 @@
                                             </a>
                                         </span>
                                         <span class="pr-2">
-                                            <a href="https://www.linkedin.com/company/grupo-nicxa/mycompany/" target="_blank">
+                                            <a href="https://www.linkedin.com/company/grupo-nicxa/mycompany/"
+                                                target="_blank">
                                                 <i class="fa-brands fa-linkedin"></i>
                                             </a>
                                         </span>
                                         <span>
-                                            <a href="https://www.youtube.com/channel/UCrjOx7RZNI2D8IakUsBo42A" target="_blank">
+                                            <a href="https://www.youtube.com/channel/UCrjOx7RZNI2D8IakUsBo42A"
+                                                target="_blank">
                                                 <i class="fa-brands fa-youtube"></i>
                                             </a>
                                         </span>
@@ -255,7 +282,8 @@
                                 </div>
                                 <div class="col-8 mt-2">
                                     <li style="font-weight: 700;"> Contacto facturación
-                                        <a href="mailto:facturacion@gruponicxa.com.mx" style="font-weight: 300;" target="_blank">facturacion@gruponicxa.com.mx</a>
+                                        <a href="mailto:facturacion@gruponicxa.com.mx" style="font-weight: 300;"
+                                            target="_blank">facturacion@gruponicxa.com.mx</a>
                                     </li>
                                 </div>
                             </div>
@@ -265,10 +293,42 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
     @stack('scripts')
-    <script src="{{asset('app.js')}}"></script>
+    <script src="{{ asset('app.js') }}"></script>
+
+    <script>
+        // Mostrar solo si no se ha mostrado antes
+    if (!localStorage.getItem('popupShown')) {
+      const overlay = document.getElementById('popup-overlay');
+      const popup = document.getElementById('welcome-popup');
+      const closeBtn = document.getElementById('close-popup');
+
+      // Mostrar popup y overlay
+      overlay.style.display = 'block';
+      popup.style.display = 'block';
+
+      // Guardar estado para no mostrarlo otra vez
+      localStorage.setItem('popupShown', 'true');
+
+      // Cerrar al hacer clic en el botón
+      closeBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+      });
+
+      // Opcional: cerrar si el usuario hace clic fuera del popup
+      overlay.addEventListener('click', () => {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+      });
+    }
+    </script>
 
 </body>
 
