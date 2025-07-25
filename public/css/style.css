@@ -191,7 +191,19 @@ html {
     }
 }
 .franquicia__logos {
-    padding: 2em 12em 0em 12em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+} @media (max-width: 600px) {
+    .franquicia__logos {
+        flex-direction: row;
+        gap: 10px;
+        padding-bottom: 1.7em;
+    }
 }
 .bg-cupon-1 {
     padding-bottom: 2em;
