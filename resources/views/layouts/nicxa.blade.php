@@ -158,14 +158,7 @@
             </div>
         </div>
     </div>
-    <div id="popup-overlay"></div>
-    <div id="welcome-popup">
-        <video controls autoplay muted playsinline>
-            <source src="{{asset ('/video/burger.mp4')}}" type="video/mp4">
-            Tu navegador no soporta la reproducción de video.
-          </video>
-      <div><button id="close-popup">Cerrar</button></div>
-    </div>
+   
     <main>
         @yield('content')
     </main>
@@ -302,33 +295,6 @@
     @stack('scripts')
     <script src="{{ asset('app.js') }}"></script>
 
-    <script>
-        // Mostrar solo si no se ha mostrado antes
-    if (!localStorage.getItem('popupShown')) {
-      const overlay = document.getElementById('popup-overlay');
-      const popup = document.getElementById('welcome-popup');
-      const closeBtn = document.getElementById('close-popup');
-
-      // Mostrar popup y overlay
-      overlay.style.display = 'block';
-      popup.style.display = 'block';
-
-      // Guardar estado para no mostrarlo otra vez
-      localStorage.setItem('popupShown', 'true');
-
-      // Cerrar al hacer clic en el botón
-      closeBtn.addEventListener('click', () => {
-        popup.style.display = 'none';
-        overlay.style.display = 'none';
-      });
-
-      // Opcional: cerrar si el usuario hace clic fuera del popup
-      overlay.addEventListener('click', () => {
-        popup.style.display = 'none';
-        overlay.style.display = 'none';
-      });
-    }
-    </script>
 
 </body>
 
