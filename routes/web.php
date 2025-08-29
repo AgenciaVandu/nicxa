@@ -321,9 +321,9 @@ Route::get('/moms-get-in-shape', function () {
 
 // Ruta mundial
 
-Route::get('/beach-on-tour', function () {
-    return view('beachontour2025');
-});
+//Route::get('/beach-on-tour', function () {
+//    return view('beachontour2025');
+//});
 //Route::get('/beach-on-tour-cupones-geo', function () {
 //    return view('sucursales.beach-cupones-geo');
 // });
